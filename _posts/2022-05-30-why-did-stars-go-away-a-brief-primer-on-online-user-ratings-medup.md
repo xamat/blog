@@ -1,6 +1,5 @@
 ---
-url: https://medium.com/@xamat/why-did-stars-go-away-a-brief-primer-on-online-user-ratings-6740453f27ed
-title: The death of the stars: A brief primer on online user ratings
+title: Testing a new thing with medupThe death of the stars: A brief primer on online user ratings
 subtitle: A few weeks back, Netflix announced that they were adding a two thumbs up option to give feedback on their content. At the same time I was…
 slug: why-did-stars-go-away-a-brief-primer-on-online-user-ratings
 description: 
