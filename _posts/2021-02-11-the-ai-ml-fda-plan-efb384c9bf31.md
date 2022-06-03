@@ -4,7 +4,6 @@ title: "The AI/ML FDA\_Plan"
 date: '2021-02-11T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=18'
 permalink: /the-ai-ml-fda-plan-efb384c9bf31/
 reading_time:
     - ''
@@ -37,7 +36,9 @@ However, this cannot be used in an AI/ML case where the “device” is expected
 
 In order to get there, it first defines a risk categorization framework based on: (1) the significance of information provided by the SaMD to the healthcare decision, and (2) the state of healthcare situation or condition, which identifies the intended user, disease or condition, and the population for the SaMD. See table below:
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>The framework also defines 3 types of not mutually exclusive AI/ML-based SaMD modifications:
+![](/blog/images/05-01.png)
+
+The framework also defines 3 types of not mutually exclusive AI/ML-based SaMD modifications:
 
 1. **Performance** (e.g. retraining, change in AI architecture…)
 2. **Inputs used by the algorithm** (e.g. adding new input data types and sources)
@@ -45,22 +46,30 @@ In order to get there, it first defines a risk categorization framework based on
 
 Finally, and very importantly, it describes a Total Product Lifecycle (**TPLC**) Regulatory Approach for AI/ML-Based SaMD illustrated below. The TPLC has 4 different regulatory components (i.e. touchpoints with the FDA): (1) A set of Good Machine Learning Practices, (2) a Premarket Assurance, (3) a Change Protocol Review Process, and (4) ways to define Real-World Performance. Let’s look briefly into these 4 components.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>1. **Quality Systems and Good Machine Learning Practices (GMLP)**
+![](/blog/images/05-02.png)
+
+1. **Quality Systems and Good Machine Learning Practices (GMLP)**
 
 All SaMD, devices that rely on AI/ML are expected to demonstrate analytical and clinical validation, as described in the SaMD: Clinical Evaluation guidance (see figure below). Example considerations include: Relevance of available data to the clinical problem and current clinical practice; data acquired in a consistent, clinically relevant and generalizable manner; appropriate separation between training, tuning, and test datasets; and appropriate level of transparency (clarity) of the output and the algorithm aimed at users.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>**2. Initial Premarket Assurance of Safety and Effectiveness**
+![](/blog/images/05-03.png)
+
+**2. Initial Premarket Assurance of Safety and Effectiveness**
 
 SaMD will require a “**Predetermined change plan**” that should include:
 
 - **SaMD Pre-Specifications (SPS)**: manufacturer’s anticipated modifications to “performance”, “inputs,” or “intended use”
 - **Algorithm Change Protocol (ACP)**: Specific methods in place to achieve and control the risks of the anticipated modifications in the SPS. See table below for more details on what is expected in the ACP.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>**3. Approach for modifications after initial review with established SPS &amp; ACP**
+![](/blog/images/05-04.png)
+
+**3. Approach for modifications after initial review with established SPS &amp; ACP**
 
 Besides the predetermined change plan, the SaMD also needs to specify an approach for modifications. The requirements depend on the concrete situation and whether the SPS and ACP above had been approved. See workflow below.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>**4. Transparency &amp; real-world performance monitoring of AI/ML-based SaMD**
+![](/blog/images/05-05.png)
+
+**4. Transparency &amp; real-world performance monitoring of AI/ML-based SaMD**
 
 Finally, the regulatory framework requires AI-based medical devices to address transparency and real-world performance. There are not many details of how that should be implemented in the framework, but mostly some examples on how to ensure transparency and monitoring. E.g.1. Transparency may include updates to FDA, device companies and collaborators of the manufacturer, and the public, such as clinicians, patients, and general users. E.g. 2. Real-world performance monitoring may also be achieved in a variety of suggested mechanisms that are currently employed or under pilot at FDA, such as adding to file or an annual report
 
@@ -74,11 +83,15 @@ Each of the sections above comes with a number of questions to the “stakeholde
 
 After its publication, and for the following few months, the framework above received [133 public comments](https://www.regulations.gov/docketBrowser?rpp=25&so=DESC&sb=commentDueDate&po=0&dct=PS&D=FDA-2019-N-1185). Those came from large corporations such as GE Healthcare or Anthem, but also individuals. There are even anonymous comments. All of them are available in the public site.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>### **Pilot: AI-guided Cardiac Ultrasound**
+![](/blog/images/05-06.png)
+
+### **Pilot: AI-guided Cardiac Ultrasound**
 
 As a way to test the framework in the real-world, the FDA applied it to [a pilot](https://www.fda.gov/news-events/press-announcements/fda-authorizes-marketing-first-cardiac-ultrasound-software-uses-artificial-intelligence-guide-user) for regulating a device developed by a startup called [Caption Health](https://captionhealth.com/). This device uses AI to guide ultrasounds, and to enable untrained registered nurses to perform ultrasounds at the same level of quality as trained specialists
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>### **Digital Health Center of Excellence**
+![](/blog/images/05-07.png)
+
+### **Digital Health Center of Excellence**
 
 Also in the context of these AI/ML initiatives, the FDA started the [Digital Health Center of Excellence](https://www.fda.gov/medical-devices/digital-health-center-excellence) late 2020. The center includes many external collaborators from universities and other non-profits (not for profit companies as far as I can see). Its 3 listed objectives are:
 
@@ -127,4 +140,6 @@ To summarize, the action plan proposes to:
 
 If you think everything you read until now makes sense, you will be surprised to read what happened next. In the middle of the chaos of Trump’s administration last days, the HHS published a request to exempt a large number AI devices from FDA regulation. This piece of news was pretty shocking for the community following these efforts and it is still unclear what it means, particularly since the new Biden administration will need to decide whether to approve or not the requested exemption (read more [here](https://www.statnews.com/2021/01/16/slippery-slope-territory-health-officials-propose-waiving-regulatory-review-of-medical-ai-tools/#:~:text=Days%20before%20leaving%20office,respiratory%20disease%20on%20medical%20images.), paywalled, or [here](https://medcitynews.com/2021/01/in-the-final-days-of-trump-administration-agencies-clashed-over-how-to-regulate-medical-ai/), free)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717d2aa51.png)<figcaption></figcaption></figure>In any case, these next few months promise to be really important and decisive for the whole space of AI in healthcare regulation. I look forward for the outcome of it all to provide a good avenue for aggressive innovation plus patient safety and medical quality.
+![](/blog/images/05-08.png)
+
+In any case, these next few months promise to be really important and decisive for the whole space of AI in healthcare regulation. I look forward for the outcome of it all to provide a good avenue for aggressive innovation plus patient safety and medical quality.
