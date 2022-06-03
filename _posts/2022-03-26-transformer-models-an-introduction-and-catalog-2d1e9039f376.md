@@ -4,7 +4,6 @@ title: "Transformer models: an introduction and catalog — 2022\_Edition"
 date: '2022-03-26T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=35'
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
 reading_time:
     - ''
@@ -15,7 +14,9 @@ categories:
 
 ### Transformer models: an introduction and catalog — 2022 Edition
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>**Update 04/02/2022**
+![](/images/02-01.png)
+
+**Update 04/02/2022**
 
 Thanks for all the interest and feedback in this post. As a result of all your comments, today I am updating the catalog with the following Transformer models: Megatron, Jurassic-1, MT-NLG , Wu Dao 2.0, Gopher, SeeKer, GPTInstruct, Chinchilla, Turing-NLG, VIT, and Swin Transformer. I considered adding others like Vega V1, which is on top of the GLUE benchmark leaderboard, but decided against it due to lack of public information on the models.
 
@@ -33,7 +34,9 @@ The Transformer architecture is a specific instance of the [encoder-decoder mode
 
 It is beyond the scope of this blog to go into all the details of the Transformer architecture. For that, I will refer you to the original paper above or to the wonderful [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) post. That being said, we will briefly describe the most important aspects since we will be referring to them in the catalog below. Let’s start with the basic architectural diagram from the original paper, and describe some of the components.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>### Encoder/Decoder architecture
+![](/images/02-02.png)
+
+### Encoder/Decoder architecture
 
 A generic encoder/decoder architecture is made up of two models. The encoder takes the input and encodes it into a fixed-length vector. The decoder takes that vector and decodes it into the output sequence. The encoder and decoder are jointly trained to minimize the conditional log-likelihood. Once trained the encoder/decoder can generate an output given an input sequence or can score a pair of input/output sequences.
 
@@ -43,7 +46,9 @@ In the case of the original Transformer architecture, both encoder and decoder h
 
 It is clear from the description above that the only “exotic” elements of the model architecture are the multi-headed attention, but, as described above, that is where the whole power of the model lies! So, what is attention anyway? An attention function is a mapping between a query and a set of key-value pairs to an output. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key. Transformers use multi-headed attention, which is a parallel computation of a specific attention function called scaled dot-product attention. I will refer you again to the [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) post for many more details on how the attention mechanism works, but will reproduce the diagram from the original paper here so you get the main idea
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>There are several advantages of attention layers over recurrent and convolutional networks, the two most important being their lower computational complexity and their higher connectivity, especially useful for learning long-term dependencies in sequences.
+![](/images/02-03.png)
+
+There are several advantages of attention layers over recurrent and convolutional networks, the two most important being their lower computational complexity and their higher connectivity, especially useful for learning long-term dependencies in sequences.
 
 ### What are Transformers used for and why are they so popular
 
@@ -95,17 +100,23 @@ Here we will note what are the main practical applications of the Transformer mo
 
 **Note:** For all the models available in Huggingface, I decided to directly link to the page in the documentation since they do a fantastic job of offering a consistent format and links to everything else you might need, including the original papers. Only a few of the models (e.g. GPT3) are not included in Huggingface.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>You can access the original table [here](https://docs.google.com/spreadsheets/d/1ltyrAB6BL29cOv2fSpNQnnq2vbX8UrHl47d7FkIf6t4/edit#gid=0) for easier browsing across the different model features. If you prefer to read the full list see below.
+![](/images/02-04.png)
+
+You can access the original table [here](https://docs.google.com/spreadsheets/d/1ltyrAB6BL29cOv2fSpNQnnq2vbX8UrHl47d7FkIf6t4/edit#gid=0) for easier browsing across the different model features. If you prefer to read the full list see below.
 
 ### Family Tree
 
 The diagram below is just a simple view that should highlight the different families of transformers and how they relate to each other.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>### Chronological timeline
+![](/images/02-05.png)
+
+### Chronological timeline
 
 Another interesting perspective is this chronological timeline of the main Transformer models borrowed from Huggingface [here](https://huggingface.co/course/chapter1/4).
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>### Catalog List
+![](/images/02-06.png)
+
+### Catalog List
 
 Finally, here is a list view that might be easier to follow along in some cases:
 
@@ -681,6 +692,8 @@ Most of the following references have already been mentioned in the post. Howeve
 - [A survey of transformers](https://arxiv.org/abs/2106.04554) (Lin et al. 2021) includes a 40 page long survey wit over 170 references and a full blown taxonomy.
 - [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/pdf/2003.08271.pdf) is also a very comprehensive survey that includes many of the pretrained models with a particular focus on NLP
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>- [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/abs/2003.08271) (Quiu et al. 2021) is another 30+ pages long survey that focuses on pretrained models for NLP.
+![](/images/02-07.png)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>
+- [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/abs/2003.08271) (Quiu et al. 2021) is another 30+ pages long survey that focuses on pretrained models for NLP.
+
+![](/images/02-08.png)
