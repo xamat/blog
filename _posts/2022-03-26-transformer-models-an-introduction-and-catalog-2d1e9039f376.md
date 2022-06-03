@@ -4,7 +4,6 @@ title: "Transformer models: an introduction and catalog — 2022\_Edition"
 date: '2022-03-26T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=35'
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
 reading_time:
     - ''
@@ -14,7 +13,9 @@ categories:
 
 ### Transformer models: an introduction and catalog — 2022 Edition
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/09XUAshzdXdpL4zdt.jpg)<figcaption>Transformer model catalog (see original table here)</figcaption></figure>**Update 04/02/2022**
+![Transformer model catalog (see original table here)](/images/09XUAshzdXdpL4zdt.jpg)
+
+**Update 04/02/2022**
 
 Thanks for all the interest and feedback in this post. As a result of all your comments, today I am updating the catalog with the following Transformer models: Megatron, Jurassic-1, MT-NLG , Wu Dao 2.0, Gopher, SeeKer, GPTInstruct, Chinchilla, Turing-NLG, VIT, and Swin Transformer. I considered adding others like Vega V1, which is on top of the GLUE benchmark leaderboard, but decided against it due to lack of public information on the models.
 
