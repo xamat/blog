@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=23'
 permalink: /cultural-overfitting-and-underfitting-or-why-the-netflix-culture-won-t-work-in-your-company-af2a62e41288/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

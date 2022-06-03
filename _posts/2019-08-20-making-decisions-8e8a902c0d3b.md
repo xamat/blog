@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=30'
 permalink: /making-decisions-8e8a902c0d3b/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=6'
 permalink: /football-or-futbol-or-why-deep-learning-will-not-make-other-machine-learning-approaches-obsolete-666658ed4167/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=20'
 permalink: /evil-ads-ad-blockers-and-the-end-of-web-diversity-1e996a396f8c/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

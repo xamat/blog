@@ -55,7 +55,7 @@ It is very good if you have situations where you can rehearse what you learn fro
 
 I have seen many cases of researchers with severe communication problems when presenting. Maybe I sound too harsh here, but I don’t think this is acceptable. If you really want to be a researcher but don’t think you can get to an acceptable level of presenting either (a) have some co-author present for you or (b) find some professional help. And this latter would be my preferred option. It is not so hard nowadays to find coaches or places that can help you out and if you agree this is an ability that you need in your job (and, again, you should agree), it is worth that you invest on it.  
 <span style="font-weight: bold;font-size:130%;">  
-</span>[![](http://3.bp.blogspot.com/_xAtUP4Gu6Zk/TO2vZ7AcGoI/AAAAAAAAAKA/ElhgjU5si20/s320/chairs.jpg)](http://3.bp.blogspot.com/_xAtUP4Gu6Zk/TO2vZ7AcGoI/AAAAAAAAAKA/ElhgjU5si20/s1600/chairs.jpg)  
+</span>[![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/chairs.jpg)](http://3.bp.blogspot.com/_xAtUP4Gu6Zk/TO2vZ7AcGoI/AAAAAAAAAKA/ElhgjU5si20/s1600/chairs.jpg)  
 <span style="font-weight: bold;font-size:130%;">  
 Preparing your next presentation</span>
 
@@ -121,5 +121,5 @@ And my last piece of advice may seem to contradict the rest. I have been talking
 
 You should be able to put any kind of external element into your presentation while not losing the main message. I don’t like having to skip slides since it gives the impression that you are in a rush to finish, but many times there is no alternative: You might have lost precious time in trying to play that video, or maybe went too far in the introduction and now you need to cut short. It is again very important that you have a clear picture of what the “main message” is and improvise by skipping those slides that are not needed to understand it.
 
-[![](http://2.bp.blogspot.com/_xAtUP4Gu6Zk/TO2vKopEwmI/AAAAAAAAAJ4/kljMWuizEUk/s320/microphone.jpg)](http://2.bp.blogspot.com/_xAtUP4Gu6Zk/TO2vKopEwmI/AAAAAAAAAJ4/kljMWuizEUk/s1600/microphone.jpg)  
+[![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/microphone.jpg)](http://2.bp.blogspot.com/_xAtUP4Gu6Zk/TO2vKopEwmI/AAAAAAAAAJ4/kljMWuizEUk/s1600/microphone.jpg)  
 I hope that some of this advice is useful in your next presentations. But I would like to hear from you: how do you prepare your talks? Any tips or suggestions you want to share in the comments?

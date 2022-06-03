@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=36'
 permalink: /10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-ii-93fe7008fa9/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

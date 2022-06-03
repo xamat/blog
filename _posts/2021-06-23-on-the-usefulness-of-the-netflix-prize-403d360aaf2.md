@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=26'
 permalink: /on-the-usefulness-of-the-netflix-prize-403d360aaf2/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

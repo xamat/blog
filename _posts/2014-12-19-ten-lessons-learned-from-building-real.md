@@ -137,7 +137,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 
 ## 6. The UI is the only communication channel between the Algorithm and what matters most: the Users
 
-| [![](http://4.bp.blogspot.com/-IlaQ9wrNQ-w/VIqLXXfAheI/AAAAAAAAA6U/ba9_p58o29I/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A29%3A37.png)](http://4.bp.blogspot.com/-IlaQ9wrNQ-w/VIqLXXfAheI/AAAAAAAAA6U/ba9_p58o29I/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A29%3A37.png) |
+| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A293A37.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A293A37.png) |
 |---|
 | **Fig 7.** The UI is the algorithm’s connection point with the user |
 
@@ -146,7 +146,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 </span></span>  
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">Also, it is important to understand that a change in the user interface might require a change in the algorithms and vice versa. Just as we learned before that there is an intimate connection between features and models, there is also another to be aware of between the algorithms and the presentation layer.</span></span></div>## 7. Data and Models are great. You know what is even better? The right evaluation approach.
 
-| [![](http://3.bp.blogspot.com/-boOR_M7VONg/VIqLwklV2hI/AAAAAAAAA6c/vTcDDGxz-5g/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A30%3A42.png)](http://3.bp.blogspot.com/-boOR_M7VONg/VIqLwklV2hI/AAAAAAAAA6c/vTcDDGxz-5g/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A30%3A42.png) |
+| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A303A42.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A303A42.png) |
 |---|
 | **Fig 8.** Offline/Online Innovation Approach |
 
@@ -159,7 +159,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">Ok, then what is the “right evaluation approach”? Figure 8 illustrates an offline/online approach to innovation that should be a good starting point. Whatever the final goal of your machine learning algorithm is in your product you should think of driving your innovation in two distinct ways: offline and online.</span>  
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">  
 </span>  
-| [![](http://1.bp.blogspot.com/-VTRWeZePLPE/VIqMIiZ60dI/AAAAAAAAA6k/UrX3q2EJhVA/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A32%3A32.png)](http://1.bp.blogspot.com/-VTRWeZePLPE/VIqMIiZ60dI/AAAAAAAAA6k/UrX3q2EJhVA/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A32%3A32.png) |
+| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A32.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A32.png) |
 |---|
 | **Fig 9.** Offline Evaluation |
 
@@ -167,7 +167,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">  
 </span>
 
-| [![](http://4.bp.blogspot.com/-4XpWGVRI50M/VIqMNJty8TI/AAAAAAAAA6s/aaTzCltjMNY/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A32%3A48.png)](http://4.bp.blogspot.com/-4XpWGVRI50M/VIqMNJty8TI/AAAAAAAAA6s/aaTzCltjMNY/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A32%3A48.png) |
+| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A48.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A48.png) |
 |---|
 | **Fig. 10.** Importance given to different ranks by typical ranking metrics |
 
@@ -203,7 +203,7 @@ As an example of the different approaches you can take to distribute each of the
 </span></span></div><span id="docs-internal-guid-2e000fb4-3d33-e866-ae0f-47dcdd6ee409">  
 </span>
 
-| [![](http://1.bp.blogspot.com/-bV484RKiTAc/VIqMnegzc5I/AAAAAAAAA60/jYLfDo-GCro/s1600/DistributedANN-Final.png)](http://1.bp.blogspot.com/-bV484RKiTAc/VIqMnegzc5I/AAAAAAAAA60/jYLfDo-GCro/s1600/DistributedANN-Final.png) |
+| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/DistributedANN-Final.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/DistributedANN-Final.png) |
 |---|
 | **Fig 11.** Distributing ANN over the AWS cloud |
 
@@ -223,7 +223,7 @@ As an example of the different approaches you can take to distribute each of the
 <span style="line-height: 16px; white-space: pre-wrap;">  
 </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">Take a look at Figure 12 below, which illustrates this issue by showing (made up) accuracy results for a model given different values of the regularization parameter. In this particular example the highest accuracy is for no regularization, plus there is a relatively flat plateau region for values of lambda between 0.1 and 100. Blindly taking a value of lambda of zero is generally a bad idea since it points to overfitting (yes, this could be checked by using the test dataset). But, beyond that, going to the “flat region”, is it better to stick with the 0.1 value? By looking at the plot I would be inclined to take 100 as the operating point. This point is (a) non-zero, and (b) noise-level different in terms of accuracy from the other non-zero values. So, one possible rule of thumb to use is to keep the highest non-zero value that is noise level different in terms of the optimizing metric from the optimal point.</span></div><div><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
-</span></span></div>| [![](http://2.bp.blogspot.com/-MlCCRurPOMY/VIqM-_W_GNI/AAAAAAAAA68/Yba5QlkSNvM/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A36%3A34.png)](http://2.bp.blogspot.com/-MlCCRurPOMY/VIqM-_W_GNI/AAAAAAAAA68/Yba5QlkSNvM/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A36%3A34.png) |
+</span></span></div>| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A363A34.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A363A34.png) |
 |---|
 | **Fig 12.** Example of model accuracy vs. regularization lambda |
 
@@ -237,11 +237,11 @@ As an example of the different approaches you can take to distribute each of the
 <span style="line-height: 16px; white-space: pre-wrap;">  
 </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">Figure 13 depicts a three level architecture that can be used as a </span><span style="line-height: 16px; white-space: pre-wrap;">blueprint for any machine learning system that is designed to have a customer impact. The basic idea is that it is important to have different layers in which to trade off latency vs. complexity. Some computations need to be as real-time as possible to quickly respond to user feedback and context. Those are better off in an online setting. On the other extreme, complex ML models that require large amounts of data and lengthy computations are better done in an offline fashion. Finally, there is a Nearline world where operations are not guaranteed to happen in real-time but a best effort is performed to do them as “soon as possible”.</span></div><div><span style="font-family: inherit;"><span style="color: #666666; line-height: 1; white-space: pre-wrap;">  
-</span></span></div>| [![](http://4.bp.blogspot.com/-ab7QnWsT-GY/VIqNala6WgI/AAAAAAAAA7E/hragQzAHvLI/s1600/MachineLearningArchitecture-v3.jpg)](http://4.bp.blogspot.com/-ab7QnWsT-GY/VIqNala6WgI/AAAAAAAAA7E/hragQzAHvLI/s1600/MachineLearningArchitecture-v3.jpg) |
+</span></span></div>| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/MachineLearningArchitecture-v3.jpg)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/MachineLearningArchitecture-v3.jpg) |
 |---|
 | **Fig 13.** This three level architecture can be used as a blueprint for machine learning systems that drive customer impact. |
 
-<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: left;">Interestingly, thinking about these three “[shades of latency](https://gigaom.com/2013/03/28/3-shades-of-latency-how-netflix-built-a-data-architecture-around-timeliness/)” also helps breaking down traditional machine learning algorithms into different components that can be executed in different layers. Take matrix factorization as an example. As illustrated in Figure 14, you can decide to do the more time-consuming item factor computation in an offline fashion. Once those item factors are computed, you can compute user factors online (e.g. solving a closed-from least squares formulation) in a matter of milliseconds in an online fashion.</div><div class="separator" style="clear: both; text-align: left;"></div>| [![](http://1.bp.blogspot.com/-jk-YlHAYJSs/VIqNpNdllFI/AAAAAAAAA7M/vAzZo_jJrDw/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A39%3A21.png)](http://1.bp.blogspot.com/-jk-YlHAYJSs/VIqNpNdllFI/AAAAAAAAA7M/vAzZo_jJrDw/s1600/Screenshot%2Bfrom%2B2014-12-11%2B22%3A39%3A21.png) |
+<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: left;">Interestingly, thinking about these three “[shades of latency](https://gigaom.com/2013/03/28/3-shades-of-latency-how-netflix-built-a-data-architecture-around-timeliness/)” also helps breaking down traditional machine learning algorithms into different components that can be executed in different layers. Take matrix factorization as an example. As illustrated in Figure 14, you can decide to do the more time-consuming item factor computation in an offline fashion. Once those item factors are computed, you can compute user factors online (e.g. solving a closed-from least squares formulation) in a matter of milliseconds in an online fashion.</div><div class="separator" style="clear: both; text-align: left;"></div>| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A393A21.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A393A21.png) |
 |---|
 | **Fig 14.** Decomposing matrix factorization into offline and online computation |
 

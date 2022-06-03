@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=7'
 permalink: /2019-summer-internships-recap-cd4cd44ed0ea/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---
@@ -16,7 +17,7 @@ categories:
 
 This summer, we had a great class of interns at Curai. We accept interns on all our different teams all year round. As a matter of fact, we currently have a few interns for the fall and winter. This post focuses on the work done by the wonderful engineering interns we had over the summer. We will update this blog with future intern work, and you should look forward to reading publications from other interns in the coming months.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>In this post, we include work done by Markie and Andrea, who study at Stanford, Dylan and Mesi from MIT, Kyle from CMU, and Joseph, an MD and CS student at UPenn. Of course all of this work would not have been possible without the great work of their mentors in the engineering team, other colleagues from other teams (e.g. medical team) who teamed up with them in the projects, and those who volunteered to help edit this post. What follows is an edited short version of their work in their own words (among other things, our interns were so proud with our mission to “**Provide the world’s best healthcare to everyone**” that they all mentioned it when describing their work). Enjoy reading about their work, and, please send us your resume at <jobs@curai.com> if you are interested in helping us with our mission by doing an internship or taking on any of our [other positions](https://curai.com/careers).
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>In this post, we include work done by Markie and Andrea, who study at Stanford, Dylan and Mesi from MIT, Kyle from CMU, and Joseph, an MD and CS student at UPenn. Of course all of this work would not have been possible without the great work of their mentors in the engineering team, other colleagues from other teams (e.g. medical team) who teamed up with them in the projects, and those who volunteered to help edit this post. What follows is an edited short version of their work in their own words (among other things, our interns were so proud with our mission to “**Provide the world’s best healthcare to everyone**” that they all mentioned it when describing their work). Enjoy reading about their work, and, please send us your resume at <jobs@curai.com> if you are interested in helping us with our mission by doing an internship or taking on any of our [other positions](https://curai.com/careers).
 
 ### 1. Doctor Speech-to-Text
 
@@ -56,13 +57,13 @@ After training embeddings on patient and doctor language, I was able to observe 
 
 Interestingly, the embeddings still seem to be able to make sense of the misspelled words correctly. The nearest neighbors of misspelled words reflect an understanding of what the word is supposed to be.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure><figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>We can also observe what the embeddings look like in 2D space. Clearly the FO Word2Vec model on patient data here is capturing the correct meaning of these words and understands the context in which they exist. Here, words most similar to the words in the key (nearest neighbors) are plotted.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>We can also observe what the embeddings look like in 2D space. Clearly the FO Word2Vec model on patient data here is capturing the correct meaning of these words and understands the context in which they exist. Here, words most similar to the words in the key (nearest neighbors) are plotted.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Some of the terms that show up commonly in doctor text but don’t appear anywhere in patient text are highly specific medical terms, descriptions, or instructions. Below are some examples:
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Some of the terms that show up commonly in doctor text but don’t appear anywhere in patient text are highly specific medical terms, descriptions, or instructions. Below are some examples:
 
 ‘decomposed’, ‘acne\_rosacea’, ‘ceana’, ‘precipitates’, ‘hamartoma’, ‘emergency\_helpline\_number’, ‘antifungal\_dusting\_powders’, ‘essential\_minerals’, ‘silla’, ‘mobilizing’, ‘emotional\_states’, ‘counter\_tynelol\_advil’, ‘acidic\_sour’, ‘connective\_tissues\_attachments’, ‘premenstrual\_syndrome\_includes’, ‘neti\_pot\_plain’, ‘articles\_php’
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Out of medical terms that appear in both corpuses, these words have embeddings that are far apart in the two embedding spaces, which could mean that they have different connotative meanings when used by doctors and patients. Below are some examples:
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Out of medical terms that appear in both corpuses, these words have embeddings that are far apart in the two embedding spaces, which could mean that they have different connotative meanings when used by doctors and patients. Below are some examples:
 
 ‘myself’, ‘email\_address’, ‘provide\_temporary\_relief’, ‘applying\_ice\_packs’, ‘triptans’, ‘cool\_wet\_cloth’, ‘eating\_smaller\_portions’, ‘various\_reasons’, ‘license’, ‘wearing\_loose\_clothes’, ‘surely’, ‘bodily\_fluid’, ‘scope’, ‘support\_network’, ‘relievers’, ‘real’, ‘character\_limit’, ‘fiber\_foods’, ‘killer’, ‘sounds\_familiar’,
 
@@ -70,11 +71,11 @@ What is surprising is the mix of specialized phrases like “wearing\_loose\_clo
 
 After training embeddings for patient speech and doctor speech, we realized there were valuable insights to be had on how different these “languages” are from each other. Since the embeddings were trained using the same Word2Vec method and since the vocabularies have a high degree of overlap, in theory, their shapes should be pretty similar and a linear transformation of one shape could align it with the other. I used the [MUSE](https://github.com/facebookresearch/MUSE) supervised model code to align the embedding spaces in different ways to further explore the differences in how patients and doctors write. Specifically, the MUSE method involves an iterative [Procrustes](https://en.wikipedia.org/wiki/Orthogonal_Procrustes_problem) method that defines the linear transformation applied to the source matrix. There is also an unsupervised GAN method that was less effective and that was not used for our data.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Aligning of Italian and English embedding spaces from MUSE paper
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Aligning of Italian and English embedding spaces from MUSE paper
 
 We are able to tell the quality of these embeddings by comparing the locations of some medical words that have layperson translations in the embedding spaces before and after alignment. Below, before alignment, the medical terms in blue are separated spatially from their layperson translated terms in red. However, after running the alignment method, we are able to see that the embedding spaces shifted, and that the vocabulary in these embedding spaces spatially match up in a logical way.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure><figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>The embedding and text translation work I completed this summer at Curai will contribute to the NLP efforts of the ML team at Curai moving forward. Having never taken an NLP class in school, I learned an immense amount this summer by working on these individual projects as well as by contributing them to a larger team and codebase. It is incredibly rewarding to see that this work helped me grow as an engineer and will also benefit Curai’s machine learning team as well.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>The embedding and text translation work I completed this summer at Curai will contribute to the NLP efforts of the ML team at Curai moving forward. Having never taken an NLP class in school, I learned an immense amount this summer by working on these individual projects as well as by contributing them to a larger team and codebase. It is incredibly rewarding to see that this work helped me grow as an engineer and will also benefit Curai’s machine learning team as well.
 
 ### 3. Interpreting natural language responses in Doctor-Patient Conversations
 
@@ -88,15 +89,15 @@ When a patient first enters a chat, they are required to input their chief compl
 
 My goal for the summer was to build machine learning models that could understand free-text responses to the doctor’s symptom questions. The motivation behind this project was to improve the question answering experience, allow for more detailed findings, enable the diagnostic engine to output more relevant questions, and provide a path to fully automate the conversation. These models can interpret a patient’s response and extract information such as the duration, frequency, severity, and confirmation/negation of a symptom.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>*Using BERT To Detect Symptom Confirmation*
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>*Using BERT To Detect Symptom Confirmation*
 
 Our Next Question engine generates questions that follow the format ‘Do you have \[symptom\]?”. To replace the functionality of the radio buttons, I created a model that could extract, from a patient answer, whether or not they were saying “yes,” “no,” or “unsure” in their text response. This turns out to be a tricky problem since over 40% of users do not use a yes/no/unsure phrases (e.g., “yeah,” “no,” “nope,” or “not sure”) in their responses. Most of the time, one must infer whether the user is saying yes or no.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>In order to understand whether a patient was confirming or denying the presence of a symptom, I experimented with several of my own feature engineering strategies and popular NLP models. In my initial attempts, I tried to make use of publicly available question answering data, such as [Amazon’s Question Answering dataset](http://jmcauley.ucsd.edu/data/amazon/qa/), but these models struggled with such a domain-specific task. I ended up using a combination of weak supervision and Mechanical Turk labeled data to create my dataset.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>In order to understand whether a patient was confirming or denying the presence of a symptom, I experimented with several of my own feature engineering strategies and popular NLP models. In my initial attempts, I tried to make use of publicly available question answering data, such as [Amazon’s Question Answering dataset](http://jmcauley.ucsd.edu/data/amazon/qa/), but these models struggled with such a domain-specific task. I ended up using a combination of weak supervision and Mechanical Turk labeled data to create my dataset.
 
 After running experiments with several sequence classification models, I found the most success with the use of the [BERT](https://arxiv.org/abs/1810.04805) and [XLNet](https://arxiv.org/abs/1906.08237) language models released by Google. I ended up using [Huggingface’s implementation](https://github.com/huggingface/pytorch-transformers) of these transformer models in Pytorch. These models worked particularly well on small datasets because they leverage the use of transfer learning. BERT and XLNet are first trained on a large-scale dataset and then finetuned on a smaller dataset for a more specific target task. In my case, I was mapping sequence (doctor question, patient answer) to binary classification (patient confirming, patient denying.)
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>*Using Conditional Random Fields To Extract Severity, Frequency, and Duration*
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>*Using Conditional Random Fields To Extract Severity, Frequency, and Duration*
 
 For collecting the severity data, I decided to use a combination of the [hNLP dataset](https://healthnlp.hms.harvard.edu/center/pages/data-sets.html) (annotated de-identified clinical notes from several institutions) and weakly supervised labels from our own patient chat logs. The weakly supervised labels were generated using a hierarchy of labeling functions, which consisted of hardcoded heuristics, syntactics (specifically, [Spacys](https://spacy.io/api/dependencyparser/) dependency trees), and more. I also ended up bootstrapping more data from our chat logs using noisy manual labels from Mechanical Turk.
 
@@ -108,7 +109,7 @@ For this entity extraction task, I found that [Conditional Random Fields](https:
 
 In the end, I was able to create models that could consistently and accurately collect natural language next question data.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>*Integration*
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>*Integration*
 
 At the end of the internship, I had to switch gears from research to product engineering and integrate API calls for each model into the backend. Curai uses Kubernetes, Prometheus, and recently [switched over to Helm](https://medium.com/curai-tech/constant-vigilance-a-step-by-step-guide-to-alerts-with-helm-and-prometheus-ae9554736031), so I had to learn how to use these technologies in order to successfully integrate, test, and productionize my models.
 
@@ -141,7 +142,7 @@ All four diagnoses are related to either allergic reactions or bee stings. So fa
 
 For anaphylaxis, we can see that out of the three symptoms, bee sting and upper lip swelling was very predictive for this diagnosis, while crying was not. That’s reassuring to know because crying isn’t a cause of anaphylaxis (unless you happen to be allergic to crying!)
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Or take bee sting. We can see that bee sting causes bee sting (no duh!), while upper lip swelling and crying do not cause bee sting. Talk about stating the obvious! But it is precisely these simple conclusions that lets us know the model is on the right track and hence, gives us more reason to trust the results!
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Or take bee sting. We can see that bee sting causes bee sting (no duh!), while upper lip swelling and crying do not cause bee sting. Talk about stating the obvious! But it is precisely these simple conclusions that lets us know the model is on the right track and hence, gives us more reason to trust the results!
 
 We used the LIME text classifier module; we converted the input (a list of symptom objects) into a single comma-delimited string (e.g. “upper\_lip\_swelling, bee\_sting, crying”) and created a wrapper function that parses the string and calls our own classifier function internally.
 
@@ -176,7 +177,7 @@ At any fast-moving company, and even more so in one like Curai that acquired ano
 1. Router.js, a file that was simply supposed to select the right component to display based on the URL, stretched to over 750 lines of code because it also handled the websocket connection to the chat in addition to a variety of other smaller tasks.
 2. Prop Drilling: API functions to talk with the backend were all instantiated in Router, and passed down to components. For components that are low in the tree, this meant passing in the functions through as many as eight (!!) other components to get the function down to the one component that needed it.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>In the old architecture, Router had logic for websocket connection even if the component displayed was not using the websocket. In addition, api calls and informational props all came from Router. This meant if component B needed to make an api call, the function would need to be passed down through component A and Chat even if those components did not need it. To address these issues, I:
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>In the old architecture, Router had logic for websocket connection even if the component displayed was not using the websocket. In addition, api calls and informational props all came from Router. This meant if component B needed to make an api call, the function would need to be passed down through component A and Chat even if those components did not need it. To address these issues, I:
 
 1. Moved the chat’s websocket handling to a separate component and out of Router.js
 2. Created[ React contexts](https://reactjs.org/docs/context.html) for services like API calls so that components that needed them could subscribe to the context directly, as opposed to receiving them through prop-drilling.
@@ -184,7 +185,7 @@ At any fast-moving company, and even more so in one like Curai that acquired ano
 4. [Hookify’d](https://reactjs.org/docs/hooks-overview.html) some existing components so they could use (2) and (3).
 5. Updated and added tests (an unexpected bonus!), and documented the new way to interact with these services.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>In the new architecture, a new wrapper component for Chat called ChatTooBig (an annoying name to motivate us to break Chat down into smaller pieces) handles websocket connection independently of Router, meaning Router can be just a router. Additionally, components like A and B can “hook” into the api or data they need, directly to contexts.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>In the new architecture, a new wrapper component for Chat called ChatTooBig (an annoying name to motivate us to break Chat down into smaller pieces) handles websocket connection independently of Router, meaning Router can be just a router. Additionally, components like A and B can “hook” into the api or data they need, directly to contexts.
 
 The refactor should make development on the application easier. Router and Chat are now decoupled, meaning that they can be tested separately and new components can be added to Router more easily. Components can now selectively subscribe to data and unnecessary prop drilling is on the way out. Finally, it lays the groundwork for a permanent move from `Weedux` to Redux for all of Curai Health’s global state management needs.
 
@@ -206,8 +207,8 @@ To address the first goal I created a datatable to store image(s), associated me
 
 In order to improve the quality of photos taken by users, we decided to present users with guidelines for taking high quality photos. These guidelines serve as a reminder to important elements of photography that are often ignored in chat mediums. For instance, it is better to take the photo with a solid colored background so that the focus is on the condition being photographed. Outlined below is the image collection flow before this project \[Figure 1\], and the final flow after the completion of my internship \[Figure 2\].
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Figure 1: Initial image collection flow.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Figure 1: Initial image collection flow.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Figure 2: Final image collection flow, from the conversation user initiates flow by pressing the camera button. The user is then asked if the photo is dermatology related, and presented with guidelines.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Figure 2: Final image collection flow, from the conversation user initiates flow by pressing the camera button. The user is then asked if the photo is dermatology related, and presented with guidelines.
 
-<figure>![](https://cdn-images-1.medium.com/max/800/0*eTXsuekl_IuIoWfr)<figcaption></figcaption></figure>Once the user uploads a photo they will be asked to fill out a survey, if this image was derm related.
+<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717f3bd51.jpg)<figcaption></figcaption></figure>Once the user uploads a photo they will be asked to fill out a survey, if this image was derm related.

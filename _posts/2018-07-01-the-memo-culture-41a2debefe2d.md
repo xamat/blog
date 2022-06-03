@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=14'
 permalink: /the-memo-culture-41a2debefe2d/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---

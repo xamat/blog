@@ -8,6 +8,7 @@ guid: 'http://localhost:8080/wordpress/?p=17'
 permalink: /how-do-you-deal-with-strong-difference-of-opinion-among-expert-engineers-in-the-team-9bdc5b102e5f/
 reading_time:
     - ''
+    - ''
 categories:
     - Uncategorized
 ---
