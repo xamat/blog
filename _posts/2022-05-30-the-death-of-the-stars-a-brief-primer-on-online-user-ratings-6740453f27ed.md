@@ -4,7 +4,6 @@ title: "The death of the stars: A brief primer on online user\_ratings"
 date: '2022-05-30T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=9'
 permalink: /the-death-of-the-stars-a-brief-primer-on-online-user-ratings-6740453f27ed/
 reading_time:
     - ''
