@@ -4,7 +4,6 @@ title: 'Valuing Equity in Startups: A Decision-Making Framework'
 date: '2021-03-21T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=27'
 permalink: /valuing-equity-in-startups-a-decision-making-framework-7cfc39d99597/
 reading_time:
     - ''
@@ -17,7 +16,9 @@ categories:
 
 #### and a spreadsheet
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717cc4c3b.jpg)<figcaption>Photo by NeONBRAND on Unsplash</figcaption></figure>(In case you came here looking for the spreadsheet, [here](https://docs.google.com/spreadsheets/d/1uqETG2kl2mnbqh7aQvJJIu7DeAT0uLOwuwxrki0vgs4/edit?usp=sharing) it is. However, I recommend you continue reading to help you understand the overall framework.)
+![](/blog/images/04-01.png)
+
+(In case you came here looking for the spreadsheet, [here](https://docs.google.com/spreadsheets/d/1uqETG2kl2mnbqh7aQvJJIu7DeAT0uLOwuwxrki0vgs4/edit?usp=sharing) it is. However, I recommend you continue reading to help you understand the overall framework.)
 
 I am often surprised that many folks I talk to, even those working at startups, have very little understanding of how to think about the value of their equity. I should credit [Chip Huyen](https://huyenchip.com/) for [her post](https://huyenchip.com/2021/02/27/why-not-join-a-startup.html) about working on a startup. While I do feel in order to make justice to that post I need to write a much broader write-up about working in a startup, the current one is addressing the discussion of how to value equity in the “[You won’t get rich](https://huyenchip.com/2021/02/27/why-not-join-a-startup.html#4_equity)” section. If you are joining a startup you should probably be doing it for many other reasons than to “make money”. However, I do think it is important to have a framework to evaluate the economic value (or risk) of joining one.
 
@@ -27,11 +28,15 @@ What you will read here is not the result of [survivorship bias](https://en.wiki
 
 In order to value equity in a startup it is useful for you to become acquainted with the notion of [expected utility](https://www.investopedia.com/terms/e/expectedutility.asp) and [expected value](https://en.wikipedia.org/wiki/Expected_value). Expected utility is a economical theory and framework to make decisions under uncertainty. While there is some limitations to equating expected utility and value, this can be used as a good approximation (in reality [most limitations](https://www.investopedia.com/terms/e/expectedutility.asp) stem from the fact that risk and probabilities are subjective, which we will talk about in the post). The expected value of an “event” is simply the value you should expect giving the possible outcomes and the probabilities for each of the outcomes.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717cc4c3b.jpg)<figcaption>Photo by NeONBRAND on Unsplash</figcaption></figure>Strictly speaking, a startup has an infinite number of possible outcomes, but you can generally simplify to a few. Just keep in mind that the probabilities need to add up to 1 and that you need to add the probabilities in bins (i.e. the probability of the outcome being 10 is going to be in reality the probability of the outcome being 0&gt;x≤10).
+![](/blog/images/04-02.png)
+
+Strictly speaking, a startup has an infinite number of possible outcomes, but you can generally simplify to a few. Just keep in mind that the probabilities need to add up to 1 and that you need to add the probabilities in bins (i.e. the probability of the outcome being 10 is going to be in reality the probability of the outcome being 0&gt;x≤10).
 
 Let’s compute your yearly compensation expected value using [Chip’s example](https://huyenchip.com/2021/02/27/why-not-join-a-startup.html) (Note that in order to be as fair as possible I didn’t take the max or the min, but rather the average for each of the possible outcomes in the column on the right):
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717cc4c3b.jpg)<figcaption>Photo by NeONBRAND on Unsplash</figcaption></figure>E = 0.8 x 120,000+ 0.05 x (270,000–170,000)/2 + 0.005 x (2,620,000–620,000)/2 + 0.0005 x (25,000,000–5,0000,000)/2 + 0.1445 x 2.12 = **$284k**
+![](/blog/images/04-03.png)
+
+E = 0.8 x 120,000+ 0.05 x (270,000–170,000)/2 + 0.005 x (2,620,000–620,000)/2 + 0.0005 x (25,000,000–5,0000,000)/2 + 0.1445 x 2.12 = **$284k**
 
 So… if we accepted those probabilities in the post to be correct, you should expect your average outcome to be around $300k a year. So, were you to assume these probabilities, and **if you only cared about the actual money** made, you should compare the offer you get from this hypothetical startup to an established company that offered a stable salary at around or probably above **$300k**. The way to think about this is the following: I am getting a compensation that is minimum $120k a year, if I am really lucky I can get up to $25M a year, but on average I should expect to get close to $300k (again, if we accept those probabilities to be correct).
 
@@ -49,7 +54,9 @@ When you get an option grant, say for 1,000 options, you usually don’t get any
 
 Again, when you get your options, you don’t have shares of the company. All you have is the option to buy those shares. And, what is the price you can buy your shares at? That is the **strike price**. The strike price is determined at the time you get your original grant by using the concept of fair market value (FMV). This is determined by a process run by a financial institution (accounting firm, bank, or even Carta) and it is called the [409A valuation](https://carta.com/blog/what-is-a-409a-valuation/). Note that the strike price for this particular grant will remain constant over time. What makes the grant valuable for successful start-ups is that over time the difference between the selling price and the purchase price will become very large (the **spread**).
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717cc4c3b.jpg)<figcaption>Photo by NeONBRAND on Unsplash</figcaption></figure>So, how can you determine the “stock price” over time in the graph above? The reality is you can’t determine 100% until there is some form of liquidity event (see section below). However, a good approximation is to look at the (preferred) share price of the last valuation since, if things go well, that is all you need to go. If things don’t go well, investors get… well, preference. They might get their money back while employees get nothing. So, yes, this probability, however small it might be, should be factored in your 0 equity payback scenario when computing your expected value.
+![](/blog/images/04-04.png)
+
+So, how can you determine the “stock price” over time in the graph above? The reality is you can’t determine 100% until there is some form of liquidity event (see section below). However, a good approximation is to look at the (preferred) share price of the last valuation since, if things go well, that is all you need to go. If things don’t go well, investors get… well, preference. They might get their money back while employees get nothing. So, yes, this probability, however small it might be, should be factored in your 0 equity payback scenario when computing your expected value.
 
 How should you compute the other possible outcomes for the expected value computation? Simple: take the number of options/shares times the spread (stock price minus strike price). In order to come up with possible stock prices look at comparable companies as mentioned above and find a multiplier for the current startup valuation. Don’t worry too much by how realistic they are. You can always adjust that in the probabilities! (Also, if you are wondering about dilution, we’ll discuss that later in the post)
 
@@ -67,9 +74,13 @@ So, given that you won’t be able to sell your shares until a liquidity event, 
 
 Again, it is beyond the scope of this post to go into the details of how options and shares are taxed, but it is in your best interest that you understand these details on your own (see [this guide](https://www.holloway.com/g/equity-compensation/sections/taxes-on-equity-compensation) for more details). Roughly speaking though, depending on what you do you can end up paying as low as 20% in long-term capital gains, or almost double in ordinary income. That depends on a number of things, including the kind of options you have (ISO or non qualified).
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717cc4c3b.jpg)<figcaption>Photo by NeONBRAND on Unsplash</figcaption></figure>If we look at ISOs (the most common case), you generally don’t have to pay taxes when you exercise ([unless you trigger the alternative minimum tax](https://turbotax.intuit.com/tax-tips/investments-and-taxes/incentive-stock-options/L4azWgfwy)) and you will pay Capital Gains when you sell. If you sell at least one year after you exercise, and two from your grant, you will qualify for long-term gains. In some cases, particularly in very early stage startups, you might even benefit from exercising options before they have even vested. In other words, you are buying something you still don’t have the rights to with the condition that you will be giving it back if you leave before vesting. This is called [early exercising](https://www.holloway.com/g/equity-compensation/sections/early-exercise) and is not always possible or advisable. But, it is something you might want to know about.
+![](/blog/images/04-05.png)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717cc4c3b.jpg)<figcaption>Photo by NeONBRAND on Unsplash</figcaption></figure>You should become familiar with tax implications, since they’ll be critical if the company has a successful exit.
+If we look at ISOs (the most common case), you generally don’t have to pay taxes when you exercise ([unless you trigger the alternative minimum tax](https://turbotax.intuit.com/tax-tips/investments-and-taxes/incentive-stock-options/L4azWgfwy)) and you will pay Capital Gains when you sell. If you sell at least one year after you exercise, and two from your grant, you will qualify for long-term gains. In some cases, particularly in very early stage startups, you might even benefit from exercising options before they have even vested. In other words, you are buying something you still don’t have the rights to with the condition that you will be giving it back if you leave before vesting. This is called [early exercising](https://www.holloway.com/g/equity-compensation/sections/early-exercise) and is not always possible or advisable. But, it is something you might want to know about.
+
+![](/blog/images/04-06.png)
+
+You should become familiar with tax implications, since they’ll be critical if the company has a successful exit.
 
 ### Dilution
 
