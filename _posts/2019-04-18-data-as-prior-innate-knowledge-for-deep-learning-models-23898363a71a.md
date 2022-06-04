@@ -4,7 +4,6 @@ title: "Data as Prior/Innate knowledge for Deep Learning\_models"
 date: '2019-04-18T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=31'
 permalink: /data-as-prior-innate-knowledge-for-deep-learning-models-23898363a71a/
 reading_time:
     - ''
@@ -36,7 +35,9 @@ In [a recent paper](https://medium.com/curai-tech/the-science-of-assisting-medic
 
 The diagram below illustrates the process.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/img_629a717faca3f.png)<figcaption></figcaption></figure>As we showed in the paper, the process of combining synthetic data with noise plus real world data to train a deep learning model has several advantages:
+![](/blog/images/11-01.png)
+
+As we showed in the paper, the process of combining synthetic data with noise plus real world data to train a deep learning model has several advantages:
 
 1. It allows to introduce innate domain-specific knowledge
 2. It allows to control the balance of innate vs. real-world learned knowledge by simply controlling the balance between synthetic and real-world data.
