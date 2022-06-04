@@ -4,7 +4,6 @@ title: 'Evil ads, ad blockers, and the end of Web diversity'
 date: '2016-04-01T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=20'
 permalink: /evil-ads-ad-blockers-and-the-end-of-web-diversity-1e996a396f8c/
 reading_time:
     - ''
@@ -31,7 +30,9 @@ Even companies like Netflix with no ads are basing their success on scale. And [
 
 Even some people have a completely [negative position](https://medium.com/@dtunkelang/the-end-game-for-ad-supported-content-3a477645dd2e#.msu7dgint) on ads and ad-supported businesses, I think it is important to understand that ads in themselves are not evil. Yes, we all have experiences with annoyingly bad ads that interfere in your user experience. However, it is also true that many of us like seeing some ads. For example, I really enjoy when I get targeted ads on Facebook or Twitter and I get “informed” of an online sale for running gear or a nearby race I might want to run. On the other hand, there is also a ton of “content” that is even worse than ads. I am sure we have all fallen victim of clicking on one of those “recommended” links that drive to really bad content farms (see example below).
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1zgtT49d-aXl1ha0yH5IVhQ.png)<figcaption>Some “content” can be much worse than ads</figcaption></figure>So, ads can be good if targeted and driving good commerce. And they can be awful, just as content itself can. Hating ads just because they “make money” makes absolutely no sense.
+![](/blog/images/17-01.png)
+    
+    Some “content” can be much worse than ads</figcaption></figure>So, ads can be good if targeted and driving good commerce. And they can be awful, just as content itself can. Hating ads just because they “make money” makes absolutely no sense.
 
 So, ads are not evil. And, even if ad blocking seems like a benefit to consumers in the short term, it will end up creating a less diverse and more concentrated media landscape. This will end up hurting consumers much more than ads themselves.
 
