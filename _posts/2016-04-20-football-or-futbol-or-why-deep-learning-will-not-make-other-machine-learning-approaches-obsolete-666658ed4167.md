@@ -4,7 +4,6 @@ title: 'Football or Futbol? Or why Deep Learning will not make other Machine Lea
 date: '2016-04-20T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=6'
 permalink: /football-or-futbol-or-why-deep-learning-will-not-make-other-machine-learning-approaches-obsolete-666658ed4167/
 reading_time:
     - ''
@@ -33,7 +32,9 @@ Even in the very unlikely case where most ML problems end up being suited for De
 
 Let’s imagine that your very demanding boss asks you to implement an image classifier to detect whether sport images contain scenes coming from a [Football (US)](https://www.quora.com/topic/Football-US) game or a [Football (Soccer)](https://www.quora.com/topic/Football-Soccer-2) game. You are well read in Deep Learning literature, so you train a two-class classifier using [Convolutional Neural Networks (CNNs)](https://www.quora.com/topic/Convolutional-Neural-Networks-CNNs) feeding it thousands of labeled images containing both sports. The classifier works out pretty good and you get an accuracy of, say, 95%.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1-ZlMEGUZV9uwAgPj6pHa_Q.png)<figcaption>Football or Futbol?</figcaption></figure>You present the work to your boss and she is super impressed. Next thing you know, your deep classifier is being used on a dataset of images from Spain. Now of course, every now and then, the image is really poor quality and blurry, so the classifier has a hard time. Let’s say it finds an image where the probability of it being Football is 60%, should it decide to classify it as such? Of course not! An image with 60% probability of being Football coming from a Spanish database should be classified as Futbol for sure… almost nobody watches Football in Spain!
+![](/blog/images/16-01.png)
+    
+    Football or Futbol?</figcaption></figure>You present the work to your boss and she is super impressed. Next thing you know, your deep classifier is being used on a dataset of images from Spain. Now of course, every now and then, the image is really poor quality and blurry, so the classifier has a hard time. Let’s say it finds an image where the probability of it being Football is 60%, should it decide to classify it as such? Of course not! An image with 60% probability of being Football coming from a Spanish database should be classified as Futbol for sure… almost nobody watches Football in Spain!
 
 As a matter of fact, in this example, a dumb classifier that just labels everything as Futbol for this dataset would manage to have much more than a 95% accuracy and would work much better than your fancy Deep Neural Network!
 
