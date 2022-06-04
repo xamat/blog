@@ -14,7 +14,7 @@ categories:
 
 ### Cultural over/under-fitting and transfer learning. Or why the “Netflix Culture” won’t work in your company.
 
-![](/blog/images/12-01.png)
+![](/blog/images/12-01.jpeg)
 
 A couple of weeks back, I gave a talk in the [SFELC](https://sfelc.com/summit2019) (San Francisco Engineering Leadership Conference). As I was preparing the slides for the talk I reflected on something pretty interesting: I have been managing technical teams for over 25 years. I have also been giving public talks for about the same time. However, this was the first time I was giving a talk about managing teams. I was also surprised that, despite a packed house and many people congratulating me after the talk, my tweets about the talk and the conference got very little engagement. I guess technical management doesn’t get as much traction as AI/Machine Learning. I get it. In any case, one of the most important points I made during the talk directly related to a some machine learning concepts like transfer learning, or under/over-fitting. So, maybe by sprinkling some of the “AI hype” onto management cultureI will be able to get people’s attention on some very important issues for not only any company, but also every founder, manager, and potentially any employee .
 
