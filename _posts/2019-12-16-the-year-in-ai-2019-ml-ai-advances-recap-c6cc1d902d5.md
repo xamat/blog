@@ -4,7 +4,6 @@ title: "The year in AI: 2019 ML/AI advances\_recap"
 date: '2019-12-16T00:00:00+00:00'
 author: xamat
 layout: post
-permalink: /the-year-in-ai-2019-ml-ai-advances-recap-c6cc1d902d5/
 reading_time:
     - ''
     - ''
