@@ -4,7 +4,6 @@ title: "10 More lessons learned from building real-life Machine Learning systems
 date: '2016-01-05T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=21'
 permalink: /10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-i-b309cafc7b5e/
 reading_time:
     - ''
@@ -31,7 +30,9 @@ Many have talked about how implicit feedback is, at least in some cases, more us
 
 <figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>Another famous example of the same effect is Youtube [moving away from their 5-star ratings](http://techcrunch.com/2009/09/22/youtube-comes-to-a-5-star-realization-its-ratings-are-useless/) into a much simpler thumbs up/thumbs down model (See [here](http://youtube-global.blogspot.com/2009/09/five-stars-dominate-ratings.html) for the original blog post).
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>So, is implicit feedback **always** more useful. And, if so, why is that?  
+![](/blog/images/19-01.png)
+
+So, is implicit feedback **always** more useful. And, if so, why is that?  
    
 Let’s start by describing a bit better what implicit/explicit feedback is. I define implicit feedback as ”information gathered from actions not directly recognized as giving feedback by the user”. These include any action where the user is selecting, clicking, or making a choice. In other words, all those actions in which the user is not (consciously) informing the system about any preference.  
    
@@ -41,11 +42,16 @@ Implicit feedback is also more representative of user behavior vs. user reflecti
    
 As a quick thought experiment, let’s take a look at what implicit data and explicit data tells us about films released in 2014. We’ll take box office as an implicit measure of people “preferring” a film enough to decide to go and watch it. We’ll take IMDb rating as an explicit measure of how much users like a film. If you take at the two lists below you will see what would be our top (unpersonalized) recommendations according to box office, and according to average rating. Which one would you choose? Of course, you can argue that rating average is not a good metric because niche content with very few, but good, ratings will be unfairly promoted. And, that is true. But, precisely this makes some of my previous points of how explicit data is affected by sparsity and user bias.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>That said, it is not always the case that implicit feedback directly correlates well with long-term retention. A counter-example is clickbait content. You can get people to click on things that they “really did not want to click on” by showing flashy images or controversial statements, for example. Users might be “tricked” into clicking this, but later decide to leave your product because they feel they are wasting their time or do not get enough out of it. There are many examples of sites and products that have fallen into the trap of optimizing short-term metrics to then end up failing as a long-term business. Too much focus on only optimizing for implicit feedback might have that side effect. (You can read about short-term/long-term effects in AB testing in many of [Ronny Kohavi’s papers](http://www.exp-platform.com/Pages/default.aspx)).  
+![](/blog/images/19-02.png)
+![](/blog/images/19-03.png)
+
+That said, it is not always the case that implicit feedback directly correlates well with long-term retention. A counter-example is clickbait content. You can get people to click on things that they “really did not want to click on” by showing flashy images or controversial statements, for example. Users might be “tricked” into clicking this, but later decide to leave your product because they feel they are wasting their time or do not get enough out of it. There are many examples of sites and products that have fallen into the trap of optimizing short-term metrics to then end up failing as a long-term business. Too much focus on only optimizing for implicit feedback might have that side effect. (You can read about short-term/long-term effects in AB testing in many of [Ronny Kohavi’s papers](http://www.exp-platform.com/Pages/default.aspx)).  
    
 The solution is, as many times, somewhere in the middle. You can actually combine different forms of implicit and explicit data in your ML models to account for short-term engagement but also for long-term retention. If you take a look at a Quora answer, for example, you can see that there are many actions the user can do on it: they can expand, upvote, downvote, comment, and share the answer. They can even click on the originating question. We take all of these into account in our models and features and tune them to the business long term goal and mission that is represented by the AB test metrics we care about.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>#### Lesson 2. your model will learn what you teach it to learn
+![](/blog/images/19-04.png)
+
+#### Lesson 2. your model will learn what you teach it to learn
 
 Machine learning models don’t have a will of their own. They will just learn whatever you show them. In particular, machine learning models will respond to:
 
@@ -57,7 +63,9 @@ As a made-up thought experiment, related to the previous IMDB example, think abo
    
 Let’s go to another more practical example: the Quora homepage Feed:
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>In this case, our training data will be a combination of implicit and explicit feedback as we mentioned above. The target function will try to capture the value of showing a story to a user by using a weighted combination of the different actions the user can take on the story. The weights will represent the contribution of that particular action to long-term company goals and will need to be tuned by combining product decisions with AB testing. We will predict the probability of each action and then compute expected value: v\_pred = E\[ V | x \] = ∑a va p(a | x). As for the final metric, we can use any ranking metric (or better, the ranking metric that we have measured better correlates to AB test metrics).
+![](/blog/images/19-05.png)
+
+In this case, our training data will be a combination of implicit and explicit feedback as we mentioned above. The target function will try to capture the value of showing a story to a user by using a weighted combination of the different actions the user can take on the story. The weights will represent the contribution of that particular action to long-term company goals and will need to be tuned by combining product decisions with AB testing. We will predict the probability of each action and then compute expected value: v\_pred = E\[ V | x \] = ∑a va p(a | x). As for the final metric, we can use any ranking metric (or better, the ranking metric that we have measured better correlates to AB test metrics).
 
 #### Lesson 3. supervised vs unsupervised learning
 
@@ -65,19 +73,31 @@ I find that many machine learning practitioners I talk to are not aware of how p
    
 As a matter of fact, a very common practical approach to many problems is to combine an initial step of unsupervised learning with a later step of supervised learning. A simple example of this is to combine some form of clustering with basic knn in order to implement collaborative filtering (see[ Xue et. al](http://www.cs.ust.hk/~qyang/Docs/2005/Sigir05Xue.pdf), for example). The idea is simple: nearest-neighbor approaches are not efficient and rely on computing costly multi-dimensional distance functions. Clustering optimizes the approach by identifying users by their cluster and effectively reducing one of the dimensions (number of users) of the problem.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>Even if you think about Matrix Factorization, you can interpret it as either supervised or unsupervised (some would call it semi-supervised). It is supervised because there are labels that you are trying to predict in a similar way as you would be doing in a regression. However, MF can also be used and interpreted as purely a dimensionality reduction approach a la PCA or as a form of clustering (this is particularly true for Non-negative Matrix Factorization, which is often used for clustering). Actually, even if you consider a standard MF approach in which training is supervised since you are trying to minimize training error to labels, the final usage can be “unsupervised”. Instead of using the label prediction output directly, you can take in the learned factors as features for another model. This is an example of using unsupervised learning for “feature engineering”.
+![](/blog/images/19-06.png)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>Even Deep Learning does in its own way combine unsupervised and supervised learning. Take a look at this slide from [Yann LeCun’s tutorial at ICML’13](http://www.cs.nyu.edu/~yann/talks/lecun-ranzato-icml2013.pdf) where the different (Deep) Learning approaches are classified as Supervised or Unsupervised.
+Even if you think about Matrix Factorization, you can interpret it as either supervised or unsupervised (some would call it semi-supervised). It is supervised because there are labels that you are trying to predict in a similar way as you would be doing in a regression. However, MF can also be used and interpreted as purely a dimensionality reduction approach a la PCA or as a form of clustering (this is particularly true for Non-negative Matrix Factorization, which is often used for clustering). Actually, even if you consider a standard MF approach in which training is supervised since you are trying to minimize training error to labels, the final usage can be “unsupervised”. Instead of using the label prediction output directly, you can take in the learned factors as features for another model. This is an example of using unsupervised learning for “feature engineering”.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>In fact, Stacked Autoencoders are an interesting way to[ pretain Deep ANN](http://www.jmlr.org/papers/volume11/erhan10a/erhan10a.pdf).
+![](/blog/images/19-07.png)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>#### Lesson 4. everything is an ensemble
+Even Deep Learning does in its own way combine unsupervised and supervised learning. Take a look at this slide from [Yann LeCun’s tutorial at ICML’13](http://www.cs.nyu.edu/~yann/talks/lecun-ranzato-icml2013.pdf) where the different (Deep) Learning approaches are classified as Supervised or Unsupervised.
+
+![](/blog/images/19-08.png)
+
+In fact, Stacked Autoencoders are an interesting way to[ pretain Deep ANN](http://www.jmlr.org/papers/volume11/erhan10a/erhan10a.pdf).
+
+![](/blog/images/19-09.png)
+
+#### Lesson 4. everything is an ensemble
 
 When people think about what won the [Netflix Prize](https://en.wikipedia.org/wiki/Netflix_Prize), they usually think about models such as [SVD++](https://www.quora.com/Whats-the-difference-between-SVD-and-SVD++) or [RMBs](http://www.machinelearning.org/proceedings/icml2007/papers/407.pdf). The truth is that the prize was won by an ensemble. Initially, the Bellkor team was using Gradient Boosted Decision Trees to combine dozens of predictors. The final ensemble used Neural Networks to combine the 103 methods.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>In fact, most practical real-life machine learning applications use an ensemble approach. The question is “why wouldn’t you?”. The ensemble is going to be at least as good as the best of your methods (provided you can assume that your methods are not entirely correlated). Also, ensembles are a great way to combine very different approaches. For example you can combine content-based and collaborative filtering into a single prediction through an ensemble. And, you can use many different models in the ensemble layer (logistic regression, GBDTs, Random Forests, ANNs…).
+![](/blog/images/19-10.png)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>As a matter of fact, ensembles are the way to turn any model into a feature! You don’t know if you should be using Factorization Machines, Tensor Factorization, or Recurrent Neural Networks? Why not use all of them? Treat each model as a feature and feed them into an ensemble so it figures out the relative merit of each of them. Actually, it might be that a particular model is better at predicting a particular sub-area of your problem space. A non-linear ensemble will be able to figure that out!
+In fact, most practical real-life machine learning applications use an ensemble approach. The question is “why wouldn’t you?”. The ensemble is going to be at least as good as the best of your methods (provided you can assume that your methods are not entirely correlated). Also, ensembles are a great way to combine very different approaches. For example you can combine content-based and collaborative filtering into a single prediction through an ensemble. And, you can use many different models in the ensemble layer (logistic regression, GBDTs, Random Forests, ANNs…).
+
+![](/blog/images/19-11.png)
+
+As a matter of fact, ensembles are the way to turn any model into a feature! You don’t know if you should be using Factorization Machines, Tensor Factorization, or Recurrent Neural Networks? Why not use all of them? Treat each model as a feature and feed them into an ensemble so it figures out the relative merit of each of them. Actually, it might be that a particular model is better at predicting a particular sub-area of your problem space. A non-linear ensemble will be able to figure that out!
 
 #### Lesson 5. the output of your model will be the input of another model (and other design problems)
 
@@ -87,10 +107,16 @@ What this means is that if you are building a model that is likely to be used in
    
 Furthermore, as Leon Bottou described in his recent [ICML keynote](http://icml.cc/2015/invited/LeonBottouICML2015.pdf), you should be aware of feedback loops in you machine learning system setup.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>Data dependencies and feedback loops though are just examples of a broader concern: we would like to treat our machine learning systems in a principled way just as we treat our software systems. Is that possible? The answer is yes… and no. Yes, because you should apply best software engineering practices to your machine learning systems. Concepts such as encapsulation, abstraction, cohesion, or low coupling, all have some parallel in machine learning. Sculley et al. from Google touch upon some of these principles in their (now popular) [paper](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf) on the “high-interest credit card”.
+![](/blog/images/19-12.png)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>However, the problem for machine learning systems and software is that there are no well known and documented design patterns. This makes reusable and principled design much more complicated than it should. This seems to me as a very interesting area for research since there is a real need and interest and not many answers (see how [this Quora question](http://qr.ae/RbmOVt) has no answer yet).
+Data dependencies and feedback loops though are just examples of a broader concern: we would like to treat our machine learning systems in a principled way just as we treat our software systems. Is that possible? The answer is yes… and no. Yes, because you should apply best software engineering practices to your machine learning systems. Concepts such as encapsulation, abstraction, cohesion, or low coupling, all have some parallel in machine learning. Sculley et al. from Google touch upon some of these principles in their (now popular) [paper](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf) on the “high-interest credit card”.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/13qBYZdwjb38e5ripN3qmoA.png)<figcaption></figcaption></figure>I look forward to your feedback.
+![](/blog/images/19-13.png)
+
+However, the problem for machine learning systems and software is that there are no well known and documented design patterns. This makes reusable and principled design much more complicated than it should. This seems to me as a very interesting area for research since there is a real need and interest and not many answers (see how [this Quora question](http://qr.ae/RbmOVt) has no answer yet).
+
+![](/blog/images/19-014.png)
+
+I look forward to your feedback.
 
 Onto [Part II](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-ii-93fe7008fa9#.rjcmgkgt2).
