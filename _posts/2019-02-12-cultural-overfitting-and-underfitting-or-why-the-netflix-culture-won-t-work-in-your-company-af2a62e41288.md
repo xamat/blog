@@ -4,7 +4,6 @@ title: "Cultural over/under-fitting and transfer learning. Or why the “Netflix
 date: '2019-02-12T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=23'
 permalink: /cultural-overfitting-and-underfitting-or-why-the-netflix-culture-won-t-work-in-your-company-af2a62e41288/
 reading_time:
     - ''
@@ -15,13 +14,17 @@ categories:
 
 ### Cultural over/under-fitting and transfer learning. Or why the “Netflix Culture” won’t work in your company.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/0riSxzMKqCtBJJtl6.jpg)<figcaption></figcaption></figure>A couple of weeks back, I gave a talk in the [SFELC](https://sfelc.com/summit2019) (San Francisco Engineering Leadership Conference). As I was preparing the slides for the talk I reflected on something pretty interesting: I have been managing technical teams for over 25 years. I have also been giving public talks for about the same time. However, this was the first time I was giving a talk about managing teams. I was also surprised that, despite a packed house and many people congratulating me after the talk, my tweets about the talk and the conference got very little engagement. I guess technical management doesn’t get as much traction as AI/Machine Learning. I get it. In any case, one of the most important points I made during the talk directly related to a some machine learning concepts like transfer learning, or under/over-fitting. So, maybe by sprinkling some of the “AI hype” onto management cultureI will be able to get people’s attention on some very important issues for not only any company, but also every founder, manager, and potentially any employee .
+![](/blog/images/12-01.png)
+
+A couple of weeks back, I gave a talk in the [SFELC](https://sfelc.com/summit2019) (San Francisco Engineering Leadership Conference). As I was preparing the slides for the talk I reflected on something pretty interesting: I have been managing technical teams for over 25 years. I have also been giving public talks for about the same time. However, this was the first time I was giving a talk about managing teams. I was also surprised that, despite a packed house and many people congratulating me after the talk, my tweets about the talk and the conference got very little engagement. I guess technical management doesn’t get as much traction as AI/Machine Learning. I get it. In any case, one of the most important points I made during the talk directly related to a some machine learning concepts like transfer learning, or under/over-fitting. So, maybe by sprinkling some of the “AI hype” onto management cultureI will be able to get people’s attention on some very important issues for not only any company, but also every founder, manager, and potentially any employee .
 
 ### **Overfitting and underfitting**
 
 In very simple terms, underfitting happens when we try to explain a complex real-world phenomenon with a model that is too simple. As an example, this often happens when we “rush” to simplistic conclusions to explain something after just observing one of the causes without realizing that there are many more. On the other hand, overfitting happens when we do the opposite: we use too complex a model to explain a phenomenon. This complex model might explain the current observation, but does not generalize well to similar situations. While over/under-fitting is a very important issue in machine learning, it is also present in every day life in many ways and forms. We humans underfit and overfit all the time.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/0riSxzMKqCtBJJtl6.jpg)<figcaption></figcaption></figure>### Examples of over/under-fitting in company culture
+![](/blog/images/12-02.png)
+
+### Examples of over/under-fitting in company culture
 
 So now that we have the “theory” under our belt, let’s see some examples of underfitting and overfitting in company culture. I will refer to some popular management books for that purpose.
 
@@ -35,7 +38,9 @@ I should start by saying that I **loved** the Netflix Culture. I really thrived 
 
 A particularly annoying manifestation of overfitting is when people in a company use the following rationale: “Everyone who works at my company is happy and successful, that proves that my culture is right”. In *Principles*, Ray Dalio says that new employees usually have a hard time at Bridgewater during the first few months, but then end up loving it there. Patty McCord says in [*Powerful*](https://www.amazon.com/Powerful-Building-Culture-Freedom-Responsibility/dp/1939714095/ref=sr_1_1?ie=UTF8&qid=1549859487&sr=8-1&keywords=powerful+patty+mccord) that “all engineers” despise process, and that is why all are happy at a culture like Netflix’. That is, of course, BS, and it is just an example of survival bias. Everyone who “survived” at your company did so **because** they adapted to the culture and were in some way predetermined to do so. This proves nothing except that you managed to rule out everyone else.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/0riSxzMKqCtBJJtl6.jpg)<figcaption></figcaption></figure>### **Transferring learnings**
+![](/blog/images/12-03.png)
+
+### **Transferring learnings**
 
 In machine learning, we talk about transfer learning when a model that has been originally trained for one problem can also be applied to a different problem, maybe with some “minor tweaks”. Similarly, while in the previous section I made it sound like it is hard to apply learnings from one company to another, there are certainly many lessons that have repeated enough to be transferable. As a matter of fact, even most of what is written in the books I criticized above can be transferred if you are careful enough to adapt them to your situation and context.
 
@@ -117,4 +122,4 @@ I know in this post I have been generally critical of management book. However, 
 - [Radical Candor](https://www.amazon.com/Radical-Candor-Kick-Ass-Without-Humanity/dp/1250103509/ref=sr_1_1?ie=UTF8&qid=1549859348&sr=8-1&keywords=radical+candor)
 - [Extreme Ownership](https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs/dp/1250183863/ref=sr_1_1?ie=UTF8&qid=1549859373&sr=8-1&keywords=extreme+ownership)
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/0riSxzMKqCtBJJtl6.jpg)<figcaption></figcaption></figure>
+![](/blog/images/12-04.png)
