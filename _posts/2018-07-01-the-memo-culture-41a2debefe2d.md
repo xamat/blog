@@ -20,7 +20,7 @@ I have been leading technical teams for many years now, and something that I hav
 
 But, you don’t need to trust my word on this though. The most agile and innovative companies that you can probably think of, from Netflix to Amazon, and also including Facebook, Google or the likes, they all use a flavor of what I will call “The Memo Culture”.
 
-![](/blog/images/14-01.png)
+![](/blog/images/14-01.jpeg)
 
 So, what is the memo culture? I use this term to loosely refer to company cultures in which generating some form of document or memo is an important part of that culture.
 
