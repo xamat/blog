@@ -4,7 +4,6 @@ title: 'Making decisions in an organization'
 date: '2019-08-20T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=30'
 permalink: /making-decisions-8e8a902c0d3b/
 reading_time:
     - ''
@@ -15,7 +14,9 @@ categories:
 
 ### Making decisions in an organization
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/0YuCWC6Buhf09k1XS.png)<figcaption></figcaption></figure>Nobody would probably argue that it is important for any organization to make the “right” decisions. However, if you ask anyone you know how are decisions made at their company, you will most likely get vague answers at best. Maybe something like “we empower everyone to make good decisions” or “we have a distributed decision-making process”. Ask them, “What does that actually mean? Who makes a decision? When and how?” and you are likely to get a silent stare for an answer.
+![](/blog/images/10-01.png)
+
+Nobody would probably argue that it is important for any organization to make the “right” decisions. However, if you ask anyone you know how are decisions made at their company, you will most likely get vague answers at best. Maybe something like “we empower everyone to make good decisions” or “we have a distributed decision-making process”. Ask them, “What does that actually mean? Who makes a decision? When and how?” and you are likely to get a silent stare for an answer.
 
 Of course, strong well-oiled cultures like Netflix go a step beyond and describe a few more details of the process. Netflix [culture](https://jobs.netflix.com/culture) talks about “informed captains”, “disagree openly”, and “context not control”, all of which are great aspects of a good decision-making process. However, I still find the description a bit vague for anyone outside of Netflix to really understand.
 
