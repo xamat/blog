@@ -4,7 +4,6 @@ title: "10 More lessons learned from building real-life Machine Learning systems
 date: '2016-01-14T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=36'
 permalink: /10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-ii-93fe7008fa9/
 reading_time:
     - ''
@@ -41,7 +40,9 @@ Let’s take a look at a practical example of feature engineering: Quora’s ans
 - well formatted
 - …
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>So, how can we translate those dimensions we care about into features that we can feed into our machine learning model? Well, the trick is to think what data we have in the product that relates to some of those properties. We can use features relating to the quality of the writing, interaction features such as upvotes or comments, and finally user features such as the expertise and trustworthiness of the user in the topic.
+![](/blog/images/18-01.png)
+    
+    Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>So, how can we translate those dimensions we care about into features that we can feed into our machine learning model? Well, the trick is to think what data we have in the product that relates to some of those properties. We can use features relating to the quality of the writing, interaction features such as upvotes or comments, and finally user features such as the expertise and trustworthiness of the user in the topic.
 
 #### 7. the two faces of your ML infrastructure
 
@@ -64,15 +65,23 @@ The value of a machine learning model is the value it brings to the product. Pro
    
 I would argue that model debuggability is so important that it can end up determining, or at least influencing, the particular model to use, the features to rely on, or the tools used for the implementation.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>As an example, we at Quora have a debug tool that allows us to analyze why we are seeing (or not seeing) a particular story in our homepage feed. This tool reports the score of not only individual stories but also of the features that refer to it. It also allows to compare different stories and understand what are the features that ended up deciding for one story to rank higher than the other. This has proved to be very useful in debugging issues and in making the product team and other stakeholders understand much better how the models behave and what matters or doesn’t.
+![](/blog/images/18-02.png)
+    
+    Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>As an example, we at Quora have a debug tool that allows us to analyze why we are seeing (or not seeing) a particular story in our homepage feed. This tool reports the score of not only individual stories but also of the features that refer to it. It also allows to compare different stories and understand what are the features that ended up deciding for one story to rank higher than the other. This has proved to be very useful in debugging issues and in making the product team and other stakeholders understand much better how the models behave and what matters or doesn’t.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>#### 9. you don’t need to distribute your ML algorithm
+![](/blog/images/18-03.png)
+    
+    Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>#### 9. you don’t need to distribute your ML algorithm
 
 There is an industry trend recently where it seems that you should distribute your machine learning algorithm by default. If you are not doing so, it might mean that your data is not “big enough”, right? Well, here I am to tell you that no, that’s not the case. As a matter of fact, most of what people need to do with practical machine learning applications should fit into a single (multi-core) machine. Of course, there are notable exceptions to this such as if you are building large-scale Deep Artificial Neural Networks to identify cats. But, most of us are not in that business.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>Of course, in order to fit things into a single machine, you need to understand other approaches. For example, you need to understand the benefits of (smart) data sampling, how to use offline processing schemes, or how to parallelize in a single machine. I actually talked about all these points in my [original 10 lessons](http://technocalifornia.blogspot.com/2014/12/ten-lessons-learned-from-building-real.html).
+![](/blog/images/18-04.png)
+    
+    Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>Of course, in order to fit things into a single machine, you need to understand other approaches. For example, you need to understand the benefits of (smart) data sampling, how to use offline processing schemes, or how to parallelize in a single machine. I actually talked about all these points in my [original 10 lessons](http://technocalifornia.blogspot.com/2014/12/ten-lessons-learned-from-building-real.html).
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>Furthermore, I think that approaches such as Hadoop and Spark, that offer “easy” access to distributed platforms by hiding most of the complexity are, in a way, dangerous. In particular, if you care about costs or latencies, not making them transparent or easy to understand is usually not a good idea.  
+![](/blog/images/18-05.png)
+    
+    Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>Furthermore, I think that approaches such as Hadoop and Spark, that offer “easy” access to distributed platforms by hiding most of the complexity are, in a way, dangerous. In particular, if you care about costs or latencies, not making them transparent or easy to understand is usually not a good idea.  
    
 Here is an interesting example from Quora that illustrates some of this. At some point we realized that we had a Spark implementation that was especially inefficient. It took 6 hours and 15 machines to run something that a back-of-the-envelope computation told us it should take much less. One of our engineers spent 4 days and looked into it by, for example, analyzing how the Spark scheduler unfolded the queries. The final C++ implementation runs now on a single machine and takes only 10 minutes to compute!
 
@@ -80,7 +89,9 @@ Here is an interesting example from Quora that illustrates some of this. At some
 
 We have all heard and read [answers](http://qr.ae/Rbl3R7) to what a Data Scientist is. Most of them talk about how they need to combine math, software, and domain expertise.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>A different question, is though, how do Data Science teams fit into an organization. Many companies have struggled, and are still struggling, with this. Most will agree that it is important to have strong data scientists who can generate value and knowledge from the data. However, regardless of what some may say, strong data scientists with solid engineering skills are unicorns, and finding them is not scalable. This often leads to situations where data scientists need to rely on engineers to bring things to production and, on the other hand, engineers don’t want to do this because they already have enough things on their plate to worry about productionizing somebody else’s ideas.  
+![](/blog/images/18-06.png)
+    
+    Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure><figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1X04ItSxsnUzIHOWEzz6aWA.png)<figcaption>Answer ranking at Quora is a \*very\* interesting ML problem that requires good feature engineering</figcaption></figure>A different question, is though, how do Data Science teams fit into an organization. Many companies have struggled, and are still struggling, with this. Most will agree that it is important to have strong data scientists who can generate value and knowledge from the data. However, regardless of what some may say, strong data scientists with solid engineering skills are unicorns, and finding them is not scalable. This often leads to situations where data scientists need to rely on engineers to bring things to production and, on the other hand, engineers don’t want to do this because they already have enough things on their plate to worry about productionizing somebody else’s ideas.  
    
 So, what is the solution? My recommendation is to think about the innovation funnel of a typical ML-related project. There are 3 distinct phases.   
    
