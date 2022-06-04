@@ -115,7 +115,7 @@ Data dependencies and feedback loops though are just examples of a broader conce
 
 However, the problem for machine learning systems and software is that there are no well known and documented design patterns. This makes reusable and principled design much more complicated than it should. This seems to me as a very interesting area for research since there is a real need and interest and not many answers (see how [this Quora question](http://qr.ae/RbmOVt) has no answer yet).
 
-![](/blog/images/19-014.png)
+![](/blog/images/19-14.png)
 
 I look forward to your feedback.
 
