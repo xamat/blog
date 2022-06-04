@@ -4,7 +4,6 @@ title: "The Memo\_Culture"
 date: '2018-07-01T00:00:00+00:00'
 author: xamat
 layout: post
-guid: 'http://localhost:8080/wordpress/?p=14'
 permalink: /the-memo-culture-41a2debefe2d/
 reading_time:
     - ''
@@ -21,7 +20,7 @@ I have been leading technical teams for many years now, and something that I hav
 
 But, you don’t need to trust my word on this though. The most agile and innovative companies that you can probably think of, from Netflix to Amazon, and also including Facebook, Google or the likes, they all use a flavor of what I will call “The Memo Culture”.
 
-<figure>![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/1hM-sKT3fzwh434fnCjeOiA.jpeg)<figcaption></figcaption></figure>### The Memo Culture
+![](/blog/images/14-01.png)
 
 So, what is the memo culture? I use this term to loosely refer to company cultures in which generating some form of document or memo is an important part of that culture.
 
