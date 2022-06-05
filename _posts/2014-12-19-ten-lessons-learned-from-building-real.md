@@ -5,7 +5,7 @@ date: '2014-12-19T06:50:00+00:00'
 author: 'Xavier Amatriain'
 layout: post
 permalink: /ten-lessons-learned-from-building-real/
-image: /wp-content/uploads/2014/12/Screenshot2Bfrom2B2014-12-112B223A263A27.png
+image: /blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png
 categories:
     - Uncategorized
 tags:
