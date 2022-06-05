@@ -36,27 +36,29 @@ And just in case it doesn’t come across clearly enough, let me insist on this 
 
 In the context of the [Netflix Prize](http://www.netflixprize.com/), [Anand Rajaraman](http://anand.typepad.com/datawocky/anand-rajaraman.html) took an early stand on the issue by claiming that “more data usually beats better algorithms”. In [his post](http://anand.typepad.com/datawocky/2008/03/more-data-usual.html) he explained how some of his students had improved some of the existing results on the Netflix ratings dataset by adding metadata from [IMDB](http://www.imdb.com/).
 
-| ![](https://lh5.googleusercontent.com/cLDPJ8z2wGz_cvgtbJBACyNh4T-f77_yh_Y82RWHdvQJqNKiSKzx3qxgkBIFsPYGtH7TA5pqdq8KKkY8qU36TvkzdUWZNTWHWKs70g98hrj_dhwqlsrwcxIfzTEX8iz1A34E) |
+| ![](/images/Datawocky.png) |
 |---|
 | **Fig 1.** More data usually beats better algorithms |
 
 Although many teams in the competition tried to follow that lead and add extra features to improve results, there was little progress in that direction. As a matter of fact, just a year later some of the leaders of what would become the runner up team published [a paper](http://dl.acm.org/citation.cfm?id=1639731) in which they showed that adding metadata had very little impact in improving the prediction accuracy of a well-tuned algorithm. Take this as a first example of why adding more data is not always the solution.
 
-| ![](https://lh6.googleusercontent.com/UdGUvRU2Hmux2zAiOzkmI9h4ZyXz4r5XW0A4_uthtk6XgcNpXttV6XVZGzcIqnXQqUIytY9BraFQqhL-px8aVpjT6HlihJVxaI2RWcJHoUhUSd7EBWw_ZE_ueCn6ojdKPDkb) |
+| ![](/images/AFewRatings.png) |
 |---|
 | **Fig 2.** Even a Few Ratings Are More Valuable than Metadata |
 
 Of course, there are different ways to “add more data”. In the example above we were adding data by increasing the number and types of features, therefore increasing the dimensionality of our problem space. We can think about adding data in a completely different way by fixing the space dimensionality and simply throwing more training examples at it. Banko and Brill [showed ](http://dl.acm.org/citation.cfm?id=1073017)in 2001 that in some cases very different algorithms responded equally well by improving to more training data (see figure below)
 
-| ![](https://lh3.googleusercontent.com/OfMe_wqQCONpoNbBrOzJNARrhj5TDF5cqWNMy5w65O6Nb5SKodAcP3DdIGtAH_CqoBnTn023laHgQ6VZmWpak5bPvmzczef06vJ4HWPBMWZ1eAw-APLrJFqLP-2YK3D5DEjN) |
+| ![](/images/BankoAndBrill.png) |
 |---|
 | **Fig 3.** Banko and Brill’s “famous” model performance curves |
 
-<div>Google’s Research Director and renowned AI figure Peter Norvig is quoted as saying that “Google does not have better algorithms, just more data”. In fact, Norvig is one of the co-authors of “[The Unreasonable Effectiveness of Data](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35179.pdf)” where in a similar problem to the one in Banko and Brill (language understanding) they also show how important it is to have “more data”.</div>| ![](https://lh4.googleusercontent.com/3K9GF2qX97K0hAeu61Es0O3j6t-oTZgvfeMEQUu94g3UQUTQXH3Ed_SS_oqMHTkGH-Z0vLW8RfFboB9gYDGEm2ghjecI4qm_r-pXLVfOw7-pNP8s8K-gP84Jc6bwfWWZgD_l) |
+<div>Google’s Research Director and renowned AI figure Peter Norvig is quoted as saying that “Google does not have better algorithms, just more data”. In fact, Norvig is one of the co-authors of “[The Unreasonable Effectiveness of Data](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35179.pdf)” where in a similar problem to the one in Banko and Brill (language understanding) they also show how important it is to have “more data”.</div>
+|![](/images/TheUnreasonableEffectivenessOfData.png) |
 |---|
 | **Fig 4.** The Unreasonable Effectiveness of Data |
 
-<div>So, is it true that more data in the form of more training examples will always help? Well, not really. The problems above are complex models with a huge number of features which lead to situations of “[high variance](http://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)“. But, in many other cases this might not be true. See below for example a real-case scenario of an algorithm in production at Netflix. In this case, adding more than 2 million training examples has very little to no effect.</div>| ![](https://lh6.googleusercontent.com/iIRqH3yADGbKXS94ZIoy7P_ArXjc6BldQb3uFsfBGPxx84O4t9KYTl_6QGlfwJnyurSbCEn_E2J1ozDmJfggDOfmr-CroI_i_xF9TnSS1AZVFT1Nw74tt6n8ImCvBdYpQIKh) |
+<div>So, is it true that more data in the form of more training examples will always help? Well, not really. The problems above are complex models with a huge number of features which lead to situations of “[high variance](http://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)“. But, in many other cases this might not be true. See below for example a real-case scenario of an algorithm in production at Netflix. In this case, adding more than 2 million training examples has very little to no effect.</div>
+| ![](/images/PerformanceVsTrainingSize.png) |
 |---|
 | **Fig 5.** Testing Accuracy of a real-life production model |
 
@@ -89,7 +91,9 @@ Of course, there are different ways to “add more data”. In the example above
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">So, what is going on? The issue here is that simply put more complex features require a more complex model, and vice versa, a more complex model may require more complex features before showing any significant improvement.</span>  
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">  
 </span>  
-So, the lesson learned is that you must improve both your model and your feature set in parallel. Doing only one of them at a time might lead to wrong conclusions. </div>## 4. Be thoughtful about how you define your training/testing data sets
+So, the lesson learned is that you must improve both your model and your feature set in parallel. Doing only one of them at a time might lead to wrong conclusions. </div>
+
+## 4. Be thoughtful about how you define your training/testing data sets
 
 <div><span style="line-height: 16px; white-space: pre-wrap;">If you are training a simple binary classifier, one of the first tasks to do is to define your positive and negative examples. Defining positive and negative labels for samples though may not be such a trivial task. Think about a use case where you need to define a classifier to distinguish between shows that users watch (positives) and do not watch (negatives). In that context, would the following be positives or negatives?</span>- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">User watches a movie to completion and rates it 1 star</span>
 - <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">User watches the same movie again (maybe because she can’t find anything else)</span>
@@ -113,7 +117,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 
 </div>## 5. Learn to deal with (the curse of) the Presentation Bias
 
-| [![](http://localhost:8080/wordpress/wp-content/uploads/2014/12/Screenshot2Bfrom2B2014-12-112B223A263A27.png)](http://localhost:8080/wordpress/wp-content/uploads/2014/12/Screenshot2Bfrom2B2014-12-112B223A263A27.png) |
+| [![](/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png) |
 |---|
 | **Fig 6.** Example of an Attention Model on a page |
 
@@ -121,7 +125,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">Let’s face it, users can only click and act on whatever your algorithm (and other parts of your system) has decided to show them. Of course, what your algorithm decided to show is what it predicted was good for the user. Let’s suppose that a new user comes in and we decide to show the user only popular items. The fact that a week later the user has only consumed popular items does not mean that’s what the user like. That’s the \*only\* thing she had a chance to consume!</span></span>  
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
 </span></span>  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">As many ([including myself](http://localhost:8080/wordpress/2011/09/recommender-problem-presentation.html)) have mentioned in the past, is important to take that into account in your algorithms and try to somehow break this “Curse of the Presentation Bias”. Most approaches to addressing this issue are based on the idea that you should “punish” items that were showed to the user but not “clicked on”. One way to do so is by implementing some presentation discounting mechanism (see [this KDD 2014 paper](http://www.cs.ubc.ca/~peil/papers/kdd2014.pdf) by the LinkedIn folks). </span></span>  
+<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">As many ([including myself](/_posts/2011-09-26-recommender-problem-presentation/)) have mentioned in the past, is important to take that into account in your algorithms and try to somehow break this “Curse of the Presentation Bias”. Most approaches to addressing this issue are based on the idea that you should “punish” items that were showed to the user but not “clicked on”. One way to do so is by implementing some presentation discounting mechanism (see [this KDD 2014 paper](http://www.cs.ubc.ca/~peil/papers/kdd2014.pdf) by the LinkedIn folks). </span></span>  
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
 </span></span>  
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">Another way to address the issue is to use viewed but not clicked items as negatives in your training process. This, in principle, makes sense: if a user searched for a query and ended up clicking in result number three it means the first two results were bad and should be treated as negatives… or not? The problem with this is that although the first two items were likely worse than the third one (at least in that particular context), this does not mean they were any worse than item in position 4, let alone item in position 5000, which your original model decided was no good at all. Yes, you want to remove the presentation bias, but not all of it since it responds to some hopefully well-informed decisions your model took in the first place.</span></span>  
@@ -137,7 +141,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 
 ## 6. The UI is the only communication channel between the Algorithm and what matters most: the Users
 
-| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A293A37.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A293A37.png) |
+| [![](/images/Screenshot2Bfrom2B2014-12-112B223A293A37.png) |
 |---|
 | **Fig 7.** The UI is the algorithm’s connection point with the user |
 
@@ -146,7 +150,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 </span></span>  
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">Also, it is important to understand that a change in the user interface might require a change in the algorithms and vice versa. Just as we learned before that there is an intimate connection between features and models, there is also another to be aware of between the algorithms and the presentation layer.</span></span></div>## 7. Data and Models are great. You know what is even better? The right evaluation approach.
 
-| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A303A42.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A303A42.png) |
+| [![](/images/Screenshot2Bfrom2B2014-12-112B223A303A42.png) |
 |---|
 | **Fig 8.** Offline/Online Innovation Approach |
 
@@ -159,7 +163,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">Ok, then what is the “right evaluation approach”? Figure 8 illustrates an offline/online approach to innovation that should be a good starting point. Whatever the final goal of your machine learning algorithm is in your product you should think of driving your innovation in two distinct ways: offline and online.</span>  
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">  
 </span>  
-| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A32.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A32.png) |
+| [![](/images/Screenshot2Bfrom2B2014-12-112B223A323A32.png) |
 |---|
 | **Fig 9.** Offline Evaluation |
 
@@ -167,7 +171,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 <span style="font-family: inherit; vertical-align: baseline; white-space: pre-wrap;">  
 </span>
 
-| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A48.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A323A48.png) |
+| [![](/images/Screenshot2Bfrom2B2014-12-112B223A323A48.png) |
 |---|
 | **Fig. 10.** Importance given to different ranks by typical ranking metrics |
 
@@ -223,7 +227,7 @@ As an example of the different approaches you can take to distribute each of the
 <span style="line-height: 16px; white-space: pre-wrap;">  
 </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">Take a look at Figure 12 below, which illustrates this issue by showing (made up) accuracy results for a model given different values of the regularization parameter. In this particular example the highest accuracy is for no regularization, plus there is a relatively flat plateau region for values of lambda between 0.1 and 100. Blindly taking a value of lambda of zero is generally a bad idea since it points to overfitting (yes, this could be checked by using the test dataset). But, beyond that, going to the “flat region”, is it better to stick with the 0.1 value? By looking at the plot I would be inclined to take 100 as the operating point. This point is (a) non-zero, and (b) noise-level different in terms of accuracy from the other non-zero values. So, one possible rule of thumb to use is to keep the highest non-zero value that is noise level different in terms of the optimizing metric from the optimal point.</span></div><div><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
-</span></span></div>| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A363A34.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A363A34.png) |
+</span></span></div>| [![](/images/Screenshot2Bfrom2B2014-12-112B223A363A34.png)](/images/Screenshot2Bfrom2B2014-12-112B223A363A34.png) |
 |---|
 | **Fig 12.** Example of model accuracy vs. regularization lambda |
 
@@ -237,11 +241,11 @@ As an example of the different approaches you can take to distribute each of the
 <span style="line-height: 16px; white-space: pre-wrap;">  
 </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">Figure 13 depicts a three level architecture that can be used as a </span><span style="line-height: 16px; white-space: pre-wrap;">blueprint for any machine learning system that is designed to have a customer impact. The basic idea is that it is important to have different layers in which to trade off latency vs. complexity. Some computations need to be as real-time as possible to quickly respond to user feedback and context. Those are better off in an online setting. On the other extreme, complex ML models that require large amounts of data and lengthy computations are better done in an offline fashion. Finally, there is a Nearline world where operations are not guaranteed to happen in real-time but a best effort is performed to do them as “soon as possible”.</span></div><div><span style="font-family: inherit;"><span style="color: #666666; line-height: 1; white-space: pre-wrap;">  
-</span></span></div>| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/MachineLearningArchitecture-v3.jpg)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/MachineLearningArchitecture-v3.jpg) |
+</span></span></div>| [![](/images/MachineLearningArchitecture-v3.jpg)](/images/MachineLearningArchitecture-v3.jpg) |
 |---|
 | **Fig 13.** This three level architecture can be used as a blueprint for machine learning systems that drive customer impact. |
 
-<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: left;">Interestingly, thinking about these three “[shades of latency](https://gigaom.com/2013/03/28/3-shades-of-latency-how-netflix-built-a-data-architecture-around-timeliness/)” also helps breaking down traditional machine learning algorithms into different components that can be executed in different layers. Take matrix factorization as an example. As illustrated in Figure 14, you can decide to do the more time-consuming item factor computation in an offline fashion. Once those item factors are computed, you can compute user factors online (e.g. solving a closed-from least squares formulation) in a matter of milliseconds in an online fashion.</div><div class="separator" style="clear: both; text-align: left;"></div>| [![](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A393A21.png)](http://localhost:8080/wordpress/wp-content/uploads/2022/06/Screenshot2Bfrom2B2014-12-112B223A393A21.png) |
+<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: left;">Interestingly, thinking about these three “[shades of latency](https://gigaom.com/2013/03/28/3-shades-of-latency-how-netflix-built-a-data-architecture-around-timeliness/)” also helps breaking down traditional machine learning algorithms into different components that can be executed in different layers. Take matrix factorization as an example. As illustrated in Figure 14, you can decide to do the more time-consuming item factor computation in an offline fashion. Once those item factors are computed, you can compute user factors online (e.g. solving a closed-from least squares formulation) in a matter of milliseconds in an online fashion.</div><div class="separator" style="clear: both; text-align: left;"></div>| [![](/images/Screenshot2Bfrom2B2014-12-112B223A393A21.png)](/images/Screenshot2Bfrom2B2014-12-112B223A393A21.png) |
 |---|
 | **Fig 14.** Decomposing matrix factorization into offline and online computation |
 
