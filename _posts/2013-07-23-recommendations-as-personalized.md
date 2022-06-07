@@ -5,7 +5,7 @@ date: '2013-07-23T18:50:00+00:00'
 author: 'Xavier Amatriain'
 layout: post
 permalink: /recommendations-as-personalized/
-image: /wp-content/uploads/2013/07/TwoDimensionalRanking.png
+image: /blog/imagesTwoDimensionalRanking.png
 categories:
     - Uncategorized
 ---
