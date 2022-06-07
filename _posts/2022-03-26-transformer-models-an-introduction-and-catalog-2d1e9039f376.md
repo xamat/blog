@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### Transformer models: an introduction and catalog — 2022 Edition
-
 ![](/blog/images/02-01.jpeg)
 
 **Update 04/02/2022**
