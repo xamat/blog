@@ -23,8 +23,8 @@ A couple of weeks ago, I gave a 4 hour lecture on Recommender Systems at the [20
 3. “Novel” Methods
 * Learning to Rank
 * Context-aware Recommendations
-** Tensor Factorization
-** Factorization Machines
+ * Tensor Factorization
+ * Factorization Machines
 4. Deep Learning
 5. Similarity<
 6. Social Recommendations
