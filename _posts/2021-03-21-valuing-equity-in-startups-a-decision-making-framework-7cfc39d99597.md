@@ -1,6 +1,6 @@
 ---
 id: 27
-title: 'Valuing Equity in Startups: A Decision-Making Framework'
+title: 'Valuing Equity in Startups: A Decision-Making Framework (and a spreadsheet)'
 date: '2021-03-21T00:00:00+00:00'
 author: xamat
 layout: post
@@ -11,10 +11,6 @@ reading_time:
 categories:
     - Uncategorized
 ---
-
-### Valuing Equity in Startups: A Decision-Making Framework
-
-#### and a spreadsheet
 
 ![](/blog/images/04-01.png)
 
