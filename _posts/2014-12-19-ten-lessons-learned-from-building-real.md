@@ -235,4 +235,4 @@ Most of the above lessons have been learned in close collaboration with my forme
     
 [![Original Vvideo of the talk](https://img.youtube.com/vi/WdzWPuazLA8/0.jpg)](https://www.youtube.com/watch?v=WdzWPuazLA8)
 
-<iframe allowfullscreen="" frameborder="0" height="355" loading="lazy" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/41571741" style="border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; max-width: 100%;" width="425; text-align: center;"> </iframe> </div>
+<iframe allowfullscreen="" frameborder="0" height="355" loading="lazy" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/41571741" style="border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; max-width: 100%;" width="425; text-align: center;"> </iframe>
