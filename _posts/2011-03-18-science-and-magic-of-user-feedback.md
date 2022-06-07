@@ -18,13 +18,11 @@ That was the main title of a series of talks I gave in different labs and compan
 I also gave a sneak preview of our results to the[ music survey](http://localhost:8080/wordpress/2010/08/study-on-online-music-taste-call-for.html) I announced some time ago. [Denis Parra](http://www.sis.pitt.edu/%7Edparra/) and I have submitted this work recently and are hoping to get it accepted to tell you a bit more about how to map implicit to explicit feedback.
 
     
-Slides:
+## Slides:
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/ajzix3INI8C6Rj" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/xamat/the-science-and-the-magic-of-user-feedback-for-recommender-systems" title="The Science and the Magic of User Feedback for Recommender Systems" target="_blank">The Science and the Magic of User Feedback for Recommender Systems</a> </strong> from <strong><a href="//www.slideshare.net/xamat" target="_blank">Xavier Amatriain</a></strong> </div>
 
-Video:
-
-[![Tech Talk: Xavier Amatriain (Telefonica) — “The Science and Magic of User and Expert Feedback for Improving Recommendations”](http://player.vimeo.com/video/22353044)](http://vimeo.com/22353044)
+## Video:
 
 <iframe src="https://player.vimeo.com/video/22353044?h=239c114666" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/22353044">Tech Talk: Xavier Amatriain (Telefonica) -- &quot;The Science and Magic of User and Expert Feedback for Improving Recommendations&quot;</a> from <a href="https://vimeo.com/talksatlinkedin">Talks at LinkedIn</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
