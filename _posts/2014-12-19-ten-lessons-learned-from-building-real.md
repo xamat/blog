@@ -18,8 +18,7 @@ tags:
 
 (This is a blogpost version of a talk I gave at [MLConf SF](http://mlconf.com/mlconf-sf/) 11/14/2014. See below for original video and slides)
 
-There are many good textbooks and courses where you can be introduced to machine learning and maybe even learn some of the most intricate  
-details about a particular approach or algorithm (See [my answer on Quora ](http://www.quora.com/What-are-the-best-talks-lectures-related-to-big-data-algorithms-machine-learning/answer/Xavier-Amatriain)on what are good resources for this). While understanding that theory is a very important base and starting point, there are many other practical issues related to building real-life ML systems that you don’t usually hear about. In this post I will share some of the most important lessons learned in years of building large-scale ML solutions that power products such as Netflix and scale to millions of users across many countries.
+There are many good textbooks and courses where you can be introduced to machine learning and maybe even learn some of the most intricate details about a particular approach or algorithm (See [my answer on Quora ](http://www.quora.com/What-are-the-best-talks-lectures-related-to-big-data-algorithms-machine-learning/answer/Xavier-Amatriain)on what are good resources for this). While understanding that theory is a very important base and starting point, there are many other practical issues related to building real-life ML systems that you don’t usually hear about. In this post I will share some of the most important lessons learned in years of building large-scale ML solutions that power products such as Netflix and scale to millions of users across many countries.
 
 And just in case it doesn’t come across clearly enough, let me insist on this once again: it does pay off to be knowledgeable and have deep understanding of the techniques and theory behind classic and modern machine learning approaches. Understanding how Logistic Regression works or the difference between Factorization Machines and Tensor Factorization, for example, is a necessary starting point. However, this in itself might not be enough unless you couple it with the real-life experience of how these models interact with systems, data, and users in order to obtain a really valuable impact. The next ten lessons are my attempt at trying to capture some of that practical knowledge.
 
@@ -34,7 +33,6 @@ In the context of the [Netflix Prize](http://www.netflixprize.com/), [Anand Raja
 | **Fig 1.** More data usually beats better algorithms |
 
 Although many teams in the competition tried to follow that lead and add extra features to improve results, there was little progress in that direction. As a matter of fact, just a year later some of the leaders of what would become the runner up team published [a paper](http://dl.acm.org/citation.cfm?id=1639731) in which they showed that adding metadata had very little impact in improving the prediction accuracy of a well-tuned algorithm. Take this as a first example of why adding more data is not always the solution.
-
 | ![](/blog/images/AFewRatings.png) |
 |---|
 | **Fig 2.** Even a Few Ratings Are More Valuable than Metadata |
@@ -47,7 +45,7 @@ Of course, there are different ways to “add more data”. In the example above
 
 Google’s Research Director and renowned AI figure Peter Norvig is quoted as saying that “Google does not have better algorithms, just more data”. In fact, Norvig is one of the co-authors of “[The Unreasonable Effectiveness of Data](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35179.pdf) where in a similar problem to the one in Banko and Brill (language understanding) they also show how important it is to have “more data”.
 
-|![](//blog/images/TheUnreasonableEffectivenessOfData.png) |
+|![](/blog/images/TheUnreasonableEffectivenessOfData.png) |
 |---|
 | **Fig 4.** The Unreasonable Effectiveness of Data |
 
@@ -82,36 +80,27 @@ So, the lesson learned is that you must improve both your model and your feature
 
 ## 4. Be thoughtful about how you define your training/testing data sets
 
-<div><span style="line-height: 16px; white-space: pre-wrap;">If you are training a simple binary classifier, one of the first tasks to do is to define your positive and negative examples. Defining positive and negative labels for samples though may not be such a trivial task. Think about a use case where you need to define a classifier to distinguish between shows that users watch (positives) and do not watch (negatives). In that context, would the following be positives or negatives?</span>- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">User watches a movie to completion and rates it 1 star</span>
-- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">User watches the same movie again (maybe because she can’t find anything else)</span>
-- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">User abandons movie after 5 minutes, or 15 minutes… or 1 hour</span>
-- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">User abandons TV show after 2 episodes, or 10 episode… or 1 season</span>
-- <span style="font-family: inherit; white-space: pre-wrap;">User adds something to her list but never watches it</span>
+<div><span style="line-height: 16px; white-space: pre-wrap;">If you are training a simple binary classifier, one of the first tasks to do is to define your positive and negative examples. Defining positive and negative labels for samples though may not be such a trivial task. Think about a use case where you need to define a classifier to distinguish between shows that users watch (positives) and do not watch (negatives). In that context, would the following be positives or negatives?
+- User watches a movie to completion and rates it 1 star
+- User watches the same movie again (maybe because she can’t find anything else)
+- User abandons movie after 5 minutes, or 15 minutes… or 1 hour
+- User abandons TV show after 2 episodes, or 10 episode… or 1 season
+- User adds something to her list but never watches it
 
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">As you can see, determining whether a given example is a positive or a negative is not so easy.</span></span>  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">Besides paying attention to your positive and negative definition, there are many other things you need to make sure to get right when defining your training and testing datasets. One such issue is what we call *Time Travelling*. </span></span>Time traveling is defined as usage of features that originated after the event you are trying to predict. <span style="vertical-align: baseline;">E.g. </span><span style="font-style: italic; vertical-align: baseline;">Your rating a movie is a pretty good prediction of you watching that movie, especially because most ratings happen AFTER you watch the movie.</span><span style="font-style: italic; vertical-align: baseline;">  
-</span>  
-In simple cases as the example above this effect might seem obvious. However, things can get very tricky when you have many features that come from different sources and pipelines and relate to each other in non-obvious ways. </span></span><span style="font-family: inherit;"><span style="white-space: pre-wrap;">*Time traveling* has the effect of increasing model performance beyond what would seem reasonable. That is why whenever you see an offline experiment with huge wins, the first question you might want to ask yourself is: “Am I time traveling?”.</span></span><span id="docs-internal-guid-b10ab187-3d2a-e838-b4e4-bffc8cd4eb91"></span>  
-<span style="font-family: inherit;"><span style="white-space: pre-wrap;">  
-</span></span>  
-<span style="font-family: inherit;"><span style="white-space: pre-wrap;">And, remember, Time Traveling and positive/negative selection are just two examples of issues you might encounter when defining your training and testing datasets. Just make sure you are thoughtful about how you define all the details of your datasets.</span></span>  
-<span style="font-family: inherit;"><span style="white-space: pre-wrap;">  
-</span></span>
+As you can see, determining whether a given example is a positive or a negative is not so easy.  
 
-<div><span id="docs-internal-guid-b10ab187-3d2a-e838-b4e4-bffc8cd4eb91"><span id="docs-internal-guid-b10ab18c-3d2b-58de-0f93-9fb017560787"></span></span></div><span id="docs-internal-guid-b10ab187-3d2a-e838-b4e4-bffc8cd4eb91">  
-</span>
+Besides paying attention to your positive and negative definition, there are many other things you need to make sure to get right when defining your training and testing datasets. One such issue is what we call *Time Travelling*. Time traveling is defined as usage of features that originated after the event you are trying to predict. E.g. Your rating a movie is a pretty good prediction of you watching that movie, especially because most ratings happen AFTER you watch the movie.
+   
+In simple cases as the example above this effect might seem obvious. However, things can get very tricky when you have many features that come from different sources and pipelines and relate to each other in non-obvious ways. </span></span><span style="font-family: inherit;"><span style="white-space: pre-wrap;">*Time traveling* has the effect of increasing model performance beyond what would seem reasonable. That is why whenever you see an offline experiment with huge wins, the first question you might want to ask yourself is: “Am I time traveling?”.</span></span><span id="docs-internal-guid-b10ab187-3d2a-e838-b4e4-bffc8cd4eb91"></span> And, remember, Time Traveling and positive/negative selection are just two examples of issues you might encounter when defining your training and testing datasets. Just make sure you are thoughtful about how you define all the details of your datasets.
 
-</div>## 5. Learn to deal with (the curse of) the Presentation Bias
+## 5. Learn to deal with (the curse of) the Presentation Bias
 
-[![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png) |
+![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png)
 |---|
 | **Fig 6.** Example of an Attention Model on a page |
 
 <div></div><span id="docs-internal-guid-a151ba49-0d50-b49d-dad4-e8c3299922b6"><span id="docs-internal-guid-704b7fa8-3d2c-0727-b62e-9a09a90f347d"></span></span><span id="docs-internal-guid-a151ba49-0d50-b49d-dad4-e8c3299922b6"></span><span id="docs-internal-guid-a151ba49-0d51-4591-bc30-f4bcaf178ac9"></span><span id="docs-internal-guid-a151ba49-0d51-8d0d-69f3-57381be5df4c"></span>   
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">Let’s face it, users can only click and act on whatever your algorithm (and other parts of your system) has decided to show them. Of course, what your algorithm decided to show is what it predicted was good for the user. Let’s suppose that a new user comes in and we decide to show the user only popular items. The fact that a week later the user has only consumed popular items does not mean that’s what the user like. That’s the \*only\* thing she had a chance to consume!</span></span>  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
-</span></span>  
 
 As many ([including myself](/_posts/2011-09-26-recommender-problem-presentation/)) have mentioned in the past, is important to take that into account in your algorithms and try to somehow break this “Curse of the Presentation Bias”. Most approaches to addressing this issue are based on the idea that you should “punish” items that were showed to the user but not “clicked on”. One way to do so is by implementing some presentation discounting mechanism (see [this KDD 2014 paper](http://www.cs.ubc.ca/~peil/papers/kdd2014.pdf) by the LinkedIn folks). 
 
@@ -125,7 +114,7 @@ Finally, yet another and well established way to address presentation bias is by
 
 ## 6. The UI is the only communication channel between the Algorithm and what matters most: the Users
 
-| [![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A293A37.png) |
+| ![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A293A37.png) |
 |---|
 **Fig 7.** The UI is the algorithm’s connection point with the user |
 
@@ -166,11 +155,11 @@ If you want more details on the online experimentation piece there are many good
 ## 8. Distributing algorithms? Yes, but at what level?
 
 <div><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">There always comes a time in the life of a Machine Learning practitioner when you feel the need to distribute your algorithm. Distributing algorithms that require of many resources is a natural thing to do. The issue to consider is at what \*level\* does it make sense to distribute.</span></span>  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
-</span></span>  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">We distinguish three levels of distribution:</span></span>- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">Level 1. For each independent subset of the overall data </span>
-- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">Level 2. For every combination of the hyperparameters</span>
-- <span style="font-family: inherit; line-height: 1; white-space: pre-wrap;">Level 3. For all partitions in each training dataset</span>
+ 
+We distinguish three levels of distribution:
+- Level 1. For each independent subset of the overall data
+- Level 2. For every combination of the hyperparameters
+- Level 3. For all partitions in each training dataset
 
 In the first level we may have subsets of the overall data for which we need to (or simply can) train an independently optimized model. A typical example of this situation is when we opt for training completely independent ML models for different regions in the world, different kinds of users, or different languages. In this case, all we need to do is to define completely independent training datasets. Training can then be fully distributed requiring no coordination or data communication.
 
@@ -181,7 +170,7 @@ Finally, in level 3 we address the issue of how to distribute or parallelize mod
 As an example of the different approaches you can take to distribute each of the levels, take a look at [what we did](http://techblog.netflix.com/2014/02/distributed-neural-networks-with-gpus.html) in our distribution of Artificial Neural Networks over the AWS cloud (see Figure 11 below for an illustration). For Level 1 distribution, we simply used different machine instances over different AWS regions. For Level 2 we used different machine in the same region and a central node for coordination. We used Condor for cluster coordination (although other options such as StarCluster, Mesos, or even Spark) are possible. Finally, for level 3 optimization, we used highly optimized CUDA code on GPUs.
 
 
-| ![](/blog/images/DistributedANN-Final.png)](/blog/images/DistributedANN-Final.png) |
+| ![](/blog/images/DistributedANN-Final.png) |
 |---|
 | **Fig 11.** Distributing ANN over the AWS cloud |
 
