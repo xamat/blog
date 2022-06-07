@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### Evil ads, ad blockers, and the end of Web diversity
-
 Ad blockers might be good for the individual consumers that are using it, short term. However, longer term, if successful, ad blockers will shape the Internet in a way that will end up hurting consumers. Let me illustrate this by talking about an obscure Spanish site called [La Frikipedia.](https://en.wikipedia.org/wiki/La_Frikipedia)
 
 Frikipedia was a controversial parody of Wikipedia. It was pretty popular among geeks in Spain because of its smart humor, especially in tech-related topics. The site was involved in many controversies (see Wikipedia article linked above) until it finally decided to shut down in 2015. In the final goodbye (see [Despedida y cierre](http://frikipedia.es/) only in Spanish), the owners of the site cite ad blockers as one of the main reasons they can’t make enough money to pay for servers and legal defense. They mention that their audience is typically tech-savvy and that results in most of them blocking ads, leaving them with no resource to make money.
