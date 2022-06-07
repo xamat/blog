@@ -12,7 +12,7 @@ categories:
     - Uncategorized
 ---
 
-![](/blog/images/04-01.png)
+![](/blog/images/04-01.jpeg)
 
 (In case you came here looking for the spreadsheet, [here](https://docs.google.com/spreadsheets/d/1uqETG2kl2mnbqh7aQvJJIu7DeAT0uLOwuwxrki0vgs4/edit?usp=sharing) it is. However, I recommend you continue reading to help you understand the overall framework.)
 
