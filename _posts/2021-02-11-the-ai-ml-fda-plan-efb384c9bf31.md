@@ -1,6 +1,6 @@
 ---
 id: 18
-title: "The AI/ML FDA\_Plan"
+title: "The AI/ML FDA Plan"
 date: '2021-02-11T00:00:00+00:00'
 author: xamat
 layout: post
@@ -12,7 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### The AI/ML FDA Plan
 
 In case you are not familiar with it, the [Food and Drugs Administration](https://en.wikipedia.org/wiki/Food_and_Drug_Administration) (FDA) is a federal agency of the Department of Health and Human Services. that is responsible for the control and supervision of food safety, drugs, vaccines, medical devices, and the likes. In recent times the FDA has been thinking about how to regulate medical devices that are driven or based on AI as a result of several recent efforts, they published their *“*[*Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan*](https://www.fda.gov/media/145022/download)*”* in January 2021. To understand this action plan, you need to go and read a number of related documents. I did that for you, and my hope is that this post summarizes the most important aspects of the FDA’s plan around Artificial Intelligence and Machine Learning. Make sure to read the last section for a surprise “ending” to it all.
 
