@@ -181,52 +181,58 @@ As an example of the different approaches you can take to distribute each of the
 <div><span id="docs-internal-guid-b7ec9469-3d35-8cb0-546e-5738b3abc26a"><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">As already mentioned in the previous lesson, one of the important things you have to do when building your ML system is to tune your hyperparameters. Most, if not all, algorithms will have some hyperparameters that need to be tuned: learning rate in matrix factorization, regularization lambda in logistic regression, number of hidden layers in a neural network, shrinkage in gradient boosted decision trees… These are all parameters that need to be tuned to the validation data.</span></span></span>  
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
 </span></span>  
+    
 <span style="line-height: 16px; white-space: pre-wrap;">Many times you will face situations in which models need to be periodically retrained and therefore hyperparameters need to be at least fine-tuned. This is a clear situation where you need to figure out a way to automatically select the best hyperparameters without requiring a manual check. As a matter of fact, having an automatic hyperparameter selection approach is worthwhile even if all you are doing is the initial experimentation. A fair approach is to try all possible combinations of hyperparameters and pick the one that maximizes a given accuracy metric on the validation set. While this is, generally speaking, a good idea, it might be problematic if implemented directly. The issue is that blindly taking the point that optimizes whatever metric does not take into account the possible noisiness in the process and the metric. In other words, we can’t be sure that if point A has an accuracy that is only 1% better than point B, point A is a better operating point than B. </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">  
 </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">Take a look at Figure 12 below, which illustrates this issue by showing (made up) accuracy results for a model given different values of the regularization parameter. In this particular example the highest accuracy is for no regularization, plus there is a relatively flat plateau region for values of lambda between 0.1 and 100. Blindly taking a value of lambda of zero is generally a bad idea since it points to overfitting (yes, this could be checked by using the test dataset). But, beyond that, going to the “flat region”, is it better to stick with the 0.1 value? By looking at the plot I would be inclined to take 100 as the operating point. This point is (a) non-zero, and (b) noise-level different in terms of accuracy from the other non-zero values. So, one possible rule of thumb to use is to keep the highest non-zero value that is noise level different in terms of the optimizing metric from the optimal point.</span></div><div><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
 </span></span></div>
 
-|![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A363A34.png)](/blog/images/Screenshot2Bfrom2B2014-12-112B223A363A34.png) |
+| ![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A363A34.png) |
 |---|
 | **Fig 12.** Example of model accuracy vs. regularization lambda |
 
 
 <span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">I should also add that even though in this lesson I have dsf about using a brute-force grid search approach to hyperparameter optimization, there are much better things you can do which are again beyond the scope of this post. If you are not familiar with Bayesian Optimization, start with [this paper](http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf) or take a look at [Spearmint](https://github.com/JasperSnoek/spearmint) or [MOE](http://engineeringblog.yelp.com/2014/07/introducing-moe-metric-optimization-engine-a-new-open-source-machine-learning-service-for-optimal-ex.html).</span></span>  
-<span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">  
-</span></span></div>## 10. There are things you can do Offline and there are things you can’t… and there is Nearline for everything in between
+
+## 10. There are things you can do Offline and there are things you can’t… and there is Nearline for everything in between
 
 <div><span style="line-height: 16px; white-space: pre-wrap;">In the lessons so far we have talked about the importance of data, models, UI, metrics… In this last lesson I thought it was worth to focus on systems and architecture. When the final goal of your ML model is to have impact on a product, you are necessarily going to have to think about the right system architecture. </span>  
 <span style="line-height: 16px; white-space: pre-wrap;">  
 </span>  
+    
 <span style="line-height: 16px; white-space: pre-wrap;">Figure 13 depicts a three level architecture that can be used as a </span><span style="line-height: 16px; white-space: pre-wrap;">blueprint for any machine learning system that is designed to have a customer impact. The basic idea is that it is important to have different layers in which to trade off latency vs. complexity. Some computations need to be as real-time as possible to quickly respond to user feedback and context. Those are better off in an online setting. On the other extreme, complex ML models that require large amounts of data and lengthy computations are better done in an offline fashion. Finally, there is a Nearline world where operations are not guaranteed to happen in real-time but a best effort is performed to do them as “soon as possible”.</span></div><div><span style="font-family: inherit;"><span style="color: #666666; line-height: 1; white-space: pre-wrap;">  
 </span></span></div>
 
-|![](/blog/images/MachineLearningArchitecture-v3.jpg)](/blog/images/MachineLearningArchitecture-v3.jpg) |
+| ![](/blog/images/MachineLearningArchitecture-v3.jpg)](/blog/images/MachineLearningArchitecture-v3.jpg) |
 |---|
 | **Fig 13.** This three level architecture can be used as a blueprint for machine learning systems that drive customer impact. |
 
-<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: left;">Interestingly, thinking about these three “[shades of latency](https://gigaom.com/2013/03/28/3-shades-of-latency-how-netflix-built-a-data-architecture-around-timeliness/)” also helps breaking down traditional machine learning algorithms into different components that can be executed in different layers. Take matrix factorization as an example. As illustrated in Figure 14, you can decide to do the more time-consuming item factor computation in an offline fashion. Once those item factors are computed, you can compute user factors online (e.g. solving a closed-from least squares formulation) in a matter of milliseconds in an online fashion.</div><div class="separator" style="clear: both; text-align: left;"></div>
+Interestingly, thinking about these three “[shades of latency](https://gigaom.com/2013/03/28/3-shades-of-latency-how-netflix-built-a-data-architecture-around-timeliness/)” also helps breaking down traditional machine learning algorithms into different components that can be executed in different layers. Take matrix factorization as an example. As illustrated in Figure 14, you can decide to do the more time-consuming item factor computation in an offline fashion. Once those item factors are computed, you can compute user factors online (e.g. solving a closed-from least squares formulation) in a matter of milliseconds in an online fashion.
 
-| ![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A393A21.png)](/blog/images/Screenshot2Bfrom2B2014-12-112B223A393A21.png) |
+| ![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A393A21.png) |
 |---|
 | **Fig 14.** Decomposing matrix factorization into offline and online computation |
 
-<div class="separator" style="clear: both; text-align: center;"></div><div><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">If you are interested in this topic take a look at our original [blog post ](http://techblog.netflix.com/2013/03/system-architectures-for.html)in the Netflix tech blog.</span></span></div>## Conclusions
+If you are interested in this topic take a look at our original [blog post ](http://techblog.netflix.com/2013/03/system-architectures-for.html)in the Netflix tech blog.
 
-<div>The ten lessons in this post illustrate knowledge gathered from building impactful machine learning and general algorithmic solutions. If I had to summarize them in 4 short take away messages those would probably be:</div><div></div>1. <div dir="ltr" style="line-height: 1; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-size: small;"><span style="background-color: transparent; font-family: "gloria hallelujah"; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Be thoughtful about your data</span></span></div>
-2. <div dir="ltr" style="line-height: 1; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-size: small;"><span style="background-color: transparent; font-family: "gloria hallelujah"; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Understand dependencies between data and models</span></span></div>
-3. <div dir="ltr" style="line-height: 1; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-size: small;"><span style="background-color: transparent; font-family: "gloria hallelujah"; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Choose the right metric</span></span></div>
-4. <div dir="ltr" style="line-height: 1; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-size: small;"><span style="background-color: transparent; font-family: "gloria hallelujah"; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;"> Optimize only wha</span></span><span style="font-size: small;"><span style="background-color: transparent; font-family: "gloria hallelujah"; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">t matters</span></span></div>
+## Conclusions
 
-<span style="font-size: small;">  
-I hope they are useful to other researchers and practicioners. And, would love to hear about similar or different experiences in building real-life machine learning solutions in the comments. Looking forward to the feedback.</span>
+The ten lessons in this post illustrate knowledge gathered from building impactful machine learning and general algorithmic solutions. If I had to summarize them in 4 short take away messages those would probably be:
+
+1. Be thoughtful about your data
+2. Understand dependencies between data and models
+3. Choose the right metric
+4. Optimize only what matters
+
+I hope they are useful to other researchers and practicioners. And, would love to hear about similar or different experiences in building real-life machine learning solutions in the comments. Looking forward to the feedback.
 
 ## Acknowledgments
 
 Most of the above lessons have been learned in close collaboration with my former Algorithms Engineering team at Netflix. In particular I would like to thank [Justin Basilico](https://twitter.com/JustinBasilico) for many fruitful conversations, feedback on the original drafts of the slides, and for providing some of the figures in this post.
 
 ## Original video and slides
+    
+[![Original Vvideo of the talk](https://img.youtube.com/vi/WdzWPuazLA8/0.jpg)](https://www.youtube.com/watch?v=WdzWPuazLA8)
 
-<div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="https://ytimg.googleusercontent.com/vi/WdzWPuazLA8/0.jpg" height="266" width="320"><param name="movie" value="https://youtube.googleapis.com/v/WdzWPuazLA8&source=uds"></param><param name="bgcolor" value="#FFFFFF"></param><param name="allowFullScreen" value="true"></param><embed allowfullscreen="true" height="266" src="https://youtube.googleapis.com/v/WdzWPuazLA8&source=uds" type="application/x-shockwave-flash" width="320"></embed></object> </div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div style="text-align: center;">  
-<iframe allowfullscreen="" frameborder="0" height="355" loading="lazy" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/41571741" style="border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; max-width: 100%;" width="425; text-align: center;"> </iframe> </div><div style="margin-bottom: 5px; text-align: center;"> **[10 Lessons Learned from Building Machine Learning Systems](https://www.slideshare.net/xamat/10-lessons-learned-from-building-machine-learning-systems "10 Lessons Learned from Building Machine Learning Systems")**  from **[Xavier Amatriain](https://www.slideshare.net/xamat)**</div>
+<iframe allowfullscreen="" frameborder="0" height="355" loading="lazy" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/41571741" style="border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; max-width: 100%;" width="425; text-align: center;"> </iframe> </div>
