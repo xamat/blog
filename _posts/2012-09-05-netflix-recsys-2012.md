@@ -9,8 +9,6 @@ categories:
     - Uncategorized
 ---
 
-| ![](http://recsys.acm.org/2012/images/header.png) |
-
 We are just a few days away from the [2012 ACM Recommender Systems Conference](http://recsys.acm.org/2012/images/header.png) (#Recsys2012), that this year will take place in Dublin, Ireland. Over the years, Recsys has become my favorite conference because of its unique blend of academic research and industrial applications. If you are not familiar with the conference, you might get a flavor by reading [my report from last year](http://localhost:8080/wordpress/2011/11/recsys-2011-notes-and-pointers.html). Needless to say that it is also dear to my heart because of my involvement as General Cochair in its [2010 edition in Barcelona](http://recsys.acm.org/2010/).
 
 If you had to mention a single company that is identified with recommender systems and technologies, that would probably be Netflix. The Netflix Prize started a year before the first Recsys conference in Minneapolis, and it impacted Recommender Systems researchers and practitioners in many ways. So, it comes as no surprise that the relation between the conference and Netflix also goes a long way. Netflix has been involved in the conference through the years. And, this time in Dublin is not going to be any different. Not only Netflix is a proud sponsor of the conference, but you will have the chance to listen to presentations and meet some of the people that make the wheels of Netflix recommendations turn. Here are some of the highlights of Netflix’ participation:
