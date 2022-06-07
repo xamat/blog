@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### How do you deal with strong difference of opinion among expert engineers in the team?
-
 This is a great question. As a TLDR; the way to deal with strong differences between engineers is not necessarily to build consensus but to have a clear owner in charge of making the final decision.
 
 First, let me say that it is great for an organization when people not only have opinions but feel empowered to express them, even strongly. Conflict avoidance is in fact one of the leading causes of poor decisions and ultimately organizations and teams failing. It is good to encourage discussion especially when a technical decision needs to be made.
