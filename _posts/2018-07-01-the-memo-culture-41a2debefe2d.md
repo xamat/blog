@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### The Memo Culture
-
 Some days back I was having a conversation about the importance of memos and documents in an agile/fast-moving startup company. The person I was talking with was surprised with my thoughts and asked me to send some links so they could follow up and share with others in the company. Unfortunately, after some searching around, I did not find anything online that was comprehensive enough to include all my thoughts. So, here I am trying to be good to the internet by filling in the void on a topic that is important but maybe not “cool” enough for tech leaders to spend much time sharing. To be clear, I don’t claim to be an expert on this, and, I would love to hear your feedback.
 
 I have been leading technical teams for many years now, and something that I have learned to appreciate is the importance of… writing documents. Yes, you heard me right. I know what some of you might be thinking now: this guy has not read the Agile Manifesto and doesn’t understand that in-person meetings are much better than documentation or that code and tests are the best documentation for any piece of software. As a matter of fact, I have reached this conclusion after many years of trying many flavors of agile methodologies, both formal and informal. I now believe that having the **right** documentation is precisely one of the best tools to be agile and move fast. As Eric Ries describes in his [Lean Startup](http://theleanstartup.com/) book, the main goal of a past-paced organization is to maximize learning rate. And, in order to maximize learning rate, you need to use data and document your decisions.
