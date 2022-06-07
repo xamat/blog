@@ -95,7 +95,7 @@ In simple cases as the example above this effect might seem obvious. However, th
 
 ## 5. Learn to deal with (the curse of) the Presentation Bias
 
-![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png)
+| ![](/blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png)|
 |---|
 | **Fig 6.** Example of an Attention Model on a page |
 
@@ -154,7 +154,7 @@ If you want more details on the online experimentation piece there are many good
 
 ## 8. Distributing algorithms? Yes, but at what level?
 
-<div><span style="font-family: inherit;"><span style="line-height: 1; white-space: pre-wrap;">There always comes a time in the life of a Machine Learning practitioner when you feel the need to distribute your algorithm. Distributing algorithms that require of many resources is a natural thing to do. The issue to consider is at what \*level\* does it make sense to distribute.</span></span>  
+There always comes a time in the life of a Machine Learning practitioner when you feel the need to distribute your algorithm. Distributing algorithms that require of many resources is a natural thing to do. The issue to consider is at what \*level\* does it make sense to distribute.  
  
 We distinguish three levels of distribution:
 - Level 1. For each independent subset of the overall data
