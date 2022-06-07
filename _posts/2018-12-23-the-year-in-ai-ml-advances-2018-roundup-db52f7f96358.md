@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### The year in AI/ML advances: 2018 roundup
-
 It has become a sort of tradition for me to try to summarize ML advances at this time of the year (see [here](https://www.quora.com/What-are-the-most-significant-machine-learning-advances-in-2017/answer/Xavier-Amatriain) for my Quora answer last year, for example). As always, this summary will necessarily be biased by my own interests and focus, but I have tried to keep it as broad as possible. Note that what follows is a blog post version of my Quora answer [here](https://www.quora.com/What-were-the-most-significant-machine-learning-AI-advances-in-2018/answer/Xavier-Amatriain?ch=2&srid=cgo).
 
 If I had to summarize the main highlights of machine learning advances in 2018 in a few headlines, these are the ones that I would probably come up:
