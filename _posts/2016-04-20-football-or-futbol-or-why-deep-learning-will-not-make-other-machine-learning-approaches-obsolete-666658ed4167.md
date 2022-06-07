@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### Football or Futbol? Or why Deep Learning will not make other Machine Learning approaches obsolete
-
 You have probably heard a lot about Deep Learning and how it is taking over the world in general, and the area of Machine Learning in particular. But, does that mean that Deep Learning will be the solution to all our (machine learning) problems? No. There are several reasons why there will always be a place for other algorithms to be better suited than deep learning in some applications.
 
 **Need for feature engineering**
