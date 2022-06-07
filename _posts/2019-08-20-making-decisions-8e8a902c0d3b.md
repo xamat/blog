@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### Making decisions in an organization
-
 ![](/blog/images/10-01.png)
 
 Nobody would probably argue that it is important for any organization to make the “right” decisions. However, if you ask anyone you know how are decisions made at their company, you will most likely get vague answers at best. Maybe something like “we empower everyone to make good decisions” or “we have a distributed decision-making process”. Ask them, “What does that actually mean? Who makes a decision? When and how?” and you are likely to get a silent stare for an answer.
