@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### 10 More lessons learned from building real-life Machine Learning systems — Part I
-
 Over a year ago, following an original [presentation](http://www.slideshare.net/xamat/10-lessons-learned-from-building-machine-learning-systems) at MLConf, I wrote a blog post entitled “[10 Lessons Learned from building ML systems](http://technocalifornia.blogspot.com/2014/12/ten-lessons-learned-from-building-real.html)”. At that point, I was leading the Algorithms Engineering team at Netflix and those lessons reflected lessons we had learned there over the last few years. When you do a post/presentation like that, you don’t really know how it is going to be received. Some things might be obvious to many while others might be controversial and some will not agree. It turns out though that it was very well received and referenced elsewhere (e.g. <http://machinelearningmastery.com/lessons-learned-building-machine-learning-systems/> or <http://techjaw.com/2015/02/11/10-machine-learning-lessons-harnessed-by-netflix/>).  
    
 With that in mind, a year later, I now decided to follow up with 10 new lessons that built upon the original ones. The present two-part blog post includes new lessons not only learned directly at Quora but also from talking to many people at different companies.  
