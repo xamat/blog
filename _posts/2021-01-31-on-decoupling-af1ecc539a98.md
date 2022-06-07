@@ -12,7 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### On Decoupling
 
 (This is an adaptation of an internal talk I gave a few days back to our engineers at [Curai](https://curaihealth.com/work))
 
