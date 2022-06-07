@@ -14,7 +14,7 @@ A couple of days ago, I attended the [Analytics @Webscale workshop](http://analy
 
 Twitter presented several components in their infrastructure. They use Thrift on HDFS to store their logs. They have now build [Twitter Parquet](http://parquet.io/), a columnar storage database that improves storage efficiency by allowing to read columns at a time. 
 
-| [![](/blog/images/ParquetTwitter-Poster.jpg) |
+| ![](/blog/images/ParquetTwitter-Poster.jpg) |
 |---|
 | @squarecog talking about Parquet |
 
@@ -44,6 +44,6 @@ Morse is a different distributed approach to fast in-memory data loading. And, [
 
 | ![](/blog/images/FacebookScubaPoster.jpg) |
     
-    Another Facebook tool that was mentioned by all three companies is [Giraph](https://github.com/apache/giraph). (To be fair, Giraph was started at Yahoo, but Facebook hired the creator Avery Ching). Giraph is a graph-based distributed computation framework that works on top of Hadoop. Facebook claims they ran a Page Rank on a graph with a trillion edges on 200 machines in less than 6 minutes/iteration. Giraph is another alternative to [Graphlab](http://graphlab.org/). Both LinkedIn and Twitter are using it. In the case of Twitter, it is interesting to hear that they now prefer it to their own in-house (although single-node) [Cassovary](https://github.com/twitter/cassovary). It will be interesting to see all these graph processing tolls side by side in this year’s [Graphlab workshop](http://graphlab.org/graphlab-workshop-2013/).
+Another Facebook tool that was mentioned by all three companies is [Giraph](https://github.com/apache/giraph). (To be fair, Giraph was started at Yahoo, but Facebook hired the creator Avery Ching). Giraph is a graph-based distributed computation framework that works on top of Hadoop. Facebook claims they ran a Page Rank on a graph with a trillion edges on 200 machines in less than 6 minutes/iteration. Giraph is another alternative to [Graphlab](http://graphlab.org/). Both LinkedIn and Twitter are using it. In the case of Twitter, it is interesting to hear that they now prefer it to their own in-house (although single-node) [Cassovary](https://github.com/twitter/cassovary). It will be interesting to see all these graph processing tolls side by side in this year’s [Graphlab workshop](http://graphlab.org/graphlab-workshop-2013/).
     
 Another interesting thread I heard from different speakers as well as coffee-break discussions was the use of [Mesos vs. Yarn](http://www.quora.com/How-does-YARN-compare-to-Mesos) or even [Spark](http://spark-project.org/). It is clear that many of us are looking forward to the NextGen Mapreduce tools to reach some level of maturity. 
