@@ -24,7 +24,7 @@ Once we have such a function, we can pass a set of videos through our function a
 
 As you might guess, the previous two-dimensional model is a very basic baseline. Apart from popularity and rating prediction, you can think on adding all kinds of features related to the user, the item, or the user-item pair.Below you can see a graph showing the improvement we have seen at Netflix after adding many different features and optimizing the models.
 
-| ![]/blog/images/Ranking-FeaturesPerformance.png) |
+| ![](/blog/images/Ranking-FeaturesPerformance.png) |
 
 The traditional pointwise approach to learning to rank described above treats ranking as a simple binary classification problem where the only input are positive and negative examples. Typical models used in this context include Logistic Regression, Support Vector Machines, Random Forests or Gradient Boosted Decision Trees.
 
