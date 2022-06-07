@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### What’s the relationship between machine learning and data mining?
-
 This is not an easy question because there is no common agreement on what “Data Mining” means. But, I am going to say that I disagree with the answer from Wikipedia that [Yuvraj Singla](https://www.quora.com/profile/Yuvraj-Singla) points to. I don’t think saying that machine learning focuses on prediction is accurate at all although I mostly agree with the definition of Data Mining focusing on the discovery of properties on the data.
 
 So, let’s start with that: **Data Mining** is a cross-disciplinary field that focuses on discovering properties of data sets. (Forget about it being the analysis step of “knowledge discovery in databases” KDD, this was maybe true years ago, it is not anymore).
