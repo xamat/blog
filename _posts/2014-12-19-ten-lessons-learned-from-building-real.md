@@ -80,7 +80,7 @@ So, the lesson learned is that you must improve both your model and your feature
 
 ## 4. Be thoughtful about how you define your training/testing data sets
 
-<div><span style="line-height: 16px; white-space: pre-wrap;">If you are training a simple binary classifier, one of the first tasks to do is to define your positive and negative examples. Defining positive and negative labels for samples though may not be such a trivial task. Think about a use case where you need to define a classifier to distinguish between shows that users watch (positives) and do not watch (negatives). In that context, would the following be positives or negatives?
+If you are training a simple binary classifier, one of the first tasks to do is to define your positive and negative examples. Defining positive and negative labels for samples though may not be such a trivial task. Think about a use case where you need to define a classifier to distinguish between shows that users watch (positives) and do not watch (negatives). In that context, would the following be positives or negatives?
 - User watches a movie to completion and rates it 1 star
 - User watches the same movie again (maybe because she can’t find anything else)
 - User abandons movie after 5 minutes, or 15 minutes… or 1 hour
@@ -91,7 +91,7 @@ As you can see, determining whether a given example is a positive or a negative 
 
 Besides paying attention to your positive and negative definition, there are many other things you need to make sure to get right when defining your training and testing datasets. One such issue is what we call *Time Travelling*. Time traveling is defined as usage of features that originated after the event you are trying to predict. E.g. Your rating a movie is a pretty good prediction of you watching that movie, especially because most ratings happen AFTER you watch the movie.
    
-In simple cases as the example above this effect might seem obvious. However, things can get very tricky when you have many features that come from different sources and pipelines and relate to each other in non-obvious ways. </span></span><span style="font-family: inherit;"><span style="white-space: pre-wrap;">*Time traveling* has the effect of increasing model performance beyond what would seem reasonable. That is why whenever you see an offline experiment with huge wins, the first question you might want to ask yourself is: “Am I time traveling?”.</span></span><span id="docs-internal-guid-b10ab187-3d2a-e838-b4e4-bffc8cd4eb91"></span> And, remember, Time Traveling and positive/negative selection are just two examples of issues you might encounter when defining your training and testing datasets. Just make sure you are thoughtful about how you define all the details of your datasets.
+In simple cases as the example above this effect might seem obvious. However, things can get very tricky when you have many features that come from different sources and pipelines and relate to each other in non-obvious ways. *Time traveling* has the effect of increasing model performance beyond what would seem reasonable. That is why whenever you see an offline experiment with huge wins, the first question you might want to ask yourself is: “Am I time traveling?”. And, remember, Time Traveling and positive/negative selection are just two examples of issues you might encounter when defining your training and testing datasets. Just make sure you are thoughtful about how you define all the details of your datasets.
 
 ## 5. Learn to deal with (the curse of) the Presentation Bias
 
