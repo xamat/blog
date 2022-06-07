@@ -12,7 +12,6 @@ tags:
     - 'recommender systems'
     - recsys
 ---
-[![MLSS 2914](http://mlss2014.com/images/mlsslogo.png)](http://mlss2014.com/index.html)
 
 A couple of weeks ago, I gave a 4 hour lecture on Recommender Systems at the [2014 Machine Learning Summer School at CMU](http://mlss2014.com/index.html). The school was organized by Alex Smola and Zico Kolter and, judging by the attendance and the quality of the speakers, it was a big success. This is the outline of my lecture:
 
