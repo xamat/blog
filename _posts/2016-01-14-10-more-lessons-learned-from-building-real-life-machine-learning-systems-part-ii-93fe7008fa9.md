@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### 10 More lessons learned from building real-life Machine Learning systems — Part II
-
 In [my previous post](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-ml-systems-part-i-b309cafc7b5e#.olhmtobts), I introduced the ten new lessons and described the first five. Let’s directly dive into the final 5.
 
 #### 6. the pains and gains of feature engineering
