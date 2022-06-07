@@ -25,3 +25,6 @@ Slides:
 Video:
 
 [![Tech Talk: Xavier Amatriain (Telefonica) — “The Science and Magic of User and Expert Feedback for Improving Recommendations”](http://player.vimeo.com/video/22353044)](http://vimeo.com/22353044)
+
+<iframe src="https://player.vimeo.com/video/22353044?h=239c114666" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/22353044">Tech Talk: Xavier Amatriain (Telefonica) -- &quot;The Science and Magic of User and Expert Feedback for Improving Recommendations&quot;</a> from <a href="https://vimeo.com/talksatlinkedin">Talks at LinkedIn</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
