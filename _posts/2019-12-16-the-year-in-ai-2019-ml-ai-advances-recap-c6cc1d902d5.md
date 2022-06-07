@@ -11,8 +11,6 @@ categories:
     - Uncategorized
 ---
 
-### The year in AI: 2019 ML/AI advances recap
-
 It has become somewhat of a tradition for me to do an end-of-year retrospective of advances in AI/ML (see [last year’s round up](https://medium.com/@xamat/the-year-in-ai-ml-advances-2018-roundup-db52f7f96358) for example), so here we go again! This year started with a big recognition to the impact of Deep Learning when Hinton, Bengio, and Lecun were awarded [the Turing award](https://www.nytimes.com/2019/03/27/technology/turing-award-ai.html). You might think that after a few years of neck-breaking speed in innovation, this kind of recognition might be signaling that we are getting near some sort of plateau. Well, think again. That is nowhere in sight yet. It is true that hot areas have clearly shifted and while a few years ago image recognition was all the rave this year we have seen more impressive advances in language. I will go into all of this below, but let me start by summarizing the biggest headlines of AI in 2019, in my own very biased opinion:
 
 - Computers learn to talk (i.e. language models like Bert and specially GPT-2 get **scaringly** good)
