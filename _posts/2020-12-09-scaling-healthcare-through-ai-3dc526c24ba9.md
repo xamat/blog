@@ -1,6 +1,6 @@
 ---
 id: 28
-title: "Scaling healthcare through\_AI"
+title: "Scaling healthcare through AI"
 date: '2020-12-09T00:00:00+00:00'
 author: xamat
 layout: post
@@ -12,7 +12,7 @@ categories:
     - Uncategorized
 ---
 
-### Scaling healthcare through AI
+
 
 [Curai](https://www.curaihealth.com/)’s mission is to “provide the world’s best healthcare to everyone”. In order to do so, we strive to scale the reach of an individual physician by creating tools that automate large portions of a medical interaction under their supervision. While our end-goal is to provide full end-to-end medical care to everyone, we initially focus on **primary care**.
 
