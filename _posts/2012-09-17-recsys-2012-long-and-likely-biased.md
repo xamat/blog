@@ -12,7 +12,9 @@ categories:
 
 After a great week in beautiful and sunny Dublin (yes, sunny), it is time to look back and recap on the most interesting things that happened in the 2012 Recsys Conference. I have been attending the conference since its first edition in Minnesota. And, it has been great to see the conference mature to become the premiere event for recommendation technologies. I can’t hide that this is my favorite conference for several reasons: perfect size, great community, good involvement from industry, and good side program of tutorials, workshops, and demos.
 
-<div class="separator" style="clear: both; text-align: center;">[![](http://localhost:8080/wordpress/wp-content/uploads/2012/09/RecsysPhoto.jpg)](http://2.bp.blogspot.com/-xcXMf1FHay8/UFdh0nz61mI/AAAAAAAAAU8/2T15Z0RslTA/s1600/RecsysPhoto.JPG)</div>This year I arrived a bit late and missed the first day of tutorials, and first day of the conference. But, was able to catch up after jumping right in with my 90 minute tutorial on “Building Industrial-scale Real-world Recommender Systems”
+| ![](/blog/images/RecsysPhoto.jpg) |
+
+This year I arrived a bit late and missed the first day of tutorials, and first day of the conference. But, was able to catch up after jumping right in with my 90 minute tutorial on “Building Industrial-scale Real-world Recommender Systems”
 
 In my tutorial ([see slides here](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial)), I talked about the importance of four different issues in real-world recommender systems:
 
