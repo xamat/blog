@@ -12,7 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### The death of the stars: A brief primer on online user ratings
 
 A few weeks back, Netflix [announced](https://about.netflix.com/en/news/two-thumbs-up-even-better-recommendations) that they were adding a two thumbs up option to give feedback on their content. At the same time I was being asked on Twitter why we had given up on 5 star ratings at Netflix back in the day. Given that I have personally spent a lot of time in my career looking into ratings and user feedback, I thought I’d share some of what I have learned not only during my time at Netflix, but also before and after.
 
