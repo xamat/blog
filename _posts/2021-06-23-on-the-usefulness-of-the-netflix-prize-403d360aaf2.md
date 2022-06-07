@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### On the “Usefulness” of the Netflix Prize
-
 It has been over 10 years since the Netflix Prize finished, and I was not expecting to write a blog post about it at this point. However, just in the past couple of weeks I have found myself talking about it extensively both in the context of a [Twitter thread and discussion](https://twitter.com/skyetetra/status/1405243698888118274?s=20), as well as the shooting of an upcoming documentary series. Given that there seems to be continued interest as well as misunderstanding around the prize and its outcome, I thought it might be worth to “set the record straight” in a dedicated post.
 
 ***TLDR****; While I am often misquoted as having said that the Netflix Prize was not useful for Netflix, that is only true about the grand prize winning entry. Along the way, Netflix got far more than our money’s worth for the famous prize.*
