@@ -12,8 +12,6 @@ categories:
     - Uncategorized
 ---
 
-### The 7+1 Habits of Highly Successful Leaders
-
 I recently had a candidate I was interviewing to ask about my leadership style. I gave a short answer, but I was left thinking that I would have liked to continue talking about this for a much longer time. My “style”, if there is such a thing, is composed of several approaches and techniques that I have added through the years. Some of them come from direct experience and trial and error, but others come from reading books. I missed not having had the time to go into more details about some of my favorite leadership “tricks”. I also missed not having mentioned some of the books where I found out about them and recommending them to that candidate.
 
 This post is what I missed saying in that conversation. I have structured some of what I consider to be the most important habits of a leader around recommended readings. Regardless of whether you trust or agree with my advice, I hope this will be at the very list an interesting reading list recommendation. I should also stress that while the focus of this post is on leadership strategies, I hope anyone can benefit from these, regardless of your current position. In fact, hopefully by reading this post I can encourage you to tap to that “leader in you”.
