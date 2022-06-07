@@ -12,9 +12,10 @@ categories:
     - Uncategorized
 ---
 
-**Everything is connected**
 
 You have probably heard of the [butterfly effect](https://en.wikipedia.org/wiki/Butterfly_effect): a distant butterfly flapping its wings can have a hard-to-predict effect on a future event. Everything seems to be connected in the world, and tech companies, let alone startups, are microcosms where that seems to be even more the case.
+
+**Everything is connected**
 
 ![](/blog/images/06-01.png)
 
