@@ -12,8 +12,7 @@ tags:
     - 'recommender systems'
     - recsys
 ---
-
-| ![http://mlss2014.com/images/mlsslogo.png](http://mlss2014.com/index.html) |
+[![MLSS 2914](http://mlss2014.com/images/mlsslogo.png)](http://mlss2014.com/index.html)
 
 A couple of weeks ago, I gave a 4 hour lecture on Recommender Systems at the [2014 Machine Learning Summer School at CMU](http://mlss2014.com/index.html). The school was organized by Alex Smola and Zico Kolter and, judging by the attendance and the quality of the speakers, it was a big success. This is the outline of my lecture:
 
@@ -38,8 +37,8 @@ You can access the slides in Slideshare and the videos in Youtube, but I thought
 
 Here are the slides:
 
-<div style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="356" loading="lazy" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/37206312?rel=0" style="border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; max-width: 100%;" width="427"> </iframe> </div><div style="margin-bottom: 5px;"> **[Recommender Systems (Machine Learning Summer School 2014 @ CMU)](https://www.slideshare.net/xamat/recommender-systems-machine-learning-summer-school-2014-cmu "Recommender Systems (Machine Learning Summer School 2014 @ CMU)")**  from **[Xavier Amatriain](http://www.slideshare.net/xamat)**
-    
+<iframe allowfullscreen="" frameborder="0" height="356" loading="lazy" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/37206312?rel=0" style="border-width: 1px; border: 1px solid #CCC; margin-bottom: 5px; max-width: 100%;" width="427"> </iframe> </div>
+
 Here is the first session (2 hours):
     
 [![First part](https://img.youtube.com/vi/bLhq63ygoU8/0.jpg)](https://www.youtube.com/watch?v=bLhq63ygoU8)
