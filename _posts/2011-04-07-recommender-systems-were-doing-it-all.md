@@ -37,7 +37,9 @@ Now onto the big question: What does this have to do with Recommender Systems an
 So our worry goes now to understanding whether ratings can be treated as interval or they should instead be treated as ordinal data, just as they are in the general case of the likert scale. In order to defend that ratings can be treated as interval, we should have some validation that the distance between different ratings is approximately equal. However, just as in the case of likert scales, we know this is not the case.
 
 Look at this figure from [our previous work](http://localhost:8080/wordpress/2009/04/i-like-it-i-like-it-not-or-how-miss.html) on measuring noise in ratings.  
-![](file:///home/xavier/Sandbox/data/articles/xamat_UMAP09/figs/fig2b.jpg)[![](http://localhost:8080/wordpress/wp-content/uploads/2011/04/fig2b.jpg)](http://4.bp.blogspot.com/-0BzBRalrIDo/TZ4xEitd5EI/AAAAAAAAAKs/1l2M5Og6dEo/s1600/fig2b.jpg)Here we are plotting the probability of finding different kinds of inconsistencies between pairs of ratings. The probability that a user changes her rating between 2 and 3 is almost 0.35 while the probability she changes between 4 and 5 goes down to almost 0.1. This is a clear indication that users perceive that the distance between a 2 and a 3 is much lower than between a 4 and a 5.
+![](file:///home/xavier/Sandbox/data/articles/xamat_UMAP09/figs/fig2b.jpg)[![](http://localhost:8080/wordpress/wp-content/uploads/2011/04/fig2b.jpg)](http://4.bp.blogspot.com/-0BzBRalrIDo/TZ4xEitd5EI/AAAAAAAAAKs/1l2M5Og6dEo/s1600/fig2b.jpg)
+
+Here we are plotting the probability of finding different kinds of inconsistencies between pairs of ratings. The probability that a user changes her rating between 2 and 3 is almost 0.35 while the probability she changes between 4 and 5 goes down to almost 0.1. This is a clear indication that users perceive that the distance between a 2 and a 3 is much lower than between a 4 and a 5.
 
 <span style="font-weight: bold;">Consequences</span>
 
