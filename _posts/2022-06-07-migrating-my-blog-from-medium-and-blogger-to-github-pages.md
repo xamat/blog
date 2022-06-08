@@ -13,7 +13,7 @@ categories:
 ---
 
 
-In case you are reading this post in my now Medium mirror, you can access the result of this migration [here] (https://xamat.github.io/blog/).
+In case you are reading this post in my now Medium mirror, you can access the result of this migration [here](https://xamat.github.io/blog/).
 
 For quite some time I have been pretty disappointed with my current [Medium blog](https://xamat.medium.com). It has been sad to see how much Medium has failed as a product. On the one hand, the tools and services for writers are horrible (as an example, they recently removed the ability to edit on mobile!). On the other hand, Medium distribution is completely dead. I get most of my views through Twitter and LinkedIn, and any of my Quora answers gets orders of magnitude more reads than my Medium post. Finally, they are not friendly to readers either (and they make it harder and harder to find the damn Friends Link). I have felt captive to Medium for the only reason that I did not have enough time to invest into alternatives. But, I thought that I just HAD TO. Here’s what I learned in the process of “freeing” my posts from Medium. In doing so, I also thought it would be a good idea to bring along my old [Blogger posts](https://technocalifornia.blogspot.com/ ).
 
