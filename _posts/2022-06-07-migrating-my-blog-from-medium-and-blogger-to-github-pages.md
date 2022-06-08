@@ -77,6 +77,6 @@ After going through all those steps, I did have to waste some time in formatting
 
 ## What is next?
 
-Jekyll has a lot of extensions and plugins too, and I haven’t even scratched the surface. I plan on adding more capabilities to my new blog. In particular, I need to add stats to keep track of the visits as well as comments.
+I have just edited my Jekyll posts with the bare minimum. I have not even added labels and categories, nor explored styling options. Similarly, Jekyll has a lot of extensions and plugins too, and I haven’t even scratched the surface. I plan on adding more capabilities to my new blog. In particular, I need to add stats to keep track of the visits as well as comments.
 
 In the meantime, I will continue to cross-post in Medium just as an experiment. I am interested in seeing what happens on Medium if I don’t share any of my posts externally. Over time though I plan to shut it down. The only question is whether Medium itself will shut down sooner than that, judging by its lack of progress and promise.
