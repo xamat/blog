@@ -10,6 +10,8 @@ reading_time:
     - ''
 categories:
     - Uncategorized
+image: /blog/images/90-05.png
+
 ---
 
 
@@ -64,6 +66,10 @@ I should have kept better notes of what exactly worked, since I had to try a com
 The final step, although you could really start here particularly if you don’t have much old content to transfer, is to create a Jekyll blog on Github pages. [Jekyll] (https://jekyllrb.com/) is a wonderful little framework that enables you to create webpages and blogs fairly easily by using a simplified markup language and some configuration files. It has the added benefit of being fully and directly compatible with Github pages. So, all you need to do is start a Jekyll compatible repository on Github, and Github will render it! 
 
 Taking all of this into account, I decided that the easiest way to start would be to fork an existing Jekyll blog. Lo and behold, while reading [this howto guide](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ ),  I found [Jekyll-now](https://github.com/barryclark/jekyll-now), a popular Jekyll blog template that has been forked a whooping 34k times. I forked the project into [my github](https://github.com/xamat/blog ), pushed the blogs that I had exported into it, and was up and running in no time. As a side note, because I did not want to host the blog directly in my Github Pages root (i.e. xamat.github.io), I had to create the fork into a gh-pages branch (see documentation [here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site )).
+
+## The result
+
+![](/blog/images/90-05.png)
 
 ## The ugly
 
