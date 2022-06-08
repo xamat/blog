@@ -17,7 +17,7 @@ In case you are reading this post in my now Medium mirror, you can access the re
 
 For quite some time I have been pretty disappointed with my current [Medium blog](https://xamat.medium.com). It has been sad to see how much Medium has failed as a product. On the one hand, the tools and services for writers are horrible (as an example, they recently removed the ability to edit on mobile!). On the other hand, Medium distribution is completely dead. I get most of my views through Twitter and LinkedIn, and any of my Quora answers gets orders of magnitude more reads than my Medium post. Finally, they are not friendly to readers either (and they make it harder and harder to find the damn Friends Link). I have felt captive to Medium for the only reason that I did not have enough time to invest into alternatives. But, I thought that I just HAD TO. Here’s what I learned in the process of “freeing” my posts from Medium. In doing so, I also thought it would be a good idea to bring along my old [Blogger posts](https://technocalifornia.blogspot.com/ ).
 
-![](/blog/images/90-1.png)
+![](/blog/images/90-01.png)
 
 ## Alternatives
 
@@ -47,16 +47,16 @@ The first thing you need to get in order to follow this route is to install Word
 
 Once you have XAMPP installed, you still need to install Wordpress. The most tricky part of that [“5 minutes installation”](https://wordpress.org/support/article/how-to-install-wordpress/ ) is to get the mySQL database started, but you can find good articles such as [this one](https://wordpress.org/support/article/creating-database-for-wordpress/ ) that will guide you through the process. 
 
-![](/blog/images/90-2.png)
+![](/blog/images/90-02.png)
 
-![](/blog/images/90-3.png)
+![](/blog/images/90-03.png)
 
 
 Once you are done with the installation, you should be ready to go. You will be able to use Wordpress locally. From Wordpress, you can install plugins to import content from Medium and Blogger (or wherever you have your old blog) into Medium, and from Wordpress to markup for then taking to your Jekyll blog. Basically you can use Wordpress as the ultimate tool to import and export content from anything to anything. I ended up using a few plugins including Blogger Importer, Blogger Importer Extended, Wordpress Importer, WP Smart Import, Wordpress Importer, Wordpress to Jekyll Exporter, and Auto Upload Images.
 
 I should have kept better notes of what exactly worked, since I had to try a combination of different things, but for importing the Medium content, I basically had used the [following tool](https://mediumtowp.com/) as explained [here](https://themeisle.com/blog/migrate-medium-to-wordpress/) .I did have to add auto upload image plugin though, and even with that I struggled with images and had to use the script above. But, a combination of the above should more or less work, and you should soon have all your posts in Wordpress ready to edit and/or export to Jekyll markup.
 
-![](/blog/images/90-4.png)
+![](/blog/images/90-04.png)
 
 
 ## Creating your Jekyll blog on Github Pages
