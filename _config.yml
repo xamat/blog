@@ -12,7 +12,7 @@ description: Musings on AI, software, technology, and people. Catalan in The Val
 avatar: /blog/images/xamat_twitter.jpeg
 
 # Remote theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 #
 # Flags below are optional
@@ -67,10 +67,16 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-include-cache # Add minimial mistakes theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
 # Exclude these files from your production _site
 # - Gemfile
