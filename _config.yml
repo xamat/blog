@@ -11,6 +11,9 @@ description: Musings on AI, software, technology, and people. Catalan in The Val
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /blog/images/xamat_twitter.jpeg
 
+# Remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 #
 # Flags below are optional
 #
