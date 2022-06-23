@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: AI, software, tech, and people... by X
+title: AI, software, tech, and people, not in that order... by X
 email:
 description: Musings on AI, software, technology, and people. Catalan in The Valley.
 twitter_username: xamat
