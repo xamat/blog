@@ -3,7 +3,7 @@ id: 68
 title: 'Blog posts and Summer gigs'
 date: '2014-06-20T21:03:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /blog-posts-and-summer-gigs/
 categories:
     - Uncategorized

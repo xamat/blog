@@ -3,7 +3,7 @@ id: 22
 title: "The year in AI: 2019 ML/AI advances\_recap"
 date: '2019-12-16T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 reading_time:
     - ''
     - ''

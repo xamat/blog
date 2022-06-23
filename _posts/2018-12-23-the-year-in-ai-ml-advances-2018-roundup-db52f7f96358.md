@@ -3,7 +3,7 @@ id: 11
 title: "The year in AI/ML advances: 2018\_roundup"
 date: '2018-12-23T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /the-year-in-ai-ml-advances-2018-roundup-db52f7f96358/
 reading_time:
     - ''

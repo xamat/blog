@@ -3,7 +3,7 @@ id: 14
 title: "The Memo\_Culture"
 date: '2018-07-01T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /the-memo-culture-41a2debefe2d/
 reading_time:
     - ''

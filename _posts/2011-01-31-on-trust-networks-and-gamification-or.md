@@ -3,7 +3,7 @@ id: 92
 title: 'On Trust Networks and Gamification. Or How Quora can overcome its Hype and embrace long-term Success'
 date: '2011-01-31T21:26:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /on-trust-networks-and-gamification-or/
 categories:
     - Uncategorized

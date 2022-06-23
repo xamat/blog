@@ -3,7 +3,7 @@ id: 9
 title: "The death of the stars: A brief primer on online user\_ratings"
 date: '2022-05-30T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /the-death-of-the-stars-a-brief-primer-on-online-user-ratings-6740453f27ed/
 reading_time:
     - ''

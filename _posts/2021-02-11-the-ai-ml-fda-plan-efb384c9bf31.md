@@ -3,7 +3,7 @@ id: 18
 title: "The AI/ML FDA Plan"
 date: '2021-02-11T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /the-ai-ml-fda-plan-efb384c9bf31/
 reading_time:
     - ''

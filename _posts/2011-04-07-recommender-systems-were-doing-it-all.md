@@ -3,7 +3,7 @@ id: 88
 title: 'Recommender Systems: We&#8217;re doing it (all) wrong'
 date: '2011-04-07T20:59:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /recommender-systems-were-doing-it-all/
 image: /wp-content/uploads/2011/04/fig2b.jpg
 categories:

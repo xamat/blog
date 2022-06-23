@@ -3,7 +3,7 @@ id: 91
 title: 'Managing Research the Agile Way'
 date: '2011-03-15T10:56:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /managing-research-agile-way/
 categories:
     - Uncategorized

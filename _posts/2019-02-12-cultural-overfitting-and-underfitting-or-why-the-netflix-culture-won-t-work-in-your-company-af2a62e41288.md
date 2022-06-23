@@ -3,7 +3,7 @@ id: 23
 title: "Cultural over/under-fitting and transfer learning. Or why the “Netflix Culture” won’t work in your\_company."
 date: '2019-02-12T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /cultural-overfitting-and-underfitting-or-why-the-netflix-culture-won-t-work-in-your-company-af2a62e41288/
 reading_time:
     - ''

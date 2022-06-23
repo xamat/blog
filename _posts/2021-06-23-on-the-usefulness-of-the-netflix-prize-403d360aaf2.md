@@ -3,7 +3,7 @@ id: 26
 title: "On the “Usefulness” of the Netflix\_Prize"
 date: '2021-06-23T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /on-the-usefulness-of-the-netflix-prize-403d360aaf2/
 reading_time:
     - ''

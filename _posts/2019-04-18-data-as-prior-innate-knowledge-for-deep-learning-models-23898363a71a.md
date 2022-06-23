@@ -3,7 +3,7 @@ id: 31
 title: "Data as Prior/Innate knowledge for Deep Learning\_models"
 date: '2019-04-18T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /data-as-prior-innate-knowledge-for-deep-learning-models-23898363a71a/
 reading_time:
     - ''

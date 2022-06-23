@@ -3,7 +3,7 @@ id: 73
 title: '10 Little lessons for life that I learned from running'
 date: '2013-01-16T06:50:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /10-little-lessons-for-life-that-i/
 image: /blog/images/ChicagoFinisher.jpg
 categories:

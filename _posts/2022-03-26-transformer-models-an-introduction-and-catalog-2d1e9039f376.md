@@ -3,7 +3,7 @@ id: 35
 title: "Transformer models: an introduction and catalog — 2022\_Edition"
 date: '2022-03-26T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
 reading_time:
     - ''

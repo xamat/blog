@@ -3,7 +3,7 @@ id: 75
 title: 'Recsys 2012: A long (and likely biased) summary'
 date: '2012-09-17T17:47:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /recsys-2012-long-and-likely-biased/
 image: /wp-content/uploads/2012/09/RecsysPhoto.jpg
 categories:

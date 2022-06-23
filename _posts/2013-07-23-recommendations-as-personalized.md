@@ -3,7 +3,7 @@ id: 69
 title: 'Recommendations as Personalized Learning to Rank'
 date: '2013-07-23T18:50:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /recommendations-as-personalized/
 image: /blog/imagesTwoDimensionalRanking.png
 categories:

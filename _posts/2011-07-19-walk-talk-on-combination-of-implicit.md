@@ -3,7 +3,7 @@ id: 86
 title: 'Walk the Talk: On the Combination of Implicit and Explicit Feedback'
 date: '2011-07-19T05:32:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /walk-talk-on-combination-of-implicit/
 image: /wp-content/uploads/2011/07/up-box.png
 categories:

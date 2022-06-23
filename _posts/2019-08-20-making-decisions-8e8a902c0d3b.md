@@ -3,7 +3,7 @@ id: 30
 title: 'Making decisions in an organization'
 date: '2019-08-20T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /making-decisions-8e8a902c0d3b/
 reading_time:
     - ''

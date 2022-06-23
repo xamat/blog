@@ -3,7 +3,7 @@ id: 93
 title: 'Did you prepare your talk?'
 date: '2010-11-17T00:12:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /did-you-prepare-your-talk/
 image: /wp-content/uploads/2010/11/ted-presenter.jpg
 categories:

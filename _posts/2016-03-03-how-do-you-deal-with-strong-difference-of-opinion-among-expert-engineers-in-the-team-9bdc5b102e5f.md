@@ -3,7 +3,7 @@ id: 17
 title: "How do you deal with strong difference of opinion among expert engineers in the\_team?"
 date: '2016-03-03T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /how-do-you-deal-with-strong-difference-of-opinion-among-expert-engineers-in-the-team-9bdc5b102e5f/
 reading_time:
     - ''

@@ -1,76 +1,52 @@
+# Welcome to Jekyll!
 #
-# This file contains configuration flags to customize your site
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Name of your site (displayed in the header)
-name: Xavier Amatriain
-
-# Short bio or description (displayed in the header)
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: AI, software, tech, and people... by X
+email:
 description: Musings on AI, software, technology, and people. Catalan in The Valley.
+twitter_username: xamat
+github_username: xamat
+minimal_mistakes_skin: dirt
+search: true
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /blog/images/xamat_twitter.jpeg
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Remote theme
-remote_theme: mmistakes/minimal-mistakes@4.24.0
+include:
+  - _pages
 
-#
-# Flags below are optional
-#
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
-# Includes an icon in the footer for each username you enter
-# TODO: add links for Scholar, arxiv, Quora, maybe Slideshare
-footer-links:
-  twitter: xamat
-  github: xamat
-  linkedin: xamatriain
-  rss: subscribe  
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:UA-1091846-5
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: "https://xamat.github.io"
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: "/blog"
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
+# Plugins (previously gems:)
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-include-cache # Add minimial mistakes theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -78,10 +54,59 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# Exclude these files from your production _site
-# - Gemfile
-# - Gemfile.lock
-exclude: 
-  - LICENSE
-  - README.md
-  - CNAME
+author:
+  name   : "Xavier Amatriain"
+  avatar : "../blog/images/xamat_twitter.jpeg"
+  bio    : "Cofounder-CTO at Curai Health. Former Quora VP Eng. Led ML algos at Netflix. ML, AI, eHealth, Recsys, Software. Catalan in the Valley. Runner & Ironman - amatriain.eth"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://xavier.amatriain.net"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/xamat"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/xamat"
+    - label: "Quora"
+      icon: "fab fa-fw fa-quora"
+      url: "https://quora.com/profile/Xavier-Amatriain"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/xamat"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/xamat"
+    - label: "Quora"
+      icon: "fab fa-fw fa-quora"
+      url: "https://quora.com/profile/Xavier-Amatriain"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

@@ -3,7 +3,7 @@ id: 10
 title: 'On Decoupling'
 date: '2021-01-31T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /on-decoupling-af1ecc539a98/
 reading_time:
     - ''

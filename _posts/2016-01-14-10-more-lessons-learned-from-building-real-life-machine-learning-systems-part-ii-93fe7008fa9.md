@@ -3,7 +3,7 @@ id: 36
 title: "10 More lessons learned from building real-life Machine Learning systems — Part\_II"
 date: '2016-01-14T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-ii-93fe7008fa9/
 reading_time:
     - ''

@@ -3,7 +3,7 @@ id: 6
 title: 'Football or Futbol? Or why Deep Learning will not make other Machine Learning approaches obsolete'
 date: '2016-04-20T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /football-or-futbol-or-why-deep-learning-will-not-make-other-machine-learning-approaches-obsolete-666658ed4167/
 reading_time:
     - ''

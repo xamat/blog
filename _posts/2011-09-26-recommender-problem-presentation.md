@@ -3,7 +3,7 @@ id: 82
 title: 'The Recommender Problem &#038; the Presentation Context'
 date: '2011-09-26T06:41:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /recommender-problem-presentation/
 image: /wp-content/uploads/2011/09/NetflixInterface.jpg
 categories:

@@ -3,7 +3,7 @@ id: 81
 title: 'Recsys 2011 &#8211; Notes and Pointers'
 date: '2011-11-03T04:29:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /recsys-2011-notes-and-pointers/
 categories:
     - Uncategorized

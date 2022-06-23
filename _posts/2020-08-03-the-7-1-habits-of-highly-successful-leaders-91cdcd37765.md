@@ -3,7 +3,7 @@ id: 24
 title: 'The 7+1 Habits of Highly Successful Leaders'
 date: '2020-08-03T00:00:00+00:00'
 author: xamat
-layout: post
+##layout: post
 permalink: /the-7-1-habits-of-highly-successful-leaders-91cdcd37765/
 reading_time:
     - ''

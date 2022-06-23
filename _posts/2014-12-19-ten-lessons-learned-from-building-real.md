@@ -3,7 +3,7 @@ id: 65
 title: 'Ten Lessons Learned from Building (real-life impactful) Machine Learning Systems'
 date: '2014-12-19T06:50:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /ten-lessons-learned-from-building-real/
 image: /blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png
 categories:

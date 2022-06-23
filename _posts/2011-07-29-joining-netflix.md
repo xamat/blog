@@ -3,7 +3,7 @@ id: 84
 title: 'Joining Netflix'
 date: '2011-07-29T04:49:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /joining-netflix/
 image: /wp-content/uploads/2011/07/2011-07-202B08.19.53.jpg
 categories:

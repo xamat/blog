@@ -3,7 +3,7 @@ id: 90
 title: 'The Science and the Magic of User Feedback'
 date: '2011-03-18T15:25:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /science-and-magic-of-user-feedback/
 categories:
     - Uncategorized

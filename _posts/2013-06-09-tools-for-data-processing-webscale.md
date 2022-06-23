@@ -3,7 +3,7 @@ id: 71
 title: 'Tools for Data Processing @ Webscale'
 date: '2013-06-09T18:19:00+00:00'
 author: 'Xavier Amatriain'
-layout: post
+##layout: post
 permalink: /tools-for-data-processing-webscale/
 image: /blog/images/ParquetTwitter-Poster.jpg
 categories:
