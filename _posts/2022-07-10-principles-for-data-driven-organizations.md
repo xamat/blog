@@ -19,7 +19,7 @@ image: /blog/images/91-01.png
 
 ## What does it mean to be “data driven”?
 
-** Data driven ** is a somewhat controversial term that has many definitions and interpretations. In fact, many argue that being data driven can harm organizations, and instead argue that they should be [“data informed”][https://www.scuba.io/blog/data-driven-vs-data-informed#:~:text=This%20is%20the%20fundamental%20difference,a%20check%20on%20your%20intuition.].  I believe that this stems from an incorrect interpretation of the term. Because of this, it is worth to start by clearly stating what we mean by it:
+**Data driven** is a somewhat controversial term that has many definitions and interpretations. In fact, many argue that being data driven can harm organizations, and instead argue that they should be [data informed][https://www.scuba.io/blog/data-driven-vs-data-informed#:~:text=This%20is%20the%20fundamental%20difference,a%20check%20on%20your%20intuition.].  I believe that this stems from an incorrect interpretation of the term. Because of this, it is worth to start by clearly stating what we mean by it:
 
 A data driven organization is one that makes decisions that are informed by quality data whenever possible. In order to do this, the organization seeks data proactively, and invests in mechanisms and tools that enable quality data to be available whenever the decision will be made.
 
@@ -99,36 +99,36 @@ As alluded to in the sections above, there are different tools for being data-dr
 
 The “data-driven grade” is a relative metric that attempts to quantify how much the tool enables or facilitates the tenets above.
 
-** Dashboards **
+**Dashboards**
 
-** Use when: ** There is an actionable metric that you need to keep track of and need to look at frequently (e.g. more than weekly).
-** Data-driven grade: ** C 
-** Why: ** While end users tend to love dashboards because they are flexible and easy to use, they hardly ever lead to good data driven decisions, they are costly to maintain, and can easily lead to metrics death spiral.
+**Use when:** There is an actionable metric that you need to keep track of and need to look at frequently (e.g. more than weekly).
+**Data-driven grade:** C 
+**Why:** While end users tend to love dashboards because they are flexible and easy to use, they hardly ever lead to good data driven decisions, they are costly to maintain, and can easily lead to metrics death spiral.
 
-** Ad hoc Data Report **
+**Ad hoc Data Report**
 
-** Use when: ** There is an actionable metric that you need to understand at a point in time to make a decision, but you do not anticipate having to track over time.
-** Data-driven grade:** A 
-** Why: ** While ad hoc reports are not generally flexible and require work from specialists, they can be a good tool for analyzing situations without generating unnecessary complexity and maintenance. 
+**Use when:** There is an actionable metric that you need to understand at a point in time to make a decision, but you do not anticipate having to track over time.
+**Data-driven grade:** A 
+**Why:** While ad hoc reports are not generally flexible and require work from specialists, they can be a good tool for analyzing situations without generating unnecessary complexity and maintenance. 
 
-** Periodic Report **
+**Periodic Report**
  
-** Use when: ** There is an actionable metric that you need to understand periodically to make a decision, and anticipate having to track every now and then to revise the decision..
-** Data-driven grade: ** A-
-** Why: ** A periodical data report is simply a bit more cumbersome to maintain than an ad hoc report. However, it is a great tool to highlight trends and changes in the metrics that are already part of the hierarchy
+**Use when:** There is an actionable metric that you need to understand periodically to make a decision, and anticipate having to track every now and then to revise the decision..
+**Data-driven grade:** A-
+**Why:** A periodical data report is simply a bit more cumbersome to maintain than an ad hoc report. However, it is a great tool to highlight trends and changes in the metrics that are already part of the hierarchy
 
-** A/B Test **
+**A/B Test**
 
-** Use when:  **You are making a change to the product/service for which you need a reliable response on whether the hypothesis is correct. Importantly, only to be used if the volume of data that will be gathered allows for the result to be significant (note that this depends on things like the duration of the experiment, but also whether you are measuring differences upstream of the funnel or deep in the product).
-** Data-driven grade: ** A+
-** Why: ** A/B tests promote hypothesis driven development and are a key component of most data driven organizations. They are costly to set up, and generally not very flexible for the end user who receives the results. However, they get us close to understanding the “why” and therefore enable us to make good data driven decisions. 
+**Use when:** You are making a change to the product/service for which you need a reliable response on whether the hypothesis is correct. Importantly, only to be used if the volume of data that will be gathered allows for the result to be significant (note that this depends on things like the duration of the experiment, but also whether you are measuring differences upstream of the funnel or deep in the product).
+**Data-driven grade:** A+
+**Why:** A/B tests promote hypothesis driven development and are a key component of most data driven organizations. They are costly to set up, and generally not very flexible for the end user who receives the results. However, they get us close to understanding the “why” and therefore enable us to make good data driven decisions. 
 
-** Tracking metrics change due to a product launch **
+**Tracking metrics change due to a product launch**
 
-** Use when: ** You want to understand the impact of a product change, but cannot afford to do an A/B test because you cannot meet necessary criteria (e.g. amount of data) or doing that could be too complex or costly. Note that you can track a product launch related metric using any of the first three tools described (dashboard, ad-hoc report, or periodic report). The pros/cons will depend on this choice.
-** Data-driven grade: ** B-
+**Use when:** You want to understand the impact of a product change, but cannot afford to do an A/B test because you cannot meet necessary criteria (e.g. amount of data) or doing that could be too complex or costly. Note that you can track a product launch related metric using any of the first three tools described (dashboard, ad-hoc report, or periodic report). The pros/cons will depend on this choice.
+**Data-driven grade:** B-
 
 
-** Others **
+**Others**
 
 There are other tools for data driven decision making that are beyond the scope of this post. For example, for experiments, besides A/B testing, you can use Quasi-experiments, interleaved experiments, or multi-armed bandits. If there is interest, and I have time, I might get to them in a second part.
