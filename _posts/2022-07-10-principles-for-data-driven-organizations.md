@@ -1,7 +1,7 @@
 ---
 id: 91
 title: "Principles for data driven organizations"
-date: '2022-07-10T00:00:00+00:00'
+date: '2022-07-09T00:00:00+00:00'
 author: xamat
 permalink: /data-driven
 reading_time:
