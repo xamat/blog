@@ -38,7 +38,7 @@ There are many aspects involved in making data driven decisions. I summarize the
 
 In the following sections, I describe the tenets or principles that drive each of those pillars. Note that these tenets should be operationalized by tools and mechanisms to support them in different teams. They are important because everyone in a data driven organization should agree to work together towards them and to call out whenever they are being compromised.
 
-### Hypothesis-driven development
+### Hypothesis-driven product development
 
 It is very hard to answer questions using past data, particularly when that data is limited or questionable. When data is extracted and prepared after the fact, it is very likely that this data is much lower quality than if we had made sure that it was going to be generated appropriately beforehand. There is also the danger of over-manipulating past data to fit your current assumptions. That is why we should strive to ask questions first, and then proactively design experiments to gather the kind of data that will answer them.
 
