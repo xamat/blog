@@ -14,7 +14,7 @@ image: /blog/images/91-01.png
 ---
 
 
-![](/blog/images/91-01.png)
+![](/blog/images/91-01.jpeg)
 
 
 ## What does it mean to be “data driven”?
@@ -90,7 +90,7 @@ Everyone in a data driven organization should be able to access the data and met
 
 Access to data or metrics without context, and a minimum level of preparation might be counterproductive though (see example below). As a rule of thumb, an individual in a data driven organization should probably understand and care about the metrics that are directly connected to their team goals. This is probably a combination of a small subset of metrics at the appropriate level in the metrics hierarchy, and the top level metrics that are important for everyone.
 
-![](/blog/images/91-03.png)
+![](/blog/images/91-03.jpeg)
 
 
 ## Appendix: The right tool for the job
