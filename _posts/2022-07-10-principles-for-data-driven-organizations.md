@@ -19,7 +19,7 @@ image: /blog/images/91-01.png
 
 ## What does it mean to be “data driven”?
 
-**Data driven** is a somewhat controversial term that has many definitions and interpretations. In fact, many argue that being data driven can harm organizations, and instead argue that they should be [data informed][https://www.scuba.io/blog/data-driven-vs-data-informed#:~:text=This%20is%20the%20fundamental%20difference,a%20check%20on%20your%20intuition.].  I believe that this stems from an incorrect interpretation of the term. Because of this, it is worth to start by clearly stating what we mean by it:
+**Data driven** is a somewhat controversial term that has many definitions and interpretations. In fact, many argue that being data driven can harm organizations, and instead argue that they should be [data informed][https://www.scuba.io/blog/data-driven-vs-data-informed#:~:text=This%20is%20the%20fundamental%20difference,a%20check%20on%20your%20intuition] .  I believe that this stems from an incorrect interpretation of the term. Because of this, it is worth to start by clearly stating what we mean by it:
 
 A data driven organization is one that makes decisions that are informed by quality data whenever possible. In order to do this, the organization seeks data proactively, and invests in mechanisms and tools that enable quality data to be available whenever the decision will be made.
 
