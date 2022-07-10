@@ -25,7 +25,7 @@ A data driven organization is one that makes decisions that are informed by qual
 
 Note that being data driven does not mean that every single decision is made by looking at data. As much as we might seek quality data, there will be times that this data is unobtainable. unavailable, or of low quality. In those situations other mechanisms for ensuring the quality of the decision will be necessary.
 
-I believe that other terms such as the aforementioned “data informed” are ill suited because they convey too much of a passive attitude towards data in which data is assumed to “exist” and needs to be interpreted subjectively, and even “mistrusted”. This leads to posthoc data reads that in the most extreme case derive in organizations deciding after the fact whether the story tells the story they want to hear or needs to be discarded.
+I believe that other terms such as the aforementioned “data informed” are ill suited because they convey too much of a passive attitude towards data in which data is assumed to “exist” and needs to be interpreted subjectively, and even “mistrusted”. This leads to posthoc data reads that in the most extreme case derive in organizations deciding after the fact whether the data tells the story they want to hear or needs to be discarded.
 
 ## The pillars of a data driven decision culture
 
