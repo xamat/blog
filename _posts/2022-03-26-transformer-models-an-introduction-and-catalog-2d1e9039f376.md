@@ -16,7 +16,16 @@ categories:
 
 ![](/blog/images/02-01.jpeg)
 
+**Update 07/19/2022**
+
+Just 3 months after my previous update I felt like there was already a "long overdued" further update. That is how quickly the field is evolving. In this recent update I have added the new class of text to image transformers, all the way from diffusion models to DALL-E2, CLIP, and Imagen. Another class of Transformer models I added are those that allow to use transformers to model an arbitrary agent with RL applications such as playing Atari or controling a robotic arm. Those include Trajectory Transformers, Decision Transformers, and Deepmind's GATO. I have also included the latest open source BLOOM model. The full list of newcomers to the catalog: BLOOM, CLIP, DALL-E2, Decision and Trajectory Transformers, Flamingo, Gato, DQ-BART, GLaM, GLIDE, GC-ViT, Imagen, LAMDA, Minerva, OPT, PaLM, and Switch.
+
+Another novelty in this edition of the catalog is that I have added the "lab" behind each of these Transformer models. I realized during my usage of the catalog that associating the original lab where the model was developed made a lot of sense and was not always obvious. Finally, I added a Catalog Index to facilitate browsing. Enjoy!
+
+
 **Catalog Index**
+
+Click on the list to access a Tranformer model directly or keep reading below for more context and explanations.
 
 - [ALBERT](#albert)
 - [BART](#BART)
@@ -68,11 +77,6 @@ categories:
 - [XLM-RoBERTa](#XMLROBERTA)
 - [XLNet](#XLNET)
 
-**Update 07/19/2022**
-
-Just 3 months after my previous update I felt like there was already a "long overdued" further update. That is how quickly the field is evolving. In this recent update I have added the new class of text to image transformers, all the way from diffusion models to DALL-E2, CLIP, and Imagen. Another class of Transformer models I added are those that allow to use transformers to model an arbitrary agent with RL applications such as playing Atari or controling a robotic arm. Those include Trajectory Transformers, Decision Transformers, and Deepmind's GATO. I have also included the latest open source BLOOM model. The full list of newcomers to the catalog: BLOOM, CLIP, DALL-E2, Decision and Trajectory Transformers, Flamingo, Gato, DQ-BART, GLaM, GLIDE, GC-ViT, Imagen, LAMDA, Minerva, OPT, PaLM, and Switch.
-
-Another novelty in this edition of the catalog is that I have added the "lab" behind each of these Transformer models. I realized during my usage of the catalog that associating the original lab where the model was developed made a lot of sense and was not always obvious. Enjoy!
 
 **Update 04/02/2022**
 
