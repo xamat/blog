@@ -18,7 +18,7 @@ categories:
 
 **Test**
 
-- [Albert][#albert] 
+- [Albert](#albert) 
 
 **Update 07/19/2022**
 
