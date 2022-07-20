@@ -142,6 +142,9 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Corpus:*** *Same as BERT*
 
+> ***Lab:*** *Google*
+ 
+
 [BART](https://huggingface.co/docs/transformers/model_doc/bart)
 
 > ***Family:*** *BERT for encoder, GPT for Decoder*
@@ -162,6 +165,9 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > *and web text)*
 
+> ***Lab:*** *Facebook*
+ 
+
 [BERT](https://huggingface.co/docs/transformers/model_doc/bert)
 
 > ***Family:*** *BERT*
@@ -180,6 +186,9 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Corpus:*** *Toronto Book Corpus and Wikipedia (3.3B Tokens)*
 
+> ***Lab:*** *Google*
+
+
 [Big Bird](https://huggingface.co/docs/transformers/model_doc/big_bird)
 
 > ***Family:***
@@ -197,6 +206,9 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Num. Params:*** *Depends on the overall architecture*
 
 > ***Corpus:*** *Books, CC-News, Stories and Wikipedia*
+
+> ***Lab:*** *Google*
+
 
 [BLOOM](https://huggingface.co/docs/transformers/model_doc/bloom)
 
@@ -235,6 +247,9 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > **Num. Params:** 70B
 
 > **Corpus:** Massive Text
+
+> ***Lab:*** *Deepmind*
+
 
 [CLIP](https://huggingface.co/docs/transformers/model_doc/clip)
 
@@ -276,6 +291,9 @@ across a batch actually occurred*
 > ***Num. Params:*** *1.63B*
 
 > ***Corpus:*** *140 GB of text including: Wikipedia (En, De, Es, Fr), Project Gutenberg, 45 subreddits, OpenWebText2, Amazon Reviews, Europarl and UN data from WMT, question-answer pairs from ELI5, and the MRQA shared task3, which includes the Stanford Question Answering Dataset, NewsQA, TriviaQA, SearchQA, HotpotQA , and Natural Questions*
+
+> ***Lab:*** *Salesforce*
+
 
 [DALL-E](https://openai.com/blog/dall-e/)
 
@@ -357,6 +375,9 @@ across a batch actually occurred*
 
 > ***Corpus:*** *140M Reddit conversations*
 
+> ***Lab:*** *Microsoft*
+
+
 [DistilBERT](https://huggingface.co/docs/transformers/model_doc/distilbert)
 
 > ***Family:*** *BERT*
@@ -374,6 +395,9 @@ across a batch actually occurred*
 > ***Num. Params:*** *66M*
 
 > ***Corpus:*** *Same as BERT*
+
+> ***Lab:*** *Huggingface*
+
 
 [DQ-BART](https://arxiv.org/abs/2203.11239)
 
@@ -413,6 +437,9 @@ across a batch actually occurred*
 
 > ***Corpus:*** *Same as BERT except for Large with is same as XLNet*
 
+> ***Lab:*** *Stanford/Google*
+
+
 [ERNIE](https://arxiv.org/abs/1905.07129)
 
 > ***Family:*** *BERT*
@@ -430,6 +457,9 @@ across a batch actually occurred*
 > ***Num. Params:*** *114M*
 
 > ***Corpus:*** *English Wikipedia + Wikidata for entitites (note that they initialize model to original BERT parameter values*
+
+> ***Lab:*** *Various Chinese institutions*
+
 
 [Flamingo](https://arxiv.org/abs/2204.14198)
 
@@ -551,6 +581,9 @@ across a batch actually occurred*
 
 > **Corpus:** Massive Text (2.35 billion documents, or about 10.5 TB of text including Massive Web, Books, Github, News, C4, and Wikipedia.
 
+> ***Lab:*** *Deepmind*
+
+
 [GPT](https://huggingface.co/docs/transformers/model_doc/openai-gpt)
 
 > ***Family:*** *GPT*
@@ -569,6 +602,9 @@ across a batch actually occurred*
 
 > ***Corpus:*** *Unsupervised Pretraining on BookCorpus dataset. Supervised Finetuning on several task-specific datasets including SNLI, RACE, Quora…*
 
+> ***Lab:*** *OpenAI*
+
+
 [GPT-2](https://huggingface.co/docs/transformers/model_doc/gpt2)
 
 > ***Family:*** *GPT*
@@ -586,6 +622,9 @@ across a batch actually occurred*
 > ***Num. Params:*** *1.5B*
 
 > ***Corpus:*** *8 million web pages (40 GB). 10X GPT . WebText dataset is created by crawling all links at Reddit with at least 3 Karma points.*
+
+> ***Lab:*** *OpenAI*
+
 
 [GPT-3](https://github.com/openai/gpt-3)
 
@@ -607,6 +646,9 @@ across a batch actually occurred*
 
 > ***Corpus:*** *~ 500B tokens including CommonCrawl (410B), WebText2 (19B), Books1 (12B), Books2 (55B), and Wikipedia (3B)*
 
+> ***Lab:*** *OpenAI*
+
+
 [GPTInstruct](https://openai.com/blog/instruction-following/)
 
 > **Family:** GPT
@@ -625,6 +667,9 @@ across a batch actually occurred*
 
 > **Corpus:** Same as GPT3 for pretraining, but finetuned and optimized using labeler data and prompts
 
+> ***Lab:*** *OpenAI*
+
+
 [GPT-Neo](https://huggingface.co/docs/transformers/model_doc/gpt_neo)
 
 > ***Family:*** *GPT*
@@ -642,6 +687,9 @@ across a batch actually occurred*
 > ***Num. Params:*** *5B, 2.7B (XL)*
 
 > ***Corpus:*** *Pile — 840 GB open source text dataset that combines 22 pre existing datasets*
+
+> ***Lab:*** *EleutherAI*
+
 
 [Imagen](https://imagen.research.google/)
 
@@ -681,6 +729,9 @@ across a batch actually occurred*
 
 > **Corpus:** 300B tokens (same as GPT-3)
 
+> ***Lab:*** *AI21*
+
+
 [LAMDA](https://ai.googleblog.com/2022/01/lamda-towards-safe-grounded-and-high.html)
 
 > ***Family:*** *Transformer*
@@ -719,6 +770,9 @@ across a batch actually occurred*
 
 > ***Corpus:*** *CC25 Corpus includes 25 monolingual corpuses in different languages. Largest corpuses are English (300 GB) and Russian (280GB)*
 
+> ***Lab:*** *Facebook*
+
+
 [Megatron](https://github.com/NVIDIA/Megatron-LM)
 
 > **Family:** GPT/BERT/T5
@@ -737,6 +791,7 @@ across a batch actually occurred*
 
 > **Corpus:** Original paper uses an aggregate dataset consisting of Wikipedia), CC-Stories), RealNews, and OpenWebtext
 
+> ***Lab:*** *NVidia*
 
 [Minerva](https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html)
 
@@ -776,6 +831,9 @@ across a batch actually occurred*
 
 > **Corpus:** [The Pile](https://arxiv.org/abs/2101.00027) (800GB dataset) + 2 Common Crawl snapshots
 
+> ***Lab:*** *NVidia*
+
+
 [OPT](https://ai.facebook.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/)
 
 > ***Family:*** *GPT-3*
@@ -795,7 +853,6 @@ across a batch actually occurred*
 > ***Corpus:*** *180B tokens = RoBERTa + the Pile + PushShift.io Reddit*
 
 > ***Lab:*** *Facebook*
-
 
 [PalM](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html)
 
@@ -817,7 +874,6 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-
 [Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)
 
 > ***Family:***
@@ -835,6 +891,8 @@ across a batch actually occurred*
 > ***Num. Params:*** *Base = 223M, Large = 568M*
 
 > ***Corpus:*** *C4 (750GB) + HugeNews (3.8 TB)*
+
+> ***Lab:*** *UCL/Google*
 
 [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta)
 
@@ -854,6 +912,8 @@ across a batch actually occurred*
 
 > ***Corpus:*** *Same as BERT + CC News + OpenWebText + Stories (~33B Tokens)*
 
+> ***Lab:*** *UW/Google*
+
 [SeeKer](https://parl.ai/projects/seeker/)
 
 > **Family:** GPT (but can extend any family)
@@ -872,6 +932,8 @@ across a batch actually occurred*
 
 > **Corpus:** Same as base model
 
+> ***Lab:*** *Facebook*
+
 [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 > **Family:** ViT
@@ -889,6 +951,8 @@ across a batch actually occurred*
 > **Num. Params:** 29M-197M
 
 > **Corpus:** Imagenet and Imagenet-22k
+
+> ***Lab:*** *Facebook*
 
 [Switch](https://arxiv.org/abs/2101.03961)
 
@@ -928,6 +992,8 @@ across a batch actually occurred*
 
 > ***Corpus:*** *Colossal Clean Crawled Corpus (C4) — Cleaned up version of the Common Crawl dataset — 750 GB*
 
+> ***Lab:*** *Google*
+
 [Trajectory Transformers](https://arxiv.org/abs/2106.02039)
 
 > ***Family:*** *GPT, Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
@@ -966,6 +1032,8 @@ across a batch actually occurred*
 
 > ***Corpus:*** *Different training datasets depending on experiments, but baseline is Wikitext-103*
 
+> ***Lab:*** *CMU/Google*
+
 [Turing-NLG](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/)
 
 > **Family:** GPT
@@ -984,7 +1052,9 @@ across a batch actually occurred*
 
 > **Corpus:** Highest quality subset from The Pile + 2 CC snapshots (339B tokens)
 
-[VIT](https://huggingface.co/docs/transformers/model_doc/vit)
+> ***Lab:*** *Microsoft*
+
+[ViT](https://huggingface.co/docs/transformers/model_doc/vit)
 
 > **Family:** BERT
 
@@ -1001,6 +1071,8 @@ across a batch actually occurred*
 > **Num. Params:** 86M(Base) to 632M (Huge)
 
 > **Corpus:** From standard Imagenet to JFT-300M (large inhouse dataset)
+
+> ***Lab:*** *Google*
 
 [Wu Dao 2.0](https://en.wikipedia.org/wiki/Wu_Dao)
 
@@ -1020,6 +1092,8 @@ across a batch actually occurred*
 
 > **Corpus:** ?
 
+> ***Lab:*** *Beijing Academy of Artificial Intelligence*
+
 [XLM-RoBERTa](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
 
 > ***Family:*** *RoBERTa*
@@ -1038,6 +1112,8 @@ across a batch actually occurred*
 
 > ***Corpus:*** *Cleaned Common Crawl in 100 languages*
 
+> ***Lab:*** *Facebook*
+
 [XLNet](https://huggingface.co/docs/transformers/model_doc/xlnet)
 
 > ***Family:*** *Transformer XL*
@@ -1055,6 +1131,8 @@ across a batch actually occurred*
 > ***Num. Params:*** *Base=117M, Large=360M*
 
 > ***Corpus:*** *Same as BERT + Giga5 (16GB text) + and aggressively filtered ClueWeb 2012-B (19GB), Common Crawl (110 GB)*
+
+> ***Lab:*** *CMU/Google*
 
 ### Further reading
 
