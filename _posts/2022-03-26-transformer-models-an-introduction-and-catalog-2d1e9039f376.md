@@ -16,9 +16,57 @@ categories:
 
 ![](/blog/images/02-01.jpeg)
 
-**Test**
+**Catalog Index**
 
-- [Albert](#albert) 
+- [ALBERT](#albert)
+- [BART](#BART)
+- [BERT](#BERT)
+- [Big Bird](#BIGBIRD)
+- [BLOOM](#BLOOM)
+- [Chinchilla](#CHINCHILLA)
+- [CLIP](#CLIP)
+- [CTRL](#CTRL)
+- [DALL-E](#DALLE)
+- [DALL-E-2](#DALLE2)
+- [Decision Transformers](#DECISION)
+- [DialoGPT](#DIALOGPT)
+- [DistilBERT](#DISTILBERT)
+- [DQ-BART](#DQBART)
+- [ELECTRA](#ELECTRA)
+- [ERNIE](#ERNIE)
+- [Flamingo](#FLAMINGO)
+- [Gato](#GATO)
+- [Gopher](#GOPHER)
+- [GLaM](#GLAM)
+- [GLIDE](#GLIDE)
+- [GC-ViT](#GCVIT)
+- [GPT](#GPT)
+- [GPT-2](#GPT2)
+- [GPT-3](#GPT3)
+- [GPT-Neo](#GPTNEO)
+- [GPTInstruct](#GPTINSTRUCT)
+- [Imagen](#IMAGEN)
+- [Jurassic-1](#JURASSIC1)
+- [LAMDA](#LAMDA)
+- [mBART](#MBART)
+- [Megatron](#MEGATRON)
+- [Minerva](#MINERVA)
+- [MT-NLG](#MTNLG)
+- [OPT](#OPT)
+- [Palm](#PALM)
+- [Pegasus](#PEGASUS)
+- [RoBERTa](#ROBERTA)
+- [SeeKer](#SEEKER)
+- [Swin Transformer](#SWIN)
+- [Switch](#SWITCH)
+- [T5](#T5)
+- [Trajectory Transformers](#TRAJECTORY)
+- [Transformer XL](#TRANSFORMER)
+- [Turing-NLG](#TURING)
+- [ViT](#VIT)
+- [Wu Dao 2.0](#WUDAO)
+- [XLM-RoBERTa](#XMLROBERTA)
+- [XLNet](#XLNET)
 
 **Update 07/19/2022**
 
@@ -151,7 +199,7 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Lab:*** *Google*
  
 
-[BART](https://huggingface.co/docs/transformers/model_doc/bart)
+<a name="BART"></a>[BART](https://huggingface.co/docs/transformers/model_doc/bart)
 
 > ***Family:*** *BERT for encoder, GPT for Decoder*
 
@@ -174,7 +222,7 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Lab:*** *Facebook*
  
 
-[BERT](https://huggingface.co/docs/transformers/model_doc/bert)
+<a name="BERT"></a>[BERT](https://huggingface.co/docs/transformers/model_doc/bert)
 
 > ***Family:*** *BERT*
 
@@ -195,7 +243,7 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Lab:*** *Google*
 
 
-[Big Bird](https://huggingface.co/docs/transformers/model_doc/big_bird)
+<a name="BIGBIRD"></a>[Big Bird](https://huggingface.co/docs/transformers/model_doc/big_bird)
 
 > ***Family:***
 
@@ -216,7 +264,7 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Lab:*** *Google*
 
 
-[BLOOM](https://huggingface.co/docs/transformers/model_doc/bloom)
+<a name="BLOOM"></a>[BLOOM](https://huggingface.co/docs/transformers/model_doc/bloom)
 
 > ***Family:*** *GPT*
 
@@ -236,7 +284,7 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Lab:*** *Big Science/Huggingface*
 
-[Chinchilla](https://arxiv.org/abs/2203.15556)
+<a name="CHINCHILLA"></a>[Chinchilla](https://arxiv.org/abs/2203.15556)
 
 > **Family:** GPT
 
@@ -257,7 +305,7 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Lab:*** *Deepmind*
 
 
-[CLIP](https://huggingface.co/docs/transformers/model_doc/clip)
+<a name="CLIP"></a>[CLIP](https://huggingface.co/docs/transformers/model_doc/clip)
 
 > ***Family:*** *CLIP (Also using Resnet, ViT, and vanilla transformer for text)*
 
@@ -278,7 +326,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *OpenAI*
  
-[CTRL](https://huggingface.co/docs/transformers/model_doc/ctrl)
+<a name="CTRL"></a>[CTRL](https://huggingface.co/docs/transformers/model_doc/ctrl)
 
 > ***Family:***
 
@@ -300,8 +348,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Salesforce*
 
-
-[DALL-E](https://openai.com/blog/dall-e/)
+<a name="DALLE"></a>[DALL-E](https://openai.com/blog/dall-e/)
 
 > ***Family:*** *GPT*
 
@@ -322,7 +369,7 @@ across a batch actually occurred*
 > ***Lab:*** *OpenAI*
  
 
-[DALL-E-2](https://openai.com/dall-e-2/)
+<a name="DALLE2"></a>[DALL-E-2](https://openai.com/dall-e-2/)
 
 > ***Family:*** *CLIP, GLIDE*
 
@@ -342,7 +389,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *OpenAI*
  
-[Decision Transformers](https://arxiv.org/abs/2106.01345)
+<a name="DECISION"></a>[Decision Transformers](https://arxiv.org/abs/2106.01345)
 
 > ***Family:*** *GPT, Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
 
@@ -363,7 +410,7 @@ across a batch actually occurred*
 > ***Lab:*** *Google/UC Berkeley/Facebook* 
 
 
-[DialoGPT](https://huggingface.co/docs/transformers/model_doc/dialogpt)
+<a name="DIALOGPT"></a>[DialoGPT](https://huggingface.co/docs/transformers/model_doc/dialogpt)
 
 > ***Family:*** *GPT*
 
@@ -384,7 +431,7 @@ across a batch actually occurred*
 > ***Lab:*** *Microsoft*
 
 
-[DistilBERT](https://huggingface.co/docs/transformers/model_doc/distilbert)
+<a name="DISTILBERT"></a>[DistilBERT](https://huggingface.co/docs/transformers/model_doc/distilbert)
 
 > ***Family:*** *BERT*
 
@@ -405,7 +452,7 @@ across a batch actually occurred*
 > ***Lab:*** *Huggingface*
 
 
-[DQ-BART](https://arxiv.org/abs/2203.11239)
+<a name="DQBERT"></a>[DQ-BART](https://arxiv.org/abs/2203.11239)
 
 > ***Family:*** *BART*
 
@@ -425,7 +472,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Amazon*
 
-[ELECTRA](https://huggingface.co/docs/transformers/model_doc/electra)
+<a name="ELECTRA"></a>[ELECTRA](https://huggingface.co/docs/transformers/model_doc/electra)
 
 > ***Family:***
 
@@ -446,7 +493,7 @@ across a batch actually occurred*
 > ***Lab:*** *Stanford/Google*
 
 
-[ERNIE](https://arxiv.org/abs/1905.07129)
+<a name="ERNIE"></a>[ERNIE](https://arxiv.org/abs/1905.07129)
 
 > ***Family:*** *BERT*
 
@@ -467,7 +514,7 @@ across a batch actually occurred*
 > ***Lab:*** *Various Chinese institutions*
 
 
-[Flamingo](https://arxiv.org/abs/2204.14198)
+<a name="FLAMINGO"></a>[Flamingo](https://arxiv.org/abs/2204.14198)
 
 > ***Family:*** *Chinchilla*
 
@@ -487,7 +534,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Deepmind*
 
-[Gato](https://www.deepmind.com/publications/a-generalist-agent)
+<a name="GATO"></a>[Gato](https://www.deepmind.com/publications/a-generalist-agent)
 
 > ***Family:*** *“Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
 
@@ -508,7 +555,7 @@ across a batch actually occurred*
 > ***Lab:*** *Deepmind*
 
 
-[GLaM](https://ai.googleblog.com/2021/12/more-efficient-in-context-learning-with.html)
+<a name="GLAM"></a>[GLaM](https://ai.googleblog.com/2021/12/more-efficient-in-context-learning-with.html)
 
 > ***Family:*** *Transformer*
 
@@ -528,7 +575,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[GLIDE](https://arxiv.org/abs/2112.10741)
+<a name="GLIDE"></a>[GLIDE](https://arxiv.org/abs/2112.10741)
 
 > ***Family:*** *Diffusion models*
 
@@ -548,7 +595,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *OpenAI*
 
-[Global Context ViT](https://arxiv.org/abs/2206.09959)
+[<a name="GCVIT"></a>Global Context ViT](https://arxiv.org/abs/2206.09959)
 
 > ***Family:*** *ViT*
 
@@ -569,7 +616,7 @@ across a batch actually occurred*
 > ***Lab:*** *NVidia*
  
 
-[Gopher](https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval)
+<a name="GOPHER"></a>[Gopher](https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval)
 
 > **Family:** GPT
 
@@ -590,7 +637,7 @@ across a batch actually occurred*
 > ***Lab:*** *Deepmind*
 
 
-[GPT](https://huggingface.co/docs/transformers/model_doc/openai-gpt)
+<a name="GPT"></a>[GPT](https://huggingface.co/docs/transformers/model_doc/openai-gpt)
 
 > ***Family:*** *GPT*
 
@@ -611,7 +658,7 @@ across a batch actually occurred*
 > ***Lab:*** *OpenAI*
 
 
-[GPT-2](https://huggingface.co/docs/transformers/model_doc/gpt2)
+<a name="GPT2"></a>[GPT-2](https://huggingface.co/docs/transformers/model_doc/gpt2)
 
 > ***Family:*** *GPT*
 
@@ -632,7 +679,7 @@ across a batch actually occurred*
 > ***Lab:*** *OpenAI*
 
 
-[GPT-3](https://github.com/openai/gpt-3)
+<a name="GPT3"></a>[GPT-3](https://github.com/openai/gpt-3)
 
 > ***Family:*** *GPT*
 
@@ -655,7 +702,7 @@ across a batch actually occurred*
 > ***Lab:*** *OpenAI*
 
 
-[GPTInstruct](https://openai.com/blog/instruction-following/)
+<a name="GPTINSTRUCT"></a>[GPTInstruct](https://openai.com/blog/instruction-following/)
 
 > **Family:** GPT
 
@@ -676,7 +723,7 @@ across a batch actually occurred*
 > ***Lab:*** *OpenAI*
 
 
-[GPT-Neo](https://huggingface.co/docs/transformers/model_doc/gpt_neo)
+<a name="GPTNEO"></a>[GPT-Neo](https://huggingface.co/docs/transformers/model_doc/gpt_neo)
 
 > ***Family:*** *GPT*
 
@@ -697,7 +744,7 @@ across a batch actually occurred*
 > ***Lab:*** *EleutherAI*
 
 
-[Imagen](https://imagen.research.google/)
+<a name="IMAGEN"></a>[Imagen](https://imagen.research.google/)
 
 > ***Family:*** *T5, CLIP, Diffusion models*
 
@@ -717,7 +764,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[Jurassic-1](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
+<a name="JURASSIC1"></a>[Jurassic-1](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
 
 > **Family:** GPT
 
@@ -738,7 +785,7 @@ across a batch actually occurred*
 > ***Lab:*** *AI21*
 
 
-[LAMDA](https://ai.googleblog.com/2022/01/lamda-towards-safe-grounded-and-high.html)
+<a name="LAMDA"></a>[LAMDA](https://ai.googleblog.com/2022/01/lamda-towards-safe-grounded-and-high.html)
 
 > ***Family:*** *Transformer*
 
@@ -758,7 +805,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[mBART](https://huggingface.co/docs/transformers/model_doc/mbart)
+<a name="MBART"></a>[mBART](https://huggingface.co/docs/transformers/model_doc/mbart)
 
 > ***Family:*** *BART*
 
@@ -779,7 +826,7 @@ across a batch actually occurred*
 > ***Lab:*** *Facebook*
 
 
-[Megatron](https://github.com/NVIDIA/Megatron-LM)
+<a name="MEGATRON"></a>[Megatron](https://github.com/NVIDIA/Megatron-LM)
 
 > **Family:** GPT/BERT/T5
 
@@ -799,7 +846,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *NVidia*
 
-[Minerva](https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html)
+<a name="MINERVA"></a>[Minerva](https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html)
 
 > ***Family:*** *PaLM*
 
@@ -819,7 +866,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[MT-NLG](https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/) (Megatron Touring NLG)
+<a name="MTNLG"></a>[MT-NLG](https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/) (Megatron Touring NLG)
 
 > **Family:** GPT
 
@@ -840,7 +887,7 @@ across a batch actually occurred*
 > ***Lab:*** *NVidia*
 
 
-[OPT](https://ai.facebook.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/)
+<a name="OPT"></a>[OPT](https://ai.facebook.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/)
 
 > ***Family:*** *GPT-3*
 
@@ -860,7 +907,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Facebook*
 
-[PalM](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html)
+<a name="PALM"></a>[PalM](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html)
 
 > ***Family:*** *Transformer*
 
@@ -880,7 +927,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)
+<a name="PEGASUS"></a>[Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)
 
 > ***Family:***
 
@@ -900,7 +947,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *UCL/Google*
 
-[RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta)
+<a name="ROBERTA"></a>[RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta)
 
 > ***Family:*** *BERT*
 
@@ -920,7 +967,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *UW/Google*
 
-[SeeKer](https://parl.ai/projects/seeker/)
+<a name="SEEKER"></a>[SeeKer](https://parl.ai/projects/seeker/)
 
 > **Family:** GPT (but can extend any family)
 
@@ -940,7 +987,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Facebook*
 
-[Swin Transformer](https://github.com/microsoft/Swin-Transformer)
+<a name="SWIN"></a>[Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
 > **Family:** ViT
 
@@ -960,7 +1007,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Facebook*
 
-[Switch](https://arxiv.org/abs/2101.03961)
+<a name="SWITCH"></a>[Switch](https://arxiv.org/abs/2101.03961)
 
 > ***Family:*** *T5*
 
@@ -980,7 +1027,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google* 
 
-[T5](https://huggingface.co/docs/transformers/model_doc/t5)
+<a name="T5"></a>[T5](https://huggingface.co/docs/transformers/model_doc/t5)
 
 > ***Family:***
 
@@ -1000,7 +1047,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[Trajectory Transformers](https://arxiv.org/abs/2106.02039)
+<a name="TRAJECTORY"></a>[Trajectory Transformers](https://arxiv.org/abs/2106.02039)
 
 > ***Family:*** *GPT, Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
 
@@ -1020,7 +1067,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *UC Berkeley*
 
-[Transformer XL](https://huggingface.co/docs/transformers/model_doc/transfo-xl)
+<a name="TRANSFORMERXL"></a>[Transformer XL](https://huggingface.co/docs/transformers/model_doc/transfo-xl)
 
 > ***Family:***
 
@@ -1040,7 +1087,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *CMU/Google*
 
-[Turing-NLG](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/)
+<a name="TURING"></a>[Turing-NLG](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/)
 
 > **Family:** GPT
 
@@ -1060,7 +1107,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Microsoft*
 
-[ViT](https://huggingface.co/docs/transformers/model_doc/vit)
+<a name="VIT"></a>[ViT](https://huggingface.co/docs/transformers/model_doc/vit)
 
 > **Family:** BERT
 
@@ -1080,7 +1127,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Google*
 
-[Wu Dao 2.0](https://en.wikipedia.org/wiki/Wu_Dao)
+<a name="WUDAO"></a>[Wu Dao 2.0](https://en.wikipedia.org/wiki/Wu_Dao)
 
 > **Family:** GLM (General Language Model)
 
@@ -1100,7 +1147,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Beijing Academy of Artificial Intelligence*
 
-[XLM-RoBERTa](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
+<a name="XMLROBERTA"></a>[XLM-RoBERTa](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
 
 > ***Family:*** *RoBERTa*
 
@@ -1120,7 +1167,7 @@ across a batch actually occurred*
 
 > ***Lab:*** *Facebook*
 
-[XLNet](https://huggingface.co/docs/transformers/model_doc/xlnet)
+<a name="XLNET"></a>[XLNet](https://huggingface.co/docs/transformers/model_doc/xlnet)
 
 > ***Family:*** *Transformer XL*
 
