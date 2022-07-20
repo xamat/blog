@@ -9,10 +9,16 @@ reading_time:
     - ''
     - ''
 categories:
-    - Uncategorized
+    - maghine learning
+    - NLP
+    - Transformers
 ---
 
 ![](/blog/images/02-01.jpeg)
+
+**Test**
+
+- [Albert][#albert] 
 
 **Update 07/19/2022**
 
@@ -124,7 +130,7 @@ Another interesting perspective is this chronological timeline of the main Trans
 
 Finally, here is a list view that might be easier to follow along in some cases:
 
-[ALBERT](https://huggingface.co/docs/transformers/model_doc/albert)
+<a name="albert"></a>[ALBERT](https://huggingface.co/docs/transformers/model_doc/albert)
 
 > ***Family:*** *BERT*
 
