@@ -1,7 +1,7 @@
 ---
 id: 35
 title: "Transformer models: an introduction and catalog — 2022\_Edition"
-date: '2022-03-26T00:00:00+00:00'
+date: '2022-07-19T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
@@ -13,6 +13,12 @@ categories:
 ---
 
 ![](/blog/images/02-01.jpeg)
+
+**Update 07/19/2022**
+
+Just 3 months after my previous update I felt like there was already a "long overdued" further update. That is how quickly the field is evolving. In this recent update I have added the new class of text to image transformers, all the way from diffusion models to DALL-E2, CLIP, and Imagen. Another class of Transformer models I added are those that allow to use transformers to model an arbitrary agent with RL applications such as playing Atari or controling a robotic arm. Those include Trajectory Transformers, Decision Transformers, and Deepmind's GATO. I have also included the latest open source BLOOM model. The full list of newcomers to the catalog: BLOOM, CLIP, DALL-E2, Decision and Trajectory Transformers, Flamingo, Gato, DQ-BART, GLaM, GLIDE, GC-ViT, Imagen, LAMDA, Minerva, OPT, PaLM, and Switch.
+
+Another novelty in this edition of the catalog is that I have added the "lab" behind each of these Transformer models. I realized during my usage of the catalog that associating the original lab where the model was developed made a lot of sense and was not always obvious. Enjoy!
 
 **Update 04/02/2022**
 
@@ -192,6 +198,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Corpus:*** *Books, CC-News, Stories and Wikipedia*
 
+[BLOOM](https://huggingface.co/docs/transformers/model_doc/bloom)
+
+> ***Family:*** *GPT*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** * Main difference to GPT-3 is that it uses full attention instead of sparse attention*
+
+> ***Application:*** *Same as GPT-3*
+
+> ***Date (of first known publication):*** *07/2022*
+
+> ***Num. Params:*** *176B*
+
+> ***Corpus:*** *366B tokens (1.5 TB of text data) multilingual dataset*
+
+> ***Lab:*** *Big Science/Huggingface*
+
 [Chinchilla](https://arxiv.org/abs/2203.15556)
 
 > **Family:** GPT
@@ -210,6 +236,27 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > **Corpus:** Massive Text
 
+[CLIP](https://huggingface.co/docs/transformers/model_doc/clip)
+
+> ***Family:*** *CLIP (Also using Resnet, ViT, and vanilla transformer for text)*
+
+> ***Pretraining Architecture:*** *Encoder*
+
+> ***Pretraining Task:*** *predict which of the N × N possible (image, text) pairings
+across a batch actually occurred*
+
+> ***Extension:*** * Combines Resnet and ViT for the visual encoding with Transformer for the Textual encoder*
+
+> ***Application:*** *Text to image*
+
+> ***Date (of first known publication):*** *02/2021*
+
+> ***Num. Params:*** *?*
+
+> ***Corpus:*** *WIT (WebImageText) - 400 million text,image pairs*
+
+> ***Lab:*** *OpenAI*
+ 
 [CTRL](https://huggingface.co/docs/transformers/model_doc/ctrl)
 
 > ***Family:***
@@ -229,6 +276,68 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Num. Params:*** *1.63B*
 
 > ***Corpus:*** *140 GB of text including: Wikipedia (En, De, Es, Fr), Project Gutenberg, 45 subreddits, OpenWebText2, Amazon Reviews, Europarl and UN data from WMT, question-answer pairs from ELI5, and the MRQA shared task3, which includes the Stanford Question Answering Dataset, NewsQA, TriviaQA, SearchQA, HotpotQA , and Natural Questions*
+
+[DALL-E](https://openai.com/blog/dall-e/)
+
+> ***Family:*** *GPT*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *Caption prediction*
+
+> ***Extension:*** * A differential variational auto-encoder is used to learn the visual codebook. The transformer is a variation of GPT-3*
+
+> ***Application:*** *Text to image*
+
+> ***Date (of first known publication):*** *01/2021*
+
+> ***Num. Params:*** *12B*
+
+> ***Corpus:*** *250 million text-images pairs from the internet*
+
+> ***Lab:*** *OpenAI*
+ 
+
+[DALL-E-2](https://openai.com/dall-e-2/)
+
+> ***Family:*** *CLIP, GLIDE*
+
+> ***Pretraining Architecture:*** *Encoder/Decoder*
+
+> ***Pretraining Task:*** *Caption prediction*
+
+> ***Extension:*** *Combines CLIP encoder and Diffusion decoder similar to GLIDE*
+
+> ***Application:*** *Text to image*
+
+> ***Date (of first known publication):*** *04/2022*
+
+> ***Num. Params:*** *3.5B*
+
+> ***Corpus:*** *Combination of the DALL-E and CLIP datasets*
+
+> ***Lab:*** *OpenAI*
+ 
+[Decision Transformers](https://arxiv.org/abs/2106.01345)
+
+> ***Family:*** *GPT, Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *Next action prediction*
+
+> ***Extension:*** *Decision transformers use a GPT architecture and extend it by encoding trajectories in a way that they can be learned by an auto-regressive task*
+
+> ***Application:*** *General RL (reinforcement learning tasks)*
+
+> ***Date (of first known publication):*** *06/2021*
+
+> ***Num. Params:*** *Same as GPT*
+
+> ***Corpus:*** *Different corpus for different experiments*
+
+> ***Lab:*** *Google/UC Berkeley/Facebook* 
+
 
 [DialoGPT](https://huggingface.co/docs/transformers/model_doc/dialogpt)
 
@@ -266,6 +375,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Corpus:*** *Same as BERT*
 
+[DQ-BART](https://arxiv.org/abs/2203.11239)
+
+> ***Family:*** *BART*
+
+> ***Pretraining Architecture:*** *Encoder/Decoder*
+
+> ***Pretraining Task:*** *DAE*
+
+> ***Extension:*** *Adds quantization and distillation to a BART model to improve performance and model size*
+
+> ***Application:*** *Text generation and understanding*
+
+> ***Date (of first known publication):*** *03/2022*
+
+> ***Num. Params:*** *Up to 30x reduction in parameters compared to standard BART*
+
+> ***Corpus:*** *CNN/DM, XSUM, ELI5, WMT16 En-Ro (~1M tokens)*
+
+> ***Lab:*** *Amazon*
+
 [ELECTRA](https://huggingface.co/docs/transformers/model_doc/electra)
 
 > ***Family:***
@@ -301,6 +430,108 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Num. Params:*** *114M*
 
 > ***Corpus:*** *English Wikipedia + Wikidata for entitites (note that they initialize model to original BERT parameter values*
+
+[Flamingo](https://arxiv.org/abs/2204.14198)
+
+> ***Family:*** *Chinchilla*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *Log likelihood of text given some visual input*
+
+> ***Extension:*** *It uses a frozen textual language model (like Chinchilla) conditioned on the visual representation, which is encoded from a Normalizer-Free ResNet*
+
+> ***Application:*** *Text to image*
+
+> ***Date (of first known publication):*** *04/2022*
+
+> ***Num. Params:*** *80B (largest)*
+
+> ***Corpus:*** *MultiModal MassiveWeb (M3W): 185 million images and 182 GB text + a number of text paired with image datasets: ALIGN + LTIP (Long Text & Image Pairs) = 312 million images, and VTP (Video & Text Pairs) = 27 million short videos (approximately 22 seconds on average)*
+
+> ***Lab:*** *Deepmind*
+
+[Gato](https://www.deepmind.com/publications/a-generalist-agent)
+
+> ***Family:*** *“Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *MLM (where tokens are either text or agent actions)*
+
+> ***Extension:*** *The standard decoder-only transformer architecture is preceded by an embedding layer that can embed text and images, plus add position encodings to add spatial information when applicable.*
+
+> ***Application:*** *Gato presents a generalizable agent that can be used beyond text to tasks such as playing Atari or controlling a robot arm. *
+
+> ***Date (of first known publication):*** *05/2022*
+
+> ***Num. Params:*** *1.2B*
+
+> ***Corpus:*** *1.5T tokens including standard text (e.g. MassiveText), vision (e.g. ALIGN), and simulation environments (e.g. ALE Atari, or RGB Stacking Real Robot)*
+
+> ***Lab:*** *Deepmind*
+
+
+[GLaM](https://ai.googleblog.com/2021/12/more-efficient-in-context-learning-with.html)
+
+> ***Family:*** *Transformer*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *GLaM introduces a Mixture of 64 Experts to increase parameter count and generalization properties in a somewhat standard decoder-only. Transformer architecture. Only two experts get activated at a time per token, which makes the model also more efficient in training and inference.*
+
+> ***Application:*** *General language modeling*
+
+> ***Date (of first known publication):*** *12/2021*
+
+> ***Num. Params:*** *1.2T across 64 experts, but only 96B get activated for inference*
+
+> ***Corpus:*** *1.6T tokens including web pages filtered by Wikipedia and books for quality*
+
+> ***Lab:*** *Google*
+
+[GLIDE](https://arxiv.org/abs/2112.10741)
+
+> ***Family:*** *Diffusion models*
+
+> ***Pretraining Architecture:*** *Encoder*
+
+> ***Pretraining Task:*** * Caption prediction*
+
+> ***Extension:*** *GLIDE can be seen as an extension of the ADM (Ablated Diffusion Model) by the same authors. However, ADM is not per se a transformer architecture although it does resemble one in some of the configurations the authors use. Given that ADM is by the same authors and was quickly followed up by GLIDE, I think it is fair to consider GLIDE as the first of its kind.*
+
+> ***Application:*** *Text to image*
+
+> ***Date (of first known publication):*** *12/2021*
+
+> ***Num. Params:*** *3.5B diffusion model (2.3B for visual encoding, 1.2B for textual) + 1.5B for model for upsampling*
+
+> ***Corpus:*** *Same as DALL-E*
+
+> ***Lab:*** *OpenAI*
+
+[Global Context ViT](https://arxiv.org/abs/2206.09959)
+
+> ***Family:*** *ViT*
+
+> ***Pretraining Architecture:*** *Encoder*
+
+> ***Pretraining Task:*** *Image classification*
+
+> ***Extension:*** *hierarchical ViT architecture consisting of local and global self-attention modules*
+
+> ***Application:*** *APPLICATION*
+
+> ***Date (of first known publication):*** *06/2022*
+
+> ***Num. Params:*** *90M*
+
+> ***Corpus:*** *Imagenet-1K and other task dependent dataasets*
+
+> ***Lab:*** *NVidia*
+ 
 
 [Gopher](https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval)
 
@@ -412,6 +643,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Corpus:*** *Pile — 840 GB open source text dataset that combines 22 pre existing datasets*
 
+[Imagen](https://imagen.research.google/)
+
+> ***Family:*** *T5, CLIP, Diffusion models*
+
+> ***Pretraining Architecture:*** *T5 (or CLIP or BERT) for frozen text encoder + U-net architecture for cascaded diffusion models for text to image*
+
+> ***Pretraining Task:*** *image/text pair prediction*
+
+> ***Extension:*** *Imagen adds a few extensions to the U-net diffusion architecture (pooled embedding vector, cross attention over text embeddings, and Layer Normalizations)*
+
+> ***Application:*** *Text to image*
+
+> ***Date (of first known publication):*** *06/2022*
+
+> ***Num. Params:*** *2B*
+
+> ***Corpus:*** *a combination of internal datasets, with ≈ 460M image-text pairs, and the publicly available Laion dataset, with ≈ 400M image-text pairs*
+
+> ***Lab:*** *Google*
+
 [Jurassic-1](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
 
 > **Family:** GPT
@@ -429,6 +680,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > **Num. Params:** 178B (Jumbo), 7.5B (Large)
 
 > **Corpus:** 300B tokens (same as GPT-3)
+
+[LAMDA](https://ai.googleblog.com/2022/01/lamda-towards-safe-grounded-and-high.html)
+
+> ***Family:*** *Transformer*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *LAMDA focuses on how to improve safety, quality, and groundeness using different fine-tuning strategies*
+
+> ***Application:*** *General language modeling*
+
+> ***Date (of first known publication):*** *01/2022*
+
+> ***Num. Params:*** *137B*
+
+> ***Corpus:*** *1.56T words from public dialog data and other public web documents*
+
+> ***Lab:*** *Google*
 
 [mBART](https://huggingface.co/docs/transformers/model_doc/mbart)
 
@@ -466,6 +737,27 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > **Corpus:** Original paper uses an aggregate dataset consisting of Wikipedia), CC-Stories), RealNews, and OpenWebtext
 
+
+[Minerva](https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html)
+
+> ***Family:*** *PaLM*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *Extends PaLM by fine-tuning on the mathematical dataset*
+
+> ***Application:*** *Mathematical reasoning*
+
+> ***Date (of first known publication):*** *06/2022*
+
+> ***Num. Params:*** *540B*
+
+> ***Corpus:*** * Same as PaLM + ​​118GB dataset of scientific papers from the arXiv preprint server and web pages that contain mathematical expressions using LaTeX, MathJax, or other mathematical typesetting formats*
+
+> ***Lab:*** *Google*
+
 [MT-NLG](https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/) (Megatron Touring NLG)
 
 > **Family:** GPT
@@ -483,6 +775,48 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > **Num. Params:** 530B
 
 > **Corpus:** [The Pile](https://arxiv.org/abs/2101.00027) (800GB dataset) + 2 Common Crawl snapshots
+
+[OPT](https://ai.facebook.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/)
+
+> ***Family:*** *GPT-3*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *Basically same architecture as GPT-3 but with some training improvements introduced in Megatron-LM*
+
+> ***Application:*** *Same as GPT-3*
+
+> ***Date (of first known publication):*** *05/2022*
+
+> ***Num. Params:*** *175B (and other smaller versions)*
+
+> ***Corpus:*** *180B tokens = RoBERTa + the Pile + PushShift.io Reddit*
+
+> ***Lab:*** *Facebook*
+
+
+[PalM](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html)
+
+> ***Family:*** *Transformer*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *Palm uses a typical decoder-only transformer architecture, but adds quite a few extensions: SwiGLU activations, parallel layers, multi-query attention, RoPE embeddings, Shared Input-Output Embeddings, no biases, and a 256k SentencePiece vocabulary generated from the training data.*
+
+> ***Application:*** *PalM is designed as a general purpose language model with applicability to hundreds of different language tasks*
+
+> ***Date (of first known publication):*** *04/2022*
+
+> ***Num. Params:*** *540B*
+
+> ***Corpus:*** *780B tokens from filtered webpages, books, Wikipedia, news articles, source code, and social media conversations. Code includes 24 programming languages.*
+
+> ***Lab:*** *Google*
+
 
 [Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)
 
@@ -556,6 +890,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > **Corpus:** Imagenet and Imagenet-22k
 
+[Switch](https://arxiv.org/abs/2101.03961)
+
+> ***Family:*** *T5*
+
+> ***Pretraining Architecture:*** *Encoder/Decoder*
+
+> ***Pretraining Task:*** *DAE*
+
+> ***Extension:*** *Goal to increase parameter count while keeping FLOP operations constant by using efficient routing of MoE (Mixture of Experts)*
+
+> ***Application:*** *General language tasks (e.g. question answering)*
+
+> ***Date (of first known publication):*** *01/2021*
+
+> ***Num. Params:*** *1T*
+
+> ***Corpus:*** *Colossal Clean Crawled Corpus*
+
+> ***Lab:*** *Google* 
+
 [T5](https://huggingface.co/docs/transformers/model_doc/t5)
 
 > ***Family:***
@@ -573,6 +927,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Num. Params:*** *11 B (up to)*
 
 > ***Corpus:*** *Colossal Clean Crawled Corpus (C4) — Cleaned up version of the Common Crawl dataset — 750 GB*
+
+[Trajectory Transformers](https://arxiv.org/abs/2106.02039)
+
+> ***Family:*** *GPT, Control Transformers” (not per se a family, but grouping here those transformers that try to model more general control, RL-like, tasks)*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *predict most likely sequence*
+
+> ***Extension:*** *Similarly to the Decision transformers, the main extension introduced by Trajectory Transformers is a way to encode a trajectory (state, actions, rewards)*
+
+> ***Application:*** *General RL (reinforcement learning tasks)*
+
+> ***Date (of first known publication):*** *06/2021*
+
+> ***Num. Params:*** *Smaller architecture than GPT*
+
+> ***Corpus:*** *D4RL dataset and other RL datasets depending on the task at hand*
+
+> ***Lab:*** *UC Berkeley*
 
 [Transformer XL](https://huggingface.co/docs/transformers/model_doc/transfo-xl)
 
