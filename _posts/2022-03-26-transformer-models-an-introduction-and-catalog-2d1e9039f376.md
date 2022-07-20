@@ -12,6 +12,7 @@ categories:
     - machine learning
     - NLP
     - Transformers
+image: /blog/images/02-05.png
 ---
 
 ![](/blog/images/02-01.jpeg)
