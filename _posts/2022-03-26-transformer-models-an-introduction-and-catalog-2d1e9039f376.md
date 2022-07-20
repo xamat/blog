@@ -25,7 +25,7 @@ Another novelty in this edition of the catalog is that I have added the "lab" be
 
 **Catalog Index**
 
-Click on the list to access a Tranformer model directly or keep reading below for more context and explanations.
+Click on the list to access a Tranformer model directly, or keep reading below for more context and explanations.
 
 - [ALBERT](#albert)
 - [BART](#BART)
@@ -77,12 +77,6 @@ Click on the list to access a Tranformer model directly or keep reading below fo
 - [XLM-RoBERTa](#XMLROBERTA)
 - [XLNet](#XLNET)
 
-
-**Update 04/02/2022**
-
-Thanks for all the interest and feedback in this post. As a result of all your comments, today I am updating the catalog with the following Transformer models: Megatron, Jurassic-1, MT-NLG , Wu Dao 2.0, Gopher, SeeKer, GPTInstruct, Chinchilla, Turing-NLG, VIT, and Swin Transformer. I considered adding others like Vega V1, which is on top of the GLUE benchmark leaderboard, but decided against it due to lack of public information on the models.
-
-Again, let me know if you have comments or feedback.
 
 ### Why this post
 
