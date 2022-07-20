@@ -9,7 +9,7 @@ reading_time:
     - ''
     - ''
 categories:
-    - maghine learning
+    - machine learning
     - NLP
     - Transformers
 ---
