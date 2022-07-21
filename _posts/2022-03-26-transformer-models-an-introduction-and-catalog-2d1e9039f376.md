@@ -315,7 +315,7 @@ across a batch actually occurred*
 
 > ***Extension:*** * Combines Resnet and ViT for the visual encoding with Transformer for the Textual encoder*
 
-> ***Application:*** *Text to image*
+> ***Application:*** *Image/object classification*
 
 > ***Date (of first known publication):*** *02/2021*
 
