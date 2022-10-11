@@ -42,11 +42,11 @@ We have accomplished so many things since then! Many of those things were not in
 
 At this point, I am proud and confident to say that our tech is not only state-of-the-art but also way ahead of anyone else working in this space. How do I know? Well, we hear that every time we show our service and demos to people with deep knowledge of the health tech industry. Even [Dr. Bob Wachter](https://en.wikipedia.org/wiki/Robert_M._Wachter), author of [The Digital Doctor](https://www.amazon.com/dp/0071849467) and member of our medical advisory board, said in a recent meeting: *“It’s really impressive. The tool that you showed us is really cool. I haven’t seen anything nearly that good in the virtual primary care, app-based care space.”* That was a highlight of my time at Curai, not only for the small role I played in putting the tech together but also because I was the one putting together our amazing [medical advisory board](https://medium.com/curai/curais-medical-advisory-board-f48b1e0ce549) and convincing Dr. Wachter to join.
 
-<img src="/blog/images/NewChapter6.png"  width="300" height="200">
+<img src="/blog/images/NewChapter6.png"  width="500" height="400">
 
 It is hard to pick just a few technical milestones to highlight here, but one that definitely makes  the list would be the moment when we surpassed typical human primary care physician diagnosis accuracy on a public dataset. We have also deployed a few of those algorithms into production, such as our “next question” algorithm that suggests optimal questions to ask to a patient given what we know about them in their history and current encounter. This algorithm does not only “suggest” questions to the providers, but also directly steps in to point out whenever conditions are met. Finally, it is also worth mentioning that our research playground is even more impressive than the technology that we have rolled out into the product. Our prototype is an end-to-end AI driven medical solution that drives the entire patient workflow from history gathering to prescription recommendations. We expect everything that is in this prototype to make it to the product in the next few quarters. It has been highly rewarding to watch the future of personalized AI medicine develop before my eyes.
 
-<img src="/blog/images/NewChapter7.png"  width="300" height="200">
+<img src="/blog/images/NewChapter7.png"  width="500" height="400">
 
 Something that **was** on our original roadmap, and that has driven many of the features I mentioned, is our research into state of the art medical AI. I started my career as a researcher after my Ph.D., and I view using research and publications as an effective way to inject an open innovation culture and attract talent. I am very happy that since 2017 [we have published](https://medium.com/curai-tech/research-publications-at-curai-ee22a820b807) more than a dozen peer-reviewed papers in areas such as medical diagnosis algorithms, NLP, and medical image classification.
 
@@ -70,4 +70,4 @@ As we looked at who would take my place in this new chapter for Curai, it was cl
 
 So, as I move on to my next chapter for personal reasons, I could not be more thankful for the opportunity to be part of Curai’s history. I am bullish on what is to come for the company, and I am committed to continue helping from the sidelines as an advisor and member of the board of directors. I will also be cheering the many successes that are to come very soon and will continue to recommend Curai to everyone I know!
 
-<img src="/blog/images/NewChapter12.jpg"  width="300" height="200">
+<img src="/blog/images/NewChapter12.jpg"  width="500" height="400">
