@@ -15,7 +15,7 @@ categories:
 
 ---
 
-(Read my cofounder Neal Khosla's version in [Curai's blog] (https://medium.com/curai/making-bets-at-curai-30609d84d16f) )
+(Read my cofounder Neal Khosla's version in [Curai's blog](https://medium.com/curai/making-bets-at-curai-30609d84d16f) )
 
 After more than 5 years as the CTO of [Curai](https://www.curaihealth.com/), the healthcare startup I co-founded, I am taking a step back and transitioning to an advisory role while remaining on the board of directors. A few days back I let my colleagues know that I will be moving on from my full time day-to-day role at the company, and moving on to my next professional chapter.
 
