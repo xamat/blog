@@ -16,4 +16,85 @@ categories:
 ---
 
 
-<img src="/blog/images/ChatGPT1.jpg"  width="300" height="200">
+“We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.” - Amara’s law
+
+[ChatGPT](https://openai.com/blog/chatgpt/) was released by OpenAI a couple of weeks back. In a few days, this next generation chatbot 
+has caused an incredible and mostly unexpected impact. Responses range from “[ChatGPT will kill Google and revolutionize the world](https://twitter.com/jdjkelly/status/1598021488795586561)”  to 
+“[ChatGPT is not only bad, but dangerous](https://medium.com/@guruduth.banavar/chatgpts-deep-fake-text-generation-is-a-threat-to-evidence-based-discourse-c096164207e0)” . 
+But, how much of it is hype, reality, or fear mongering? Let me try to go over some of these questions. 
+Inevitably, the answer will point us to Amara’s law.
+
+# What is ChatGPT?	
+
+ChatGPT is a fine tuned version of [GPT-3](https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/#GPT3). 
+GPT-3 is an LLM (Large Language Model) developed by OpenAI and published in May 2020. It is a decoder-only Transformer with 175B parameters. 
+To be more precise, ChatGPT is a fine tuned version of the so-called GPT-3.5, a family of models that derives from the so-called [code-davinci-002](https://beta.openai.com/docs/model-index-for-researchers). 
+Note that there is no publications explaining the differences between GPT-3 and GPT-3.5 models (except for the variations introduced in the 
+[InstructGPT paper](https://arxiv.org/abs/2203.02155)). I won’t hypothesize here on what other improvements could have been introduced in recent models, 
+but anyone following the LLM literature closely will probably have good intuitions of what those might be.
+
+# What can ChatGPT be used for?
+
+ChatGPT has been explicitly designed and fine-tuned for chatbot applications. Because of this it can, for example, better track the state of a 
+conversation than previous models. Very importantly, ChatGPT has an easy-to-use interface that has been released to the public and has enabled 
+thousands of people to experiment with LLMs for the first time. In fact, ChatGPT surpassed all expectations by registering over 1 million users during
+the first week. OpenAI had to close access to new users shortly after.
+
+Although the main use of ChatGPT is, as mentioned above, open ended conversations, people have quickly found creative ways to use it. Here are some examples:
+
+* [Answer StackOverflow questions](https://twitter.com/christophmolnar/status/1598250997939597312)
+* [Replace Google](https://twitter.com/jdjkelly/status/1598021488795586561)
+* [Generate cooking recipes](https://twitter.com/stephsmithio/status/1598920887029628928)
+* [Solve complex programming tasks](https://twitter.com/goodside/status/1598129631609380864)
+* [Generate prompts for Dall-e/StableDiffusion](https://twitter.com/guyp/status/1598020781065527296)
+* [Build apps from scratch](https://twitter.com/packym/status/1598405769669771264)
+
+It is important to keep in mind again, that ChatGPT was not optimized for any of those uses, nor was it considered to be general purpose. However, some of the results on those specific tasks have been pretty remarkable, which has given many people a peak into what might be coming soon.
+
+# What are ChatGPT’s limitations?
+
+ChatGPT, as all LLMs from its generation, are not great at factual information retrieval on their own. The problem is not that they 
+lack knowledge, but rather that they have been trained on all kinds of information, some of which can be very unreliable. LLMs such as 
+ChatGPT do not have a sense of source reliability or their own confidence on some specific information. Because of this they can easily, 
+and very confidently, hallucinate responses to questions by combining unreliable information they have been trained on. A way to understand 
+this is the following. Imagine a LLM like ChatGPT has been trained on the best medical literature, but also Reddit threads that discuss health 
+issues. The AI can sometimes respond by retrieving and referring to high quality information, but it can other times respond by using the completely 
+unreliable Reddit information. In fact, if the information is not available in the medical literature (e.g. a very rare condition), it is much more 
+likely it will make it up (aka hallucinate). In that case it will still “sound authoritative”, particularly because it is “generally correct”.
+
+<img src="/blog/images/ChatGPT2.jpg"  width="300" height="200">
+
+Because of the above, there have been plenty of examples of ChatGPT “being wrong”. This has pushed some renowned researchers and academics 
+to claim things such as ChatGPT being a [threat to evidence-based discourse](https://medium.com/@guruduth.banavar/chatgpts-deep-fake-text-generation-is-a-threat-to-evidence-based-discourse-c096164207e0).
+They are not wrong, ChatGPT as such, and as Sam Altman explained,
+is not designed for evidence-based discourse. In fact, ChatGPT is trained on data that is over a year old! So, at the very least it won’t have
+evidence of recent events. ChatGPT does not have basic information such as what is the current day or where you are located. If you ask a simple 
+question that Siri can answer such as what is the weather like today in San Francisco, it will acknowledge that it doesn’t know.
+
+<img src="/blog/images/ChatGPT3.jpg"  width="300" height="200">
+
+
+It is important to understand that many of these issues can be solved, some more easily than others, of course. As an example, 
+access to current information such as weather in San Francisco is something that very basic systems such as Siri, Alexa or Google Assistant 
+have no problems with. 
+
+Other limitations require a bit more work, but we have reasons to believe that they can be addressed. Let’s look at another critique: ChatGPT 
+[does not know math](https://hariprasadblogs.medium.com/testing-chatgpt-in-mathematics-can-chatgpt-fe73c20b2c6d). There are plenty of examples of math mistakes by ChatGPT. This clearly means that ChatGPT on its own is pretty bad at math 
+(although it is fair to say that even with that [it gets](https://twitter.com/davidtsong/status/1598767389390573569) a 500 score in the math portion of
+the SAT). But, hold on, it has not been designed for that purpose! The truth is that how much you can rely on ChatGPT’s response depends on your prompt.
+You can in fact [teach a generic LLM math](https://arxiv.org/abs/2211.09066) by feeding algorithmic reasoning in the prompt (aka zero shot learning).
+
+What about broader concerns about safety, trust, and truthfulness? There are also very promising avenues for solving those, even in a general sense. 
+Google’s [LaMDA](https://blog.google/technology/ai/lamda/) model already included some of those aspects. More recently, Deepmind’s [Sparrow](https://www.deepmind.com/blog/building-safer-dialogue-agents) 
+includes a number of improvements in this area. It is very important to keep in mind that these improvements are still not perfect. However, one of the reasons for this is that they all attempt to provide safe/trustworthy general purpose dialog agents. However, in narrower domains, this is much easier to accomplish, even if by adding artificial rule-based guardrails. Yes, those will not scale to a general-purpose AI, but they can be extremely useful in a specific domain or application very soon.
+
+# Conclusion
+
+ChatGPT has taken the world by storm. Having such a high quality general-purpose chatbot available to anyone has 
+sparked our wildest imaginations, and there have been crazy applications in a few days. However, this LLM has very obviou
+s limitations, particularly related to factualness and truthfulness. Those limitations have solutions, some easier than other'
+s, that make me think that high quality and trustworthy LLMs are around the corner, particularly in narrow domains or specific applications.
+
+As an end note I will say that I have been working with language models for quite some time now, particularly in the healthcare domain 
+(see e.g. [our publication](https://proceedings.mlr.press/v149/chintagunta21a.html) on using GPT3 for medical data labeling). In my end-of-year recap of AI in 2018 I already highlighted the importance of Language Models. I could not have foreseen such an incredibly fast development in this space. I am not at all dazzled by ChatGPT. I think it is a very incremental improvement over GPT3.5 and most of the hype is due to it being open to so many people. However, as always, we overestimate progress in the short term, and underestimate in the long term. In fact, I would replace “long term” with “mid term” in this last sentence. My strong prediction is that LLM applications (not ChatGPT) will revolutionize almost every digital vertical in the next 18 to 24 months. You better get ready for it!
+
