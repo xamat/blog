@@ -97,9 +97,11 @@ Prompt engineering requires some domain understanding to incorporate the goal in
 
 Generating prompts at some scale requires a programmatic approach. At the most basic level you want to generate prompt templates that can be programmatically modified according to some dataset or context. As a basic example, if you had a database of people with a short blurb about them similar to the one used in the college essay above. The prompt template would become something like “Given the following information about [USER], write a 4 paragraph college essay: [USER_BLURB]“. And the programmatic approach to generating college letters for all users would look something like:
 
-`for user, blurb in students.items():
-prompt = “Given the following information about {}, write a 4 paragraph college essay: {}”.format(user, blurb)
-callGPT(prompt)`
+```{r, attr.source='.numberLines'}
+for user, blurb in students.items():
+   prompt = “Given the following information about {}, write a 4 paragraph college essay: {}”.format(user, blurb)
+   callGPT(prompt)
+```
 
 Finally, prompt engineering, as any engineering discipline, is iterative and requires some exploration in order to find the right solution. While this is not something that I have heard of, prompt engineering will require many of the same engineering processes as software engineering (e.g. version control, and regression testing).
 
