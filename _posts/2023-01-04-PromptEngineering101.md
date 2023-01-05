@@ -97,7 +97,7 @@ Prompt engineering requires some domain understanding to incorporate the goal in
 
 Generating prompts at some scale requires a programmatic approach. At the most basic level you want to generate prompt templates that can be programmatically modified according to some dataset or context. As a basic example, if you had a database of people with a short blurb about them similar to the one used in the college essay above. The prompt template would become something like “Given the following information about [USER], write a 4 paragraph college essay: [USER_BLURB]“. And the programmatic approach to generating college letters for all users would look something like:
 
---- python
+---
     for user,blurb in students.items():
       prompt = “Given the following information about {}, write a 4 paragraph college essay: {}”.format(user, blurb)
       callGPT(prompt)
