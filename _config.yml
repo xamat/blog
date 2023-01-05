@@ -28,10 +28,10 @@ analytics:
     anonymize_ip: false # default
 
 # Build settings
-markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable : true
+# markdown: kramdown
+# kramdown:
+#  syntax_highlighter_opts:
+#    disable : true
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
