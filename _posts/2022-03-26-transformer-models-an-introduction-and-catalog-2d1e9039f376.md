@@ -1,7 +1,7 @@
 ---
 id: 35
-title: "Transformer models: an introduction and catalog — 2022\_Edition"
-date: '2022-07-19T00:00:00+00:00'
+title: "Transformer models: an introduction and catalog — 2023\_Edition"
+date: '2023-01-26T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
@@ -17,24 +17,45 @@ image: /blog/images/02-05.png
 
 ![](/blog/images/02-01.jpeg)
 
-**Update 07/19/2022**
+**Update 01/16/2023**
 
-Just 3 months after my previous update I felt like there was already a "long overdued" further update. That is how quickly the field is evolving. In this recent update I have added the new class of text to image transformers, all the way from diffusion models to DALL-E2, and Imagen. Another class of Transformer models I added are those that allow to use transformers to model an arbitrary agent with RL applications such as playing Atari or controling a robotic arm. Those include Trajectory Transformers, Decision Transformers, and Deepmind's GATO. I have also included the latest open source BLOOM model. The full list of newcomers to the catalog: BLOOM, CLIP, DALL-E2, Decision and Trajectory Transformers, Flamingo, Gato, DQ-BART, GLaM, GLIDE, GC-ViT, Imagen, LAMDA, Minerva, OPT, PaLM, and Switch.
+6 months after my last update, it is clear that the world has been taken by storm by Transformers. Everyone is talking about [ChatGPT](https://amatriain.net/blog/chatGPT), so I thought I needed to add the models that got us there. I had already talked about GPTInstruct before, but I added [GPT3.5](#gpt35) and [ChatGPT](#chatgpt) as independent models although they don’t add too much to the former. I also added a couple of models from [Eleuther.ai](https://www.eleuther.ai/) and [Anthropic](https://www.anthropic.com/), the only two startups that seem to be even ready to challenge the OpenAI/Facebook/Google supremacy in language models. Because of what is happening with ChatGPT, I thought I should add the main competitors from the big labs: [Sparrow](#sparrow) from Deepmind/Google, and Blenderbot3 from Facebook. Speaking of startups though, there has been a lot of talk of [Stability.ai](https://stability.ai/), so I felt I needed to add a reference to [StableDiffusion](#stablediffusion). Finally, and while not many details are known about [AlphaFold](#alphafold)'s architeccture, I thought I should add a reference to it since the problem of protein folding is very important, and Deepmind’s accomplishment in this regard is huge.
 
-Another novelty in this edition of the catalog is that I have added the "lab" behind each of these Transformer models. I realized during my usage of the catalog that associating the original lab where the model was developed made a lot of sense and was not always obvious. Finally, I added a Catalog Index to facilitate browsing. Enjoy!
+Also, there are two concepts that are becoming more and more important in the recent success of Transformers: On the one hand, [RLHF](#rlhf) (Reinforcement Learning with Human Feedback) for language models. On the other hand, [Diffusion models](#diffusion). I added a brief section on both these topics. 
+
+Now that I am including over 50 Transformers I thought I should highlight those that for some reason I consider to be noteworthy. I hope the others don’t feel bad about it :-) I also felt that very often I was searching for Transformer model timelines and none was comprehensive enough, so I bit the bullet and added a [timeline view](#timeline) to the catalog.
+
+Enjoy! And, as always, human feedback is welcomed.
+
+**Table of Contents**
+
+- [Catalog Index](#CatalogIndex)
+- [What are Transformers](#Transformers)
+     - [Reinforcement Leraning with Human Feedback] (#rlhf)
+     - [Diffusion Models](#diffusion) 
+- [The Transformers Catalog](#TransformersCatalog)
+    - [Catalog Table](#CatalogTable)
+    - [Catalog Family Tree](#FamilyTree)
+    - [Catalog Timeline](#Timeline)
+    - [Catalog List](#CatalogList)
 
 
-**Catalog Index**
+<a name="CatalogIndex"></a>**Catalog Index**
 
 Click on the list to access a Tranformer model directly, or keep reading below for more context and explanations.
 
 - [ALBERT](#albert)
+- [AlphaFold](#alphafold)
+- [Anthropic Assistant](#anthropicassistant)
 - [BART](#BART)
 - [BERT](#BERT)
 - [Big Bird](#BIGBIRD)
+- [BlenderBot3](#blenderbot3)
 - [BLOOM](#BLOOM)
+- [ChatGPT](#chatgpt)
 - [Chinchilla](#CHINCHILLA)
 - [CLIP](#CLIP)
+- [CM3](#CM3)
 - [CTRL](#CTRL)
 - [DALL-E](#DALLE)
 - [DALL-E-2](#DALLE2)
@@ -47,14 +68,18 @@ Click on the list to access a Tranformer model directly, or keep reading below f
 - [Flamingo](#FLAMINGO)
 - [Gato](#GATO)
 - [Gopher](#GOPHER)
+- [GopherCite](#gophercite)
 - [GLaM](#GLAM)
 - [GLIDE](#GLIDE)
 - [GC-ViT](#GCVIT)
 - [GPT](#GPT)
 - [GPT-2](#GPT2)
 - [GPT-3](#GPT3)
+- [GPT-3.5](#GPT35)
 - [GPT-Neo](#GPTNEO)
+- [GPT-NeoX](#GPTNEOX)
 - [GPTInstruct](#GPTINSTRUCT)
+- [HTML](#html)
 - [Imagen](#IMAGEN)
 - [Jurassic-1](#JURASSIC1)
 - [LAMDA](#LAMDA)
@@ -67,6 +92,8 @@ Click on the list to access a Tranformer model directly, or keep reading below f
 - [Pegasus](#PEGASUS)
 - [RoBERTa](#ROBERTA)
 - [SeeKer](#SEEKER)
+- [Sparrow](#Sparrow)
+- [StableDiffusion](#stablediffusion)
 - [Swin Transformer](#SWIN)
 - [Switch](#SWITCH)
 - [T5](#T5)
@@ -83,7 +110,7 @@ Click on the list to access a Tranformer model directly, or keep reading below f
 
 I have a terrible memory for names. In the past few years we have seen the meteoric appearance of dozens of models of the Transformer family, all of which have funny, but not self-explanatory, names. The goal of this post is to offer a short and simple catalog and classification of the most popular Transformer models. In other words, I needed a Transformers cheat-sheet and couldn’t find a good enough one online, so I thought I’d write my own. I hope it can be useful to you too.
 
-### What are Transformers
+<a name="Transformers"></a>### What are Transformers
 
 Transformers are a class of deep learning models that are defined by some architectural traits. They were first introduced in the now famous [Attention is All you Need](https://arxiv.org/abs/1706.03762) paper by Google researchers in 2017 (the paper has accumulated a whooping 38k citations in only 5 years) and associated [blog post](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html).
 
@@ -119,7 +146,23 @@ Of course all these applications would have not been possible if it wasn’t bec
 
 Last but not least, I would be remiss if I did not mention the impact of [GPT-3](https://en.wikipedia.org/wiki/GPT-3) on the popularization of Transformers. GPT-3 is a Transformer model introduced by OpenAI in May 2020 as a follow up to their earlier GPT and GPT-2. The company made a big splash by introducing the model in a [preprint](https://arxiv.org/abs/2005.14165) in which they claimed that the model was so powerful that they were not in a position to release it to the world. Since then, the model has not only been released, but also commercialized through a very large [partnership](https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/) between OpenAI and Microsoft. GPT-3 powers over [300 different applications](https://openai.com/blog/gpt-3-apps/), and is the foundation for OpenAI’s commercial strategy (which is a lot to say for a company that has received over $1B in funding).
 
-### The Transformers catalog
+<a name="rlhf"></a>### RLHF
+
+Reinforcement Learning from Human Feedback (or Preferences) aka RLHF (or RLHP) has become a huge addition to the AI toolkit as of lately. The concept was introduced already in 2017 in the paper [“Deep reinforcement learning from human preferences”](https://arxiv.org/abs/1706.03741). More recently though, it has been applied to ChatGPT and similar dialog agents like BlenderBot3 or Sparrow. The idea is pretty simple though: Once a language model is pretrained, we can generate different responses to a dialog and have Humans rank the results. We can use those ranking (aka preferences or feedback) to train a reward, in the reinforcement learning context. You can read much more in these two wonderful posts by [Huggingface](https://huggingface.co/blog/rlhf) or [Weights and Bias](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx).
+
+![](/blog/images/rlhf.png)
+
+<a name="diffusion"></a>### Diffusion Models
+
+Diffusion models have become the new SOTA in image generation, clearly pushing aside the previous approaches such as GANs (Generative Adversarial Networks). What are diffusion models? They are a class of latent variable models trained variational inference. What this means in practice is that we train a deep neural network to denoise images blurred with some sort of noise function. Networks that are trained this way are in fact learning the latent space of what those images represent.
+
+![](/blog/images/diffusion.png)
+
+From [“Diffusion Models: A Comprehensive Survey of Methods and Applications”](https://arxiv.org/abs/2209.00796)
+
+Diffusion models have relation with other generative models like the famous [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network), which they have mostly replaced in many applications and, particularly with (denoising) Autoencoders. Some [authors](https://benanne.github.io/2022/01/31/diffusion.html) will go as far as saying that Diffusion models are just a specific instance of autoencoders. However, they also admit that the small differences do transform their application, from the latent representation of autoconders to the pure generative nature of Diffusion models.
+
+<a name="TransformersCatalog"></a>### The Transformers catalog
 
 So hopefully by now you understand what Transformer models are, and why they are so popular and impactful. In this section I will introduce a catalog of the most important Transformer models that have been developed to this day. I will categorize each model according to the following properties: Pretraining Architecture, Pretraining Task, Compression, Application, Year, and Number of Parameters. Let’s briefly define each of those:
 
@@ -153,7 +196,7 @@ When training a model we need to define a task for the model to learn on. Some o
 
 Here we will note what are the main practical applications of the Transformer model. Most of these applications will be in the language domain (e.g. question answering, sentiment analysis, or entity recognition). However, as mentioned before, some Transformer models have also found applications well beyond NLP and are also included in the catalog.
 
-### Catalog table
+<a name="CatalogTable"></a>### Catalog table
 
 **Note:** For all the models available in Huggingface, I decided to directly link to the page in the documentation since they do a fantastic job of offering a consistent format and links to everything else you might need, including the original papers. Only a few of the models (e.g. GPT3) are not included in Huggingface.
 
@@ -161,19 +204,19 @@ Here we will note what are the main practical applications of the Transformer mo
 
 You can access the original table [here](https://docs.google.com/spreadsheets/d/1ltyrAB6BL29cOv2fSpNQnnq2vbX8UrHl47d7FkIf6t4/edit#gid=0) for easier browsing across the different model features. If you prefer to read the full list see below.
 
-### Family Tree
+<a name="FamilyTree"></a>### Family Tree
 
 The diagram below is just a simple view that should highlight the different families of transformers and how they relate to each other.
 
 ![](/blog/images/02-05.png)
 
-### Chronological timeline
+<a name="Timeline"></a>### Chronological timeline
 
-Another interesting perspective is this chronological timeline of the main Transformer models borrowed from Huggingface [here](https://huggingface.co/course/chapter1/4).
+Another interesting perspective of the catalog is to see it as a chronological timeline. Here you will find all the transformers in the catalog sorted by their date of publication.
 
 ![](/blog/images/02-06.png)
 
-### Catalog List
+<a name="Catalog List"></a>### Catalog List
 
 Finally, here is a list view that might be easier to follow along in some cases:
 
@@ -196,7 +239,46 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Corpus:*** *Same as BERT*
 
 > ***Lab:*** *Google*
- 
+
+<a name="alphafold"></a>[AlphaFold](https://www.deepmind.com/publications/highly-accurate-protein-structure-prediction-with-alphafold)
+
+> ***Family:*** *[SE(3)-Transformer](https://arxiv.org/abs/2006.10503)*
+
+> ***Pretraining Architecture:*** *Encoder*
+
+> ***Pretraining Task:*** *Protein folding prediction*
+
+> ***Extension:*** *The original Alphafold used a BERT-style transformer. The details of Alphafold’s Transformer are not known, but it is believed it is an extension of the SE(3)-Tranformer, a 3-D equivariant Transformer (see [this blog post](https://fabianfuchsml.github.io/alphafold2/)).*
+
+> ***Application:*** *Protein folding*
+
+> ***Date (of first known publication):*** *07/2021*
+
+> ***Num. Params:*** *21M*
+
+> ***Corpus:*** *4170,000 proteins from a public repository of protein sequences and structures*
+
+> ***Lab:*** *Deepmind*
+
+<a name="anthropicassistant"></a>[Anthropic Assistant](https://arxiv.org/abs/2112.00861) (see [also](https://arxiv.org/abs/2204.05862) )
+
+> ***Family:*** *GPT*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *These models do not introduce novelties at the architecture/pretraining level and they are based on GPT-3 but rather focuses on how to improve alignment through fine-tuning and prompting. Note that the Anthropic Assistant includes several models optimized for different tasks. Latest versions of this work focus on the benefits of RLHF.*
+
+> ***Application:*** *Different models with different applications from general dialog to code assistant.*
+
+> ***Date (of first known publication):*** *12/2021*
+
+> ***Num. Params:*** *10M to 52B*
+
+> ***Corpus:*** *400B tokens from filtered Common Crawl and Books. They also create several Dialogue Preference datasets for the RLHF training.*
+
+> ***Lab:*** *Anthropic*
 
 <a name="BART"></a>[BART](https://huggingface.co/docs/transformers/model_doc/bart)
 
@@ -262,6 +344,25 @@ Finally, here is a list view that might be easier to follow along in some cases:
 
 > ***Lab:*** *Google*
 
+<a name="blenderbot3"></a>[BlenderBot3](https://arxiv.org/abs/2208.03188)
+
+> ***Family:*** *GPT*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** * BlenderBot 3 is based on a pre-trained OPT. It adds features needed for a dialog agent such as long-term memory or the ability to search the internet. It is also fine-tuned for some specific tasks given human feedback on them.*
+
+> ***Application:*** *Same as GPT-3*
+
+> ***Date (of first known publication):*** *08/2022*
+
+> ***Num. Params:*** *175B*
+
+> ***Corpus:*** *180B tokens = RoBERTa + the Pile + PushShift.io Reddit*
+
+> ***Lab:*** *Facebook*
 
 <a name="BLOOM"></a>[BLOOM](https://huggingface.co/docs/transformers/model_doc/bloom)
 
@@ -282,6 +383,26 @@ Finally, here is a list view that might be easier to follow along in some cases:
 > ***Corpus:*** *366B tokens (1.5 TB of text data) multilingual dataset*
 
 > ***Lab:*** *Big Science/Huggingface*
+
+<a name="chatgpt"></a>[ChatGPT](https://openai.com/blog/chatgpt/)
+
+> **Family:** GPT
+
+> **Pretraining Architecture:** Decoder
+
+> **Pretraining Task:** LM
+
+> **Extension:** ChatGPT takes a GPT3.5 (aka GPT3 Davinci-003) pretrained model and uses RLHF to finetune the model mostly like described in InstructGPT but with slight differences in the data collection. ChatGPT is also more than a model since it includes extensions for Memory Store and retrieval similar to BlenderBot3
+
+> **Application:** Dialog agents
+
+> **Date (of first known publication):** 10/2022
+
+> **Num. Params:** Same as GPT3
+
+> **Corpus:** Same as GPT3 + datasets generated for RLHF
+
+> ***Lab:*** *OpenAI*
 
 <a name="CHINCHILLA"></a>[Chinchilla](https://arxiv.org/abs/2203.15556)
 
@@ -324,7 +445,29 @@ across a batch actually occurred*
 > ***Corpus:*** *WIT (WebImageText) - 400 million text,image pairs*
 
 > ***Lab:*** *OpenAI*
+
+
+<a name="CM3"></a>[CM3](https://arxiv.org/abs/2201.07520)
+
+> ***Family:*** *HTML*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *Causality-masked LM*
+
+> ***Extension:*** *This is somewhat similar to HTML in its use of structured training data. However, it is a different architecture and uses causal masking*
+
+> ***Application:*** *Multimodal language model with the ability to do structured prompting*
+
+> ***Date (of first known publication):*** *01/2022*
+
+> ***Num. Params:*** *13B (largest)*
+
+> ***Corpus:*** *CC-News, English Wikipedia*
+
+> ***Lab:*** *Facebook*
  
+
 <a name="CTRL"></a>[CTRL](https://huggingface.co/docs/transformers/model_doc/ctrl)
 
 > ***Family:***
@@ -636,6 +779,26 @@ across a batch actually occurred*
 > ***Lab:*** *Deepmind*
 
 
+<a name="gophercite"></a>[GopherCite](https://arxiv.org/abs/2203.11147)
+
+> **Family:** GPT
+
+> **Pretraining Architecture:** Decoder
+
+> **Pretraining Task:** LM
+
+> **Extension:** GopherCite is based on Gopher but adds a step using RLHP (Reinforcement Learning from Human Preferences) to learn whether not only a response is plausible but also supported
+
+> **Application:** Dialog systems, Q&A, general language generation tasks
+
+> **Date (of first known publication):** 03/2022
+
+> **Num. Params:** 280B
+
+> **Corpus:** Same as Gopher plus specific dataset generated in the RLHP process
+
+> ***Lab:*** *Deepmind*
+
 <a name="GPT"></a>[GPT](https://huggingface.co/docs/transformers/model_doc/openai-gpt)
 
 > ***Family:*** *GPT*
@@ -700,6 +863,26 @@ across a batch actually occurred*
 
 > ***Lab:*** *OpenAI*
 
+<a name="GPT35"></a>[GPT-3.5](https://beta.openai.com/docs/model-index-for-researchers)
+
+> ***Family:*** *GPT*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *The GPT3.5 series includes a number of models like Davinci-003. They are basically versions of the InstructGPT model. See [here](https://scale.com/blog/gpt-3-davinci-003-comparison) for details on the comparison of the performance to older GPT3 models.*
+
+> ***Application:*** *Dialog and general language, but there is a code specific model too*
+
+> ***Date (of first known publication):*** *10/2022*
+
+> ***Num. Params:*** *175B*
+
+> ***Corpus:*** *Same as InstructGPT*
+
+> ***Lab:*** *OpenAI*
+
 
 <a name="GPTINSTRUCT"></a>[GPTInstruct](https://openai.com/blog/instruction-following/)
 
@@ -741,6 +924,48 @@ across a batch actually occurred*
 > ***Corpus:*** *Pile — 840 GB open source text dataset that combines 22 pre existing datasets*
 
 > ***Lab:*** *EleutherAI*
+
+
+<a name="GPTNEOX"></a>[GPT-NeoX-20B](https://arxiv.org/abs/2204.06745)
+
+> ***Family:*** *GPT*
+
+> ***Pretraining Architecture:*** *Decoder*
+
+> ***Pretraining Task:*** *LM*
+
+> ***Extension:*** *Similar to GPT-3 with rotary encoders instead of positional, parallel attention and feed forward layers, different initialization, and all dense layers instead of alternate dense/sparse*
+
+> ***Application:*** *same as GPT-3*
+
+> ***Date (of first known publication):*** *04/2022*
+
+> ***Num. Params:*** *20B*
+
+> ***Corpus:*** *Pile — 840 GB open source text dataset that combines 22 pre existing datasets*
+
+> ***Lab:*** *EleutherAI*
+
+
+<a name="html"></a>[HTML](https://arxiv.org/abs/2107.06955)
+
+> ***Family:*** *BART*
+
+> ***Pretraining Architecture:*** *Encoder/Decoder*
+
+> ***Pretraining Task:*** *DAE*
+
+> ***Extension:*** *As opposed to BART, they don’t do sentence shuffling*
+
+> ***Application:*** *General purpose language model that allows structured HTML prompting *
+
+> ***Date (of first known publication):*** *07/2021*
+
+> ***Num. Params:*** *400M*
+
+> ***Corpus:*** *23TB of simplified HTML extracted from CommonCrawl*
+
+> ***Lab:*** *Facebook*
 
 
 <a name="IMAGEN"></a>[Imagen](https://imagen.research.google/)
@@ -985,6 +1210,46 @@ across a batch actually occurred*
 > **Corpus:** Same as base model
 
 > ***Lab:*** *Facebook*
+
+<a name="Sparrow"></a>[Sparrow](https://arxiv.org/abs/2209.14375)
+
+> **Family:** GPT 
+
+> **Pretraining Architecture:** Decoder
+
+> **Pretraining Task:** LM
+
+> **Extension:** Starts from the Chinchilla 70B model but adds RLHF (Reinforcement Learning with Human Feedback). It also adds inline evidence a la GopherCite
+
+> **Application:** Dialog agents and general language generation applications like Q&A
+
+> **Date (of first known publication):** 09/2022
+
+> **Num. Params:** 70B
+
+> **Corpus:** Same as Chinchilla + interactive data gathering with human annotators during the RLHF process
+
+> ***Lab:*** *Deepmind*
+
+<a name="stablediffusion"></a>[StableDiffusion](https://huggingface.co/CompVis/stable-diffusion)
+
+> **Family:** Diffusion
+
+> **Pretraining Architecture:** Encoder/Decoder
+
+> **Pretraining Task:** Caption prediction
+
+> **Extension:** Stable diffusion is basically the Latent Diffusion model developed by LMU Munich researchers + some learnings on conditional diffusion from DALL-e and Imagen
+
+> **Application:** Text to image 
+
+> **Date (of first known publication):** 12/2021
+
+> **Num. Params:** 890M (although there are different, smaller, variants)
+
+> **Corpus:** LAION-5B, a publicly available dataset derived from Common Crawl
+
+> ***Lab:*** *LMU Munich + Stability.ai + Eleuther.ai*
 
 <a name="SWIN"></a>[Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 
