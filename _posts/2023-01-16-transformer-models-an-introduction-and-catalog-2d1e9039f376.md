@@ -154,6 +154,8 @@ Reinforcement Learning from Human Feedback (or Preferences) aka RLHF (or RLHP) h
 
 ![](/blog/images/rlhf.png)
 
+From HuggingFace’s RLHF [blog post](https://huggingface.co/blog/rlhf). 
+
 ### <a name="diffusion"></a>Diffusion Models
 
 Diffusion models have become the new SOTA in image generation, clearly pushing aside the previous approaches such as GANs (Generative Adversarial Networks). What are diffusion models? They are a class of latent variable models trained variational inference. What this means in practice is that we train a deep neural network to denoise images blurred with some sort of noise function. Networks that are trained this way are in fact learning the latent space of what those images represent.
