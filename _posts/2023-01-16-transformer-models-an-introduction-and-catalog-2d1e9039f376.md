@@ -19,11 +19,11 @@ image: /blog/images/02-05.png
 
 **Update 01/16/2023**
 
-6 months after my last update, it is clear that the world has been taken by storm by Transformers. Everyone is talking about [ChatGPT](https://amatriain.net/blog/chatGPT), so I thought I needed to add the models that got us there. I had already talked about GPTInstruct before, but I added [GPT3.5](#gpt35) and [ChatGPT](#chatgpt) as independent models although they don’t add too much to the former. I also added a couple of models from [Eleuther.ai](https://www.eleuther.ai/) and [Anthropic](https://www.anthropic.com/), the only two startups that seem to be even ready to challenge the OpenAI/Facebook/Google supremacy in language models. Because of what is happening with ChatGPT, I thought I should add the main competitors from the big labs: [Sparrow](#sparrow) from Deepmind/Google, and Blenderbot3 from Facebook. Speaking of startups though, there has been a lot of talk of [Stability.ai](https://stability.ai/), so I felt I needed to add a reference to [StableDiffusion](#stablediffusion). Finally, and while not many details are known about [AlphaFold](#alphafold)'s architeccture, I thought I should add a reference to it since the problem of protein folding is very important, and Deepmind’s accomplishment in this regard is huge.
+6 months after my last update, it is clear that the world has been taken by storm by Transformers. Everyone is talking about [ChatGPT](https://amatriain.net/blog/chatGPT), so I thought I needed to add the models that got us there. I had already talked about GPTInstruct before, but I added [GPT3.5](#gpt35) and [ChatGPT](#chatgpt) as independent models although they don’t add too much to the former. I also added a couple of models from [Eleuther.ai](https://www.eleuther.ai/) and [Anthropic](https://www.anthropic.com/), the only two startups that seem to be even ready to challenge the OpenAI/Facebook/Google supremacy in language models. Because of what is happening with ChatGPT, I thought I should add the main competitors from the big labs: [Sparrow](#Sparrow) from Deepmind/Google, and Blenderbot3 from Facebook. Speaking of startups though, there has been a lot of talk of [Stability.ai](https://stability.ai/), so I felt I needed to add a reference to [StableDiffusion](#stablediffusion). Finally, and while not many details are known about [AlphaFold](#alphafold)'s architeccture, I thought I should add a reference to it since the problem of protein folding is very important, and Deepmind’s accomplishment in this regard is huge.
 
 Also, there are two concepts that are becoming more and more important in the recent success of Transformers: On the one hand, [RLHF](#rlhf) (Reinforcement Learning with Human Feedback) for language models. On the other hand, [Diffusion models](#diffusion). I added a brief section on both these topics. 
 
-Now that I am including over 50 Transformers I thought I should highlight those that for some reason I consider to be noteworthy. I hope the others don’t feel bad about it :-) I also felt that very often I was searching for Transformer model timelines and none was comprehensive enough, so I bit the bullet and added a [timeline view](#timeline) to the catalog.
+Now that I am including over 50 Transformers I thought I should highlight those that for some reason I consider to be noteworthy. I hope the others don’t feel bad about it :-) I also felt that very often I was searching for Transformer model timelines and none was comprehensive enough, so I bit the bullet and added a [timeline view](#Timeline) to the catalog.
 
 Enjoy! And, as always, human feedback is welcomed.
 
@@ -31,7 +31,7 @@ Enjoy! And, as always, human feedback is welcomed.
 
 - [Catalog Index](#CatalogIndex)
 - [What are Transformers](#Transformers)
-     - [Reinforcement Leraning with Human Feedback] (#rlhf)
+     - [Reinforcement Leraning with Human Feedback](#rlhf)
      - [Diffusion Models](#diffusion) 
 - [The Transformers Catalog](#TransformersCatalog)
     - [Catalog Table](#CatalogTable)
@@ -110,7 +110,7 @@ Click on the list to access a Tranformer model directly, or keep reading below f
 
 I have a terrible memory for names. In the past few years we have seen the meteoric appearance of dozens of models of the Transformer family, all of which have funny, but not self-explanatory, names. The goal of this post is to offer a short and simple catalog and classification of the most popular Transformer models. In other words, I needed a Transformers cheat-sheet and couldn’t find a good enough one online, so I thought I’d write my own. I hope it can be useful to you too.
 
-<a name="Transformers"></a>### What are Transformers
+### <a name="Transformers"></a>What are Transformers
 
 Transformers are a class of deep learning models that are defined by some architectural traits. They were first introduced in the now famous [Attention is All you Need](https://arxiv.org/abs/1706.03762) paper by Google researchers in 2017 (the paper has accumulated a whooping 38k citations in only 5 years) and associated [blog post](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html).
 
@@ -146,13 +146,13 @@ Of course all these applications would have not been possible if it wasn’t bec
 
 Last but not least, I would be remiss if I did not mention the impact of [GPT-3](https://en.wikipedia.org/wiki/GPT-3) on the popularization of Transformers. GPT-3 is a Transformer model introduced by OpenAI in May 2020 as a follow up to their earlier GPT and GPT-2. The company made a big splash by introducing the model in a [preprint](https://arxiv.org/abs/2005.14165) in which they claimed that the model was so powerful that they were not in a position to release it to the world. Since then, the model has not only been released, but also commercialized through a very large [partnership](https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/) between OpenAI and Microsoft. GPT-3 powers over [300 different applications](https://openai.com/blog/gpt-3-apps/), and is the foundation for OpenAI’s commercial strategy (which is a lot to say for a company that has received over $1B in funding).
 
-<a name="rlhf"></a>### RLHF
+### <a name="rlhf"></a>RLHF
 
 Reinforcement Learning from Human Feedback (or Preferences) aka RLHF (or RLHP) has become a huge addition to the AI toolkit as of lately. The concept was introduced already in 2017 in the paper [“Deep reinforcement learning from human preferences”](https://arxiv.org/abs/1706.03741). More recently though, it has been applied to ChatGPT and similar dialog agents like BlenderBot3 or Sparrow. The idea is pretty simple though: Once a language model is pretrained, we can generate different responses to a dialog and have Humans rank the results. We can use those ranking (aka preferences or feedback) to train a reward, in the reinforcement learning context. You can read much more in these two wonderful posts by [Huggingface](https://huggingface.co/blog/rlhf) or [Weights and Bias](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx).
 
 ![](/blog/images/rlhf.png)
 
-<a name="diffusion"></a>### Diffusion Models
+### <a name="diffusion"></a>Diffusion Models
 
 Diffusion models have become the new SOTA in image generation, clearly pushing aside the previous approaches such as GANs (Generative Adversarial Networks). What are diffusion models? They are a class of latent variable models trained variational inference. What this means in practice is that we train a deep neural network to denoise images blurred with some sort of noise function. Networks that are trained this way are in fact learning the latent space of what those images represent.
 
@@ -162,7 +162,7 @@ From [“Diffusion Models: A Comprehensive Survey of Methods and Applications”
 
 Diffusion models have relation with other generative models like the famous [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network), which they have mostly replaced in many applications and, particularly with (denoising) Autoencoders. Some [authors](https://benanne.github.io/2022/01/31/diffusion.html) will go as far as saying that Diffusion models are just a specific instance of autoencoders. However, they also admit that the small differences do transform their application, from the latent representation of autoconders to the pure generative nature of Diffusion models.
 
-<a name="TransformersCatalog"></a>### The Transformers catalog
+### <a name="TransformersCatalog"></a>The Transformers catalog
 
 So hopefully by now you understand what Transformer models are, and why they are so popular and impactful. In this section I will introduce a catalog of the most important Transformer models that have been developed to this day. I will categorize each model according to the following properties: Pretraining Architecture, Pretraining Task, Compression, Application, Year, and Number of Parameters. Let’s briefly define each of those:
 
@@ -196,7 +196,7 @@ When training a model we need to define a task for the model to learn on. Some o
 
 Here we will note what are the main practical applications of the Transformer model. Most of these applications will be in the language domain (e.g. question answering, sentiment analysis, or entity recognition). However, as mentioned before, some Transformer models have also found applications well beyond NLP and are also included in the catalog.
 
-<a name="CatalogTable"></a>### Catalog table
+### <a name="CatalogTable"></a>Catalog table
 
 **Note:** For all the models available in Huggingface, I decided to directly link to the page in the documentation since they do a fantastic job of offering a consistent format and links to everything else you might need, including the original papers. Only a few of the models (e.g. GPT3) are not included in Huggingface.
 
@@ -204,19 +204,19 @@ Here we will note what are the main practical applications of the Transformer mo
 
 You can access the original table [here](https://docs.google.com/spreadsheets/d/1ltyrAB6BL29cOv2fSpNQnnq2vbX8UrHl47d7FkIf6t4/edit#gid=0) for easier browsing across the different model features. If you prefer to read the full list see below.
 
-<a name="FamilyTree"></a>### Family Tree
+### <a name="FamilyTree"></a>Family Tree
 
 The diagram below is just a simple view that should highlight the different families of transformers and how they relate to each other.
 
 ![](/blog/images/02-05.png)
 
-<a name="Timeline"></a>### Chronological timeline
+### <a name="Timeline"></a>Chronological timeline
 
 Another interesting perspective of the catalog is to see it as a chronological timeline. Here you will find all the transformers in the catalog sorted by their date of publication.
 
 ![](/blog/images/02-06.png)
 
-<a name="Catalog List"></a>### Catalog List
+### <a name="Catalog List"></a>Catalog List
 
 Finally, here is a list view that might be easier to follow along in some cases:
 
