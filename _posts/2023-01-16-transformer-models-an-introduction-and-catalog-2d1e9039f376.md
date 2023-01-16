@@ -31,7 +31,7 @@ Enjoy! And, as always, human feedback is welcomed.
 
 - [Catalog Index](#CatalogIndex)
 - [What are Transformers](#Transformers)
-     - [Reinforcement Leraning with Human Feedback](#rlhf)
+     - [Reinforcement Learning with Human Feedback](#rlhf)
      - [Diffusion Models](#diffusion) 
 - [The Transformers Catalog](#TransformersCatalog)
     - [Catalog Table](#CatalogTable)
