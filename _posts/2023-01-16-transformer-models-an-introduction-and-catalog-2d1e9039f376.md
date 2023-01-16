@@ -1,7 +1,7 @@
 ---
 id: 35
 title: "Transformer models: an introduction and catalog — 2023\_Edition"
-date: '2023-01-26T00:00:00+00:00'
+date: '2023-01-16T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
