@@ -224,7 +224,7 @@ Another interesting perspective of the catalog is to see it as a chronological t
 
 In this next visualization, the Y-axis represents model size in millions of parameters. You won't be able to see all the models in the catalog since many fall right on the same time and size, so please refer to the previous image for that.
 
-![](/blog/images/02-07.png)
+![](/blog/images/02-09.png)
 
 
 ### <a name="Catalog List"></a>Catalog List
