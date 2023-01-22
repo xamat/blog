@@ -17,6 +17,8 @@ image: /blog/images/02-05.png
 
 ![](/blog/images/02-01.jpeg)
 
+If you have any changes you want to propose to this catalog, feel free to file a PR [here](https://github.com/xamat/blog/blob/gh-pages/_posts/2023-01-16-transformer-models-an-introduction-and-catalog-2d1e9039f376.md)
+
 **Update 01/16/2023**
 
 Six months after my last update, it is clear that the world has been taken by storm by Transformers. Everyone is talking about [ChatGPT](https://amatriain.net/blog/chatGPT), so I thought I needed to add the models that got us there. I had already talked about GPTInstruct before, but I added [GPT3.5](#gpt35) and [ChatGPT](#chatgpt) as independent models although they don’t add too much to the former. I also added a couple of models from [Eleuther.ai](https://www.eleuther.ai/) and [Anthropic](https://www.anthropic.com/), the only two startups that seem to be even ready to challenge the OpenAI/Facebook/Google supremacy in language models. Because of what is happening with ChatGPT, I thought I should add the main competitors from the big labs: [Sparrow](#Sparrow) from Deepmind/Google, and Blenderbot3 from Facebook. Speaking of startups though, there has been a lot of talk of [Stability.ai](https://stability.ai/), so I felt I needed to add a reference to [StableDiffusion](#stablediffusion). Finally, and while not many details are known about [AlphaFold](#alphafold)'s architeccture, I thought I should add a reference to it since the problem of protein folding is very important, and Deepmind’s accomplishment in this regard is huge.
@@ -216,9 +218,14 @@ The diagram below is just a simple view that should highlight the different fami
 
 ### <a name="Timeline"></a>Chronological timeline
 
-Another interesting perspective of the catalog is to see it as a chronological timeline. Here you will find all the transformers in the catalog sorted by their date of publication.
+Another interesting perspective of the catalog is to see it as a chronological timeline. Here you will find all the transformers in the catalog sorted by their date of publication. In this first visualization, the Y-axis is only used to cluster transformers of related heritage/family.
 
 ![](/blog/images/02-06.png)
+
+In this next visualization, the Y-axis represents model size in millions of parameters. You won't be able to see all the models in the catalog since many fall right on the same time and size, so please refer to the previous image for that.
+
+![](/blog/images/02-07.png)
+
 
 ### <a name="Catalog List"></a>Catalog List
 
