@@ -16,6 +16,8 @@ I have always loved reading. For the past 3 years I have also gotten into audiob
 I listen to many audiobooks, and then buy in paper those that I really like. For fiction novels, I still prefer paper, but in some cases 
 I have found the audio extremely good too.
 
+<img src="/blog/images/2022Books.png">
+
 Here is the list of my 10 favorite books that I read in 2022 (Thanks to [Necip Fazil Ayan](https://www.linkedin.com/in/necip-fazil-ayan-3241206a) for prompting me!):
 
 1. [If Nietzsche Were a Narwhal: What Animal Intelligence Reveals About Human Stupidity](https://www.amazon.com/Nietzsche-Were-Narwhal-Intelligence-Stupidity/dp/0316388068) - by Justin Gregg- a fascinating and radical look at what intelligence is by comparing humans and animals. Among other things, it discusses the idea of why causal reasoning is not only not needed but it might lead to human extinction. Very thought provoking.
