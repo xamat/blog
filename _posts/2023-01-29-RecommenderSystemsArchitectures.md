@@ -44,7 +44,7 @@ Finally, and very importantly, what’s with those “retrieval” components? W
 
 A few months later, Even and Karl from NVidia’s Merlin team published [a new architectural blueprint](https://medium.com/nvidia-merlin/recommender-systems-not-just-recommender-models-485c161c755e) that they acknowledge extended Eugene’s.
 
-<img src="/blog/images/NvidiaArchitecture.png">
+<img src="/blog/images/NVidiaArchitecture.png">
 
 Indeed, it is clear that this is an extension of the previous blueprint where they added a filtering step, and they decomposed ranking into scoring and ordering. While I think those two changes make sense, I do think the way they are named and described is confusing, and not general purpose enough. The key aspect to keep in mind is that both before and after the machine learning model is applied (either for scoring or ranking), many systems apply business logic or some other kind of logic for filtering or re-ranking. However, filtering can also be done after scoring or even ranking. And, as mentioned, ranking or ordering is not necessarily done following some business logic. For example, a multi-armed bandit approach can be used at this stage to learn the optimal exploration/exploitation strategy.
 
