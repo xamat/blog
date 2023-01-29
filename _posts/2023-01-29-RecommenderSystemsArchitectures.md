@@ -30,7 +30,7 @@ In our post ten years ago, we focused on clearly distinguishing the components t
 Ten years ago I felt like this architecture was state of the art. A lot of things have happened since then in the machine learning world, but this three tiered approach is still pretty relevant. Let’s fast forward.
 
 
-# Eugene Yan’s 2 x 2 architecture
+# Eugene Yan’s 2 x 2 blueprint
 
 Amazon’s Eugene Yan does an amazing job of compiling many industry posts in [his june 2021 post](https://eugeneyan.com/writing/system-design-for-discovery/). He cites and describes systems from Alibaba, Facebook, JD, Doordash, and LinkedIn. If you are interested in this space, you should totally read his post (and the rest of his blog btw). After this amazing compilation and distillation work, he presents the following 2x2 blueprint: 
 
@@ -40,7 +40,7 @@ There are a few things worth noting here. First off, as opposed to our previous 
 
 Finally, and very importantly, what’s with those “retrieval” components? Why weren’t they even present in our original blueprint? I am glad you asked. It turns out that at Netflix the catalog of items was so small that we did not have to select a subset for ranking. We could literally rank the whole catalog for every member. However, in most other situations, as I quickly learned at Quora, you cannot rank all items for all users all the time. Therefore, this two phase approach where you first select candidates using some retrieval approach, and then you rank them, is pretty much general purpose. 
 
-# Nvidia’s 4 stage architecture
+# Nvidia’s 4 stage blueprint
 
 A few months later, Even and Karl from NVidia’s Merlin team published [a new architectural blueprint](https://medium.com/nvidia-merlin/recommender-systems-not-just-recommender-models-485c161c755e) that they acknowledge extended Eugene’s.
 
@@ -48,7 +48,7 @@ A few months later, Even and Karl from NVidia’s Merlin team published [a new a
 
 Indeed, it is clear that this is an extension of the previous blueprint where they added a filtering step, and they decomposed ranking into scoring and ordering. While I think those two changes make sense, I do think the way they are named and described is confusing, and not general purpose enough. The key aspect to keep in mind is that both before and after the machine learning model is applied (either for scoring or ranking), many systems apply business logic or some other kind of logic for filtering or re-ranking. However, filtering can also be done after scoring or even ranking. And, as mentioned, ranking or ordering is not necessarily done following some business logic. For example, a multi-armed bandit approach can be used at this stage to learn the optimal exploration/exploitation strategy.
 
-# Fennel.ai’s 8 stage architecture
+# Fennel.ai’s 8 stage blueprint
 
 Finally, my friends at Fennel.ai recently published [a three posts series](https://fennel.ai/blog/real-world-recommendation-system/) describing an 8-stage recommender systems architecture.
 
