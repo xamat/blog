@@ -1,6 +1,6 @@
 ---
 id: 97
-title: "2022: A Year in Book"
+title: "2022: A Year in Books"
 date: '2023-01-29T00:00:00+00:00'
 author: Xavier
 permalink: /2022Books
