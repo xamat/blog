@@ -15,7 +15,7 @@ categories:
 ---
 
 
-Ten years ago, we published [a post](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8) in the Netflix tech blog explaining our three-tier architectural approach to building recommender systems (see below). A lot has happened in the last 10 years in the recommender systems space for sure. That’s why, when a few months back I designed a Recsys course for Sphere, I thought it would be a great opportunity to revisit the blueprint.
+Ten years ago, we published [a post](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8) in the Netflix tech blog explaining our three-tier architectural approach to building recommender systems (see below). A lot has happened in the last 10 years in the recommender systems space for sure. That’s why, when a few months back I designed [a Recsys course for Sphere](https://www.getsphere.com/cohorts/designing-state-of-the-art-recommender-systems), I thought it would be a great opportunity to revisit the blueprint.
 
 In this blog post I summarize 4 existing architectural blueprints, and present a new one that, in my opinion, encompasses all the previous ones.
 
