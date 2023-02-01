@@ -227,7 +227,7 @@ In this next visualization, the Y-axis represents model size in millions of para
 ![](/blog/images/02-09.png)
 
 
-### <a name="Catalog List"></a>Catalog List
+### <a name="CatalogList"></a>Catalog List
 
 Finally, here is a list view that might be easier to follow along in some cases:
 
