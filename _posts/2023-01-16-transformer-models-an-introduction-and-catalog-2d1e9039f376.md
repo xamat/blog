@@ -17,7 +17,9 @@ image: /blog/images/02-05.png
 
 ![](/blog/images/02-01.jpeg)
 
-If you have any changes you want to propose to this catalog, feel free to file a PR [here](https://github.com/xamat/blog/blob/gh-pages/_posts/2023-01-16-transformer-models-an-introduction-and-catalog-2d1e9039f376.md)
+This post is now an [ArXiV paper](https://arxiv.org/abs/2302.07730) that you can print and cite.
+
+If you have any changes you want to propose to this catalog, feel free to file a PR [here](https://github.com/xamat/blog/blob/gh-pages/_posts/2023-01-16-transformer-models-an-introduction-and-catalog-2d1e9039f376.md) or directly in the LaTeX sources [here](https://github.com/xamat/TransformerCatalog)
 
 **Update 01/16/2023**
 
