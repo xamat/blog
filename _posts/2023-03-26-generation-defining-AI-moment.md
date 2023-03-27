@@ -25,7 +25,7 @@ Let’s take a look at some of the amazing accomplishments by GPT-4 out of the b
 
 * It scores in the 90th percentile for the BAR exam to become a lawyer
 * It scores in the 90th percentile for the SAT both in Math and Reading and Comprehension
-* It exceeds the USMLE score required to graduate in medicine in the US by 20 points (https://www.microsoft.com/en-us/research/publication/capabilities-of-gpt-4-on-medical-challenge-problems/)
+* It exceeds the USMLE score required to graduate in medicine in the US [by 20 points](https://www.microsoft.com/en-us/research/publication/capabilities-of-gpt-4-on-medical-challenge-problems/)
 * It shows [“sparks of general artificial intelligence”](https://arxiv.org/abs/2303.12712)  according to some 
 * It is much better at coding than ChatGPT
 
