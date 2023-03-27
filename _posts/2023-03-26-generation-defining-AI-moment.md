@@ -95,3 +95,5 @@ On the other hand, as powerful as GPT-4 is, and as much as it can solve many tas
 GPT-4, together with the previous ChatGPT, represents an inflection point in Artificial Intelligence. It is not only that the model has amazing capabilities that would have been unthinkable a few months back, but it is mostly about how these two data points illustrate the mind boggling increase in our rate of innovation. Even if you still believe GPT-4 is not impressive, project what you have seen in the past few months two years forward. What do you see? 
 
 So, yes, as Bill Gates said, [the Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun).
+
+Btw, if you are able to cope with Lex Fridman, which I am barely able to, [this interview] (https://www.youtube.com/watch?v=L_Guz73e6fw_ with Sam Altman, has some interesting tidbits about GPT-4. Also, take a look at [the book](https://www.impromptubook.com/wp-content/uploads/2023/03/impromptu-rh.pdf) that Reid Hoffman wrote using GPT-4 and [his conversation](https://www.youtube.com/watch?v=CYQniyjirJs) about writing the book.
