@@ -39,7 +39,7 @@ Let’s take a look at some of the amazing accomplishments by GPT-4 out of the b
 <img src="/blog/images/99-04.png">
 [GPT-4 can solve real world problems](https://arxiv.org/abs/2303.12712)
 
-I have been using GPT-4 for months, and I have been very impressed. When I was at [Curai](https://www.curaihealth.com), we saw huge improvements in all our medical tasks when moving from GPT-3.5 to GPT-4. Yes, it still has many shortcomings, but most of them are being addressed and will get much better soon. As someone who has been working on AI for over twenty years I can say with no hesitation that what has happened in the field in recent months/years really represents a huge leap. In the following sectiosn I dive into some of the questions regarding this point in time and what it means for the near future.
+I have been using GPT-4 for months, and I have been very impressed. When I was at [Curai](https://www.curaihealth.com), we saw huge improvements in all our medical tasks when moving from GPT-3.5 to GPT-4. And, I have continued to be impressed while using it at LinkedIn in the context of exploratory work and some of our recently announced product launches. Yes, it still has many shortcomings, but most of them are being addressed and will get much better soon. As someone who has been working on AI for over twenty years I can say with no hesitation that what has happened in the field in recent months/years really represents a huge leap. In the following sectiosn I dive into some of the questions regarding this point in time and what it means for the near future.
 
 # What will be disrupted by AI?
 
