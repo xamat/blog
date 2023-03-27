@@ -53,9 +53,9 @@ So, I think there are more reasons to be excited than to be scared. But, it is i
 
 As many scientists will try to convince you, nothing really revolutionary has happened on the technical side. The current revolution has happened mostly because of the accumulation of several recent (and not so recent) discoveries coming into place at once.
 
-The first one is Deep Learning. Deep learning, which some dismissed at first as “just overfitted large neural networks” when it re-appeared in the spotlight ten years ago, went from classifying cats (https://www.wired.com/2012/06/google-x-neural-network/ ) to much more impressive tasks like voice recognition or beating Go and Poker professional players.
+The first one is Deep Learning. Deep learning, which some dismissed at first as “just overfitted large neural networks” when it re-appeared in the spotlight ten years ago, went from [classifying cats](https://www.wired.com/2012/06/google-x-neural-network/ ) to much more impressive tasks like voice recognition or beating Go and Poker professional players.
 
-Only five years ago, a novel deep learning architecture, the Transformer, grabbed everyone’s attention (pun intended). In only five years, there has been an explosion of Transformer models. You can read all about them in my now popular Transformer catalog (https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/).
+Only five years ago, a novel deep learning architecture, the Transformer, grabbed everyone’s attention (pun intended). In only five years, there has been an explosion of Transformer models. You can read all about them in my now popular [Transformer catalog](https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/).
 
 <img src="/blog/images/99-03.png">
 
@@ -65,7 +65,7 @@ The exponential growth in number of models and model size in only five years has
 * Improvement in training processes (and in GPU hardware) have enabled training much larger models on much larger datasets. Most recent models are trained on almost all of the internet… and some.
 * Reinforcement learning with human feedback, which was more recently introduced, has quickly improved “reasoning” capabilities and alignment.
 
-Now it is important to remember that these large language models have still only been pre-trained to predict the next token (~word). However, we still don’t know why, but there are clearly some “emerging abilities” once those models get large enough (https://arxiv.org/abs/2206.07682). The addition of the RLHF has furthermore introduced another level of emergent abilities that are still hard to explain.
+Now it is important to remember that these large language models have still only been pre-trained to predict the next token (~word). However, we still don’t know why, but there are clearly some [“emerging abilities”](https://arxiv.org/abs/2206.07682) once those models get large enough. The addition of the RLHF has furthermore introduced another level of emergent abilities that are still hard to explain.
 
 In summary, there have been a few discoveries that have all come together and enabled this revolution. However, we still don’t fully understand why all those things work so well together.
 
@@ -75,11 +75,11 @@ The obvious answer to those questions is of course not. The not-so-obvious answe
 
 On the other hand, while we do probably want AI models over time to be more general purpose, the reality is that we might be better off with different models who are each “superhuman” at whatever they do. Think about it: if we had an AI that was better than the best human doctors at medical reasoning and another AI that was better than the best lawyers at legal reasoning why would we care about having an AI that is both of them?
 
-The question about consciousness is philosophically very interesting, and I don’t want to dismiss it. But, in order to answer a question like that, we would first need to agree on what consciousness is. Read any book about philosophy of mind and you will quickly realize that there is no commonly accepted definition (in fact, there is a “the problem of definition” in the Wikipedia article https://en.wikipedia.org/wiki/Consciousness ). So, the answer to is GPT-4 conscious is that it is not according to many definitions of consciousness, but it is according to some.
+The question about consciousness is philosophically very interesting, and I don’t want to dismiss it. But, in order to answer a question like that, we would first need to agree on what consciousness is. Read any book about philosophy of mind and you will quickly realize that there is no commonly accepted definition (in fact, there is a “the problem of definition” in the [Wikipedia article](https://en.wikipedia.org/wiki/Consciousness). So, the answer to is GPT-4 conscious is that it is not according to many definitions of consciousness, but it is according to some.
 
 There is though a more interesting question than those two: can GPT-4 reason? That is an important question, and its answer is a bit controversial. Some researchers will argue that a model that has been trained in the way that GPT-4 has been trained can never reason. Interestingly, both Yann LeCun and Gary Marcus, who have been battling out on the issue of reasoning on other approaches agree that large language models “cannot reason”. I think they are both wrong.
 
-Reasoning is not a black or white binary label that requires a specific fundamental approach. As opposed to consciousness, it is not a philosophical concept either. Reasoning can be measured, and is task specific. Therefore GPT-4 does reason in many contexts and for many tasks. This is obvious when you read the “Sparks of artificial general intelligence” report (https://arxiv.org/abs/2303.12712), which I wished had been entitled something more along the lines of “GPT-4 reasoning capabilities”.
+Reasoning is not a black or white binary label that requires a specific fundamental approach. As opposed to consciousness, it is not a philosophical concept either. Reasoning can be measured, and is task specific. Therefore GPT-4 does reason in many contexts and for many tasks. This is obvious when you read the [“Sparks of artificial general intelligence” report](https://arxiv.org/abs/2303.12712), which I wished had been entitled something more along the lines of “GPT-4 reasoning capabilities”.
 
 # Will GPT-4 replace all other AI?
 
