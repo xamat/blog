@@ -18,7 +18,8 @@ categories:
 
 
 
-Take a moment to reflect on everything that is going on with generative AI because what we are experiencing right now will define generations to come. 
+Let's take a moment to reflect on everything that is going on with generative AI because what we are experiencing right now will define generations to come. 
+
 In my previous post [“ChatGPT: hype or revolution?”](https://amatriain.net/blog/chatGPT), I discussed that while there was some short-term hype with ChatGPT, a revolution was clearly brewing. Well, I am here to tell you that the revolution is already in full swing. Today.
 The launch of GPT-4 marks a big milestone for many reasons. Not only GPT4 shows better than human capabilities at many tasks, but it is also multi-modal enabling mind-boggling applications that we just did not think possible only a few months ago. 
 Let’s take a look at some of the amazing accomplishments by GPT-4 out of the box:
