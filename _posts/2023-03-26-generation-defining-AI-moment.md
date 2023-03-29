@@ -4,7 +4,7 @@ title: "A generation defining AI moment"
 date: '2023-03-25T00:00:01+00:00'
 author: Xavier
 permalink: /AImoment
-image: /blog/images/99-01.png
+image: /blog/images/99-00.png
 reading_time:
     - ''
     - ''
@@ -17,6 +17,7 @@ categories:
 ---
 
 
+<img src="/blog/images/99-00.png">
 
 Let's take a moment to reflect on everything that is going on with generative AI because what we are experiencing right now will define generations to come. 
 
