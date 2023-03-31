@@ -1,0 +1,151 @@
+---
+id: 100
+title: "Towards Reinforcement Learning with AI Feedback (RLAIF). What open-sourced foundation models, instruction tuning, and other recent events mean for the future of AI"
+date: '2023-03-30T00:00:01+00:00'
+author: Xavier
+permalink: /AImoment
+image: /blog/images/100-00.png
+reading_time:
+    - ''
+    - ''
+categories:
+    - Artificial Intelligence
+    - Machine Learning
+    - LLMs
+---
+
+
+<img src="/blog/images/100-00.png">
+
+Let's take a moment to reflect on everything that is going on with generative AI because what we are experiencing right now will define generations to come. 
+
+In my previous post [“ChatGPT: hype or revolution?”](https://amatriain.net/blog/chatGPT), I discussed that while there was some short-term hype with ChatGPT, a revolution was clearly brewing. Well, I am here to tell you that the revolution is already in full swing. Today.
+The launch of GPT-4 marks a big milestone for many reasons. Not only GPT4 shows better than human capabilities at many tasks, but it is also multi-modal enabling mind-boggling applications that we just did not think possible only a few months ago. 
+Let’s take a look at some of the amazing accomplishments by GPT-4 out of the box:
+
+* It scores in the 90th percentile for the BAR exam to become a lawyer
+* It scores in the 90th percentile for the SAT both in Math and Reading and Comprehension
+* It exceeds the USMLE score required to graduate in medicine in the US [by 20 points](https://www.microsoft.com/en-us/research/publication/capabilities-of-gpt-4-on-medical-challenge-problems/)
+* It shows [“sparks of general artificial intelligence”](https://arxiv.org/abs/2303.12712)  according to some 
+* It is much better at coding than ChatGPT
+
+
+<img src="/blog/images/99-01.png">
+[Results of GPT-4 one several standard exams](https://openai.com/research/gpt-4)
+
+<img src="/blog/images/99-02.png">
+[GPT-4 is much better in intricate coding tasks than ChatGPT](https://arxiv.org/abs/2303.12712)
+
+<img src="/blog/images/99-04.png">
+[GPT-4 can solve real world problems](https://arxiv.org/abs/2303.12712)
+
+
+
+A few weeks back I shared my thoughts on how things were going to evolve in the race to build better/larger/smarter generative AI models, and particularly LLMs. Here is what I had to say:
+
+*If you are working with LLMs, here are three important things you might want to keep in mind to anticipate how things are going to evolve in the next 6 months:
+
+1. The best LLMs are going to be much better in all the different dimensions you probably care about (including e.g. less hallucinations)
+2. The best open-sourced LLMs are going to be better than the best non-open source LLMs nowadays. As an example, Facebook AI made a big announcement for their LLaMA open source model a couple of weeks back (https://lnkd.in/gfdq8Bed). A few days later Google announced their Flan-UL2 20B model (https://lnkd.in/ggzfwvGN). The latter is much better. Not as good as GPT-3.5 yet, but getting close.
+3. While the best LLMs in (1) are going to continue to grow in size, there are going to be models that are much smaller than the current best models yet have better capabilities. Some of them might be open sourced in (2).*
+
+In just three weeks, a few other things that have happened have reinforced my belief, but they have also introduced a very interesting angle that I think is worth highlighting and really paying attention to. In this post I summarize these recent “trends” and discuss how to interpret them.
+
+#More and better open source foundation models
+
+In just a few weeks we have seen a pretty large influx of open source foundation models. 
+These models not only include the usual players, but other less likely subjects. 
+After Facebook introduced [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/ ), 
+Google presented [ul2](https://ai.googleblog.com/2022/10/ul2-20b-open-source-unified-language.html). 
+But then we saw Databricks open source [Dolly](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html) 
+and Cerebras presented [Cerebras-GPT](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/
+).
+
+<img src="/blog/images/100-00.png">
+
+It is clear that the race for better, smaller, and more efficient models is on. It will be hard to compete with the GPT-4s of the world, but, 
+as I mentioned above, this is not a winner-takes-all kind of market.
+
+#Improved fine-tuning and training techniques
+
+If you are reading this, you are probably very familiar with the idea of RLHF (Reinforcement Learning with Human Feedback). 
+You have a longer description in my [Transformer Catalog](https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/), 
+but in summary, it is the training process in which a foundation base model is trained with labeled data from humans where annotators label pairs of 
+prompt/responses as good or bad. It has been documented that only a few of those labels can go a long way in improving results, and, in particular, 
+alignment in LLMs.
+
+<img src="/blog/images/100-01.png">
+
+There have been other interesting improvements to training and fine-tuning LLMs such as [LoRA](https://github.com/microsoft/LoRA). 
+These improvements, most of which are now available as part of HuggingFace’s 
+[State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods library](https://github.com/huggingface/peft ), allow to fine-tune LLMs 
+in an efficient way such that the resulting fine-tune model is smaller and more efficient. These approaches are kind of a big deal, 
+because you can turn a huge general-purpose model into a much smaller one that is better at a particular task you are interested in.
+
+#Instruction fine tuning
+
+A specific kind of model fine-tuning is the so-called instruction tuning. Base foundational models like GPT-3 are not very good at 
+following multi-step instructions. However, models that are fine-tuned to instructions like GPT-3.5 (the model used in ChatGPT) are 
+much better. Instructions for fine-tuning can even be generated by the model itself in the so-called 
+[self-instruct approach](https://arxiv.org/abs/2212.10560)
+
+<img src="/blog/images/100-02.png">
+
+There are several examples of these instruction fine-tuned models available already as open source. For example, 
+[Openchatkit](https://www.together.xyz/blog/openchatkit) is a model fine-tuned for chat from EleutherAI’s GPT-NeoX-20B 
+with over 43 million instructions. Or HuggingFace’s [OpenAssistant](https://huggingface.co/OpenAssistant/oasst-sft-1-pythia-12b ) a 
+Pythia 12B fine-tuned on 22k human demonstrations.
+
+#Fine-tuning open source foundation models with data from other models
+
+Ok, so now things are starting to get interesting: it turns out that you can not only get a foundation model and turn it into a better 
+and more efficient model by feeding in instructions, but those instructions you are feeding in can be themselves generated by a model!
+
+And, wait for it, the instructions that you are generating to fine-tune your foundation model do not need to come from an open-sourced model, do they?
+
+Well, meet Stanford’s [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) , a “controversial” model that uses LLaMA foundation model from 
+Meta and finetunes with instructions created by OpenAI’s davinci-003.
+
+<img src="/blog/images/100-03.png">
+
+Alpaca is controversial for two reasons: First, it uses a foundation model LLaMA that is not completely open sourced. 
+LLaMA is only shared with those who follow Meta’s process, and, while model 
+weights [leaked soon on 4chan](https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse ), 
+Meta is not very happy about this. Secondly, it is not clear that OpenAI’s TOS (Terms of Service) allow for this kind of usage. 
+If you own a foundation model, you probably don’t want it to be generating data to train the competition’s model. 
+But, it is not super clear how that can be enforced at this point.
+
+To be fair, Stanford did not release the model weights for Alpaca, and, in fact, 
+soon after [removed the model entirely](https://gizmodo.com/stanford-ai-alpaca-llama-facebook-taken-down-chatgpt-1850247570 ). 
+But, you can imagine that is not the end of it all.
+
+Soon after, a similar [GPT4ALL](https://github.com/nomic-ai/gpt4all ) model was released. This model was also a LLaMA model 
+fine-tuned on instructions (using LoRA), this time around from gpt-3.5. The model again faced LlaMA distribution issues, and is 
+now trying to recreate the same results from GPTJ, but I am sure they might try Cerebras-GPT and others soon. 
+
+On an incredible turn of events, it seems like Google itself was using data generated by ChatGPT to fine tune Bard! According 
+to [The Information](https://www.theinformation.com/articles/alphabets-google-and-deepmind-pause-grudges-join-forces-to-chase-openai?rc=9kfau8), 
+a Google engineer resigned over this.
+
+<img src="/blog/images/100-04.png">
+
+#Towards RLAIF and what it means for the future of AI
+
+So, let’s recap:
+
+- There are pretty capable general purpose foundation models being released every day
+- These models can be efficiently fine-tuned on instructions to make them even better
+- Those instructions can be generated by other models, including those that are closed source.
+
+Models can improve by learning from each other, and they don’t necessarily need human feedback!
+
+While this is not exactly the same as Reinforcement Learning with AI feedback, I think that we are not very far from this paradigm 
+appearing and dominating much of the landscape. Of course this will introduce a lot of interesting new questions and issues ranging 
+from legal and IP concerns on model owners all the way to propagation of biases and/or errors through generations of models that are 
+trained on each other.
+
+I am not really sure what way this will go, but it is fascinating to see how quickly everything is happening before our eyes. 
+And, while I think the [six months moratorium that some are proposing](https://futureoflife.org/open-letter/pause-giant-ai-experiments/) is 
+naive and unrealistic, we really need to think hard about all these fast changes and make sure that we better understand their consequences.
+
+
