@@ -97,4 +97,4 @@ GPT-4, together with the previous ChatGPT, represents an inflection point in Art
 
 So, yes, as Bill Gates said, [the Age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun).
 
-Btw, if you are able to cope with Lex Fridman, which I am barely able to, [this interview] (https://www.youtube.com/watch?v=L_Guz73e6fw_ with Sam Altman, has some interesting tidbits about GPT-4. Also, take a look at [the book](https://www.impromptubook.com/wp-content/uploads/2023/03/impromptu-rh.pdf) that Reid Hoffman wrote using GPT-4 and [his conversation](https://www.youtube.com/watch?v=CYQniyjirJs) about writing the book.
+Btw, if you are able to cope with Lex Fridman, [this interview](https://www.youtube.com/watch?v=L_Guz73e6fw_) with Sam Altman, has some interesting tidbits about GPT-4. Also, take a look at [the book](https://www.impromptubook.com/wp-content/uploads/2023/03/impromptu-rh.pdf) that Reid Hoffman wrote using GPT-4 and [his conversation](https://www.youtube.com/watch?v=CYQniyjirJs) about writing the book.
