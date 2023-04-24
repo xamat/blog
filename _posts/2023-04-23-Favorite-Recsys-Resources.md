@@ -36,7 +36,7 @@ image: /blog/images/101-01.png
 6. [End-to-end examples of real-world industrial recommender systems](#e2e)
 
 
-### <a name="Intro"></a> 1. Introduction to recommender systems: Basics and classic techniques 
+## <a name="Intro"></a> 1. Introduction to recommender systems: Basics and classic techniques 
 
 
 [Introduction to Recommender Systems: A 4-hour lecture [VIDEO]](https://amatriain.net/blog/introduction-to-recommender-systems-4/)
@@ -127,7 +127,7 @@ image: /blog/images/101-01.png
 
 [Deep Reinforcement Learning for Page-wise Recommendations](https://zhaoxyai.github.io/paper/recsys2018.pdf)
 
-### <a name="DL"></a>3. Deep Learning for recommendations
+## <a name="DL"></a>3. Deep Learning for recommendations
 
 #### <a name="DeepBasics"></a>3.1 The Deep Basics
 
@@ -184,7 +184,7 @@ image: /blog/images/101-01.png
 
 [Zero and Few Shot Recommender Systems based on Large Language Models](https://blog.reachsumit.com/posts/2023/04/llm-for-recsys/)
 
-### <a name="systems"></a>4. The “systems part” of recommender systems
+## <a name="systems"></a>4. The “systems part” of recommender systems
 
 
 <img src="/blog/images/101-17.png">
@@ -217,7 +217,7 @@ image: /blog/images/101-01.png
 
 [Introducing DreamShard: A reinforcement learning approach for embedding table sharding by Facebook](https://research.facebook.com/blog/2022/12/introducing-dreamshard-a-reinforcement-learning-approach-for-embedding-table-sharding/)
 
-### <a name="UX"></a>5. Evaluation and UX
+## <a name="UX"></a>5. Evaluation and UX
 
 
 <img src="/blog/images/101-23.png">
@@ -239,7 +239,7 @@ image: /blog/images/101-01.png
 [I like It... I like It Not: Measuring Users Ratings Noise in Recommender Systems](https://amatriain.net/pubs/umap09.pdf)
 
 
-### <a name="e2e"></a>6. End-to-end examples of real-world industrial recommender systems
+## <a name="e2e"></a>6. End-to-end examples of real-world industrial recommender systems
 
 [Lessons Learned from building real life recommender systems](https://amatriain.net/blog/ten-lessons-learned-from-building-real/)
 
