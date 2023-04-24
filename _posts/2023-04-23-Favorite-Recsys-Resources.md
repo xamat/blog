@@ -144,7 +144,7 @@ image: /blog/images/101-01.png
 
 #### <a name="llms"></a> LLMs for recommendations
 
-### <a name="systems"></a>The “systems part” of recommender systems]()
+### <a name="systems"></a>The “systems part” of recommender systems
 
 [Recommender Systems, Not Just Recommender Models](https://medium.com/nvidia-merlin/recommender-systems-not-just-recommender-models-485c161c755e)
 
@@ -184,7 +184,7 @@ image: /blog/images/101-01.png
 
 [Lessons Learned from building real life recommender systems](https://amatriain.net/blog/ten-lessons-learned-from-building-real/)
 
-[Pa[st, present, and future of recommender systems: An industry perspective [VIDEO]](https://dl.acm.org/doi/abs/10.1145/2959100.2959144)
+[Past, present, and future of recommender systems: An industry perspective [VIDEO]](https://dl.acm.org/doi/abs/10.1145/2959100.2959144)
 
 [On YouTube’s recommendation system by Youtube](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/)
 
