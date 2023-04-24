@@ -175,6 +175,10 @@ image: /blog/images/101-01.png
 
 #### <a name="llms"></a>3.5 LLMs for recommendations
 
+<img src="/blog/images/101-33.png">
+
+[Zero and Few Shot Recommender Systems based on Large Language Models](https://blog.reachsumit.com/posts/2023/04/llm-for-recsys/)
+
 ### <a name="systems"></a>4. The “systems part” of recommender systems
 
 <img src="/blog/images/101-17.png">
