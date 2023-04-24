@@ -36,7 +36,7 @@ image: /blog/images/101-01.png
 - [End-to-end examples of real-world industrial recommender systems](#e2e)
 
 
-### <a name="Intro"></a> Introduction to recommender systems: Basics and classic techniques 
+### <a name="Intro"></a> 1. Introduction to recommender systems: Basics and classic techniques 
 
 
 [Introduction to Recommender Systems: A 4-hour lecture [VIDEO]](https://amatriain.net/blog/introduction-to-recommender-systems-4/)
@@ -57,9 +57,9 @@ image: /blog/images/101-01.png
 
 [Feature Engineering for Recommendation Systems -- Part 1](https://blog.fennel.ai/p/feature-engineering-for-recommendation)
 
-### <a name="Beyond"></a> Beyond the basics
+### <a name="Beyond"></a> 2. Beyond the basics
 
-#### <a name="ranking"></a>Ranking
+#### <a name="ranking"></a>2.1 Ranking
 
 [What is Learning To Rank?](https://opensourceconnections.com/blog/2017/02/24/what-is-learning-to-rank/)
 
@@ -69,7 +69,7 @@ image: /blog/images/101-01.png
 
 [Lamdbamart In depth](https://softwaredoug.com/blog/2022/01/17/lambdamart-in-depth.html)
 
-#### <a name="fm"></a>Factorization machines
+#### <a name="fm"></a>2.2 Factorization machines
 
 <img src="/blog/images/101-5.png">
 
@@ -77,7 +77,7 @@ image: /blog/images/101-01.png
 
 [Factorization Machines](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)
 
-#### <a name="explorerexploit"></a>Explore/exploit
+#### <a name="explorerexploit"></a>2.3 Explore/exploit
 
 [Bandits for Recommender Systems](https://eugeneyan.com/writing/bandits/)
 
@@ -93,7 +93,7 @@ image: /blog/images/101-01.png
 
 [Recommending Items to Users: An Explore Exploit Perspective](https://www.ueo-workshop.com/wp-content/uploads/2013/10/UEO-Deepak.pdf)
 
-#### <a name="page"></a> Full page optimization
+#### <a name="page"></a>2.4 Full page optimization
 
 <img src="/blog/images/101-7.png">
 
@@ -105,7 +105,7 @@ image: /blog/images/101-01.png
 
 [Fair and Balanced: Learning to Present News Stories](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=07b73ac3e6881865e518b72cff6d82ea08456241)
 
-#### <a name="context"></a> Context-aware recommendations and other approaches
+#### <a name="context"></a>2.5 Context-aware recommendations and other approaches
 
 [The Wisdom of the Few: A Collaborative Filtering Approach Based on Expert Opinions from the Web](https://amatriain.net/pubs/xamatriain_sigir09.pdf)
 
@@ -117,7 +117,7 @@ image: /blog/images/101-01.png
 
 [Towards Time-Dependant Recommendation based on Implicit Feedback](https://amatriain.net/pubs/karatzoglu-recsys-2010.pdf)
 
-#### <a name="RL"></a>Reinforcement learning
+#### <a name="RL"></a>2.6 Reinforcement learning
 
 [Reinforcement Learning for Recommendations and Search](https://eugeneyan.com/writing/reinforcement-learning-for-recsys-and-search/)
 
@@ -125,9 +125,9 @@ image: /blog/images/101-01.png
 
 [Deep Reinforcement Learning for Page-wise Recommendations](https://zhaoxyai.github.io/paper/recsys2018.pdf)
 
-### <a name="DL"></a> Deep Learning for recommendations
+### <a name="DL"></a>3. Deep Learning for recommendations
 
-#### <a name="DeepBasics"></a> The Deep Basics
+#### <a name="DeepBasics"></a>3.1 The Deep Basics
 
 <img src="/blog/images/101-11.png">
 
@@ -141,7 +141,7 @@ image: /blog/images/101-01.png
 
 [Deep Learning Recommendation Model for Personalization and Recommendation Systems by Facebook](https://arxiv.org/abs/1906.00091)
 
-#### <a name="embeddings"></a> Embeddings
+#### <a name="embeddings"></a>3.2 Embeddings
 
 [Embedding-based Retrieval in Facebook Search by Facebook](https://arxiv.org/pdf/2006.11632.pdf)
 
@@ -149,7 +149,7 @@ image: /blog/images/101-01.png
 
 [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba by Alibaba](https://arxiv.org/pdf/1803.02349.pdf)
 
-#### <a name="gnn"></a> Graph Neural Networks
+#### <a name="gnn"></a>3.3 Graph Neural Networks
 
 <img src="/blog/images/101-15.png">
 
@@ -164,7 +164,7 @@ image: /blog/images/101-01.png
 [Graph Neural Networks in Recommender Systems: A Survey](https://arxiv.org/abs/2011.02260)
 
 
-#### <a name="sequences"></a> Recommending Sequences
+#### <a name="sequences"></a>3.4 Recommending Sequences
 
 [Behavior Sequence Transformer for E-commerce Recommendation in Alibaba by Alibaba](https://arxiv.org/pdf/1905.06874.pdf)
 
@@ -173,9 +173,9 @@ image: /blog/images/101-01.png
 [Recommending movies: retrieval using a sequential model a Tensorflow example](https://www.tensorflow.org/recommenders/examples/sequential_retrieval)
 
 
-#### <a name="llms"></a> LLMs for recommendations
+#### <a name="llms"></a>3.5 LLMs for recommendations
 
-### <a name="systems"></a>The “systems part” of recommender systems
+### <a name="systems"></a>4. The “systems part” of recommender systems
 
 <img src="/blog/images/101-17.png">
 
@@ -207,7 +207,7 @@ image: /blog/images/101-01.png
 
 [Introducing DreamShard: A reinforcement learning approach for embedding table sharding by Facebook](https://research.facebook.com/blog/2022/12/introducing-dreamshard-a-reinforcement-learning-approach-for-embedding-table-sharding/)
 
-### <a name="UX"></a> Evaluation and UX
+### <a name="UX"></a>5. Evaluation and UX
 
 <img src="/blog/images/101-23.png">
 
@@ -228,7 +228,7 @@ image: /blog/images/101-01.png
 [I like It... I like It Not: Measuring Users Ratings Noise in Recommender Systems](https://amatriain.net/pubs/umap09.pdf)
 
 
-### <a name="e2e"></a> End-to-end examples of real-world industrial recommender systems
+### <a name="e2e"></a>6. End-to-end examples of real-world industrial recommender systems
 
 [Lessons Learned from building real life recommender systems](https://amatriain.net/blog/ten-lessons-learned-from-building-real/)
 
