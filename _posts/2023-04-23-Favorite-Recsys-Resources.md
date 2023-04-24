@@ -144,7 +144,7 @@ image: /blog/images/101-01.png
 
 #### <a name="llms"></a> LLMs for recommendations
 
-#### <a name="systems"></a>The “systems part” of recommender systems]()
+### <a name="systems"></a>The “systems part” of recommender systems]()
 
 [Recommender Systems, Not Just Recommender Models](https://medium.com/nvidia-merlin/recommender-systems-not-just-recommender-models-485c161c755e)
 
@@ -164,7 +164,7 @@ image: /blog/images/101-01.png
 
 [Introducing DreamShard: A reinforcement learning approach for embedding table sharding by Facebook](https://research.facebook.com/blog/2022/12/introducing-dreamshard-a-reinforcement-learning-approach-for-embedding-table-sharding/)
 
-#### <a name="UX"></a> Evaluation and UX
+### <a name="UX"></a> Evaluation and UX
 
 
 [The death of the stars: A brief primer on online user ratings](https://amatriain.net/blog/the-death-of-the-stars-a-brief-primer-on-online-user-ratings-6740453f27ed/)
@@ -180,7 +180,7 @@ image: /blog/images/101-01.png
 [I like It... I like It Not: Measuring Users Ratings Noise in Recommender Systems](https://amatriain.net/pubs/umap09.pdf)
 
 
-#### <a name="e2e"></a> End-to-end examples of real-world industrial recommender systems
+### <a name="e2e"></a> End-to-end examples of real-world industrial recommender systems
 
 [Lessons Learned from building real life recommender systems](https://amatriain.net/blog/ten-lessons-learned-from-building-real/)
 
