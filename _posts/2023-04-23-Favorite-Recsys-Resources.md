@@ -39,182 +39,182 @@ image: /blog/images/101-01.png
 ### <a name="Intro"></a> Introduction to recommender systems: Basics and classic techniques 
 
 
-[Introduction to Recommender Systems: A 4-hour lecture [VIDEO]]()
+[Introduction to Recommender Systems: A 4-hour lecture [VIDEO]](https://amatriain.net/blog/introduction-to-recommender-systems-4/)
 
-[Data Mining Methods for Recommender Systems]()
+[Data Mining Methods for Recommender Systems](https://amatriain.net/pubs/RecsysHandbookChapter.pdf)
 
-[The recommender revolution]()
+[The recommender revolution](https://www.technologyreview.com/2022/04/27/1048517/the-recommender-revolution/)
 
-[On the “Usefulness” of the Netflix Prize]()
+[On the “Usefulness” of the Netflix Prize](https://amatriain.net/blog/on-the-usefulness-of-the-netflix-prize-403d360aaf2/)
 
-[Kdd 2014 Tutorial - the recommender problem revisited]()
+[Kdd 2014 Tutorial - the recommender problem revisited](https://www.slideshare.net/xamat/kdd-2014-tutorial-the-recommender-problem-revisited)
 
-[Feature Engineering for Recommendation Systems -- Part 1]()
+[Feature Engineering for Recommendation Systems -- Part 1](https://blog.fennel.ai/p/feature-engineering-for-recommendation)
 
 ### <a name="Beyond"></a> Beyond the basics
 
 #### <a name="ranking"></a>Ranking
 
-[What is Learning To Rank?]()
+[What is Learning To Rank?](https://opensourceconnections.com/blog/2017/02/24/what-is-learning-to-rank/)
 
-[Personalized ‘Complete the Look’ model by Walmart]()
+[Personalized ‘Complete the Look’ model by Walmart](https://medium.com/walmartglobaltech/personalized-complete-the-look-model-ea093aba0b73)
 
-[Lamdbamart In depth]()
+[Lamdbamart In depth](https://softwaredoug.com/blog/2022/01/17/lambdamart-in-depth.html)
 
 #### <a name="fm"></a>Factorization machines
 
-[Factorization Machines for Item Recommendation with Implicit Feedback Data]()
+[Factorization Machines for Item Recommendation with Implicit Feedback Data](https://towardsdatascience.com/factorization-machines-for-item-recommendation-with-implicit-feedback-data-5655a7c749db)
 
-[Factorization Machines]()
+[Factorization Machines](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)
 
 #### <a name="explorerexploit"></a>Explore/exploit
 
-[Bandits for Recommender Systems]()
+[Bandits for Recommender Systems](https://eugeneyan.com/writing/bandits/)
 
-[Explore/Exploit Schemes for Web Content Optimization]()
+[Explore/Exploit Schemes for Web Content Optimization](https://sci-hub.se/10.1109/icdm.2009.52)
 
-[Explore/Exploit for Personalized Recommendation [VIDEO]]()
+[Explore/Exploit for Personalized Recommendation [VIDEO]](https://www.youtube.com/watch?v=LvcoPy0QUuw&list=PLZSO_6-bSqHQCIYxE3ycGLXHMjK3XV7Iz)
 
-[Artwork Personalization at Netflix by Netflix]()
+[Artwork Personalization at Netflix by Netflix](https://netflixtechblog.com/artwork-personalization-c589f074ad76)
 
-[A Contextual-Bandit Approach to Personalized News Article Recommendation]()
+[A Contextual-Bandit Approach to Personalized News Article Recommendation](https://arxiv.org/pdf/1003.0146.pdf)
 
-[Recommending Items to Users: An Explore Exploit Perspective]()
+[Recommending Items to Users: An Explore Exploit Perspective](https://www.ueo-workshop.com/wp-content/uploads/2013/10/UEO-Deepak.pdf)
 
 #### <a name="page"></a> Full page optimization
 
-[Learning a Personalized Homepage by Netflix]()
+[Learning a Personalized Homepage by Netflix](https://netflixtechblog.com/learning-a-personalized-homepage-aa8ec670359a)
 
-[Beyond Ranking: Optimizing Whole-Page Presentation [VIDEO]]()
+[Beyond Ranking: Optimizing Whole-Page Presentation [VIDEO]](https://www.youtube.com/watch?v=1LGJmFadtoI)
 
-[Fair and Balanced: Learning to Present News Stories]()
+[Fair and Balanced: Learning to Present News Stories](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=07b73ac3e6881865e518b72cff6d82ea08456241)
 
 #### <a name="context"></a> Context-aware recommendations and other approaches
 
-[The Wisdom of the Few: A Collaborative Filtering Approach Based on Expert Opinions from the Web]()
+[The Wisdom of the Few: A Collaborative Filtering Approach Based on Expert Opinions from the Web](https://amatriain.net/pubs/xamatriain_sigir09.pdf)
 
-[Multiverse Recommendation: N-dimensional Tensor Factorization for Context-aware Collaborative Filtering]()
+[Multiverse Recommendation: N-dimensional Tensor Factorization for Context-aware Collaborative Filtering](https://amatriain.net/pubs/karatzoglu-recsys-2010.pdf)
 
-[Temporal Diversity in Recommender Systems]()
+[Temporal Diversity in Recommender Systems](https://amatriain.net/pubs/karatzoglu-recsys-2010.pdf)
 
-[Towards Time-Dependant Recommendation based on Implicit Feedback]()
+[Towards Time-Dependant Recommendation based on Implicit Feedback](https://amatriain.net/pubs/karatzoglu-recsys-2010.pdf)
 
 #### <a name="RL"></a>Reinforcement learning
 
-[Reinforcement Learning for Recommendations and Search]()
+[Reinforcement Learning for Recommendations and Search](https://eugeneyan.com/writing/reinforcement-learning-for-recsys-and-search/)
 
-[Deep Reinforcement Learning for Page-wise Recommendations]()
+[Deep Reinforcement Learning for Page-wise Recommendations](https://zhaoxyai.github.io/paper/recsys2018.pdf)
 
 
 ### <a name="DL"></a> Deep Learning for recommendations
 
 #### <a name="DeepBasics"></a> The Deep Basics
 
-[Neural Collaborative Filtering]()
+[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)
 
-[Wide & Deep Learning for Recommender Systems by Google]()
+[Wide & Deep Learning for Recommender Systems by Google](https://arxiv.org/abs/1606.07792)
 [
-[Deep Learning Recommendation Model for Personalization and Recommendation Systems by Facebook]()
+[Deep Learning Recommendation Model for Personalization and Recommendation Systems by Facebook](https://arxiv.org/abs/1906.00091)
 
 #### <a name="embeddings"></a> Embeddings
 
-[Embedding-based Retrieval in Facebook Search by Facebook]()
+[Embedding-based Retrieval in Facebook Search by Facebook](https://arxiv.org/pdf/2006.11632.pdf)
 
-[Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba by Alibaba]()
+[Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba by Alibaba](https://arxiv.org/pdf/1803.02349.pdf)
 
 #### <a name="gnn"></a> Graph Neural Networks
 
-[ATBRG: Adaptive Target-Behavior Relational Graph Network for Effective Recommendation]()
+[ATBRG: Adaptive Target-Behavior Relational Graph Network for Effective Recommendation](https://arxiv.org/pdf/2005.12002.pdf)
 
-[Using graph neural networks to recommend related products by Amazon]()
+[Using graph neural networks to recommend related products by Amazon](https://towardsdatascience.com/modern-recommendation-systems-with-neural-networks-3cc06a6ded2c)
 
-[Modern Recommendation Systems with Neural Networks]()
+[Modern Recommendation Systems with Neural Networks](https://towardsdatascience.com/modern-recommendation-systems-with-neural-networks-3cc06a6ded2c)
 
-[Graph Neural Networks in Recommender Systems: A Survey]()
+[Graph Neural Networks in Recommender Systems: A Survey](https://arxiv.org/abs/2011.02260)
 
 
 #### <a name="sequences"></a> Recommending Sequences
 
-[Behavior Sequence Transformer for E-commerce Recommendation in Alibaba by Alibaba]()
+[Behavior Sequence Transformer for E-commerce Recommendation in Alibaba by Alibaba](https://arxiv.org/pdf/1905.06874.pdf)
 
-[Sequential Recommender Systems: Challenges, Progress and Prospects]()
+[Sequential Recommender Systems: Challenges, Progress and Prospects](https://www.ijcai.org/Proceedings/2019/0883.pdf)
 
-[Recommending movies: retrieval using a sequential model a Tensorflow example]()
+[Recommending movies: retrieval using a sequential model a Tensorflow example](https://www.tensorflow.org/recommenders/examples/sequential_retrieval)
 
 
 #### <a name="llms"></a> LLMs for recommendations
 
 #### <a name="systems"></a>The “systems part” of recommender systems]()
 
-[Recommender Systems, Not Just Recommender Models
+[Recommender Systems, Not Just Recommender Models](https://medium.com/nvidia-merlin/recommender-systems-not-just-recommender-models-485c161c755e)
 
-[Real World Recommendation System - Part 1 by Fennel.ai]()
+[Real World Recommendation System - Part 1 by Fennel.ai](https://blog.fennel.ai/p/real-world-recommendation-system)
 
-[Blueprints for recommender system architectures: 10th anniversary edition]()
+[Blueprints for recommender system architectures: 10th anniversary edition](https://amatriain.net/blog/RecsysArchitectures)
 
-[Pinterest Home Feed Unified Lightweight Scoring: A Two-tower Approach by Pinterest]()
+[Pinterest Home Feed Unified Lightweight Scoring: A Two-tower Approach by Pinterest](https://medium.com/pinterest-engineering/pinterest-home-feed-unified-lightweight-scoring-a-two-tower-approach-b3143ac70b55)
 
-[How NVidia supports Recommender Systems [VIDEO] by NVidia]()
+[How NVidia supports Recommender Systems [VIDEO] by NVidia](https://www.youtube.com/watch?v=wPso35VkuCs)
 
-[System Design for Recommendations and Search]()
+[System Design for Recommendations and Search](https://eugeneyan.com/writing/system-design-for-discovery/)
 
-[Real-time Machine Learning For Recommendations]()
+[Real-time Machine Learning For Recommendations](https://eugeneyan.com/writing/real-time-recommendations/#when-not-to-use-real-time-recommendations)
 
-[Near real-time features for near real-time personalization by LinkedIn]()
+[Near real-time features for near real-time personalization by LinkedIn](https://engineering.linkedin.com/blog/2022/near-real-time-features-for-near-real-time-personalization)
 
-[Introducing DreamShard: A reinforcement learning approach for embedding table sharding by Facebook]()
+[Introducing DreamShard: A reinforcement learning approach for embedding table sharding by Facebook](https://research.facebook.com/blog/2022/12/introducing-dreamshard-a-reinforcement-learning-approach-for-embedding-table-sharding/)
 
 #### <a name="UX"></a> Evaluation and UX
 
 
-[The death of the stars: A brief primer on online user ratings]()
+[The death of the stars: A brief primer on online user ratings](https://amatriain.net/blog/the-death-of-the-stars-a-brief-primer-on-online-user-ratings-6740453f27ed/)
 
-[EvalRS: a Rounded Evaluation of Recommender Systems]()
+[EvalRS: a Rounded Evaluation of Recommender Systems](https://arxiv.org/pdf/2207.05772.pdf)
 
-[Beyond NDCG: behavioral testing of recommender systems with RecList]()
+[Beyond NDCG: behavioral testing of recommender systems with RecList](https://arxiv.org/abs/2111.09963)
 
-[How to Measure and Mitigate Position Bias]()
+[How to Measure and Mitigate Position Bias](https://eugeneyan.com/writing/position-bias/)
 
-[Rate it Again: Increasing Recommendation Accuracy by User re-Rating]()
+[Rate it Again: Increasing Recommendation Accuracy by User re-Rating](https://amatriain.net/pubs/xamatriain_Recsys09.pdf)
 
-[I like It... I like It Not: Measuring Users Ratings Noise in Recommender Systems]()
+[I like It... I like It Not: Measuring Users Ratings Noise in Recommender Systems](https://amatriain.net/pubs/umap09.pdf)
 
 
 #### <a name="e2e"></a> End-to-end examples of real-world industrial recommender systems
 
-[[https://amatriain.net/blog/ten-lessons-learned-from-building-real/]()
+[Lessons Learned from building real life recommender systems](https://amatriain.net/blog/ten-lessons-learned-from-building-real/)
 
-[Pa[st, present, and future of recommender systems: An industry perspective [VIDEO]]()
+[Pa[st, present, and future of recommender systems: An industry perspective [VIDEO]](https://dl.acm.org/doi/abs/10.1145/2959100.2959144)
 
-[On YouTube’s recommendation system by Youtube]()
+[On YouTube’s recommendation system by Youtube](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/)
 
-[Deep Neural Networks for YouTube Recommendations by Youtube]()
+[Deep Neural Networks for YouTube Recommendations by Youtube](https://dl.acm.org/doi/pdf/10.1145/2959100.2959190)
 
-[How Spotify Uses ML to Create the Future of Personalization by Spotify [VIDEO]]()
+[How Spotify Uses ML to Create the Future of Personalization by Spotify [VIDEO]](https://engineering.atspotify.com/2021/12/how-spotify-uses-ml-to-create-the-future-of-personalization/)
 
-[Recommender systems in industry: A Netflix case study by Netflix]()
+[Recommender systems in industry: A Netflix case study by Netflix](https://amatriain.net/pubs/Recsys-in-industry.pdf)
 
-[Twitter’s recommendation algorithm by Twitter]()
+[Twitter’s recommendation algorithm by Twitter](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
 
-[Evolving the Best Sort for Reddit’s Home Feed by Reddit]()
+[Evolving the Best Sort for Reddit’s Home Feed by Reddit](https://www.reddit.com/r/blog/comments/o5tjcn/evolving_the_best_sort_for_reddits_home_feed/)
 
-[Intelligent Customer Preference engine with real-time ML systems by Walmart [VIDEO]]()
+[Intelligent Customer Preference engine with real-time ML systems by Walmart [VIDEO]](https://www.tecton.ai/apply/session-video-archive/intelligent-customer-preference-engine-with-real-time-ml-systems-2/)
 
-[Homepage Recommendation with Exploitation and Exploration by Doordash]()
+[Homepage Recommendation with Exploitation and Exploration by Doordash](https://doordash.engineering/2022/10/05/homepage-recommendation-with-exploitation-and-exploration/)
 
-[Learning to rank restaurants by Swiggy]()
+[Learning to rank restaurants by Swiggy](https://bytes.swiggy.com/learning-to-rank-restaurants-c6a69ba4b330)
 
-[How we use engagement-based embeddings to improve search and recommendation on Faire by Faire]()
+[How we use engagement-based embeddings to improve search and recommendation on Faire by Faire](https://craft.faire.com/how-we-use-engagement-based-embeddings-to-improve-search-and-recommendation-on-faire-912277de4e6d)
 
-[Deep Recommender Systems at Facebook [VIDEO] by Facebook]()
+[Deep Recommender Systems at Facebook [VIDEO] by Facebook](https://www.youtube.com/live/5xcd0V9m6Xs?feature=share)
 
-[Building a heterogeneous social network recommendation system by LinkedIn]()
+[Building a heterogeneous social network recommendation system by LinkedIn](https://engineering.linkedin.com/blog/2020/building-a-heterogeneous-social-network-recommendation-system)
 
-[A closer look at the AI behind course recommendations on LinkedIn Learning by LinkedIn]()
+[A closer look at the AI behind course recommendations on LinkedIn Learning by LinkedIn](https://engineering.linkedin.com/blog/2020/course-recommendations-ai-part-one)
 
-[Recommending the world's knowledge. Applications of Recommender Systems at Quora]()
+[Recommending the world's knowledge. Applications of Recommender Systems at Quora](https://www.slideshare.net/LeiYang27/recommending-the-worlds-knowledge)
 
-[Monolith: Real Time Recommendation System With Collisionless Embedding Table by Bytedance/Tiktok]()
+[Monolith: Real Time Recommendation System With Collisionless Embedding Table by Bytedance/Tiktok](https://arxiv.org/abs/2209.07663)
 
 
 
