@@ -14,58 +14,26 @@ categories:
 image: /blog/images/101-01.png
 ---
 
-![](/blog/images/02-01.jpeg)
-
-This post is now an [ArXiV paper](https://arxiv.org/abs/2302.07730) that you can print and cite.
-
-If you have any changes you want to propose to this catalog, feel free to file a PR [here](https://github.com/xamat/blog/blob/gh-pages/_posts/2023-01-16-transformer-models-an-introduction-and-catalog-2d1e9039f376.md) or directly in the LaTeX sources [here](https://github.com/xamat/TransformerCatalog)
-
-**Update 01/16/2023**
-
-S
-
-**Table of Contents**
-
-- [Catalog Index](#CatalogIndex)
-- [What are Transformers](#Transformers)
-     - [Encoder/Decoder Architecture](#encoderdecoder)
-     - [Attention](#attention)
-     - [Reinforcement Learning with Human Feedback](#rlhf)
-     - [Diffusion Models](#diffusion) 
-- [The Transformers Catalog](#TransformersCatalog)
-    - [Catalog Table](#CatalogTable)
-    - [Catalog Family Tree](#FamilyTree)
-    - [Catalog Timeline](#Timeline)
-    - [Catalog List](#CatalogList)
 
 
 
-### <a name="Transformers"></a>What are Transformers
-
-
-
-![](/blog/images/02-02.png)
-
-
-
-
-- [Introduction to recommender systems: Basics and classic techniques](#)
-- [Beyond the basics](#)
-    - [Ranking](#)
-    - [Factorization machines](#)
-    - [Explore/exploit](#)
-    - [Full page optimization](#)
-    - [Context-aware recommendations and other approaches](#)
-    - [Reinforcement learning](#)
-- [Deep Learning for recommendations](#)
-    - [The Deep Basics](#)
-    - [Embeddings](#)
-    - [Graph Neural Networks](#)
-    - [Recommending Sequences](#)
-    - [LLMs for recommendations](#)
-- [The “systems part” of recommender systems](#)
-- [Evaluation and UX](#)
-- [End-to-end examples of real-world industrial recommender systems](#)
+- [Introduction to recommender systems: Basics and classic techniques](#Intro)
+- [Beyond the basics](#Beyond)
+    - [Ranking](#ranking)
+    - [Factorization machines](#fm)
+    - [Explore/exploit](#explorerexploit)
+    - [Full page optimization](#page)
+    - [Context-aware recommendations and other approaches](#context)
+    - [Reinforcement learning](#RL)
+- [Deep Learning for recommendations](#DL)
+    - [The Deep Basics](#DeepBasics)
+    - [Embeddings](#embeddings)
+    - [Graph Neural Networks](#gnn)
+    - [Recommending Sequences](#sequences)
+    - [LLMs for recommendations](#llms)
+- [The “systems part” of recommender systems](#systems)
+- [Evaluation and UX](#ux)
+- [End-to-end examples of real-world industrial recommender systems](#e2e)
 
 
 ### <a name="Intro"></a> Introduction to recommender systems: Basics and classic techniques 
@@ -91,7 +59,8 @@ What is Learning To Rank?
 
 Personalized ‘Complete the Look’ model by Walmart
 Lamdbamart In depth 
-Factorization machines
+
+#### <a name="fm"></a>Factorization machines
 
 Factorization Machines for Item Recommendation with Implicit Feedback Data
 Factorization Machines
