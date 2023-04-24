@@ -71,6 +71,7 @@ image: /blog/images/101-01.png
 
 #### <a name="fm"></a>2.2 Factorization machines
 
+
 <img src="/blog/images/101-5.png">
 
 [Factorization Machines for Item Recommendation with Implicit Feedback Data](https://towardsdatascience.com/factorization-machines-for-item-recommendation-with-implicit-feedback-data-5655a7c749db)
@@ -94,6 +95,7 @@ image: /blog/images/101-01.png
 [Recommending Items to Users: An Explore Exploit Perspective](https://www.ueo-workshop.com/wp-content/uploads/2013/10/UEO-Deepak.pdf)
 
 #### <a name="page"></a>2.4 Full page optimization
+
 
 <img src="/blog/images/101-7.png">
 
@@ -129,6 +131,7 @@ image: /blog/images/101-01.png
 
 #### <a name="DeepBasics"></a>3.1 The Deep Basics
 
+
 <img src="/blog/images/101-11.png">
 
 [Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)
@@ -136,7 +139,8 @@ image: /blog/images/101-01.png
 <img src="/blog/images/101-12.png">
 
 [Wide & Deep Learning for Recommender Systems by Google](https://arxiv.org/abs/1606.07792)
-[
+
+
 <img src="/blog/images/101-13.png">
 
 [Deep Learning Recommendation Model for Personalization and Recommendation Systems by Facebook](https://arxiv.org/abs/1906.00091)
@@ -150,6 +154,7 @@ image: /blog/images/101-01.png
 [Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba by Alibaba](https://arxiv.org/pdf/1803.02349.pdf)
 
 #### <a name="gnn"></a>3.3 Graph Neural Networks
+
 
 <img src="/blog/images/101-15.png">
 
@@ -180,6 +185,7 @@ image: /blog/images/101-01.png
 [Zero and Few Shot Recommender Systems based on Large Language Models](https://blog.reachsumit.com/posts/2023/04/llm-for-recsys/)
 
 ### <a name="systems"></a>4. The “systems part” of recommender systems
+
 
 <img src="/blog/images/101-17.png">
 
@@ -212,6 +218,7 @@ image: /blog/images/101-01.png
 [Introducing DreamShard: A reinforcement learning approach for embedding table sharding by Facebook](https://research.facebook.com/blog/2022/12/introducing-dreamshard-a-reinforcement-learning-approach-for-embedding-table-sharding/)
 
 ### <a name="UX"></a>5. Evaluation and UX
+
 
 <img src="/blog/images/101-23.png">
 
