@@ -35,6 +35,7 @@ image: /blog/images/101-01.png
 5. [Evaluation and UX](#UX)
 6. [End-to-end examples of real-world industrial recommender systems](#e2e)
 
+*****
 
 ## <a name="Intro"></a> 1. Introduction to recommender systems: Basics and classic techniques 
 
