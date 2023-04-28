@@ -57,6 +57,8 @@ In ["DERA: Enhancing Large Language Model Completions with Dialog-Enabled Resolv
 my former team at Curai develops medical research and medical decision maker agents and show that combining these two 
 kinds of agents improves results over using a single GPT-4.
 
+Interestingly, just a few hours after publishing the first version of this post, I read about NVidia's [guardrails](https://github.com/NVIDIA/NeMo-Guardrails) toolkit for minimizing hallucination. It turns out that they implement exactly this approach.
+
 # The importance of messaging
 
 While the solution outlined below is readily available, generalized, and scales well, it cannot be implemented unless it comes with a 
