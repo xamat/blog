@@ -1,0 +1,50 @@
+---
+id: 103
+title: "Why I post"
+date: '2023-05-14T00:00:01+00:00'
+author: Xavier
+permalink: /whyIpost
+image: /blog/images/103-1.png
+reading_time:
+    - ''
+    - ''
+categories:
+    
+---
+
+
+<img src="/blog/images/103-1.png">
+
+I many times get this question: "Why do you post?". It is a fair question. In the past, I could have argued that posting helped my career. 
+And, I think it actually did. Despite having a fair chair of [publications and citations](https://scholar.google.com/citations?user=YYUK51oAAAAJ&hl=en), 
+it turns out that many people have known me because of some post or video I have published. 
+
+You might think that at this point in my career that is no longer true, but it turns out that is still the case. I was at a conference recently and someone who I was introduced 
+to said "Oh! You are the Transformer Catalog guy!". Pretty interesting that after so many years [this blog post](https://amatriain.net/blog/transformer-models-an-introduction-and-catalog-2d1e9039f376/)
+was what they knew me for. Actually, regarding that post, I even recetnly received a request to turn it into a journal submission, and it is already under review.
+
+# The real reason I post, and you should maybe too
+
+Besides all of this though, there is something that has become apparent over the years and that keeps me hooked to posting: my posts **help people**, in all kinds of unsuspected ways!
+I know it sounds a bit hard to believe, but I do get such stories all the time. For example, you would not believe the amount of people that I have met over the years that told me that 
+they learn about Recommender Systems in my 4-hour long Summer School [Youtube video](https://www.youtube.com/watch?v=bLhq63ygoU8&t=25s) that has almost 40k views at this point 
+(and, that I would not recommend at this point since it is a bit "old").
+
+Let me give you the last of such stories, which literally made my week/month recently. I will not reveal names or details becuase I have not cleared that with the people involved, 
+but if it's you reading this, feel free to raise your hand.
+
+I was at a Generative AI event in SF last week (one of the two events I get invited to every week, btw). There were a lot of interesting GenAI startups, and people in general. 
+At one point I got introduced to the founder/CEO of a GenAI startup. It is one of those "hot" startups (are there any non hot GenAI startups?) with a pretty decent early investment 
+from investors of high pedigree. When this founder heard my name though, he stopped and said: "I have something important to thank you for." I was surprised, but I thought he was
+going to talk about his cofounder, who I know pretty well. But, no, he was talking about himself! "I am in AI thanks to you." Wait, what? I didn't even know they guy. So, this
+required some explanation. Here it is:
+
+It turns out that when this person was first getting into AI/ML, they applied for an internship. The internship was declined at first because they did not have the appropriate
+background/experience. However, my new cocktail party friend found an obscure post of mine (I think it's [this Quora answer on ALS](https://www.quora.com/What-is-the-Alternating-Least-Squares-method-in-recommendation-systems-And-why-does-this-algorithm-work-intuition-behind-this/answer/Xavier-Amatriain)).
+They implemented the algorithm and went back to the internship hiring manager. The hiring manager was impressed, and they got accepted. Not only that, it turned out most of 
+their internship simply involved getting the ALS algorithm to work, which they had already done as part of the interview, so the whole internship was a huge success. One thing
+led to another, and they are now the founder of a successful GenAI startup!
+
+Hearing stories like this one not only make me smile and be happy, but also give me the energy to continue posting. If you have a story like this, I would love to hear!
+
+
