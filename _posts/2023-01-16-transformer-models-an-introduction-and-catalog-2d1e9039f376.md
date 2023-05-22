@@ -187,7 +187,7 @@ referring to them in the catalog below. Let's start with the basic
 architectural diagram from the original paper, and describe some of the
 components.
 
-![(/blog/images/02-02.png)](#fig:transformer)
+[!(/blog/images/02-02.png)](#fig:transformer)
 
 ## <a name="encoderdecoder"></a> Encoder/Decoder architecture
 
