@@ -21,7 +21,10 @@ This post is now an [ArXiV paper](https://arxiv.org/abs/2302.07730) that you can
 
 
 **Update 05/2023**
+
 Another pretty large update after 4 months. I was invited to submit the [article] (https://arxiv.org/abs/2302.07730) to a journal, so I decided to enlist some help from some LinkedIn colleages and completely revamp it. First off, we added a whole lot of new models, including e.g. many from the Llama family. Because of this, we also included a new image that includes all the newer models we have included since February 2023. Since some of those models are fine-tuned or intstruction-tuned, we went into explaining a bit more what is the difference between a fine-tuned and a pre-trained model, and added a section on that discussion. Finally, there was a lot of editing throughout the paper that I have incorporated here too. Hope this makes it more useful!
+
+Also, in case you wonder why the catalog does not include GPT-4 or PALM-2, I explicitly decided not to include models for which there are no public details of the different elements needed to classify and understand them even at the most basic level.
 
 
 **Update 01/16/2023**
