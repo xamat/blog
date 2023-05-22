@@ -133,11 +133,11 @@ Click on the list to access a Tranformer model directly, or keep reading below f
 - [XLNet](#XLNET)
 
 
-### Why this post
+# Why this post
 
 I have a terrible memory for names. In the past few years we have seen the meteoric appearance of dozens of models of the Transformer family, all of which have funny, but not self-explanatory, names. The goal of this post is to offer a short and simple catalog and classification of the most popular Transformer models. In other words, I needed a Transformers cheat-sheet and couldn’t find a good enough one online, so I thought I’d write my own. I hope it can be useful to you too.
 
-### <a name="Transformers"></a>What are Transformers
+# <a name="Transformers"></a>What are Transformers
 
 
 Transformers are a class of deep learning models that are defined by
@@ -189,7 +189,7 @@ components.
 
 ![](/blog/images/02-02.png){#fig:transformer}
 
-### <a name="encoderdecoder"></a> Encoder/Decoder architecture
+## <a name="encoderdecoder"></a> Encoder/Decoder architecture
 
 A generic encoder/decoder architecture (see
 Figure [2](#fig:transformer) is composed of two models. The encoder
@@ -219,7 +219,7 @@ specific details have since been modified in the many Transformer
 variations we will discuss. For example, as we noted before, models like
 BERT and GPT are based on only the encoder or decoder.
 
-### <a name="attention"></a>Attention
+## <a name="attention"></a>Attention
 
 It is clear from the description above that the only "exotic" elements
 of the model architecture are the multi-head attention layers, but, as
@@ -253,7 +253,7 @@ computational complexity and their higher connectivity, especially
 useful for learning long-term dependencies in sequences.
 
 
-### Foundation vs Fine-tuned models
+## Foundation vs Fine-tuned models
 
 A foundation model is defined as \"any model that is trained on broad
 data (generally using self-supervision at scale) that can be adapted
@@ -332,7 +332,7 @@ can read much more in these two wonderful posts by [Huggingface](https://hugging
 blog post at <https://huggingface.co/blog/rlhf>](rlhf.png){#fig:rlhf}
 
 
-### The impact of Transformers
+## The impact of Transformers
 
 The application demonstrated in the original Transformer paper  was
 language translation. This seminal work also showed the architecture
@@ -377,7 +377,7 @@ OpenAI announced the release of the more powerful [GPT-4](https://openai.com/res
 medical doctors or the bar exam for lawyers](https://arxiv.org/abs/2303.08774) .
 
 
-### <a name="diffusion"></a>A Note on Diffusion Models
+## <a name="diffusion"></a>A Note on Diffusion Models
 
 Diffusion models have become the new state-of-the-art in image
 generation, clearly pushing aside the previous approaches such as GANs
@@ -405,35 +405,117 @@ differences do transform their application, from the latent
 representation of autoencoders to the pure generative nature of
 Diffusion models.
 
-### <a name="TransformersCatalog"></a>The Transformers catalog
+# <a name="TransformersCatalog"></a>The Transformers catalog
 
-So hopefully by now you understand what Transformer models are, and why they are so popular and impactful. In this section I will introduce a catalog of the most important Transformer models that have been developed to this day. I will categorize each model according to the following properties: Pretraining Architecture, Pretraining Task, Compression, Application, Year, and Number of Parameters. Let’s briefly define each of those:
+## Features of a Transformer
+
+So hopefully by now you understand what Transformer models are, and why they are so popular and impactful. In this section we will introduce a catalog of the most important
+Transformer models that have been developed to this day. We will
+categorize each model according to the following properties: Family,
+Pretraining Architecture, Pretraining or Fine-tuning Task, Extension,
+Application, Date (of first known publication), Number of Parameters,
+Corpus, License, and Lab. Some are relative simple to understand:
+*Family* represents what original foundation model the specific model is
+extending, *extension* describes what the model is adding to the one it
+is deriving from, *Date* is when the model was firts published, *Number
+of parameters* of the pretrained model, *Corpus* is what data sources
+the model was pre-trained or fine-tuned on, *License* describes how the
+model can be legally used, and *Lab* lists the institution that
+published the model. The remaining propterties deserve a bit more
+explanation. We do that in the paregraphs that follow:
 
 ### Pretraining Architecture
 
-We described the Transformer architecture as being made up of an Encoder and a Decoder, and that is true for the original Transformer. However, since then, different advances have been made that have revealed that in some cases it is beneficial to use only the encoder, only the decoder, or both.
+We described the Transformer architecture as being made up of an Encoder
+and a Decoder, and that is true for the original Transformer. However,
+since then, different advances have been made that have revealed that in
+some cases it is beneficial to use only the encoder, only the decoder,
+or both.
 
 **Encoder Pretraining**
 
-These models, which are also called bi-directional or auto-encoding, only use the encoder during pretraining, which is usually accomplished by masking words in the input sentence and training the model to reconstruct. At each stage during pretraining, attention layers can access all the input words. This family of models are most useful for tasks that require understanding complete sentences such as sentence classification or extractive question answering.
+These models, which are also called bi-directional or auto-encoding,
+only use the encoder during pretraining, which is usually accomplished
+by masking tokens in the input sentence and training the model to
+reconstruct those tokens. At each stage during pretraining,
+self-attention layers can access all their input tokens. This family of
+models are most useful for tasks that require understanding complete
+sentences or passages, such as text classification, entailment, and
+extractive question answering.
 
 **Decoder Pretraining**
 
-Decoder models, often called auto-regressive, use only the decoder during a pretraining that is usually designed so the model is forced to predict the next word. The attention layers can only access the words positioned before a given word in the sentence. They are best suited for tasks involving text generation.
+Decoder models use only the decoder during a pretraining. They are also
+called auto-regressive language models because they are trained to
+predict the next token based on the previous sequence of tokens.
+
+The self-attention layers can only access the tokens positioned before a
+given token in the sentence. They are best suited for tasks involving
+text generation.
 
 **Transformer (Encoder-Decoder) Pretraining**
 
-Encoder-decoder models, also called sequence-to-sequence, use both parts of the Transformer architecture. Attention layers of the encoder can access all the words in the input, while those of the decoder can only access the words positioned before a given word in the input. The pretraining can be done using the objectives of encoder or decoder models, but usually involves something a bit more complex. These models are best suited for tasks revolving around generating new sentences depending on a given input, such as summarization, translation, or generative question answering.
+Encoder-decoder models, also called sequence-to-sequence, use both parts
+of the Transformer architecture.
+
+Self-attention layers of the encoder can access all their input tokens,
+while the self-attention layers of the decoder can only access the
+tokens positioned before a given token. As explained before, the
+additional attention layer in the decoder enables access to all encoder
+token representations.
+
+An encoder-decoder model can be pre-trained by optimizing denoising
+objectives  or a combination of denoising and causal language modeling
+objectives . These objective functions are complex in comparison to the
+ones used to pretrain encoder only or decoder only models. The
+encoder-decoder models are best suited for tasks revolving around
+generating new sentences depending on a given input, such as
+summarization, translation, or generative question answering.
 
 ### Pretraining Task
 
 When training a model we need to define a task for the model to learn on. Some of the typical tasks, such as predicting the next word or learning to reconstruct masked words were already mentioned above. “[Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/abs/2003.08271)” includes a pretty comprehensive taxonomy of pretraining tasks, all of which can be considered self-supervised:
 
-1. **Language Modeling (LM):** Predict next token (in the case of unidirectional LM) or previous and next token (in the case of bidirectional LM)
-2. **Masked Language Modeling (MLM):** mask out some tokens from the input sentences and then trains the model to predict the masked tokens by the rest of the tokens
-3. **Permuted Language Modeling (PLM):** same as LM but on a random permutation of input sequences. A permutation is randomly sampled from all possible permutations. Then some of the tokens are chosen as the target, and the model is trained to predict these targets.
-4. **Denoising Autoencoder (DAE):** take a partially corrupted input (e.g. Randomly sampling tokens from the input and replacing them with \[MASK\] elements. randomly deleting tokens from the input, or shuffling sentences in random order) and aim to recover the original undistorted input.
-5. **Contrastive Learning (CTL):** A score function for text pairs is learned by assuming some observed pairs of text that are more semantically similar than randomly sampled text. It includes: ***Deep InfoMax (DIM):*** *maximize mutual information between an image representation and local regions of the image;* ***Replaced Token Detection (RTD):*** *predict whether a token is replaced given its surroundings;* ***Next Sentence Prediction (NSP):*** *train the model to distinguish whether two input sentences are continuous segments from the training corpus; and* ***Sentence Order Prediction (SOP):*** *Similar to NSP, but uses two consecutive segments as positive examples, and the same segments but with their order swapped as negative examples*
+When training a model we need to define an objective, or task, for the
+model to learn on. Some of the typical tasks, such as predicting the
+next token or learning to reconstruct masked tokens were already
+mentioned above. "Pre-trained Models for Natural Language Processing: A
+Survey"  includes a pretty comprehensive taxonomy of pretraining tasks,
+all of which can be considered self-supervised:
+
+1.  **Language Modeling (LM):** Predict the next token (in the case of
+    unidirectional LM) or the previous and next token (in the case of
+    bidirectional LM).
+2.  **Causal Language Modeling (Causality-masked LM):** Autoregressively
+    (left-to-right, in general) predict a text sequence, similar to
+    unidirectional LM.
+3.  **Prefix Language Modeling (Prefix LM):** In this task, a separate
+    'prefix' section is separated from the main sequence. Within the
+    prefix, any token can attend to any other token (non-causal).
+    Outside of the prefix, decoding proceeds autoregressively.
+4.  **Masked Language Modeling (MLM):** Mask out some tokens from the
+    input sentences and then train the model to predict the masked
+    tokens using the surrounding context.
+5.  **Permuted Language Modeling (PLM):** Same as LM, but on a random
+    permutation of input sequences. A permutation is randomly sampled
+    from all possible permutations. Then some of the tokens are chosen
+    as the target, and the model is trained to predict these targets.
+6.  **Denoising Autoencoder (DAE):** Take a partially corrupted input
+    and aim to recover the original, undistorted input. Examples of
+    corrupted input include randomly sampling tokens from the input and
+    replacing them with \"\[MASK\]\" elements, randomly deleting tokens
+    from the input, or shuffling sentences in random order.
+7.  **Replaced Token Detection (RTD):** Using a \"generator\" model,
+    randomly replace certain tokens in the text. The \"discriminator\"
+    is tasked to predict whether a token comes from the original text,
+    or the generator model.
+8.  **Next Sentence Prediction (NSP):** Train the model to distinguish
+    whether two input sentences are continuous segments from the
+    training corpus.
+
+Note that in the case of fine-tuned models, this property is used to
+describe the task the model was fine-tuned to, not how it was
+pre-trained.
 
 ### Application
 
@@ -449,7 +531,7 @@ You can access the original table [here](https://docs.google.com/spreadsheets/d/
 
 ### <a name="FamilyTree"></a>Family Tree
 
-The diagram below is just a simple view that should highlight the different families of transformers and how they relate to each other.
+The diagram below is a simple view that should highlight the different families of transformers and how they relate to each other.
 
 ![](/blog/images/02-05.png)
 
@@ -463,6 +545,15 @@ In this next visualization, the Y-axis represents model size in millions of para
 
 ![](/blog/images/02-09.png)
 
+Since the introduction of chatGPT, the LLM open-source community has
+experienced a significant surge in activity. With each passing week, we
+have observed a proliferation of refined models fine-tuned using the
+latest technologies. As a result, these models are continuously
+improving, growing more robust and powerful.
+Figure [10](#fig:finetunedModels) demonstrates the recent emerged models
+since Feb, 2023.
+
+![Recently published LLMs](02-10.png){#fig:finetunedModels}
 
 ### <a name="Catalog List"></a>Catalog List
 
