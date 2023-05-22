@@ -87,7 +87,7 @@ Click on the list to access a Tranformer model directly, or keep reading below f
 - [Gato*](#GATO)
 - [GLaM](#GLAM)
 - [GLIDE](#GLIDE)
-- [GLM](#glm]
+- [GLM](#glm)
 - [GC-ViT](#GCVIT)
 - [Gopher](#GOPHER)
 - [GopherCite](#gophercite)
@@ -139,57 +139,271 @@ I have a terrible memory for names. In the past few years we have seen the meteo
 
 ### <a name="Transformers"></a>What are Transformers
 
-Transformers are a class of deep learning models that are defined by some architectural traits. They were first introduced in the now famous [Attention is All you Need](https://arxiv.org/abs/1706.03762) paper by Google researchers in 2017 (the paper has accumulated a whooping 38k citations in only 5 years) and associated [blog post](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html).
 
-The Transformer architecture is a specific instance of the [encoder-decoder models](https://machinelearningmastery.com/encoder-decoder-long-short-term-memory-networks/) that had become popular just over the 2–3 years prior. Up until that point however, attention was just one of the mechanisms used by these models, which were mostly based on LSTM (Long Short Term Memory) and other RNN (Recurrent Neural Networks) variations. The key insight of the Transformers paper was that, as the title implies, attention could be used as the only mechanism to derive dependencies between input and output.
+Transformers are a class of deep learning models that are defined by
+some architectural traits. They were first introduced in he now famous [Attention is All you Need](https://arxiv.org/abs/1706.03762) paper by Google researchers in 2017 (the paper has accumulated a whooping 38k citations in only 5 years) and associated [blog post](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)) by
+Google researchers in 2017. The paper has accumulated a whopping 38k
+citations in only 5 years.
 
-It is beyond the scope of this blog to go into all the details of the Transformer architecture. For that, I will refer you to the original paper above or to the wonderful [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) post. That being said, we will briefly describe the most important aspects since we will be referring to them in the catalog below. Let’s start with the basic architectural diagram from the original paper, and describe some of the components.
+The original Transformer architecture is a specific instance of the
+[encoder-decoder models](https://machinelearningmastery.com/encoder-decoder-long-short-term-memory-networks/)  that had become popular just over the 2--3
+years prior. Up until that point however, attention was just one of the
+mechanisms used by these models, which were mostly based on LSTM (Long
+Short Term Memory)  and other RNN (Recurrent Neural Networks) 
+variations. The key insight of the Transformers paper, as the title
+implies, was that attention could be used as the only mechanism to
+derive dependencies between input and output.
 
-![](/blog/images/02-02.png)
+The input to the Transformer is a sequence of tokens. The output of the
+encoder is a fixed-dimensional representation for each of the tokens
+along with a separate embedding for the sequence as a whole. The decoder
+takes the output of the encoder as input, and spits out a sequence of
+tokens as its output. In natural language processing (NLP), the tokens
+can be words or subwords. Subwords are used in all popular Transformer
+NLP models because they enable us to address the out-of-vocabulary (OOV)
+issue that is inherent in a word-based system. For simplicity, we will
+use the term \"token\" to refer to the items in the input and output
+sequences, understanding that these tokens are subwords for NLP systems.
+When Transformers are used for processing images or video, the tokens
+can represent sub-images or objects.
+
+Since the publication of the paper, popular models like BERT and GPT
+have used only the encoder or decoder aspects of the original
+architecture. The core commonality of these models is, thus, not the
+encoder-decoder aspect, but, rather, the architecture of the individual
+layers in the encoders and decoders. The layer architecture of
+Transformers is based on a self-attention mechanism and a feed-forward
+layer, the core aspect of this being that each input token flows through
+the layers in its own path, while, at the same time, being directly
+dependent on every other token in the input sequence. This enables
+parallel and direct computation of contextual token representations
+which was previously not possible with sequential models like RNNs.
+
+It is beyond the scope of this paper to go into all the details of the
+Transformer architecture. For that, we will refer you to the original
+paper or to  [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) post. That being said, we
+will briefly describe the most important aspects since we will be
+referring to them in the catalog below. Let's start with the basic
+architectural diagram from the original paper, and describe some of the
+components.
+
+![](/blog/images/02-02.png){#fig:transformer}
 
 ### <a name="encoderdecoder"></a> Encoder/Decoder architecture
 
-A generic encoder/decoder architecture is made up of two models. The encoder takes the input and encodes it into a fixed-length vector. The decoder takes that vector and decodes it into the output sequence. The encoder and decoder are jointly trained to minimize the conditional log-likelihood. Once trained the encoder/decoder can generate an output given an input sequence or can score a pair of input/output sequences.
+A generic encoder/decoder architecture (see
+Figure [2](#fig:transformer) is composed of two models. The encoder
+takes the input and encodes it into a fixed-length vector. The decoder
+takes that vector and decodes it into the output sequence. The encoder
+and decoder are jointly trained to maximize the conditional
+log-likelihood of the output given the input. Once trained, the
+encoder/decoder can generate an output given an input sequence or can
+score a pair of input/output sequences.
 
-In the case of the original Transformer architecture, both encoder and decoder had 6 identical layers. In each of those 6 layers the Encoder has two sub layers: a multi-head attention layer, and a simple feed forward network. Each sublayer has a residual connection and a layer normalization. The output size of the Encoder is 512. The Decoder adds a third sublayer, which is another multi-head attention layer over the output of the Encoder. Besides, the other multi-head layer in the decoder is masked to prevent attention to subsequent positions.
+In the case of the original Transformer architecture, both encoder and
+decoder had 6 identical layers. In each of those 6 layers the Encoder
+had two sub layers: a multi-head self attention layer, and a simple feed
+forward network. The self attention layer computes the output
+representation of each of its input tokens based on *all the input
+tokens*. Each sublayer also has a residual connection and a layer
+normalization. The output representation size of the Encoder was 512.
+The multi-head self-attention layer in the decoder is slightly different
+than that in the encoder. It masks all tokens to the right of the token
+whose representation is being computed so as to ensure that the decoder
+can only attend to tokens that come before the token it is trying to
+predict. This is shown in
+Figure  [2](#fig:transformer) as \"masked multi-head attention.\" The
+Decoder also added a third sublayer, which is another multi-head
+attention layer over all the outputs of the Encoder. Note that all those
+specific details have since been modified in the many Transformer
+variations we will discuss. For example, as we noted before, models like
+BERT and GPT are based on only the encoder or decoder.
 
 ### <a name="attention"></a>Attention
 
-It is clear from the description above that the only “exotic” elements of the model architecture are the multi-headed attention, but, as described above, that is where the whole power of the model lies! So, what is attention anyway? An attention function is a mapping between a query and a set of key-value pairs to an output. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key. Transformers use multi-headed attention, which is a parallel computation of a specific attention function called scaled dot-product attention. I will refer you again to the [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) post for many more details on how the attention mechanism works, but will reproduce the diagram from the original paper here so you get the main idea
+It is clear from the description above that the only "exotic" elements
+of the model architecture are the multi-head attention layers, but, as
+described above, that is where the whole power of the model lies! So,
+what is attention anyway? An attention function is a mapping between a
+query and a set of key-value pairs to an output. Each token in the input
+to the attention layer is converted to a query, key and value using
+three corresponding matrices. The output representation of each token is
+computed as a weighted sum of the values of all the tokens, where the
+weight assigned to each value is computed by a compatibility function of
+its associated key and the query of the token whose representation is
+being computed. The compatibility function used in Transformers is just
+a scaled dot product. A key aspect of this attention mechanism in
+Transformers is that each token flows through its own computation path,
+thus lending itself to parallel computation of the representation of all
+the tokens in the input sequence. Now that we understand how attention
+works, what is multi-head attention? Well, that is just multiple
+attention blocks independently computing representations for each token.
+All these representations are then aggregated to give the final
+representation of the token. We will refer you again to the [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) 
+for many more details on how the
+attention mechanism works, but will reproduce the diagram from the
+original paper in Figure [3](#fig:attention) so you get the main idea.
 
-![](/blog/images/02-03.png)
+![The Attention Mechanism from. (left) Scaled Dot-Product Attention,
+(right) Multi-Head Attention](/blog/images/02-03.png){#fig:attention}
 
-There are several advantages of attention layers over recurrent and convolutional networks, the two most important being their lower computational complexity and their higher connectivity, especially useful for learning long-term dependencies in sequences.
+There are several advantages of attention layers over recurrent and
+convolutional networks, the two most important being their lower
+computational complexity and their higher connectivity, especially
+useful for learning long-term dependencies in sequences.
 
-### What are Transformers used for and why are they so popular
 
-The original transformer was designed for language translation, particularly from English to German. But, already the original paper showed that the architecture generalized well to other language tasks. This particular trend became quickly noticed by the research community. Over the next few months most of the leaderboards for any language-related ML task became completely dominated by some version of the transformer architecture (see for example the well known [SQUAD leaderboard](https://rajpurkar.github.io/SQuAD-explorer/) for question answer where all models at the top are ensembles of Transformers).
+### Foundation vs Fine-tuned models
 
-One of the key reasons Transformers were able to so quickly take over most NLP leaderboards is their ability to quickly adapt to other tasks, a.k.a. Transfer learning. Pretrained Transformer models can adapt extremely easily and quickly to tasks they have not been trained on, and that has huge advantages. As an ML practitioner, you no longer need to train a large model on a huge dataset. All you need to do is re-use the pretrained model on your task, maybe just slightly adapting it with a much smaller data set. A specific technique used to adapt pretrained models to a different task is the so-called [fine tuning](https://huggingface.co/docs/transformers/training).
+A foundation model is defined as \"any model that is trained on broad
+data (generally using self-supervision at scale) that can be adapted
+(e.g., fine-tuned) to a wide range of downstream tasks" (see paper [here](https://arxiv.org/abs/2108.07258)) . When the
+foundation model is further trained on a small amount of target-specific
+data, it is called a [fine-tuned model](https://huggingface.co/docs/transformers/training) because it has been fine-tuned
+to the specifics of the task at hand.
 
-It turns out that the capability of Transformers to adapt to other tasks is so great, that, while they were initially developed for language related tasks, they quickly became useful for other tasks ranging from [vision](https://arxiv.org/abs/2101.01169) or audio and [music](https://magenta.tensorflow.org/music-transformer) applications all the way to [playing chess](https://arxiv.org/abs/2008.04057) or [doing math](https://arxiv.org/abs/2110.03501)!
+The [BERT paper](https://export.arxiv.org/abs/1810.04805) popularized this approach of pretraining and finetuning
+for natural language processing, resulting in many researchers using
+this approach for many different tasks. As a consequence, most of the
+leaderboards for any language-related machine leartning (ML) task became
+completely dominated by some version of the Transformer architecture
+(see for example the well known [SQUAD leaderboard](https://rajpurkar.github.io/SQuAD-explorer) for question
+answering or the [GLUE leaderboard](https://gluebenchmark.com/leaderboard) for general language
+understanding, where all systems at the top employ Transformer-based
+models).
 
-Of course all these applications would have not been possible if it wasn’t because of the myriad of tools that made them readily available to anyone that could write a few lines of code. Not only were Transformers quickly integrated into the main AI frameworks (namely [Pytorch](https://pytorch.org/tutorials/beginner/transformer_tutorial.html) and [TF](https://www.tensorflow.org/text/tutorials/transformer)), but they even enabled the creation of an entire company around them. [Huggingface](https://huggingface.co/docs), a startup that has raised over $60M to this day, is almost entirely built around the idea of commercializing their open source [Transformers library](https://github.com/huggingface/transformers).
+In its original usage, \"fine-tuning\" referred to tweaking a foundation
+model for a specific task, such as spam classification or question
+answering. Models, such as BERT, produce representations of the input
+tokens, but do not, by themselves, accomplish any task. Thus, it is
+necessary to fine-tune them by adding extra neural layers on top of the
+foundation model and training the model end to end.
 
-Last but not least, I would be remiss if I did not mention the impact of [GPT-3](https://en.wikipedia.org/wiki/GPT-3) on the popularization of Transformers. GPT-3 is a Transformer model introduced by OpenAI in May 2020 as a follow up to their earlier GPT and GPT-2. The company made a big splash by introducing the model in a [preprint](https://arxiv.org/abs/2005.14165) in which they claimed that the model was so powerful that they were not in a position to release it to the world. Since then, the model has not only been released, but also commercialized through a very large [partnership](https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/) between OpenAI and Microsoft. GPT-3 powers over [300 different applications](https://openai.com/blog/gpt-3-apps/), and is the foundation for OpenAI’s commercial strategy (which is a lot to say for a company that has received over $1B in funding).
+With generative models like GPT, things are a little different. GPT is a
+decoder language model trained to predict the next token of a sentence
+given all the previous tokens. By training on huge amounts of web
+corpora covering almost any topic one can think about, it was found that
+GPT could actually produce reasonable outputs to input queries or
+prompts. GPT accomplished this by simply predicting the next token given
+the input prompt sequence and the output sequence GPT had already
+predicted. This language generation actually did a somewhat reasonable
+job of tasks like answering questions about general web knowledge,
+writing poems etc. Notwithstanding, GPT's outputs were often untruthful
+or really not very helpful to the user. To address this, OpenAI
+researchers came up with the idea of training GPT to [follow human
+instructions](https://arxiv.org/abs/2203.02155) . The resulting models are called InstructGPT. The authors
+did this by using a small amount of human-labeled data from a large
+variety of tasks to further train GPT. As before, this is a
+\"fine-tuning\" process, but the resulting Instruct GPT model is capable
+of doing a wide range of tasks, and is, in fact, the class of models
+used by the popular ChatGPT engine. Since these models can accomplish a
+myriad of tasks, we refer to them as foundation models.
 
-### <a name="rlhf"></a>RLHF
+Such additional fine-tuning has been used to generate other general
+purpose model variants as well, specifically designed for uses cases
+beyond language modeling (predicting the next token in a sequence). For
+example, there is a subclass of models fined-tuned to learn text string
+embeddings optimized for semantic-relatedness, making them directly
+useful for higher-level semantic tasks (e.g. text classification,
+clustering, search retrieval, etc.). Examples include [OpenAI's text
+embedding models](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings}, [E5](https://huggingface.co/intfloat/e5-large), 
+and [InstructOR](https://huggingface.co/hkunlp/instructor-xl). Transformer encoders
+have also been successfully fined-tuned within multi-task learning
+frameworks to be able to perform [multiple different semantic tasks using
+a single shared Transformer model](https://arxiv.org/abs/2101.11038).
 
-Reinforcement Learning from Human Feedback (or Preferences) aka RLHF (or RLHP) has become a huge addition to the AI toolkit as of lately. The concept was introduced already in 2017 in the paper [“Deep reinforcement learning from human preferences”](https://arxiv.org/abs/1706.03741). More recently though, it has been applied to ChatGPT and similar dialog agents like BlenderBot3 or Sparrow. The idea is pretty simple though: Once a language model is pretrained, we can generate different responses to a dialog and have Humans rank the results. We can use those ranking (aka preferences or feedback) to train a reward, in the reinforcement learning context. You can read much more in these two wonderful posts by [Huggingface](https://huggingface.co/blog/rlhf) or [Weights and Bias](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx).
+Thus, as we see, while originally foundation models were fine-tuned for
+very specific target tasks for specific groups of users, today
+fine-tuning is used to also create further versions of foundation models
+that can be used by a huge number of users. The process used by ChatGPT
+and similar dialog agents, like BlenderBot3 or Sparrow, is fairly
+simple: Given a pretrained language model like GPT, we use it to
+generate different responses to input prompts (or instructions) and have
+humans rank the results. We then use those rankings (aka preferences or
+feedback) to train a reward model. The reward model attaches a score to
+each output for a given input instruction. After this, a reinforcement
+learning with human feedback [(RLHF) process](https://arxiv.org/abs/1706.03741) is used to train the model
+on more input instructions, but, rather than use a human to generate the
+feedback, the reward model is used to rank the outputs of the model. You
+can read much more in these two wonderful posts by [Huggingface](https://huggingface.co/blog/rlhf) and
+[Ayush Thakur](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx).
 
-![](/blog/images/rlhf.png)
+![Reinforcement Learning with Human Feedback. From HuggingFace's RLHF
+blog post at <https://huggingface.co/blog/rlhf>](rlhf.png){#fig:rlhf}
 
-From HuggingFace’s RLHF [blog post](https://huggingface.co/blog/rlhf). 
 
-### <a name="diffusion"></a>Diffusion Models
+### The impact of Transformers
 
-Diffusion models have become the new SOTA in image generation, clearly pushing aside the previous approaches such as GANs (Generative Adversarial Networks). What are diffusion models? They are a class of latent variable models trained variational inference. What this means in practice is that we train a deep neural network to denoise images blurred with some sort of noise function. Networks that are trained this way are in fact learning the latent space of what those images represent.
+The application demonstrated in the original Transformer paper  was
+language translation. This seminal work also showed the architecture
+generalized well to other language tasks. Over the next several months,
+researchers figured out that Transformers could be used to capture a lot
+of inherent knowledge about language by pretraining them on a very large
+amount of unsupervised text. The knowledge captured in these models
+could then be transferred to target tasks by training on a small amount
+of labeled data.
 
-![](/blog/images/diffusion.png)
+While original Transformers were designed for language tasks, the same
+Transformer architecture has been applied to many other applications
+like the generation of images, audio, music, or even actions. Because of
+that, Transformers are considered a key, if not the key, component to
+the new wave of the so-called \"Generative AI\". Generative AI and its
+many applications are already revolutionizing many aspects of society (see [here](https://www.nature.com/articles/d41586-023-00340-6) 
+and [here](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=4337484), for example).
 
-From [“Diffusion Models: A Comprehensive Survey of Methods and Applications”](https://arxiv.org/abs/2209.00796)
+Of course all these applications would not have been possible but for
+the myriad of tools that made them readily available to anyone that
+could write a few lines of code. Not only were Transformers quickly
+integrated into the main AI frameworks (namely [Pytorch](https://pytorch.org/tutorials/beginner/transformer_tutorial.html) and
+[TensorFlow](https://www.tensorflow.org/text/tutorials/transformer)), but they even enabled the creation of an entire
+company around them. [Huggingface](https://huggingface.co/docs), a startup that has raised over \$
+60M to this day, is almost entirely built around the idea of
+commercializing their open source [Transformers library](https://github.com/huggingface/transformers).
 
-Diffusion models have relation with other generative models like the famous [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network), which they have mostly replaced in many applications and, particularly with (denoising) Autoencoders. Some [authors](https://benanne.github.io/2022/01/31/diffusion.html) will go as far as saying that Diffusion models are just a specific instance of autoencoders. However, they also admit that the small differences do transform their application, from the latent representation of autoconders to the pure generative nature of Diffusion models.
+Transformer model adoption is further accelerated as specialized
+hardware is developed by commercial players to improve model training
+and inference speed. NVIDIA's [Hopper Tensor Cores](https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet) can apply mixed
+FP8 and FP16 precisions to dramatically accelerate AI calculations for
+Transformers.
+
+Last but not least, we would be remiss if we did not mention the impact
+of ChatGPT on the popularization of Transformers. ChatGPT was released
+by OpenAI in November 2022, and became the fastest growing app in
+history, reaching 1 million users in less than a month, and 100 million
+in [less than two](https://www.ubs.com/us/en/wealth-management/insights/article.1585717.html). ChatGPT was originally a chatbot application built on
+top of the [Instruct-GPT model](https://arxiv.org/abs/2203.02155) also called GPT-3.5. Not much later,
+OpenAI announced the release of the more powerful [GPT-4](https://openai.com/research/gpt-4), which
+[achieves human level capabilities in tasks such as passing the USMLE exam for
+medical doctors or the bar exam for lawyers](https://arxiv.org/abs/2303.08774) .
+
+
+### <a name="diffusion"></a>A Note on Diffusion Models
+
+Diffusion models have become the new state-of-the-art in image
+generation, clearly pushing aside the previous approaches such as GANs
+(Generative Adversarial Networks). It is important to note, though, that
+the diffusion mechanism is not dependent on the Transformer
+architecture. However, most modern diffusion approaches do include a
+Transformer backbone .
+
+Diffusion models are a class of latent variable models trained through
+variational inference. What this means in practice is that we train a
+deep neural network to denoise images blurred with some sort of noise
+function. Networks that are trained this way are in fact learning the
+latent space of what those images represent (see
+Figure [4](#fig:diffusion).
+
+![Probabilistic diffusion model architecture from "Diffusion Models: A
+Comprehensive Survey of Methods and Applications,\"](/blog/images/diffusion.png){#fig:diffusion}
+
+Diffusion models have relation to other generative models like Denoising
+Autoencoders and the famous Generative Adversarial Networks [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network),
+which they have mostly replaced in many applications. Some [authors](https://benanne.github.io/2022/01/31/diffusion.html)
+will go as far as saying that Diffusion models are just a specific
+instance of autoencoders. However, they also admit that the small
+differences do transform their application, from the latent
+representation of autoencoders to the pure generative nature of
+Diffusion models.
 
 ### <a name="TransformersCatalog"></a>The Transformers catalog
 
