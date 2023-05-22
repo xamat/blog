@@ -332,7 +332,7 @@ can read much more in these two wonderful posts by [Huggingface](https://hugging
 [Ayush Thakur](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx).
 
 <a name="fig:rlhf"></a>![Reinforcement Learning with Human Feedback. From HuggingFace's RLHF
-blog post at <https://huggingface.co/blog/rlhf>](rlhf.png)
+blog post at <https://huggingface.co/blog/rlhf>](/blog/images/rlhf.png)
 
 
 ## The impact of Transformers
