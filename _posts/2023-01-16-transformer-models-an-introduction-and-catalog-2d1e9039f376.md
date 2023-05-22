@@ -556,7 +556,7 @@ improving, growing more robust and powerful.
 Figure [10](#fig:finetunedModels) demonstrates the recent emerged models
 since Feb, 2023.
 
-<a name="fig:timeline3"></a>![Recently published LLMs](02-10.png){#fig:finetunedModels}
+<a name="fig:timeline3"></a>![Recently published LLMs](02-10.png)
 
 ### <a name="Catalog List"></a>Catalog List
 
