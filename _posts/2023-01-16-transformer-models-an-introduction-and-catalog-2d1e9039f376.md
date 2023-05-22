@@ -244,8 +244,8 @@ for many more details on how the
 attention mechanism works, but will reproduce the diagram from the
 original paper in Figure [3](#fig:attention) so you get the main idea.
 
-![The Attention Mechanism from. (left) Scaled Dot-Product Attention,
-(right) Multi-Head Attention](/blog/images/02-03.png){#fig:attention}
+<a name="fig:attention"></a>![The Attention Mechanism from. (left) Scaled Dot-Product Attention,
+(right) Multi-Head Attention](/blog/images/02-03.png)
 
 There are several advantages of attention layers over recurrent and
 convolutional networks, the two most important being their lower
@@ -328,8 +328,8 @@ feedback, the reward model is used to rank the outputs of the model. You
 can read much more in these two wonderful posts by [Huggingface](https://huggingface.co/blog/rlhf) and
 [Ayush Thakur](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx).
 
-![Reinforcement Learning with Human Feedback. From HuggingFace's RLHF
-blog post at <https://huggingface.co/blog/rlhf>](rlhf.png){#fig:rlhf}
+<a name="fig:rlhf"></a>![Reinforcement Learning with Human Feedback. From HuggingFace's RLHF
+blog post at <https://huggingface.co/blog/rlhf>](rlhf.png)
 
 
 ## The impact of Transformers
@@ -393,8 +393,8 @@ function. Networks that are trained this way are in fact learning the
 latent space of what those images represent (see
 Figure [4](#fig:diffusion).
 
-![Probabilistic diffusion model architecture from "Diffusion Models: A
-Comprehensive Survey of Methods and Applications,\"](/blog/images/diffusion.png){#fig:diffusion}
+<a name="fig:diffusion"></a>![Probabilistic diffusion model architecture from "Diffusion Models: A
+Comprehensive Survey of Methods and Applications,\"](/blog/images/diffusion.png)
 
 Diffusion models have relation to other generative models like Denoising
 Autoencoders and the famous Generative Adversarial Networks [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network),
@@ -533,17 +533,17 @@ You can access the original table [here](https://docs.google.com/spreadsheets/d/
 
 The diagram below is a simple view that should highlight the different families of transformers and how they relate to each other.
 
-![](/blog/images/02-05.png)
+<a name="fig:familytree"></a>![](/blog/images/02-05.png)
 
 ### <a name="Timeline"></a>Chronological timeline
 
 Another interesting perspective of the catalog is to see it as a chronological timeline. Here you will find all the transformers in the catalog sorted by their date of publication. In this first visualization, the Y-axis is only used to cluster transformers of related heritage/family.
 
-![](/blog/images/02-06.png)
+<a name="fig:timeline1"></a>![](/blog/images/02-06.png)
 
 In this next visualization, the Y-axis represents model size in millions of parameters. You won't be able to see all the models in the catalog since many fall right on the same time and size, so please refer to the previous image for that.
 
-![](/blog/images/02-09.png)
+<a name="fig:timeline2"></a>![](/blog/images/02-09.png)
 
 Since the introduction of chatGPT, the LLM open-source community has
 experienced a significant surge in activity. With each passing week, we
@@ -553,7 +553,7 @@ improving, growing more robust and powerful.
 Figure [10](#fig:finetunedModels) demonstrates the recent emerged models
 since Feb, 2023.
 
-![Recently published LLMs](02-10.png){#fig:finetunedModels}
+<a name="fig:timeline3"></a>![Recently published LLMs](02-10.png){#fig:finetunedModels}
 
 ### <a name="Catalog List"></a>Catalog List
 
