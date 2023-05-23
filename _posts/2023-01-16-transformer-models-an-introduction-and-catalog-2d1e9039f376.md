@@ -530,7 +530,7 @@ Here we will note what are the main practical applications of the Transformer mo
 
 ![](/blog/images/02-04.png)
 
-You can access the original table [here](https://docs.google.com/spreadsheets/d/1ltyrAB6BL29cOv2fSpNQnnq2vbX8UrHl47d7FkIf6t4/edit#gid=0) for easier browsing across the different model features. If you prefer to read the full list see below.
+You can access the original table [here](https://docs.google.com/spreadsheets/d/1ltyrAB6BL29cOv2fSpNQnnq2vbX8UrHl47d7FkIf6t4/edit#gid=0) for easier browsing across the different model features. The full list of models is included below.
 
 ### <a name="FamilyTree"></a>Family Tree
 
@@ -560,7 +560,2310 @@ since Feb, 2023.
 
 ### <a name="Catalog List"></a>Catalog List
 
-Finally, here is a list view that might be easier to follow along in some cases:
+Finally, here is the full list of all the models in the catalog:
+
+## ALBERT
+
+-   **Reference:** [](https://arxiv.org/abs/1909.11942)
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/albert>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM/NSP
+
+-   **Extension:** Compressed version of BERT using parameter sharing,
+    which is much more efficient given the same number of parameters
+
+-   **Application:** Same as BERT
+
+-   **Date (of first known publication):** 09/2019
+
+-   **Num. Params:** Base = 12M, Large = 18M, XLarge = 60M\*
+
+-   **Corpus:** Same as BERT
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Google
+
+## AlexaTM 20B
+
+-   **Reference:**
+
+-   **Link:** <https://github.com/amazon-science/alexa-teacher-models>
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** Optimizes denoising ($80\%$) and Prefix LM
+    ($20\%$)
+
+-   **Extension:** Derived from BART and layernorms located exactly at
+    the beginning of each layer. Encoder initialized with internal 10B
+    pre-trained encoder.
+
+-   **Application:** Summarization, multi-lingual machine translation
+    and NLU tasks
+
+-   **Date (of first known publication):** 08/2022
+
+-   **Num. Params:** 20B
+
+-   **Corpus:** Wikipedia and mC4 datasets in 12 languages.
+
+-   **License:** Limited, non-commercial
+
+-   **Lab:** Amazon
+
+## Alpaca
+
+-   **Reference:** 
+
+-   **Link:** <https://github.com/tatsu-lab/stanford_alpaca>
+
+-   **Family:** LLaMA
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Fine-tuning Task:** human instructions
+
+-   **Extension:** Alpaca is fine-tuned from a 7B LLaMA model.
+
+-   **Application:** Evaluated on a variety of text generation and
+    classification tasks.
+
+-   **Date (of first known publication):** 03/2023
+
+-   **Num. Params:** 7B
+
+-   **Corpus:** 52K instruction-following data generated using
+    self-instruct mechanism, from 175 human-written instruction-output
+    pairs.
+
+-   **License:** Limited, Non-commercial bespoke license
+
+-   **Lab:** Stanford
+
+## AlphaFold
+
+-   **Reference:** 
+
+-   **Link:** <https://github.com/deepmind/alphafold>
+
+-   **Family:** SE(3) Transformer 
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** Protein folding prediction of BERT using
+    parameter sharing, which is much more efficient given the same
+    number of parameters
+
+-   **Extension:** The original Alphafold used a BERT-style Transformer.
+    The details of Alphafold's Transformer are not known, but it is
+    believed it is an extension of the SE(3)-Tranformer, a 3-D
+    equivariant Transformer (see this blog post[^21])
+
+-   **Application:** Protein folding
+
+-   **Date (of first known publication):** 09/2019
+
+-   **Num. Params:**b12M, Large = 18M, XLarge = 60M\*
+
+-   **Corpus:** Same as BERT
+
+-   **License:** the code is open sourced, with Apache-2.0
+
+-   **Lab:** Deepmind
+
+## Anthropic Assistant
+
+-   **Reference:** 
+
+-   **Link:** N/A
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** These models do not introduce novelties at the
+    architecture/pretraining level and they are similar to GPT-3, but
+    they focus on how to improve alignment through fine-tuning and
+    prompting. Note that the Anthropic Assistant includes several models
+    optimized for different tasks. The work often focus on the benefits
+    of RLHF. Latest versions of this work study using an LLM to critique
+    the model output for harmlessness, and provide feedback data for RL
+    this way (RLHF -\> RLAIF).
+
+-   **Application:** Different models with different applications from
+    general dialog to code assistant.
+
+-   **Date (of first known publication):** 12/2021
+
+-   **Num. Params:**10M to 52B
+
+-   **Corpus:** 400B tokens from filtered Common Crawl and Books, and
+    10% python code. They also create several Dialogue Preference
+    datasets for the RLHF training.
+
+-   **License:** N/A
+
+-   **Lab:** Anthropic
+
+## BART
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/bart>
+
+-   **Family:** BERT for encoder, GPT for Decoder
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE
+
+-   **Extension:** It can be seen as a generalization of BERT and GPT in
+    that it combines ideas from both in the encoder and decoder
+
+-   **Application:** Mostly text generation but also some text
+    understanding tasks\*
+
+-   **Date (of first known publication):** 10/2019\*
+
+-   **Num. Params:** Base = 140M, Large = 400M. In general, roughly 10%
+    larger than BART for equivalent architectures.
+
+-   **Corpus:**Same as RoBERTa (160Gb of news, books, stories)
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:**Facebook
+
+## BERT
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/bert>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM/NSP
+
+-   **Extension:It can be seen as a generalization of BERT and GPT in
+    that it combines ideas from both in the encoder and decoder**
+
+-   **Application:**General Language Understanding and Question
+    Answering. Many other language applications followed
+
+-   **Date (of first known publication):** 10/2018
+
+-   **Num. Params:**Base = 110M, Large = 340MT
+
+-   **Corpus:**Toronto Book Corpus and Wikipedia (3.3B Tokens)
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:**Google
+
+## Big Bird
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/big_bird>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM
+
+-   **Extension:** Big Bird can extend other architectures such as BERT,
+    Pegasus, or RoBERTa by using a sparse attention mechanism that
+    elminates the quadratic dependency thus making it more suitable for
+    longer sequences
+
+-   **Application:**Particularly well suited for longer sequences, not
+    only in text but also e.g. in genomics
+
+-   **Date (of first known publication):** 07/2020
+
+-   **Num. Params:**Depends on the overall architecture
+
+-   **Corpus:**Books, CC-News, Stories and Wikipedia)
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:**Google
+
+## BlenderBot3
+
+-   **Reference:**
+
+-   **Link:** <https://parl.ai/projects/bb3/>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** BlenderBot 3 is based on a pre-trained OPT. It adds
+    features needed for a dialog agent such as long-term memory or the
+    ability to search the internet. It is also fine-tuned for some
+    specific tasks given human feedback on them.
+
+-   **Application:** Same as GPT-3
+
+-   **Date (of first known publication):** 08/2022
+
+-   **Num. Params:** 3B, 30B, and 175B
+
+-   **Corpus:** 180B tokens = RoBERTa + the Pile + PushShift.io Reddit
+    item **License:** Limited, non-commercial, research only
+
+-   **Lab:**Facebook
+
+## BLOOM
+
+-   **Reference:** See blog post[^22]
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/bloom>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Main difference to GPT-3 is that it uses full
+    attention instead of sparse attention
+
+-   **Application:** Same as GPT-3
+
+-   **Date (of first known publication):** 07/2022
+
+-   **Num. Params:**176B
+
+-   **Corpus:** 366B tokens (1.5 TB of text data) multilingual dataset
+
+-   **Lab:** Big Science/Huggingface
+
+-   **License:** Open, but need to follow restrictions in Attachment A,
+    BigScience RAIL License v1.0
+
+## ChatGPT
+
+-   **Reference:** See blog post[^23]
+
+-   **Link:** <https://chat.openai.com>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** ChatGPT takes a GPT3.5 (aka GPT3 Davinci-003)
+    pretrained model and uses RLHF to finetune the model mostly like
+    described in InstructGPT but with slight differences in the data
+    collection. ChatGPT is also more than a model since it includes
+    extensions for Memory Store and retrieval similar to BlenderBot3
+
+-   **Application:** Dialog agents
+
+-   **Date (of first known publication):** 10/2022
+
+-   **Num. Params:** Same as GPT3
+
+-   **Corpus:** Same as GPT3 + datasets generated for RLHF
+
+-   **License:** Closed source, accessible through API
+
+-   **Lab:** OpenAI
+
+## Chinchilla
+
+-   **Reference:** [](https://arxiv.org/abs/2203.15556)
+
+-   **Link:** N/A
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Same as Gopher but with optimizations to reduce model
+    size and therefore training/inference time with equal or superior
+    performance
+
+-   **Application:** Same as Gopher/GPT3
+
+-   **Date (of first known publication):** 03/2022
+
+-   **Num. Params:**70B
+
+-   **Corpus:** Massive Text
+
+-   **License:** Closed source.
+
+-   **Lab:** Deepmind
+
+## CLIP
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/clip>
+
+-   **Family:** CLIP (Also using Resnet, ViT, and vanilla Transformer
+    for text)
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** predict which of the N × N possible (image,
+    text) pairings across a batch actually occurred
+
+-   **Extension:** Combines Resnet and ViT for the visual encoding with
+    Transformer for the Textual encoder
+
+-   **Application:** Image/object classification
+
+-   **Date (of first known publication):** 02/2021
+
+-   **Num. Params:** N/A
+
+-   **Corpus:** WIT (WebImageText) - 400 million text,image pairs
+
+-   **License:** Open, MIT license
+
+-   **Lab:** OpenAI
+
+## CM3
+
+-   **Reference:** [](https://arxiv.org/abs/2201.07520)
+
+-   **Link:** N/A
+
+-   **Family:** HTML
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** Causality-masked LM
+
+-   **Extension:** This is somewhat similar to HTML in its use of
+    structured training data. However, it is a different architecture
+    and uses causal masking, which makes the model predict, at the end
+    of the sequence, an entire missing span of text. It also includes
+    image input via Vector Quantized Variational Autoencoding (VQ-VAE)
+    tokens.
+
+-   **Application:** Multimodal language model with the ability to do
+    structured prompting, zero-shot captioning, image generation, and
+    entity linking (via target text prediction of hyperlinks)
+
+-   **Date (of first known publication):** 01/2022
+
+-   **Num. Params:**13B (largest)
+
+-   **Corpus:** CC-News, English Wikipedia
+
+-   **License:** N/A
+
+-   **Lab:** Facebook
+
+## CTRL
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/ctrl>
+
+-   **Family:**
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:**
+
+-   **Extension:** model can generate text conditioned on control codes
+    that specify domain, style, topics, dates, entities, relationships
+    between entities, plot points, and task-related behavior
+
+-   **Application:** Controllable text generation
+
+-   **Date (of first known publication):** 09/2019
+
+-   **Num. Params:**1.63B
+
+-   **Corpus:** 140 GB of text including: Wikipedia (En, De, Es, Fr),
+    Project Gutenberg, 45 subreddits, OpenWebText2, Amazon Reviews,
+    Europarl and UN data from WMT, question-answer pairs from ELI5, and
+    the MRQA shared task3, which includes the Stanford Question
+    Answering Dataset, NewsQA, TriviaQA, SearchQA, HotpotQA , and
+    Natural Questions
+
+-   **License:** Open, BSD-3-Clause license
+
+-   **Lab:** Salesforce
+
+## DALL-E
+
+-   **Reference:**
+
+-   **Link:** <https://openai.com/blog/dall-e>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** Caption prediction
+
+-   **Extension:** A differential variational auto-encoder is used to
+    learn the visual codebook. The Transformer is a variation of GPT-3
+
+-   **Application:** Text to image
+
+-   **Date (of first known publication):** 01/2021
+
+-   **Num. Params:**12B
+
+-   **Corpus:** 250 million text-images pairs from the internet
+
+-   **License:** N/A
+
+-   **Lab:** OpenAI
+
+## DALL-E 2
+
+-   **Reference:**
+
+-   **Link:** <https://openai.com/dall-e-2>
+
+-   **Family:** CLIP, GLIDE
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** Caption prediction
+
+-   **Extension:** Combines CLIP encoder and Diffusion decoder similar
+    to GLIDE
+
+-   **Application:** Text to image
+
+-   **Date (of first known publication):** 04/2022
+
+-   **Num. Params:**3.5B
+
+-   **Corpus:** Combination of the DALL-E and CLIP datasets
+
+-   **License:** Closed source, accessible through API
+
+-   **Lab:** OpenAI
+
+## DeBERTa
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/microsoft/deberta-large>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM
+
+-   **Extension:** Separate positional embedding vector independent from
+    the content embedding using disentangled attention matrices for
+    contents and relative positions
+
+-   **Application:** Same as BERT
+
+-   **Date (of first known publication):** 06/2020
+
+-   **Num. Params:** 134M (base), 384M (large), 750M (xlarge)
+
+-   **Corpus:** English Wikipedia, BookCorpus, OPENWEBTEXT and STORIES
+
+-   **License:** Open, MIT license
+
+-   **Lab:** Microsoft
+
+## Decision Transformers
+
+-   **Reference:** [](https://arxiv.org/abs/2106.01345)
+
+-   **Link:** <https://github.com/kzl/decision-transformer>
+
+-   **Family:** GPT, Control Transformers" (not per se a family, but
+    grouping here those Transformers that try to model more general
+    control, RL-like, tasks)
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** Next action prediction
+
+-   **Extension:** Decision Transformers use a GPT architecture and
+    extend it by encoding trajectories in a way that they can be learned
+    by an auto-regressive task
+
+-   **Application:** General RL (reinforcement learning tasks)
+
+-   **Date (of first known publication):** 06/2021
+
+-   **Num. Params:**Same as GPT
+
+-   **Corpus:** Different corpus for different experiments
+
+-   **License:** Open, MIT license
+
+-   **Lab:** Google/UC Berkeley/Facebook
+
+## DialoGPT
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/dialogpt>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** GPT-2 architecture trained on dialog data
+
+-   **Application:** Text generation in dialog settings
+
+-   **Date (of first known publication):** 10/2019
+
+-   **Num. Params:**1.5B
+
+-   **Corpus:** 140M Reddit conversations
+
+-   **License:** Open, MIT license
+
+-   **Lab:** Microsoft
+
+## DistilBERT
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/distilbert>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM/NSP
+
+-   **Extension:** Compressed version of BERT using distillation, which
+    is much more efficient given the same number of parameters
+
+-   **Application:** Same as BERT
+
+-   **Date (of first known publication):** 10/2019
+
+-   **Num. Params:**66M
+
+-   **Corpus:** Same as BERT
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Huggingface
+
+## DQ-BART
+
+-   **Reference:**
+
+-   **Link:** <https://github.com/amazon-science/dq-bart>
+
+-   **Family:** BART
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE
+
+-   **Extension:** Adds quantization and distillation to a BART model to
+    improve performance and model size
+
+-   **Application:** Text generation and understanding
+
+-   **Date (of first known publication):** 03/2022
+
+-   **Num. Params:**Up to 30x reduction in parameters compared to
+    standard BART
+
+-   **Corpus:** CNN/DM, XSUM, ELI5, WMT16 En-Ro ( 1M tokens)
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Amazon
+
+## Dolly
+
+-   **Reference:** See blog post[^24]
+
+-   **Link:** <https://huggingface.co/databricks/dolly-v1-6b>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Fine-tuning Task:** human instructions
+
+-   **Extension:** fine-tuned based on the GPT-J-6B (V1) and Pythia
+    model (V2)
+
+-   **Application:** Similar to Alpaca
+
+-   **Date (of first known publication):** 03/2023
+
+-   **Num. Params:** V1: 6B, V2: 12B
+
+-   **Corpus:** V1: Instruction corpus same as Alpaca, V2: databricks
+    own dataset.
+
+-   **License:** Open
+
+-   **Lab:** Databricks, Inc
+
+## E5
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/intfloat/e5-large>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Fine-tuning Task:** Semantic similarity using contrastive loss
+
+-   **Extension:** Fine-tunes BERT-based models to create text string
+    embeddings optimized for semantic relatedness.
+
+-   **Application:** Text embeddings for semantic relatedness tasks such
+    as text clustering or search retrieval.
+
+-   **Date (of first known publication):** 12/2022
+
+-   **Num. Params:** 300M (large version)
+
+-   **Corpus:** MS-MARCO, NQ, NLI
+
+-   **License:** Open, MIT license
+
+-   **Lab:** Microsoft
+
+## ELECTRA
+
+-   **Reference:** 
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/electra>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** RTD
+
+-   **Extension:** Applied new training techniques including Replaced
+    Token Detection
+
+-   **Application:** 03/2020
+
+-   **Date (of first known publication):** 2020
+
+-   **Num. Params:**Base = 110M, Large = 330M
+
+-   **Corpus:** Same as BERT except for Large which is same as XLNet
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Stanford/Google
+
+## ERNIE
+
+-   **Reference:**[](https://arxiv.org/abs/1905.07129)
+
+-   **Link:** N/A
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM
+
+-   **Extension:** Uses BERT for Encoder architecture, but stacks and
+    aggregates two of them for text and entities. This architecture
+    could be understood as BERT for text + knowledge graphs
+
+-   **Application:** Knowledge intensive related tasks that might
+    benefit from knowledge graphs or entities such as entity recognition
+
+-   **Date (of first known publication):** 05/2019
+
+-   **Num. Params:** Ernie-ViLG 2.0 = 10B, Ernie 3.0 Titan = 260B
+
+-   **Corpus:** English Wikipedia + Wikidata for entitites (note that
+    they initialize model to original BERT parameter values
+
+-   **License:** Closed source
+
+-   **Lab:** Baidu, Pengcheng Lab
+
+## Flamingo
+
+-   **Reference:** [](https://arxiv.org/abs/2204.14198)
+
+-   **Link:** N/A
+
+-   **Family:** Chinchilla
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** Log likelihood of text given some visual input
+
+-   **Extension:** It uses a frozen textual language model (like
+    Chinchilla) conditioned on the visual representation, which is
+    encoded from a Normalizer-Free ResNet
+
+-   **Application:** Text to image
+
+-   **Date (of first known publication):** 04/2022
+
+-   **Num. Params:**80B (largest)
+
+-   **Corpus:** MultiModal MassiveWeb (M3W): 185 million images and 182
+    GB text + a number of text paired with image datasets: ALIGN + LTIP
+    (Long Text & Image Pairs) = 312 million images, and VTP (Video &
+    Text Pairs) = 27 million short videos (approximately 22 seconds on
+    average)
+
+-   **License:** Closed source
+
+-   **Lab:** Deepmind
+
+## Flan-T5
+
+-   **Reference:** [](https://arxiv.org/abs/2210.11416)
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/flan-t5>
+
+-   **Family:** T5
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Fine-tuning Task:** Instructions for zero-shot and few-shot tasks
+
+-   **Extension:** Flan-T5 is generated by \"Flan Finetuning\" the T5
+    models: (1) scaling the number of tasks to 1,836, (2) scaling the
+    model size, and (3) finetuning on chain-of-thought data.
+
+-   **Application:** The primary use is to underestand how to improve
+    large language models with the right kind of instruction
+    fine-tuning. The focus is research on zero-shot and in-context
+    few-shot learning NLP tasks, such as reasoning, and question
+    answering; advancing fairness and safety research, and understanding
+    limitations of current large language models
+
+-   **Date (of first known publication):** 11/2022
+
+-   **Num. Params:** 80M(small), 250M(base), 780M(large), 3B(xl),
+    11B(xxl)
+
+-   **Corpus:** Flan finetuned with tasks in Muffin, T0-SF, NIV2, and
+    CoT.
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Google
+
+## Flan-PaLM
+
+-   **Reference:** [ ](https://arxiv.org/abs/2210.11416)
+
+-   **Link:** N/A
+
+-   **Family:** PaLM
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Fine-tuning Task:** Instructions for zero-shot and few-shot tasks
+
+-   **Extension:** Flan-PaLM is generated by \"Flan Finetuning\" the
+    PaLM models: (1) scaling the number of tasks to 1,836, (2) scaling
+    the model size, and (3) finetuning on chain-of-thought data.
+
+-   **Application:** Same as Flan-T5. The goal is to show Flan
+    finetuning can even improve on the largest Google LMs (+9.4%
+    improvement average across tasks), with improvements to chain of
+    thought, self consistency, multilingual tasks, arithmetic reasoning
+
+-   **Date (of first known publication):** 11/2022
+
+-   **Num. Params:** 8B, 62B, 540B
+
+-   **Corpus:** Flan finetuned with tasks in Muffin, T0-SF, NIV2, and
+    CoT.
+
+-   **License:** Closed source
+
+-   **Lab:** Google
+
+## Galactica
+
+-   **Reference:** [](https://arxiv.org/abs/2211.09085)
+
+-   **Link:** <https://galactica.org>
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM for scientific domain
+
+-   **Extension:** Transformer based architecture in a decoder-only
+    setup with a few modifications. Data extensions include special
+    tokens for working memory, citations, genetic data, and a few other
+    biology related tasks.
+
+-   **Application:** The models are designed to perform scientific
+    tasks, including but not limited to citation prediction, scientific
+    QA, mathematical reasoning, summarization, document generation,
+    molecular property prediction and entity extraction.
+
+-   **Date (of first known publication):** 11/2022
+
+-   **Num. Params:** mini: 125M, base: 1.3B, standard: 6.7B, large: 30B,
+    huge: 120B
+
+-   **Corpus:** Trained on 106 billion tokens of open-access scientific
+    text and data. This includes papers, textbooks, scientific websites,
+    encyclopedias, reference material, knowledge bases, and more
+
+-   **License:** Limited, non-commerical CC BY-NC 4.0 license
+
+-   **Lab:** Meta
+
+## Gato
+
+-   **Reference:**
+
+-   **Link:** <https://www.deepmind.com/blog/a-generalist-agent>
+
+-   **Family:** "Control Transformers" (not per se a family, but
+    grouping here those Transformers that try to model more general
+    control, RL-like, tasks)
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** MLM (where tokens are either text or agent
+    actions)
+
+-   **Extension:** The standard decoder-only Transformer architecture is
+    preceded by an embedding layer that can embed text and images, plus
+    add position encodings to add spatial information when applicable.
+
+-   **Application:** Gato presents a generalizable agent that can be
+    used beyond text to tasks such as playing Atari or controlling a
+    robot arm.
+
+-   **Date (of first known publication):** 05/2022
+
+-   **Num. Params:**1.2B
+
+-   **Corpus:** 1.5T tokens including standard text (e.g. MassiveText),
+    vision (e.g. ALIGN), and simulation environments (e.g. ALE Atari, or
+    RGB Stacking Real Robot)
+
+-   **License:** Closed source
+
+-   **Lab:** Deepmind
+
+## GLaM
+
+-   **Reference:**
+
+-   **Link:** See blog post[^25]
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** GLaM introduces a Mixture of 64 Experts to increase
+    parameter count and generalization properties in a somewhat standard
+    decoder-only. Transformer architecture. Only two experts get
+    activated at a time per token, which makes the model also more
+    efficient in training and inference.
+
+-   **Application:** General language modeling
+
+-   **Date (of first known publication):** 12/2021
+
+-   **Num. Params:**1.2T across 64 experts, but only 96B get activated
+    for inference
+
+-   **Corpus:** 1.6T tokens including web pages filtered by Wikipedia
+    and books for quality
+
+-   **License:** Closed source
+
+-   **Lab:** Google
+
+## GLIDE
+
+-   **Reference:** [](https://arxiv.org/abs/2112.10741)
+
+-   **Link:** <https://github.com/openai/glide-text2im>
+
+-   **Family:** Diffusion models
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** Caption prediction
+
+-   **Extension:** GLIDE can be seen as an extension of the ADM (Ablated
+    Diffusion Model) by the same authors. However, ADM is not per se a
+    Transformer architecture although it does resemble one in some of
+    the configurations the authors use. Given that ADM is by the same
+    authors and was quickly followed up by GLIDE, we think it is fair to
+    consider GLIDE as the first of its kind.
+
+-   **Application:** Text to image
+
+-   **Date (of first known publication):** 12/2021
+
+-   **Num. Params:**3.5B diffusion model (2.3B for visual encoding, 1.2B
+    for textual) + 1.5B for model for upsampling
+
+-   **Corpus:** Same as DALL-E
+
+-   **License:** Open, MIT license
+
+-   **Lab:** OpenAI
+
+## GLM
+
+-   **Reference:** [](https://arxiv.org/abs/2103.10360)
+
+-   **Link:** <https://github.com/THUDM/GLM-130B>
+
+-   **Family:** GLM (General Language Model)
+
+-   **Pretraining Architecture:** Encoder and decoder
+
+-   **Pretraining Task:** Auto regressive blank infilling
+
+-   **Extension:** GLM has a bidirectional encoder and a unidirectional
+    decoder in a unified model.
+
+-   **Application:** a General Language Model pretrained with an
+    autoregressive blank-filling objective and can be finetuned on
+    various natural language understanding and generation tasks.
+
+-   **Date (of first known publication):** 03/2022
+
+-   **Num. Params:** Base = 110M, Large = 335M, and also 2B, 10B, 130B
+
+-   **Corpus:** Pile, GLM-130B Chinese corpora, P3, DeepStruct
+    finetuning dataset
+
+-   **License:** Open, MIT license
+
+-   **Lab:** Tsinghua
+
+## Global Context ViT
+
+-   **Reference:** [](https://arxiv.org/abs/2206.09959)
+
+-   **Link:** <https://github.com/NVlabs/GCVit>
+
+-   **Family:** ViT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** Image classification
+
+-   **Extension:** hierarchical ViT architecture consisting of local and
+    global self-attention modules
+
+-   **Application:** Image generation
+
+-   **Date (of first known publication):** 06/2022
+
+-   **Num. Params:** 90M
+
+-   **Corpus:** Imagenet-1K and other task dependent dataasets
+
+-   **License:** Limited, non-commercial license CC-BY-NC-SA-4.0
+
+-   **Lab:** NVidia
+
+## Gopher
+
+-   **Reference:**
+
+-   **Link:** See blog post[^26]
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Same as GPT-2 but use RSNorm instead of LayerNorm and
+    relative positional encoding rather than absolute
+
+-   **Application:** Mostly Language Modeling and NLU, but also
+    extensible like GPT
+
+-   **Date (of first known publication):** 12/2021
+
+-   **Num. Params:**280B
+
+-   **Corpus:** Massive Text (2.35 billion documents, or about 10.5 TB
+    of text including Massive Web, Books, Github, News, C4, and
+    Wikipedia.
+
+-   **License:** Closed source
+
+-   **Lab:** Deepmind
+
+## GopherCite
+
+-   **Reference:** [](https://arxiv.org/abs/2203.11147)
+
+-   **Link:** See blog post[^27]
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** GopherCite is based on Gopher but adds a step using
+    RLHP (Reinforcement Learning from Human Preferences) to learn
+    whether not only a response is plausible but also supported
+
+-   **Application:** Dialog systems, Q&A, general language generation
+    tasks
+
+-   **Date (of first known publication):** 03/2022
+
+-   **Num. Params:**280B
+
+-   **Corpus:** Same as Gopher plus specific dataset generated in the
+    RLHP process
+
+-   **License:** Closed source
+
+-   **Lab:** Deepmind
+
+## GPT
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/openai-gpt>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:**
+
+-   **Application:** Text generation, but adaptable to many other NLP
+    tasks when fine tuned.
+
+-   **Date (of first known publication):** 06/2018
+
+-   **Num. Params:**117M
+
+-   **Corpus:** Unsupervised Pretraining on BookCorpus dataset.
+    Supervised Finetuning on several task-specific datasets including
+    SNLI, RACE, Quora...
+
+-   **License:** N/A
+
+-   **Lab:** OpenAI
+
+## GPT-2
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/gpt2>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Minor extensions to the GPT architecture (e.g. layer
+    normalization moved to the input of each sub-layer, or increased
+    context size from 512 to 1024)
+
+-   **Application:** Text generation, but adaptable to many other NLP
+    tasks when fine tuned.
+
+-   **Date (of first known publication):** 02/2019
+
+-   **Num. Params:** 124M, 355M, 774M, 1.5B
+
+-   **Corpus:** 8 million web pages (40 GB). 10X GPT . WebText dataset
+    is created by crawling all links at Reddit with at least 3 Karma
+    points.
+
+-   **License:** Open, Modified MIT license
+
+-   **Lab:** OpenAI
+
+## GPT-3
+
+-   **Reference:**
+
+-   **Link:** <https://github.com/openai/gpt-3>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Same as GPT-2 with the only addition of alternating
+    dense and locally banded sparse attention patterns, inspired by the
+    Sparse Transformer
+
+-   **Application:** Initially text generation, but has over time been
+    used for a large range of applications in areas such as code
+    generation, but also image and audio generation
+
+-   **Date (of first known publication):** 05/2020
+
+-   **Num. Params:**175 B
+
+-   **Corpus:** 500B tokens including CommonCrawl (410B), WebText2
+    (19B), Books1 (12B), Books2 (55B), and Wikipedia (3B)
+
+-   **License:** Closed source
+
+-   **Lab:** OpenAI
+
+## GPT-3.5
+
+-   **Reference:** N/A
+
+-   **Link:**
+    <https://platform.openai.com/docs/model-index-for-researchers/models-referred-to-as-gpt-3-5>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** The GPT3.5 series includes a number of models like
+    Davinci-003. They are basically versions of the InstructGPT model.
+    See blog post[^28] for details on the comparison of the performance
+    to older GPT3 models.
+
+-   **Application:** Dialog and general language, but there is a code
+    specific model - codex
+
+-   **Date (of first known publication):** 10/2022
+
+-   **Num. Params:**175B
+
+-   **Corpus:** Same as InstructGPT
+
+-   **License:** Closed source, accessible through API
+
+-   **Lab:** OpenAI
+
+## GPT-J
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/EleutherAI/gpt-j-6B>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** GPT-J 6B is a Transformer model trained using Mesh
+    Transformer JAX and same tokenizer as GPT2/3
+
+-   **Application:** Same as GPT-3
+
+-   **Date (of first known publication):** 05/2021
+
+-   **Num. Params:** 6B
+
+-   **Corpus:** Pile corpus, a large-scale curated dataset created by
+    EleutherAI.
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** EleutherAI
+
+## GPT-Neo
+
+-   **Reference:**
+    <https://huggingface.co/docs/transformers/model_doc/gpt_neo>
+
+-   **Link:** <https://github.com/EleutherAI/gpt-neo>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Similar to GPT-2 but uses local attention in every
+    other layer with a window size of 256 tokens
+
+-   **Application:** Text generation, but adaptable to many other NLP
+    tasks when fine tuned
+
+-   **Date (of first known publication):** 03/2021
+
+-   **Num. Params:** 5B, 2.7B (XL)
+
+-   **Corpus:** Pile --- 840 GB open source text dataset that combines
+    22 pre existing datasets
+
+-   **License:** Open, MIT license
+
+-   **Lab:** EleutherAI
+
+## GPT-NeoX-20B
+
+-   **Reference:** [](https://arxiv.org/abs/2204.06745)
+
+-   **Link:** <https://huggingface.co/EleutherAI/gpt-neox-20b>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Similar to GPT-3 with rotary encoders instead of
+    positional, parallel attention and feed forward layers, different
+    initialization, and all dense layers instead of alternate
+    dense/sparse
+
+-   **Application:** same as GPT-3
+
+-   **Date (of first known publication):** 04/2022
+
+-   **Num. Params:**20B
+
+-   **Corpus:** Pile --- 840 GB open source text dataset that combines
+    22 pre existing datasets
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** EleutherAI
+
+## HTLM
+
+-   **Reference:** [](https://arxiv.org/abs/2107.06955)
+
+-   **Link:** N/A
+
+-   **Family:** BART
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE
+
+-   **Extension:** As opposed to BART, they don't do sentence shuffling
+
+-   **Application:** General purpose language model that allows
+    structured HTML prompting
+
+-   **Date (of first known publication):** 07/2021
+
+-   **Num. Params:**400M
+
+-   **Corpus:** 23TB of simplified HTML extracted from CommonCrawl
+
+-   **License:** N/A
+
+-   **Lab:** Facebook
+
+## Imagen
+
+-   **Reference:**
+
+-   **Link:** <https://imagen.research.google>
+
+-   **Family:** T5, CLIP, Diffusion models
+
+-   **Pretraining Architecture:** T5 (or CLIP or BERT) for frozen text
+    encoder + U-net architecture for cascaded diffusion models for text
+    to image
+
+-   **Pretraining Task:** image/text pair prediction
+
+-   **Extension:** Imagen adds a few extensions to the U-net diffusion
+    architecture (pooled embedding vector, cross attention over text
+    embeddings, and Layer Normalizations)
+
+-   **Application:** Text to image
+
+-   **Date (of first known publication):** 06/2022
+
+-   **Num. Params:**2B
+
+-   **Corpus:** a combination of internal datasets, with 460M image-text
+    pairs, and the publicly available Laion dataset, with 400M
+    image-text pairs
+
+-   **License:** Closed source
+
+-   **Lab:** Google
+
+## InstructGPT
+
+-   **Reference:**
+
+-   **Link:**
+    <https://github.com/openai/following-instructions-human-feedback>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** GPTInstruct starts off with a pretrained GPT3 model
+    and adds reward modeling through reinforcement learning after a
+    supervised finetuning
+
+-   **Application:** Knowledge-intensive dialog or language tasks
+
+-   **Date (of first known publication):** 01/2022
+
+-   **Num. Params:** Same as GPT3
+
+-   **Corpus:** Same as GPT3 for pretraining, but finetuned and
+    optimized using labeler data and prompts
+
+-   **License:** Closed source, Accessible through API
+
+-   **Lab:** OpenAI
+
+## InstructOR
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/hkunlp/instructor-xl>
+
+-   **Family:** T5
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Fine-tuning Tasks:** Wide variety of instruction based
+    text-to-text tasks
+
+-   **Extension:** Fine-tunes T5 explicitly to optimize encoder to
+    produce a general purpose text string embedding useful for many NLU
+    tasks.
+
+-   **Application:** Any NLU task requiring a single text string
+    embedding. As of April 2023 InstructOR is the top-ranked system on
+    the Massive Text Embedding Benchmark (MTEB).[^29]
+
+-   **Date (of first known publication):** 12/2022
+
+-   **Num. Params:** 330M
+
+-   **Corpus:** Finetuned on MEDI
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** University of Hong Kong, University of Washington, META AI
+
+## Jurassic-1
+
+-   **Reference:**
+    [](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)
+
+-   **Link:** <https://github.com/ai21labs/lm-evaluation>
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Very similar to GPT-3, but far more parameters and
+    improved training efficiency mostly because of the improved
+    tokenizer. Also, different ratio of depth to breadth
+
+-   **Application:** Similar to GPT-3
+
+-   **Date (of first known publication):** 09/2021
+
+-   **Num. Params:** 178B (Jumbo), 17B (Grande), 7.5B (Large)
+
+-   **Corpus:** 300B tokens (same as GPT-3)
+
+-   **License:** Closed source, accessible through API
+
+-   **Lab:** AI21
+
+## LAMDA
+
+-   **Reference:**
+
+-   **Link:** See blog post[^30]
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** LAMDA focuses on how to improve safety, quality, and
+    groundeness using different fine-tuning strategies
+
+-   **Application:** General language modeling, such as translation,
+    summarization, question and answers.
+
+-   **Date (of first known publication):** 01/2022
+
+-   **Num. Params:**137B
+
+-   **Corpus:** 1.56T words from public dialog data and other public web
+    documents
+
+-   **License:** Closed source
+
+-   **Lab:** Google
+
+## LLaMA
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/main/model_doc/llama>
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** LLaMA uses a Transformer architecture, and with
+    extensions: Pre-normalization, SwiGLU activations, RoPE embeddings,
+    reduced memory usage and runtime through efficient implementation of
+    the causal multi-head attention, checkpointing to reduce the amount
+    of activations that are recomputed during the backward pass, model
+    and sequence parallelism to reduce memory usage of the model, and
+    uses 1.4T BPE tokens after tokenization.
+
+-   **Application:** Zero and few shot Commonsense reasoning, Question
+    answering, Code generation and Reading comprehension.
+
+-   **Date (of first known publication):** 02/2023
+
+-   **Num. Params:** 7B, 13B, 33B and 65B
+
+-   **Corpus:** English CommonCrawl + C4 + Github + Wikipedia +
+    Gutenberg and Books3 + ArXiv + Stack Exchange
+
+-   **License:** Limited, Non-commercial bespoke license
+
+-   **Lab:** Meta
+
+## mBART
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/mbart>
+
+-   **Family:** BART
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE
+
+-   **Extension:** Extends BART to multilingual capability
+
+-   **Application:** Translation
+
+-   **Date (of first known publication):** 01/2020
+
+-   **Num. Params:** Same as BART
+
+-   **Corpus:** CC25 Corpus includes 25 monolingual corpuses in
+    different languages. Largest corpuses are English (300 GB) and
+    Russian (280GB)
+
+-   **License:** Open, MIT license
+
+-   **Lab:** facebook
+
+## Megatron
+
+-   **Reference:**
+
+-   **Link:** <https://github.com/NVIDIA/Megatron-LM>
+
+-   **Family:** GPT/BERT/T5
+
+-   **Pretraining Architecture:** Encoder or Decorder, depending on the
+    base model
+
+-   **Pretraining Task:** Same as base model
+
+-   **Extension:** Megatron is a family of models that extend previously
+    known architectures (namely GPT-2 and BERT originally, but also T5
+    more recently) by introducing model parallelism primitives. In the
+    case of BERT, the authors also replace the next sentence prediction
+    head with sentence order prediction and use whole word n-gram
+    masking.
+
+-   **Application:** Same as base model
+
+-   **Date (of first known publication):** 03/2020
+
+-   **Num. Params:** 8.3B (GPT-like), 3.9B (BERT-like)
+
+-   **Corpus:** Original paper uses an aggregate dataset consisting of
+    Wikipedia), CC-Stories), RealNews, and OpenWebtext
+
+-   **License:** Limited, Non-commercial usage
+
+-   **Lab:** NVidia
+
+## Minerva
+
+-   **Reference:**
+
+-   **Link:** See blog post[^31]
+
+-   **Family:** PaLM
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Extends PaLM by fine-tuning on the mathematical
+    dataset
+
+-   **Application:** Mathematical reasoning
+
+-   **Date (of first known publication):** 06/2022
+
+-   **Num. Params:**540B
+
+-   **Corpus:** Same as PaLM + 118GB dataset of scientific papers from
+    the arXiv preprint server and web pages that contain mathematical
+    expressions using LaTeX, MathJax, or other mathematical typesetting
+    formats
+
+-   **License:** Closed source
+
+-   **Lab:** Google
+
+## MT-NLG (Megatron TuringNLG)
+
+-   **Reference:**
+
+-   **Link:** See blog post[^32]
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Uses parallelization similar to Megatron to train a
+    LM double the size of GPT-3
+
+-   **Application:** Language generation and others (similar to GPT-3)
+
+-   **Date (of first known publication):** 10/2021
+
+-   **Num. Params:**530B
+
+-   **Corpus:** The Pile[^33] (800GB dataset) + 2 Common Crawl snapshots
+
+-   **License:** Limited, Non-commercial usage
+
+-   **Lab:** NVidia
+
+## OpenAssistant LLaMa
+
+-   **Reference:** N/A
+
+-   **Link:** <https://open-assistant.io/>
+
+-   **Family:** LLaMA
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Extension:** Supervised fine-tuning on crowd sourced
+    conversation/assistant data.
+
+-   **Application:** Same as ChatGPT, but open source. Compared to
+    alternatives, it uses human generated conversation data
+
+-   **Date (of first known publication):** 04/2023
+
+-   **Num. Params:** 30B for LLaMa
+
+-   **Corpus:** Conversations collected by volunteers available at
+    <https://huggingface.co/datasets/OpenAssistant/oasst1>
+
+-   **License:** Limited, Non-commercial bespoke license. There is also
+    a version based on Pythia which is Apache licensed.
+
+-   **Lab:** Various open source contributors
+
+## OPT
+
+-   **Reference:**
+
+-   **Link:** See blog post[^34]
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Basically same architecture as GPT-3 but with some
+    training improvements introduced in Megatron-LM
+
+-   **Application:** Same as GPT-3
+
+-   **Date (of first known publication):** 05/2022
+
+-   **Num. Params:** 175B (and other smaller versions)
+
+-   **Corpus:** 180B tokens = RoBERTa + the Pile + PushShift.io Reddit
+
+-   **License:** Limited, non-commercial license
+
+-   **Lab:** Facebook
+
+## PalM
+
+-   **Reference:**
+
+-   **Link:** See blog post[^35]
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Palm uses a typical decoder-only Transformer
+    architecture, but adds quite a few extensions: SwiGLU activations,
+    parallel layers, multi-query attention, RoPE embeddings, Shared
+    Input-Output Embeddings, no biases, and a 256k SentencePiece
+    vocabulary generated from the training data.
+
+-   **Application:** PalM is designed as a general purpose language
+    model with applicability to hundreds of different language tasks
+
+-   **Date (of first known publication):** 04/2022
+
+-   **Num. Params:** 540B
+
+-   **Corpus:** 780B tokens from filtered webpages, books, Wikipedia,
+    news articles, source code, and social media conversations. Code
+    includes 24 programming languages.
+
+-   **License:** Closed source, Accessible through API
+
+-   **Lab:** Google
+
+## Pegasus
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/pegasus>
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE (more concretely GSG) and MLM
+
+-   **Extension:** Extends vanilla Transformer by using a different
+    pretraining task (GSG: Gap Sentence Generation) that is better
+    suited for summarization
+
+-   **Application:** Summarization
+
+-   **Date (of first known publication):** 12/2019
+
+-   **Num. Params:** Base = 223M, Large = 568M
+
+-   **Corpus:** C4 (750GB) + HugeNews (3.8 TB)
+
+-   **License:** N/A
+
+-   **Lab:** UCL/Google
+
+## Pythia
+
+-   **Reference:** [](https://arxiv.org/abs/2304.01373)
+
+-   **Link:** <https://github.com/EleutherAI/pythia>
+
+-   **Family:** Pythia
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Extension:** Trained with the library GPT-NeoX
+
+-   **Application:** Research on language model's behavior,
+    functionality, and limitations.
+
+-   **Date (of first known publication):** 04/2023
+
+-   **Num. Params:** 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, 12B
+
+-   **Corpus:** Pile
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Eleuther AI
+
+## RoBERTa
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/roberta>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM (Dynamic)
+
+-   **Extension:** Extension of BERT with optimized training procedure
+    and more data
+
+-   **Application:** Same as BERT
+
+-   **Date (of first known publication):** 07/2019
+
+-   **Num. Params:** 356M
+
+-   **Corpus:** Same as BERT + CC News + OpenWebText + Stories ( 33B
+    Tokens)
+
+-   **License:** N/A
+
+-   **Lab:** UW/Google
+
+## SeeKer
+
+-   **Reference:**
+
+-   **Link:** <https://parl.ai/projects/seeker>
+
+-   **Family:** GPT (but can extend any family)
+
+-   **Pretraining Architecture:** Encoder/decoder or decoder only,
+    depending on the base model it's extending
+
+-   **Pretraining Task:** LM training, Dialogue training
+
+-   **Extension:** SeeKer is an extension that can be applied to any
+    Transformer architecture by introducing "search", "knowledge", and
+    "response" modules that are introduced during pretraining
+
+-   **Application:** Same as base models
+
+-   **Date (of first known publication):** 03/2022
+
+-   **Num. Params:** SeeKeR Dialogue: 400M, 3B; SeeKeR LM: 365M, 762M,
+    1.5B, R2C2 BlenderBot: 400M, 3B
+
+-   **Corpus:** Wizard of the Internet/Wikipedia, PersonaChat, Blended
+    Skill Talk, Empatheic Dialogues, Multi-Session Chat, MS MARCO,
+    Natural questions, SQuAD, TriviaQA
+
+-   **License:** the code is open sourced.
+
+-   **Lab:** Facebook
+
+## Sparrow
+
+-   **Reference:** [](https://arxiv.org/abs/2209.14375)
+
+-   **Link:** N/A
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Starts from the Chinchilla 70B model but adds RLHF
+    (Reinforcement Learning with Human Feedback). It also adds inline
+    evidence a la GopherCite
+
+-   **Application:** Dialog agents and general language generation
+    applications like Q&A
+
+-   **Date (of first known publication):** 09/2022
+
+-   **Num. Params:** 70B
+
+-   **Corpus:** Same as Chinchilla + interactive data gathering with
+    human annotators during the RLHF process
+
+-   **License:** Closed source
+
+-   **Lab:** Deepmind
+
+## StableDiffusion
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/CompVis/stable-diffusion>
+
+-   **Family:** Diffusion
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** Caption prediction
+
+-   **Extension:** Stable diffusion is basically the Latent Diffusion
+    model developed by LMU Munich researchers + some learnings on
+    conditional diffusion from DALL-e and Imagen
+
+-   **Application:** Text to image
+
+-   **Date (of first known publication):** 12/2021
+
+-   **Num. Params:** 890M (although there are different, smaller,
+    variants)
+
+-   **Corpus:** LAION-5B, a publicly available dataset derived from
+    Common Crawl
+
+-   **License:** open, CreativeML Open RAIL++-M License
+
+-   **Lab:** LMU Munich + Stability.ai + Eleuther.ai
+
+## Swin Transformer
+
+-   **Reference:**
+
+-   **Link:** <https://github.com/microsoft/Swin-Transformer>
+
+-   **Family:** ViT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** Same as ViT
+
+-   **Extension:** Extends ViT by replacing the standard multi-head self
+    attention (MSA) module by a module based on shifted windows (Swin)
+    allowing ViT-like architectures to generalize to higher resolution
+    images
+
+-   **Application:** Image (object detection, image classification..)
+
+-   **Date (of first known publication):** 03/2021
+
+-   **Num. Params:** 29M-197M
+
+-   **Corpus:** Imagenet and Imagenet-22k
+
+-   **License:** the code is open sourced, with MIT-license
+
+-   **Lab:** Microsoft
+
+## Switch
+
+-   **Reference:** [](https://arxiv.org/abs/2101.03961)
+
+-   **Link:** <https://github.com/google-research/t5x>
+
+-   **Family:** T5
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE
+
+-   **Extension:** Goal to increase parameter count while keeping FLOP
+    operations constant by using efficient routing of MoE (Mixture of
+    Experts)
+
+-   **Application:** General language tasks (e.g. question answering)
+
+-   **Date (of first known publication):** 01/2021
+
+-   **Num. Params:** 1T
+
+-   **Corpus:** Colossal Clean Crawled Corpus
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Google
+
+## T0
+
+-   **Reference:** [](https://arxiv.org/abs/2110.08207)
+
+-   **Link:** <https://huggingface.co/bigscience/T0>
+
+-   **Family:** T5
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Fine-tuning Task:** Natural language prompts
+
+-   **Extension:** T0 stands for \"T5 for Zero Shot\", obtained by
+    fine-tuning the T5 model on multitask mixture covering many
+    different NLP tasks. Compared with T0, T0p and T0pp were fine-tuned
+    with more datasets. T0pp is recommended as it leads (on average) to
+    the best performances on a variety of NLP tasks.
+
+-   **Application:** Perform zero-shot inference tasks by specifying the
+    query in natural language, and the models will generate a
+    prediction.
+
+-   **Date (of first known publication):** 03/2022
+
+-   **Num. Params:** T0-3B: 3 billion, T0, T0p, T0pp: 11 billion
+
+-   **Corpus:** T0 (Multiple-choice QA, Extractive QA, Closed-Book QA,
+    Structure-To-Text, Sentiment, Summarization, Topic Classification,
+    Paraphrase Identification. T0p (same as T0, with additional datasets
+    from GPT-3's evaluation suite). T0pp (same as T0p, with additional
+    datasets from SuperGLUE, excluding NLI sets)
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** BigScience
+
+## T5
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/t5>
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** DAE
+
+-   **Extension:** Same as original Transformer with some additions such
+    as relative positional embeddings like Transformer XL
+
+-   **Application:** General language tasks including machine
+    translation, question answering, abstractive summarization, and text
+    classification
+
+-   **Date (of first known publication):** 10/2019
+
+-   **Num. Params:** 11 B (up to)
+
+-   **Corpus:** Colossal Clean Crawled Corpus (C4) --- Cleaned up
+    version of the Common Crawl dataset --- 750 GB
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Google
+
+## Trajectory Transformers
+
+-   **Reference:** [](https://arxiv.org/abs/2106.02039)
+
+-   **Link:** <https://trajectory-transformer.github.io>
+
+-   **Family:** GPT, Control Transformers" (not per se a family, but
+    grouping here those Transformers that try to model more general
+    control, RL-like, tasks)
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** predict most likely sequence
+
+-   **Extension:** Similarly to the Decision Transformers, the main
+    extension introduced by Trajectory Transformers is a way to encode a
+    trajectory (state, actions, rewards)
+
+-   **Application:** General RL (reinforcement learning tasks)
+
+-   **Date (of first known publication):** 06/2021
+
+-   **Num. Params:** Smaller architecture than GPT
+
+-   **Corpus:** D4RL dataset and other RL datasets depending on the task
+    at hand
+
+-   **License:** Open, MIT license
+
+-   **Lab:** UC Berkeley
+
+## Transformer XL
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/transfo-xl>
+
+-   **Family:**
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Relative positioned embeddings enable longer-context
+    attention when compared to vanilla Transformer model
+
+-   **Application:** General language tasks
+
+-   **Date (of first known publication):** 01/2019
+
+-   **Num. Params:** 151M
+
+-   **Corpus:** Different training datasets depending on experiments,
+    but baseline is Wikitext-103
+
+-   **License:** N/A
+
+-   **Lab:** CMU/Google
+
+## Turing-NLG
+
+-   **Reference:**
+    [](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft)
+
+-   **Link:** N/A
+
+-   **Family:** GPT
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** LM
+
+-   **Extension:** Optimized version of GPT2 with optimal
+    hyperparameters and software/hardware platform to improve training
+
+-   **Application:** Same as GPT-2/3
+
+-   **Date (of first known publication):** 02/2020
+
+-   **Num. Params:** 17B originally, up to 530B more recently
+
+-   **Corpus:** Highest quality subset from The Pile + 2 CC snapshots
+    (339B tokens)
+
+-   **License:** N/A
+
+-   **Lab:** Microsoft
+
+## UL2
+
+-   **Reference:** [](https://arxiv.org/abs/2205.05131)
+
+-   **Link:**
+    <https://github.com/google-research/google-research/tree/master/ul2>
+
+-   **Family:** Transformer
+
+-   **Pretraining Architecture:** Encoder/Decoder
+
+-   **Pretraining Task:** Mixture-of-Denoisers, which combines diverse
+    pre-training paradigms together
+
+-   **Extension:** UL2-20B (Unifying Language Learning) can be
+    interpreted as a model that is quite similar to T5 but trained with
+    a different objective and slightly different scaling knobs.
+
+-   **Application:** A unified framework for pre-training models that
+    are universally effective across datasets and setups.
+
+-   **Date (of first known publication):** 05/2022
+
+-   **Num. Params:** 20B
+
+-   **Corpus:** 1 trillion tokens on C4
+
+-   **License:** Open, Apache-2.0
+
+-   **Lab:** Google
+
+## Vicuna
+
+-   **Reference:** N/A
+
+-   **Link:** <https://vicuna.lmsys.org>
+
+-   **Family:** LLaMA
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Fine-tuning Task:** human instructions
+
+-   **Extension:** LLaMA fine-tuned on user-shared conversations
+    collected from ShareGPT.
+
+-   **Application:** Same as ChatGPT
+
+-   **Date (of first known publication):** 03/2023
+
+-   **Num. Params:** 13B
+
+-   **Corpus:** Conversations collected from ShareGPT
+
+-   **License:** Limited, Non-commercial bespoke license
+
+-   **Lab:** UC Berkeley, CMU, Stanford, UC San Diego, and MBZUAI
+
+## ViT
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/vit>
+
+-   **Family:** BERT
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** Image classification
+
+-   **Extension:** Extension of BERT architecture to train on patches of
+    images
+
+-   **Application:** Image classification
+
+-   **Date (of first known publication):** 10/2020
+
+-   **Num. Params:** 86M(Base) to 632M (Huge)
+
+-   **Corpus:** From standard Imagenet to JFT-300M (large inhouse
+    dataset)
+
+-   **License:** N/A
+
+-   **Lab:** Google
+
+## Wu Dao 2.0
+
+-   **Reference:** See Wikipedia page[^36]
+
+-   **Link:** See blog post[^37]
+
+-   **Family:** GLM (General Language Model)
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** Autoregressive blank infilling
+
+-   **Extension:** Similar to GPT in that it uses a
+    Decoder/autoregressive architecture but applies a different
+    pretraining task proposed in the GLM family of models. Besides, Wu
+    Dao uses a Fast Mixture of Experts (see
+    <https://github.com/laekov/fastmoe)> approach to scale training to
+    trillions of parameters
+
+-   **Application:** Language and multimodal (particularly image)
+
+-   **Date (of first known publication):** 06/2021
+
+-   **Num. Params:** 1.75T
+
+-   **Corpus:** 4.9 TB of high quality images and texts in both English
+    and Chinese
+
+-   **License:** Closed source
+
+-   **Lab:** Beijing Academy of Artificial Intelligence
+
+## XLM-RoBERTa
+
+-   **Reference:**
+
+-   **Link:**
+    <https://huggingface.co/docs/transformers/model_doc/xlm-roberta>
+
+-   **Family:** RoBERTa
+
+-   **Pretraining Architecture:** Encoder
+
+-   **Pretraining Task:** MLM (Dynamic)
+
+-   **Extension:** An extension of RoBERTa that introduces parameter
+    tuning insights in the context of multilingual applications
+
+-   **Application:** Translation and other cross-lingual language tasks
+
+-   **Date (of first known publication):** 10/2019
+
+-   **Num. Params:** Base = 270M, Large = 550M
+
+-   **Corpus:** Cleaned Common Crawl in 100 languages
+
+-   **License:** Open, MIT license
+
+-   **Lab:** Facebook
+
+## XLNet
+
+-   **Reference:**
+
+-   **Link:** <https://huggingface.co/docs/transformers/model_doc/xlnet>
+
+-   **Family:** Transformer XL
+
+-   **Pretraining Architecture:** Decoder
+
+-   **Pretraining Task:** PLM
+
+-   **Extension:** This model basically adapts Transformer XL
+    architecture to permutation-based LM
+
+-   **Application:** General language tasks
+
+-   **Date (of first known publication):** 05/2019
+
+-   **Num. Params:** Base=117M, Large=360M
+
+-   **Corpus:** Same as BERT + Giga5 (16GB text) + and aggressively
+    filtered ClueWeb 2012-B (19GB), Common Crawl (110 GB)
+
+-   **License:** Open, MIT license
+
+-   **Lab:** CMU/Google
+
 
 <a name="albert"></a>[ALBERT](https://huggingface.co/docs/transformers/model_doc/albert)
 
