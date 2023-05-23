@@ -562,7 +562,8 @@ since Feb, 2023.
 
 Finally, here is the full list of all the models in the catalog:
 
-<a name="albert"></a>## ALBERT
+<a name="albert"></a> 
+## ALBERT
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/albert>
