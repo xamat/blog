@@ -562,8 +562,8 @@ since Feb, 2023.
 
 Finally, here is the full list of all the models in the catalog:
 
-<a name="albert"></a> 
-## ALBERT
+ 
+## <a name="albert"></a>ALBERT
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/albert>
@@ -589,7 +589,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="alexa"></a>## AlexaTM 20B
+## <a name="alexa"></a>AlexaTM 20B
 
 -   **Link:** <https://github.com/amazon-science/alexa-teacher-models>
 
@@ -617,7 +617,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Amazon
 
-<a name="alpaca"></a>## Alpaca
+## <a name="alpaca"></a>Alpaca
 
 -   **Link:** <https://github.com/tatsu-lab/stanford_alpaca>
 
@@ -644,7 +644,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Stanford
 
-<a name="alphafold"></a>## AlphaFold
+## <a name="alphafold"></a> AlphaFold
 
 -   **Link:** <https://github.com/deepmind/alphafold>
 
@@ -673,7 +673,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="anthropicassistant"></a>## Anthropic Assistant
+## <a name="anthropicassistant"></a> Anthropic Assistant
 
 -   **Link:** <https://arxiv.org/abs/2112.00861>
 
@@ -707,7 +707,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Anthropic
 
-<a name="bart"></a>## BART
+## <a name="bart"></a>BART
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/bart>
 
@@ -734,7 +734,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:**Facebook
 
-<a name="bert"></a>## BERT
+## <a name="bert"></a>BERT
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/bert>
 
@@ -760,7 +760,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:**Google
 
-<a name="bigbird"></a>## Big Bird
+## <a name="bigbird"></a>Big Bird
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/big_bird>
@@ -789,7 +789,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:**Google
 
-<a name="blenderbot3"></a>## BlenderBot3
+## <a name="blenderbot3"></a>BlenderBot3
 
 -   **Link:** <https://parl.ai/projects/bb3/>
 
@@ -815,7 +815,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Facebook
 
-<a name="bloom"></a>## BLOOM
+## <a name="bloom"></a>BLOOM
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/bloom>
 
@@ -841,7 +841,7 @@ Finally, here is the full list of all the models in the catalog:
 -   **License:** Open, but need to follow restrictions in Attachment A,
     BigScience RAIL License v1.0
 
-<a name="chatgpt"></a>## ChatGPT
+## <a name="chatgpt"></a>ChatGPT
 
 -   **Link:** <https://chat.openai.com>
 
@@ -869,7 +869,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="chinchilla"></a>## Chinchilla
+## <a name="chinchilla"></a>Chinchilla
 
 -   **Link:** <https://arxiv.org/abs/2203.15556>
 
@@ -895,7 +895,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="clip"></a>## CLIP
+## <a name="clip"></a>CLIP
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/clip>
 
@@ -922,7 +922,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="cm3"></a>## CM3
+## <a name="cm3"></a>CM3
 
 -   **Link:** <https://arxiv.org/abs/2201.07520>
 
@@ -953,7 +953,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Facebook
 
-<a name="ctrl"></a>## CTRL
+## <a name="ctrl"></a>CTRL
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/ctrl>
 
@@ -984,7 +984,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Salesforce
 
-<a name="dall-e"></a>## DALL-E
+## <a name="dall-e"></a>DALL-E
 
 -   **Link:** <https://openai.com/blog/dall-e>
 
@@ -1009,7 +1009,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="dall-e2"></a>## DALL-E 2
+## <a name="dall-e2"></a>DALL-E 2
 
 -   **Link:** <https://openai.com/dall-e-2>
 
@@ -1034,7 +1034,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="deberta"></a>## DeBERTa
+## <a name="deberta"></a>DeBERTa
 
 -   **Link:** <https://huggingface.co/microsoft/deberta-large>
 
@@ -1060,7 +1060,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Microsoft
 
-<a name="decisiontransformer"></a>## Decision Transformers
+## <a name="decisiontransformer"></a>Decision Transformers
 
 -   **Link:** <https://github.com/kzl/decision-transformer>
 
@@ -1088,7 +1088,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google/UC Berkeley/Facebook
 
-<a name="dialoggpt"></a>## DialoGPT
+## <a name="dialoggpt"></a>DialoGPT
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/dialogpt>
@@ -1113,7 +1113,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Microsoft
 
-<a name="distilbert"></a>## DistilBERT
+## <a name="distilbert"></a>DistilBERT
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/distilbert>
@@ -1139,7 +1139,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Huggingface
 
-<a name="dqbart"></a>## DQ-BART
+## <a name="dqbart"></a>DQ-BART
 
 -   **Link:** <https://github.com/amazon-science/dq-bart>
 
@@ -1165,7 +1165,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Amazon
 
-<a name="dolly"></a>## Dolly
+## <a name="dolly"></a>Dolly
 
 -   **Link:** <https://huggingface.co/databricks/dolly-v1-6b>
 
@@ -1191,7 +1191,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Databricks, Inc
 
-<a name="e5"></a>## E5
+## <a name="e5"></a>E5
 
 -   **Link:** <https://huggingface.co/intfloat/e5-large>
 
@@ -1217,7 +1217,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Microsoft
 
-<a name="electra"></a>## ELECTRA
+## <a name="electra"></a>ELECTRA
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/electra>
@@ -1243,7 +1243,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Stanford/Google
 
-<a name="ernie"></a>## ERNIE
+## <a name="ernie"></a>ERNIE
 
 -   **Link:** <https://arxiv.org/abs/1905.07129>
 
@@ -1271,7 +1271,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Baidu, Pengcheng Lab
 
-<a name="flamingo"></a>## Flamingo
+## <a name="flamingo"></a>Flamingo
 
 -   **Link:** <https://arxiv.org/abs/2204.14198>
 
@@ -1301,7 +1301,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="flant5"></a>## Flan-T5
+## <a name="flant5"></a>Flan-T5
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/flan-t5>
@@ -1335,7 +1335,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="flanpalm"></a>## Flan-PaLM
+## <a name="flanpalm"></a>Flan-PaLM
 
 -   **Link:** <https://arxiv.org/abs/2210.11416>
 
@@ -1365,7 +1365,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="galactica"></a>## Galactica
+## <a name="galactica"></a>Galactica
 
 -   **Link:** <https://galactica.org>
 
@@ -1398,7 +1398,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Meta
 
-<a name="gato"></a>## Gato
+## <a name="gato"></a>Gato
 
 -   **Link:** <https://www.deepmind.com/blog/a-generalist-agent>
 
@@ -1431,7 +1431,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="glam"></a>## GLaM
+## <a name="glam"></a>GLaM
 
 -   **Link:** See blog post[^25]
 
@@ -1461,7 +1461,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="glide"></a>## GLIDE
+## <a name="glide"></a>GLIDE
 
 -   **Link:** <https://github.com/openai/glide-text2im>
 
@@ -1491,7 +1491,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="glm"></a>## GLM
+## <a name="glm"></a>GLM
 
 -   **Link:** <https://github.com/THUDM/GLM-130B>
 
@@ -1519,7 +1519,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Tsinghua
 
-<a name="gcvit"></a>## Global Context ViT
+## <a name="gcvit"></a>Global Context ViT
 
 -   **Link:** <https://github.com/NVlabs/GCVit>
 
@@ -1544,7 +1544,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** NVidia
 
-<a name="gopher"></a>## Gopher
+## <a name="gopher"></a>Gopher
 
 -   **Link:** See blog post[^26]
 
@@ -1572,7 +1572,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="gophercite"></a>## GopherCite
+## <a name="gophercite"></a>GopherCite
 
 -   **Link:** <ttps://www.deepmind.com/blog/gophercite-teaching-language-models-to-support-answers-with-verified-quotes>
 
@@ -1600,7 +1600,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="gpt"></a>## GPT
+## <a name="gpt"></a>GPT
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/openai-gpt>
@@ -1628,7 +1628,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="gpt2"></a>## GPT-2
+## <a name="gpt2"></a>GPT-2
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/gpt2>
 
@@ -1657,7 +1657,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="gpt3"></a>## GPT-3
+## <a name="gpt3"></a>GPT-3
 
 -   **Link:** <https://github.com/openai/gpt-3>
 
@@ -1686,7 +1686,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="gpt3.5"></a>## GPT-3.5
+## <a name="gpt3.5"></a>GPT-3.5
 
 -   **Link:**
     <https://platform.openai.com/docs/model-index-for-researchers/models-referred-to-as-gpt-3-5>
@@ -1715,7 +1715,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="gpt3"></a>## GPT-J
+## <a name="gpt3"></a>GPT-J
 
 -   **Link:** <https://huggingface.co/EleutherAI/gpt-j-6B>
 
@@ -1741,7 +1741,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** EleutherAI
 
-<a name="gptneo"></a>## GPT-Neo
+## <a name="gptneo"></a>GPT-Neo
 
 -   **Link:** <https://github.com/EleutherAI/gpt-neo>
 
@@ -1768,7 +1768,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** EleutherAI
 
-<a name="gptneox20"></a>## GPT-NeoX-20B
+## <a name="gptneox20"></a>GPT-NeoX-20B
 
 -   **Link:** <https://huggingface.co/EleutherAI/gpt-neox-20b>
 
@@ -1796,7 +1796,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** EleutherAI
 
-<a name="htlm"></a>## HTLM
+## <a name="htlm"></a>HTLM
 
 -   **Link:** <https://arxiv.org/abs/2107.06955>
 
@@ -1821,7 +1821,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Facebook
 
-<a name="imagen"></a>## Imagen
+## <a name="imagen"></a>Imagen
 
 -   **Link:** <https://imagen.research.google>
 
@@ -1851,7 +1851,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="instructgpt"></a>## InstructGPT
+## <a name="instructgpt"></a>InstructGPT
 
 -   **Link:**
     <https://github.com/openai/following-instructions-human-feedback>
@@ -1879,7 +1879,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** OpenAI
 
-<a name="instructor"></a>## InstructOR
+## <a name="instructor"></a>InstructOR
 
 -   **Link:** <https://huggingface.co/hkunlp/instructor-xl>
 
@@ -1908,7 +1908,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** University of Hong Kong, University of Washington, META AI
 
-<a name="jurassic1"></a>## Jurassic-1
+## <a name="jurassic1"></a>Jurassic-1
 
 -   **Link:** <https://github.com/ai21labs/lm-evaluation>
 
@@ -1934,7 +1934,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** AI21
 
-<a name="lamda"></a>## LAMDA
+## <a name="lamda"></a>LAMDA
 
 -   **Link:** See blog post[^30]
 
@@ -1961,7 +1961,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="llama"></a>## LLaMA
+## <a name="llama"></a>LLaMA
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/main/model_doc/llama>
@@ -1994,7 +1994,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Meta
 
-<a name="mbart"></a>## mBART
+## <a name="mbart"></a>mBART
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/mbart>
 
@@ -2020,7 +2020,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** facebook
 
-<a name="megatron"></a>## Megatron
+## <a name="megatron"></a>Megatron
 
 -   **Link:** <https://github.com/NVIDIA/Megatron-LM>
 
@@ -2051,7 +2051,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** NVidia
 
-<a name="minerva"></a>## Minerva
+## <a name="minerva"></a>Minerva
 
 -   **Link:** See blog post[^31]
 
@@ -2079,7 +2079,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="mtnlg"></a>## MT-NLG (Megatron TuringNLG)
+## <a name="mtnlg"></a>MT-NLG (Megatron TuringNLG)
 
 -   **Link:** See blog post[^32]
 
@@ -2104,7 +2104,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** NVidia
 
-<a name="openassistantllama"></a>## OpenAssistant LLaMa
+## <a name="openassistantllama"></a>OpenAssistant LLaMa
 
 -   **Link:** <https://open-assistant.io/>
 
@@ -2130,7 +2130,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Various open source contributors
 
-<a name="gpt"></a>## OPT
+## <a name="gpt"></a>OPT
 
 -   **Link:** See blog post[^34]
 
@@ -2155,7 +2155,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Facebook
 
-<a name="palm"></a>## PalM
+## <a name="palm"></a>PalM
 
 -   **Link:** See blog post[^35]
 
@@ -2186,7 +2186,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="pegasus"></a>## Pegasus
+## <a name="pegasus"></a>Pegasus
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/pegasus>
@@ -2213,7 +2213,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** UCL/Google
 
-<a name="pythia"></a>## Pythia
+## <a name="pythia"></a>Pythia
 
 -   **Reference:** [](https://arxiv.org/abs/2304.01373)
 
@@ -2238,7 +2238,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Eleuther AI
 
-<a name="roberta"></a>## RoBERTa
+## <a name="roberta"></a>RoBERTa
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/roberta>
@@ -2265,7 +2265,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** UW/Google
 
-<a name="seeker"></a>## SeeKer
+## <a name="seeker"></a>SeeKer
 
 -   **Link:** <https://parl.ai/projects/seeker>
 
@@ -2295,7 +2295,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Facebook
 
-<a name="sparrow"></a>## Sparrow
+## <a name="sparrow"></a>Sparrow
 
 -   **Link:** <https://arxiv.org/abs/2209.14375>
 
@@ -2323,7 +2323,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Deepmind
 
-<a name="stablediffusion"></a>## StableDiffusion
+## <a name="stablediffusion"></a>StableDiffusion
 
 -   **Link:** <https://huggingface.co/CompVis/stable-diffusion>
 
@@ -2351,7 +2351,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** LMU Munich + Stability.ai + Eleuther.ai
 
-<a name="swintransformer"></a>## Swin Transformer
+## <a name="swintransformer"></a>Swin Transformer
 
 -   **Link:** <https://github.com/microsoft/Swin-Transformer>
 
@@ -2378,7 +2378,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Microsoft
 
-<a name="switch"></a>## Switch
+## <a name="switch"></a>Switch
 
 -   **Link:** <https://github.com/google-research/t5x>
 
@@ -2404,7 +2404,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="t0"></a>## T0
+## <a name="t0"></a>T0
 
 -   **Link:** <https://huggingface.co/bigscience/T0>
 
@@ -2438,7 +2438,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** BigScience
 
-<a name="t5"></a>## T5
+## <a name="t5"></a>T5
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/t5>
 
@@ -2466,7 +2466,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="trajectorytransformers"></a>## Trajectory Transformers
+## <a name="trajectorytransformers"></a>Trajectory Transformers
 
 -   **Link:** <https://trajectory-transformer.github.io>
 
@@ -2495,7 +2495,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** UC Berkeley
 
-<a name="transformerxl"></a>## Transformer XL
+## <a name="transformerxl"></a>Transformer XL
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/transfo-xl>
@@ -2522,7 +2522,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** CMU/Google
 
-<a name="turingnlg"></a>## Turing-NLG
+## <a name="turingnlg"></a>Turing-NLG
 
 -   **Link:** <https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft>
 
@@ -2548,7 +2548,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Microsoft
 
-<a name="ul2"></a>## UL2
+## <a name="ul2"></a>UL2
 
 -   **Link:**
     <https://github.com/google-research/google-research/tree/master/ul2>
@@ -2577,7 +2577,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="vicuna"></a>## Vicuna
+## <a name="vicuna"></a>Vicuna
 
 -   **Link:** <https://vicuna.lmsys.org>
 
@@ -2602,7 +2602,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** UC Berkeley, CMU, Stanford, UC San Diego, and MBZUAI
 
-<a name="vit"></a>## ViT
+## <a name="vit"></a>ViT
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/vit>
 
@@ -2628,7 +2628,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Google
 
-<a name="wudao2"></a>## Wu Dao 2.0
+## <a name="wudao2"></a>Wu Dao 2.0
 
 -   **Link:** <https://en.wikipedia.org/wiki/Wu_Dao>
 
@@ -2658,7 +2658,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Beijing Academy of Artificial Intelligence
 
-<a name="xlmroberta"></a>## XLM-RoBERTa
+## <a name="xlmroberta"></a>XLM-RoBERTa
 
 -   **Link:**
     <https://huggingface.co/docs/transformers/model_doc/xlm-roberta>
@@ -2684,7 +2684,7 @@ Finally, here is the full list of all the models in the catalog:
 
 -   **Lab:** Facebook
 
-<a name="xlnet"></a>## XLNet
+## <a name="xlnet"></a>XLNet
 
 -   **Link:** <https://huggingface.co/docs/transformers/model_doc/xlnet>
 
