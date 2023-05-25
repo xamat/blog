@@ -22,7 +22,7 @@ This post is now an [ArXiV paper](https://arxiv.org/abs/2302.07730) that you can
 
 **Update 05/2023**
 
-Another pretty large update after 4 months. I was invited to submit the [article] (https://arxiv.org/abs/2302.07730) to a journal, so I decided to enlist some help from some LinkedIn colleages and completely revamp it. First off, we added a whole lot of new models, including e.g. many from the Llama family. Because of this, we also included a new image that includes all the newer models we have included since February 2023. Since some of those models are fine-tuned or intstruction-tuned, we went into explaining a bit more what is the difference between a fine-tuned and a pre-trained model, and added a section on that discussion. We also fixed some details on the catalog itself and added a field on the license status of each model, which has become very relevant recently. Finally, there was a lot of editing throughout the paper that I have incorporated here too. Hope this makes it more useful!
+Another pretty large update after 4 months. I was invited to submit the [article] (https://arxiv.org/abs/2302.07730) to a journal, so I decided to enlist some help from some LinkedIn colleages and completely revamp it. First off, we added a whole lot of new models, including e.g. many from the Llama family. Because of this, we also included a new image that includes all the newer models we have included since February 2023. Since some of those models are fine-tuned or intstruction-tuned, we went into explaining a bit more what is the difference between a fine-tuned and a pre-trained model, and added a section on that discussion. We also fixed some details on the catalog itself and added a field on the license status of each model, which has become very relevant recently. I also added quite a few links to similar surveys at the end of this post. Finally, there was a lot of editing throughout the paper that I have incorporated here too. Hope this makes it more useful!
 
 Also, in case you are wondering why the catalog does not include GPT-4 or PALM-2, I explicitly decided not to include models for which there are no public details of the different elements needed to classify and understand them even at the most basic level.
 
@@ -2718,10 +2718,22 @@ Most of the following references have already been mentioned in the post. Howeve
 
 - The Huggingface Transformers [documentation](https://huggingface.co/course/chapter1/1?fw=pt) and course is extremely good and comprehensive. I have used myself in this post, and I can’t recommend enough as a natural follow up to what you will find here.
 - [A survey of transformers](https://arxiv.org/abs/2106.04554) (Lin et al. 2021) includes a 40 page long survey wit over 170 references and a full blown taxonomy.
-- [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/pdf/2003.08271.pdf) is also a very comprehensive survey that includes many of the pretrained models with a particular focus on NLP
 
-![](/blog/images/02-07.png)
+There are a few surveys specificially focused on LLMs. Here a afew worth checking out:
 
 - [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/abs/2003.08271) (Quiu et al. 2021) is another 30+ pages long survey that focuses on pretrained models for NLP.
 
 ![](/blog/images/02-08.png)
+
+- [Stanford Ecosystem Model Zoo](https://crfm.stanford.edu/ecosystem-graphs/index.html?mode=table)
+
+![](/blog/images/02-11.png)
+
+- [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/pdf/2304.13712.pdf)
+
+![](/blog/images/02-12.png)
+
+- [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
+
+![](/blog/images/02-13.png)
+
