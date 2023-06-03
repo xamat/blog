@@ -1,6 +1,6 @@
 ---
 id: 104
-title: "On why LLMs are just like medical doctors"
+title: "Prompt Engineering 201: Advanced prompt engineering and toolkits"
 date: '2023-06-03T00:00:01+00:00'
 author: Xavier
 permalink: /prompt201
@@ -17,7 +17,7 @@ categories:
 
 
 <img src="/blog/images/104-0.png">
-
+*DALLE-2: An advanced prompt engineer talking to a robot*
 
 Six months ago I published my [Prompt Engineering 101 post](https://amatriain.net/blog/PromptEngineering). That later turned into a pretty 
 popular [LinkedIn course](https://www.linkedin.com/learning-login/share?account=104&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fprompt-engineering-how-to-talk-to-the-ais%3Ftrk%3Dshare_ent_url%26shareId%3D9gu04nS6TX6dqeav6lZp7w%253D%253D) 
