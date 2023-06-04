@@ -17,7 +17,7 @@ categories:
 
 
 <img src="/blog/images/104-0.png">
-*DALLE-2: An advanced prompt engineer talking to a robot*
+*DALL-E 2: An advanced prompt engineer talking to a robot*
 
 Six months ago I published my [Prompt Engineering 101 post](https://amatriain.net/blog/PromptEngineering). That later turned into a pretty 
 popular [LinkedIn course](https://www.linkedin.com/learning-login/share?account=104&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fprompt-engineering-how-to-talk-to-the-ais%3Ftrk%3Dshare_ent_url%26shareId%3D9gu04nS6TX6dqeav6lZp7w%253D%253D) 
