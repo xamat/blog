@@ -162,7 +162,7 @@ The approach is illustrated in the diagram below. Given a question, the Planner 
 
 <img src="/blog/images/104-18.png">
 
-The following image, also from the paper, illustrates the main benefit of the approach by comparing to the "standard" approapch of reasoning with observations. In the latter, the LLM is queried for each call to a Tool (observation), which incurs in lots of potential redundancy (and therefore cost, and latency).
+The following image, also from the paper, illustrates the main benefit of the approach by comparing to the "standard" approach of reasoning with observations. In the latter, the LLM is queried for each call to a Tool (observation), which incurs in lots of potential redundancy (and therefore cost, and latency).
 
 <img src="/blog/images/104-19.png">
 
