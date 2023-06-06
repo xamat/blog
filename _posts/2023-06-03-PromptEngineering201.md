@@ -33,6 +33,7 @@ post, Chain of Thought, but will build up from there. Here are the techniques I 
 * [Automatic multi-step reasoning and tool-use (ART)](#art)
 * [Self-consistency](#self)
 * [Tree of thought (ToT)](#tot)
+* [Reasoning without observation (ReWoo)](#rewoo)
 * [Retrieval Augmented Generation (RAG)](#rag)
 * [Foward-looking active retrieval augmented generation (FLARE)](#flare)
 * [Reflection](#reflection)
@@ -44,9 +45,16 @@ post, Chain of Thought, but will build up from there. Here are the techniques I 
 * [Guidance and Constriained Prompting](#guidance)
 
 Before I continue, I will add a disclaimer though. While I am keeping the title of “prompt engineering” here for consistency with my previous 
-post and with current trends, I do think most of these approaches are mostly prompt design, which is only one of the components of prompt engineering. 
+post and with current trends, I do think most of these approaches address mostly prompt design, which is only one of the components of prompt engineering. 
 Prompt engineering includes all the necessary processes and components to not only design, but also serve, prompts at scale. 
-That is why I have added [a bonus section](#tools) at the end with the most interesting prompt engineering tools and frameworks.
+
+That being said, many of the approaches herein can be considered approaches to "automatic prompt design" in that they describe ways to automate the design of
+prompts at scale. In the [bonus section](#tools) you will find some of the most interesting prompt engineering tools and frameworks that implement these techniques.
+However, it is important to note that none of these approaches will get you to the results of an experienced prompt engineer. An experienced prompt engineer will 
+understand and be aware of all of the following techniques and apply some of the patterns wherever they apply rather than blindly following a particular approach
+for everything. This, for now, still requires judgement and experience. This is good news for you reading this. You can learn and understand these patterns, but you
+won't be replaced by any of these libraries. Take these patterns as a starting tools to add to your toolkit, but also experiment and combine them to gain experience
+and judgement. 
 
 # <a name="cot"></a>Chain of Thought (CoT)
 
@@ -124,8 +132,6 @@ to be more precise). Given those task examples, the LLM will decide how to execu
 At generation time, the ART system parses the output of the LLM until a tool is called, at which point the tool is called and integrated into the output. 
 The human feedback step is optional and is used to improve the tool library itself.
 
-Code for ART can be found within the [guidance library](https://github.com/microsoft/guidance)
-
 # <a name="consistency"></a>Self-consistency
 
 Self consistency, introduced in the paper [“SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models”](https://arxiv.org/abs/2303.08896),
@@ -147,6 +153,18 @@ ToT draws inspiration from the traditional AI work on planning to build a system
 for consistency during generation until one is determined to be the best one and is used as the output. This approach requires to define a strategy regarding 
 the number of candidates as well as the number of steps/thoughts after which those candidates will be evaluated. For example, for a “creative writing” task, 
 the authors use 2 steps and 5 candidates. But, for a “crossword puzzle” task, they keep up to a max of 10 steps and use BFS search.
+
+# <a name="rewoo"></a>Reasoning without observation (ReWOO)
+
+ReWOO was recently presented in the paper ["ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models"](https://arxiv.org/abs/2305.18323). This approach addresses the challenge that many of the other augmentation approaches in this guide present by increasing the number of calls and tokens to the LLM and therefore increasing cost and latency. ReWOO not only improves token efficiency but also demonstrate robustness to tool failure, and also shows good results in using smaller models.
+
+The approach is illustrated in the diagram below. Given a question, the Planner a comprehensive list of plans or meta-plan prior to tool response. This meta-plan instructs Worker to use external tools and collect evidence. Finally, plans and evidence are sent to Solver who composes the final answer.
+
+<img src="/blog/images/104-18.png">
+
+The following image, also from the paper, illustrates the main benefit of the approach by comparing to the "standard" approapch of reasoning with observations. In the latter, the LLM is queried for each call to a Tool (observation), which incurs in lots of potential redundancy (and therefore cost, and latency).
+
+<img src="/blog/images/104-19.png">
 
 # <a name="rag"></a>Retrieval Augmented Generation (RAG)
 
@@ -205,7 +223,7 @@ of data and then running a different prompt to combine all the initial outputs.
 Since the process of constructing and maintaining chains can become quite an engineering task, there are a number of tools that have recently 
 appeared to support it. The main one is the already mentioned LangChain. In 
 [“PromptChainer: Chaining Large Language Model Prompts through Visual Programming”](https://arxiv.org/abs/2203.06566), the authors not only describe the main 
-challenges in designing chains, but also describe a visual tool to support those tasks. The tool is available in Beta [here](https://promptchainer.io/)
+challenges in designing chains, but also describe a visual tool to support those tasks. There is a tool with the exact same name and a similar approach available in Beta [here](https://promptchainer.io/). I am told this one has nothing to do with the authors of the original paper though. I haven't used, so I can't vouch for (or against) it.
 
 <img src="/blog/images/104-14.png">
 
@@ -269,7 +287,7 @@ As we have seen throughout this guide, it is hard to implement
 * [Semantic Kernel](https://github.com/microsoft/semantic-kernel)
   * This toolkit developed by Microsoft in C# and Python is designed around the idea of skills and planning. That being said, at this point it also supports chaining, indexing and memory access and plugin development.
 * [Guidance](https://github.com/microsoft/guidance) 
-  * Guidance is a more recent prompt engineering library also from Microsoft. Based on a templating language (see above) it supports most of the techniques in this post.
+  * Guidance is a more recent prompt engineering library also from Microsoft. Based on a templating language (see above) it supports many of the techniques in this post.
 * [Prompt Chainer](https://promptchainer.io/) 
   * Visual tool for prompt engineering
 * [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
