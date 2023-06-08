@@ -42,7 +42,7 @@ post, Chain of Thought, but will build up from there. Here are the techniques I 
 * [Reason and Act (React)](#react)
 * [Rails](#rails)
 * [Automatic Prompt Engineering (APE)](#ape)
-* [Guidance and Constriained Prompting](#guidance)
+* [Guidance and Constrained Prompting](#guidance)
 
 Before I continue, I will add a disclaimer though. While I am keeping the title of “prompt engineering” here for consistency with my previous 
 post and with current trends, I do think most of these approaches address mostly prompt design, which is only one of the components of prompt engineering. 
@@ -120,7 +120,7 @@ a specific but quite general tool.
 
 # <a name="art"></a> Automatic multi-step reasoning and tool-use (ART)
 
-[ART](https://arxiv.org/abs/2303.09014) combines automatic chain of prompting and tool usage, so it can be seen as a combination of 
+[ART](https://arxiv.org/abs/2303.09014) combines automatic chain of thought prompting and tool usage, so it can be seen as a combination of 
 everything we have seen so far. The following figure from the paper illustrates the overall approach:
 
 <img src="/blog/images/104-8.png">
@@ -167,7 +167,6 @@ The following image, also from the paper, illustrates the main benefit of the ap
 <img src="/blog/images/104-19.png">
 
 # <a name="rag"></a>Retrieval Augmented Generation (RAG)
-
 RAG is a technique that has been used for some time to augment LLMs. It was [presented by Facebook](https://ai.facebook.com/blog/retrieval-augmented-generation-streamlining-the-creation-of-intelligent-natural-language-processing-models/)
 as a way to improve BART in 2020 and released as a component in the [Huggingface library](https://huggingface.co/docs/transformers/model_doc/rag).
 
@@ -179,7 +178,7 @@ The idea is simple: combine a retrieval component with a generative one such tha
 RAG has become an essential component of the prompt engineer’s toolkit, and has evolved into much more complex approaches. In fact, you can consider RAG at this point 
 almost as a concrete case of Tools, where the tool is a simple retriever or query engine.
 
-The [FastRAG library](https://github.com/IntelLabs/fastRAG) from Intel  includes not only the basic burt also more sophisticated RAG approaches like the ones described 
+The [FastRAG library](https://github.com/IntelLabs/fastRAG) from Intel  includes not only the basic but also more sophisticated RAG approaches like the ones described 
 in other sections in this post.
 
 # <a name="flare"></a> Foward-looking active retrieval augmented generation (FLARE)
@@ -296,6 +295,9 @@ As we have seen throughout this guide, it is hard to implement
   * Recent tool by NVidia to build rails (see above) to make sure your LLM behaves as it should
 * [LamaIndex](https://github.com/microsoft/semantic-kernel)
   * Toolkit for managing the data that goes into an LLM application with mostly data connectors/tools.
+* [FastRAG](https://github.com/IntelLabs/fastRAG) 
+    * From Intel, includes not only the basic RAG approach but also more sophisticated RAG approaches like the ones described in other sections in this post.
+
 
 
 
