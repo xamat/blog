@@ -35,7 +35,7 @@ post, Chain of Thought, but will build up from there. Here are the techniques I 
 * [Tree of thought (ToT)](#tot)
 * [Reasoning without observation (ReWoo)](#rewoo)
 * [Retrieval Augmented Generation (RAG)](#rag)
-* [Foward-looking active retrieval augmented generation (FLARE)](#flare)
+* [Forward-looking active retrieval augmented generation (FLARE)](#flare)
 * [Reflection](#reflection)
 * [Chains](#chains)
 * [Agents](#agents)
@@ -97,7 +97,7 @@ You can use the format trick for practically anything. Riley illustrated it by p
 However, if you specify code as the output format in your prompts you can do even more surprising things like 
 [generating a complete powerpoint presentation in Visual Basic](https://www.reddit.com/r/AIAssisted/comments/13xf8pq/make_powerpoint_presentations_with_chatgpt/).
 
-# <a name="tools"></a>Tools, Connectors, and skills
+# <a name="tools"></a>Tools, Connectors, and Skills
 
 Tools are generally defined as functions that LLMs can use to interact with the external world.
 
@@ -181,7 +181,7 @@ almost as a concrete case of Tools, where the tool is a simple retriever or quer
 The [FastRAG library](https://github.com/IntelLabs/fastRAG) from Intel  includes not only the basic but also more sophisticated RAG approaches like the ones described 
 in other sections in this post.
 
-# <a name="flare"></a> Foward-looking active retrieval augmented generation (FLARE)
+# <a name="flare"></a> Forward-looking active retrieval augmented generation (FLARE)
 
 [FLARE](https://arxiv.org/abs/2305.06983) is an advanced RAG approach where, instead of retrieving information just once and then generating, the system iteratively uses a 
 prediction of the upcoming sentence as a query to retrieve relevant documents to regenerate the sentence if it the confidence is low. The diagram below from the paper clearly 
@@ -293,7 +293,7 @@ As we have seen throughout this guide, it is hard to implement
   * Popular tool for designing LLM agents
 * [Nemo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails/tree/main) 
   * Recent tool by NVidia to build rails (see above) to make sure your LLM behaves as it should
-* [LamaIndex](https://github.com/microsoft/semantic-kernel)
+* [LlamaIndex](https://github.com/jerryjliu/llama_index)
   * Toolkit for managing the data that goes into an LLM application with mostly data connectors/tools.
 * [FastRAG](https://github.com/IntelLabs/fastRAG) 
     * From Intel, includes not only the basic RAG approach but also more sophisticated RAG approaches like the ones described in other sections in this post.
