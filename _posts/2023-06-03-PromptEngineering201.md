@@ -17,26 +17,58 @@ categories:
 
 
 <img src="/blog/images/104-0.png">
-*DALL-E 2: An advanced prompt engineer talking to a robot*
+*DALL-E 2: An old professor with a notebook in his hand talking to a futuristic looking robot. 4k. Professional photo. Photorealistic*
 
 Six months ago I published my [Prompt Engineering 101 post](https://amatriain.net/blog/PromptEngineering). That later turned into a pretty 
 popular [LinkedIn course](https://www.linkedin.com/learning-login/share?account=104&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fprompt-engineering-how-to-talk-to-the-ais%3Ftrk%3Dshare_ent_url%26shareId%3D9gu04nS6TX6dqeav6lZp7w%253D%253D) 
 that has been taken by over 20k people at this point. That post and course were thought out as a gentle introduction to the topic. If you are new to prompt engineering, please start there.
 Also, a lot has happened in the world of LLMs since then. So, now is a good time to complement the Prompt Engineering 101 with an up-to-date and a bit more advanced post. 
 I’ll call it Prompt Engineering 201. I will start off by repeating a “classic” technique that was already covered in the “advanced section” of the original 
-post, Chain of Thought, but will build up from there. Here are the techniques I will be covering:
+post, Chain of Thought, but will build up from there. 
+
+Before we get into those techniques, a few words on what is Prompt Engineering.
+
+# <a name="prompt_eng"></a>Prompt Design and Engineering
+
+*Prompt Design* is the process of coming up with the optimal prompt given an LLM and a clearly stated goal. While prompts are "mostly" natural language, there is more to writing a good prompt than just telling the model what you want. Designing a good prompt requires a combination of:
+
+- Understanding of the LLM: Some LLMs might respond differently to the same prompt and might even have keywords (e.g. <|endofpromt|>) that will be interpreted in a particular way
+- Domain knowledge: Writing a prompt to e.g. infer a medical diagnosis, requires medical knowlede.
+- Iterative approach with some way to measure quality: Coming up with the ideal prompt is usually a trial and error process. It is key to have a way to measure the output better than a simple "it looks good", particularly if the prompt is meant to be used at scale.
+
+*Prompt Engineering* is prompt design plus a few other important processes:
+
+- Design of prompts at scale: This usually involves design of meta prompts (prompts that generate prompts) and prompt templates (parameterized prompts that can be instantiated at run-time)
+- Tool design and integration: Prompts can include results from external tools that need to be integrated.
+- Workflow, planning, and prompt management: An LLM application (e.g. chatbot) requires managing prompt libraries, planning, choosing prompts, tools….
+- Approach to evaluate and QA prompts: This will include definition of metrics and process to evaluate both automatically as well as with humans in the loop.
+- Prompt optimization: Cost and latency depend on model choice and prompt (token length).
+
+Many of the approaches herein can be considered approaches to "automatic prompt design" in that they describe ways to automate the design of
+prompts at scale. In the [bonus section](#tools) you will find some of the most interesting prompt engineering tools and frameworks that implement these techniques.
+However, it is important to note that none of these approaches will get you to the results of an experienced prompt engineer. An experienced prompt engineer will 
+understand and be aware of all of the following techniques and apply some of the patterns wherever they apply rather than blindly following a particular approach
+for everything. This, for now, still requires judgement and experience. This is good news for you reading this. You can learn and understand these patterns, but you
+won't be replaced by any of these libraries. Take these patterns as a starting tools to add to your toolkit, but also experiment and combine them to gain experience
+and judgement. 
+
+# <a name="techniques"></a>Advanced techniques
+
+Here are the techniques I will be covering:
 
 * [Chain of thought (CoT)](#cot)
 * [Automatic Chain of thought (Auto CoT)](#autocot)
 * [The format trick](#format)
 * [Tools, Connectors, and Skills](#tools)
 * [Automatic multi-step reasoning and tool-use (ART)](#art)
-* [Self-consistency](#self)
+* [Self-consistency](#consistency)
 * [Tree of thought (ToT)](#tot)
 * [Reasoning without observation (ReWoo)](#rewoo)
 * [Retrieval Augmented Generation (RAG)](#rag)
 * [Forward-looking active retrieval augmented generation (FLARE)](#flare)
 * [Reflection](#reflection)
+* [Dialog-Enabled Resolving Agents (DERA)](#dera)
+* [Expert Prompting](#expert)
 * [Chains](#chains)
 * [Agents](#agents)
 * [Reason and Act (React)](#react)
@@ -44,17 +76,6 @@ post, Chain of Thought, but will build up from there. Here are the techniques I 
 * [Automatic Prompt Engineering (APE)](#ape)
 * [Guidance and Constrained Prompting](#guidance)
 
-Before I continue, I will add a disclaimer though. While I am keeping the title of “prompt engineering” here for consistency with my previous 
-post and with current trends, I do think most of these approaches address mostly prompt design, which is only one of the components of prompt engineering. 
-Prompt engineering includes all the necessary processes and components to not only design, but also serve, prompts at scale. 
-
-That being said, many of the approaches herein can be considered approaches to "automatic prompt design" in that they describe ways to automate the design of
-prompts at scale. In the [bonus section](#tools) you will find some of the most interesting prompt engineering tools and frameworks that implement these techniques.
-However, it is important to note that none of these approaches will get you to the results of an experienced prompt engineer. An experienced prompt engineer will 
-understand and be aware of all of the following techniques and apply some of the patterns wherever they apply rather than blindly following a particular approach
-for everything. This, for now, still requires judgement and experience. This is good news for you reading this. You can learn and understand these patterns, but you
-won't be replaced by any of these libraries. Take these patterns as a starting tools to add to your toolkit, but also experiment and combine them to gain experience
-and judgement. 
 
 # <a name="cot"></a>Chain of Thought (CoT)
 
@@ -67,7 +88,7 @@ if you specify those required reasoning steps. Here is a simple example from the
 
 <img src="/blog/images/104-1.png">
 
-Note that in this case the “required reasoning steps” are given in the example in blue. This is the so-called “Manual CoT”.  There are in fact two ways of doing basic chain 
+Note that in this case the “required reasoning steps” are given in the example in blue. This is the so-called “Manual CoT”.  There are two ways of doing chain 
 of thought prompting (see below). In the basic one, called zero-shot CoT, you simply ask the LLM to “think step by step”. In the more complex version, called “manual CoT” 
 you have to give the LLM examples of thinking step by step to illustrate how to reason. Manual prompting is more effective, but harder to scale and maintain.
 
@@ -204,9 +225,22 @@ The self reflection component produces a summary that is stored in memory. The p
 
 <img src="/blog/images/104-13.png">
 
-This approach reminds me quite a bit of [DERA](https://arxiv.org/abs/2303.17071) that my former team at Curai devised for their specific healthcare approach where they 
-define a set of Researchers and a Decider. The main difference here is that the Researchers operate in parallel vs. the Reflexion Actors that operate sequentially only 
+# <a name="dera"></a> Dialog-Enabled Resolving Agents (DERA)
+
+[DERA](https://arxiv.org/abs/2303.17071), developed by my former team at Curai Health for their specific healthcare approach defines different agents that, in the context of a dialog take different roles. In the case of high stakes situations like a medical conversation, it pays off to define a set of "Researchers" and a "Decider". The main difference here is that the Researchers operate in parallel vs. the Reflexion Actors that operate sequentially only 
 if the Evaluator decides.
+
+<img src="/blog/images/104-20.png">
+
+# <a name="expert"></a> Expert Prompting
+
+This recently presented prompting approach proposes to ask LLMs to respond as an expert. It involves 3 different steps:
+
+- Ask LLM to identify experts in a given field related to the prompt/question
+- Ask LLM to respond to the question as if it was each of the experts
+- Make final decision as a collaboration between the generated responses
+
+Introduced in the (controversial) [“Exploring the MIT Mathematics and EECS Curriculum Using Large Language Models”](https://arxiv.org/abs/2306.08997) beats other approaches like CoT or ToT. It can also be seen as an extension of the Reflection approach
 
 # <a name="chains"></a>Chains
 
@@ -255,6 +289,8 @@ A [rail](https://github.com/NVIDIA/NeMo-Guardrails/blob/main/docs/README.md) is 
 Colang, a simple modeling language, and Canonical Forms, templates to standardize natural language sentences (see 
 [here](https://github.com/NVIDIA/NeMo-Guardrails/blob/main/docs/getting_started/hello-world.md) )
 
+<img src="/blog/images/104-21.png">
+
 Using rails, one can implement ways to have the LLM stick to a particular topic (Topical rail), minimize hallucination (Fact checking rail) or prevent 
 jailbreaking (Jailbreaking rail).
 
@@ -266,16 +302,18 @@ generate proposed prompts, to score them, and to propose similar prompts to the 
 
 <img src="/blog/images/104-17.png">
 
-# <a name="guidance"></a> Guidance (Constrained Prompting)
+# <a name="guidance"></a> Constrained Prompting
 
 “Constrained Prompting” is a term recently [introduced by Andrej Karpathy]((https://youtu.be/bZQun8Y4L2A?t=2093)) to describe approaches and languages that allow us to 
 interleave generation, prompting, and logical control in an LLM flow.
 
-[Guidance] (https://github.com/microsoft/guidance) is the only example of such an approach that I know although one could argue that [React](#react) is 
+[Guidance](https://github.com/microsoft/guidance) is the only example of such an approach that I know although one could argue that [React](#react) is 
 also a constrained prompting approach. The tool is not so much a prompting approach but rather a “prompting language”. Using guidance templates, you can pretty much 
 implement most if not all the approaches in this post. Guidance uses a syntax based on [Handlebars](https://handlebarsjs.com/) that allows to interleave prompting and 
 generation, as well as manage logical control flow and variables. Because Guidance programs are declared in the exact linear order that they will be executed, the LLM can, 
 at any point, be used to generate text or make logical decisions. 
+
+<img src="/blog/images/104-22.png">
  
 # <a name="tools"></a>Prompt Engineering tools and frameworks
 
