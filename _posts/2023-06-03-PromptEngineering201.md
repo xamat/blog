@@ -32,7 +32,7 @@ Before we get into those techniques, a few words on what is Prompt Engineering.
 
 *Prompt Design* is the process of coming up with the optimal prompt given an LLM and a clearly stated goal. While prompts are "mostly" natural language, there is more to writing a good prompt than just telling the model what you want. Designing a good prompt requires a combination of:
 
-- Understanding of the LLM: Some LLMs might respond differently to the same prompt and might even have keywords (e.g. <|endofpromt|>) that will be interpreted in a particular way
+- Understanding of the LLM: Some LLMs might respond differently to the same prompt and might even have keywords (e.g. '<|endofpromt|>') that will be interpreted in a particular way
 - Domain knowledge: Writing a prompt to e.g. infer a medical diagnosis, requires medical knowlede.
 - Iterative approach with some way to measure quality: Coming up with the ideal prompt is usually a trial and error process. It is key to have a way to measure the output better than a simple "it looks good", particularly if the prompt is meant to be used at scale.
 
