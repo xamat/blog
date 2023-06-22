@@ -1,6 +1,6 @@
 ---
 id: 104
-title: "Prompt Engineering 201: Advanced prompt engineering and toolkits"
+title: "Prompt Engineering 201: Advanced methods and toolkits"
 date: '2023-06-03T00:00:01+00:00'
 author: Xavier
 permalink: /prompt201
