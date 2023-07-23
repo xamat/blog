@@ -113,7 +113,7 @@ Bard (Palm 2)
 
 <img src="/blog/images/105-6.png">
 
-LlaMa 2 (through [Perplexity.ai](https://perplexity.ai) chat interface)
+LlaMa 2 70B (through [Perplexity.ai](https://perplexity.ai) chat interface)
 
 <img src="/blog/images/105-7.png">
 
