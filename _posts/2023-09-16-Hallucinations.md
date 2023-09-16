@@ -1,7 +1,7 @@
 ---
 id: 106
-title: "Prompt Engineering 201: Advanced methods and toolkits"
-date: '2023-09-18T00:00:01+00:00'
+title: "Mitigating LLM Hallucinations: a multifaceted approach"
+date: '2023-09-16T00:00:01+00:00'
 author: Xavier
 permalink: /hallucinations
 image: /blog/images/106-0.png
@@ -14,7 +14,7 @@ categories:
     - Prompt Engineering
 ---
 
-# Mitigating LLM Hallucinations 
+# Mitigating LLM Hallucinations: a multifaceted approach 
 
 * [Introduction](#introduction)
 * [What Are Hallucinations](#definition)
