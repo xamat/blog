@@ -70,17 +70,17 @@ Understanding hallucinations is one thing, but quantifying them? That's where th
 
 Based on best practices in the field, here's a systematic five-step approach to accurately measure hallucinations:
 
-**Identify Grounding Data:** Grounding data serves as the benchmark for what the LLM should produce. The choice of grounding data varies by use-case. For instance, actual resumes could serve as grounding data when generating resume-related information. On the other hand, search engine results could be used for web-based queries.
+**1. Identify Grounding Data:** Grounding data serves as the benchmark for what the LLM should produce. The choice of grounding data varies by use-case. For instance, actual resumes could serve as grounding data when generating resume-related information. On the other hand, search engine results could be used for web-based queries.
 
-**Create Measurement Test Sets:** These sets usually consist of input/output pairs and may include human-LLM conversations, depending on the application. Ideally, you'd have at least two types of test sets:
+**2. Create Measurement Test Sets:** These sets usually consist of input/output pairs and may include human-LLM conversations, depending on the application. Ideally, you'd have at least two types of test sets:
     * A generic or random test set
     * An adversarial test set, generated from red-teaming exercises to include challenging or high-risk edge cases.
 
-**Extract Claims:** After preparing the test sets, the next step is to extract claims made by the LLM. This can be done manually, through rule-based methods, or even using machine learning models. Each technique has its pros and cons, which we will explore in detail.
+**3. Extract Claims:** After preparing the test sets, the next step is to extract claims made by the LLM. This can be done manually, through rule-based methods, or even using machine learning models. Each technique has its pros and cons, which we will explore in detail.
 
-**Validate Against Grounding Data:** Validation ensures that the LLM's generated content aligns with the grounding data. This step often mirrors the extraction methods used previously.
+**4. Validate Against Grounding Data:** Validation ensures that the LLM's generated content aligns with the grounding data. This step often mirrors the extraction methods used previously.
 
-**Report Metrics:** The "Grounding Defect Rate" is a fundamental metric that quantifies the ratio of ungrounded responses to the total number of generated outputs. Additional metrics will be discussed later for a more nuanced evaluation.
+**5. Report Metrics:** The "Grounding Defect Rate" is a fundamental metric that quantifies the ratio of ungrounded responses to the total number of generated outputs. Additional metrics will be discussed later for a more nuanced evaluation.
 
 ## <a name="metricsandmethods"></a>Evaluating Hallucinations: Common Metrics and Methodologies
 
@@ -127,7 +127,7 @@ While statistical and model-based metrics are indispensable for measuring halluc
 
 For more details, see Microsoft’s [“Planning red teaming for large language models (LLMs) and their applications”](https://hits.microsoft.com/Collection/7002860)
 
-# <a name="mitigation"></a>Mitigating Hallucinations in Large Language Models: A Practical Guide
+# <a name="mitigation"></a>Mitigating Hallucinations in Large Language Models: A Multifaceted Approach
 
 The road to minimizing hallucinations is paved with both challenges and opportunities. In this section, we'll explore various mitigation strategies that can be customized to fit the unique demands of different applications of large language models.
 
@@ -207,20 +207,16 @@ Because RAG **grounds** the response to the LLM to external data, it is known to
 
 ### <a name="ragcaveats"></a>RAG known caveats and guardrails
 
-The Pitfall of Over-Reliance
-
+**The Pitfall of Over-Reliance**
 One significant drawback of using RAG is a pronounced over-reliance on the retrieval results, which can, in certain cases, lead to hallucinations. It's crucial to understand that retrieval might produce results that are either empty, incorrect, or require further disambiguation. Below are strategies to handle each of these scenarios.
 
-Empty Results: Be Prepared for Voids
-
+**Empty Results: Be Prepared for Voids**
 When the retrieval engine returns empty results, it could either be due to a lack of relevant data in the document source or an incorrect query formulation. Meta-prompts should be designed to anticipate and guard against this scenario. If the retrieval engine returns no results, the system should opt for caution and decline to answer, stating something along the lines of, "Sorry, we don't have enough information on this topic. Could you please rephrase your question?" More advanced strategies might involve internally reformulating the query to handle issues like user misspellings, which can lead to void results.
 
-Ambiguous Results: Seek Clarification
-
+**Ambiguous Results: Seek Clarification**
 For ambiguous queries such as "What is a good restaurant in Portland?", where Portland could refer to multiple locations, it's advisable to seek further clarification from the user. For example, "Did you mean Portland, OR, or Portland, ME?"
 
-Wrong Results: Navigate Carefully
-
+**Wrong Results: Navigate Carefully**
 Incorrect retrieval results are particularly challenging to address because they are difficult to identify without an external ground truth. While improving the accuracy of retrieval engines is a complex problem that's beyond the scope of this document, we recommend analyzing the performance of your retrieval solution within your application's specific use cases. Design your prompts to be extra cautious in areas where the retrieval engine has been identified to be less accurate.
 
 ## <a name="advancedprompting"></a>Advanced Prompt Engineering methods
@@ -254,7 +250,7 @@ React is a specific approach to designing agents introduced by Google in [“ReA
 
 ### <a name="reflection"></a>Reflection
 
-In the Self-consistency approach we saw how LLMs can be used to infer the confidence in a response. In that approach, confidence is measured as a by-product of how similar several responses to the same question are. Reflection goes a step further and tries to answer the question of whether (or how) we can ask an LLM directly about the confidence in its response. As Eric Jang puts it, there is “some preliminary evidence that GPT-4 possesses some ability to edit own prior generations based on reasoning whether their output makes sense” ([Can LLMs Critique and Iterate on Their Own Outputs? | Eric Jang](https://evjang.com/2023/03/26/self-reflection.html)).
+In the Self-consistency approach we saw how LLMs can be used to infer the confidence in a response. In that approach, confidence is measured as a by-product of how similar several responses to the same question are. Reflection goes a step further and tries to answer the question of whether (or how) we can ask an LLM directly about the confidence in its response. As [Eric Jang puts it](https://evjang.com/2023/03/26/self-reflection.html), there is “some preliminary evidence that GPT-4 possesses some ability to edit own prior generations based on reasoning whether their output makes sense”.
 
 The Reflexion [paper](https://arxiv.org/abs/2303.11366) proposes an approach defined as “reinforcement via verbal reflection” with different components. The actor, an LLM itself, produces a trajectory (hypothesis). The evaluator produces a score on how good that hypothesis is. The self reflection component produces a summary that is stored in memory. The process is repeated iteratively until the Evaluator decides it has a “good enough” answer. The authors show through experiments how reflection greatly improves the ability of detecting hallucinations even when compared to a ReAct agent.
 
