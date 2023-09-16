@@ -207,29 +207,21 @@ Because RAG **grounds** the response to the LLM to external data, it is known to
 
 ### <a name="ragcaveats"></a>RAG known caveats and guardrails
 
-**The Pitfall of Over-Reliance**
-One significant drawback of using RAG is a pronounced over-reliance on the retrieval results, which can, in certain cases, lead to hallucinations. It's crucial to understand that retrieval might produce results that are either empty, incorrect, or require further disambiguation. Below are strategies to handle each of these scenarios.
+**The Pitfall of Over-Reliance**: One significant drawback of using RAG is a pronounced over-reliance on the retrieval results, which can, in certain cases, lead to hallucinations. It's crucial to understand that retrieval might produce results that are either empty, incorrect, or require further disambiguation. Below are strategies to handle each of these scenarios.
 
-**Empty Results: Be Prepared for Voids**
-When the retrieval engine returns empty results, it could either be due to a lack of relevant data in the document source or an incorrect query formulation. Meta-prompts should be designed to anticipate and guard against this scenario. If the retrieval engine returns no results, the system should opt for caution and decline to answer, stating something along the lines of, "Sorry, we don't have enough information on this topic. Could you please rephrase your question?" More advanced strategies might involve internally reformulating the query to handle issues like user misspellings, which can lead to void results.
+**Empty Results: Be Prepared for Voids**: When the retrieval engine returns empty results, it could either be due to a lack of relevant data in the document source or an incorrect query formulation. Meta-prompts should be designed to anticipate and guard against this scenario. If the retrieval engine returns no results, the system should opt for caution and decline to answer, stating something along the lines of, "Sorry, we don't have enough information on this topic. Could you please rephrase your question?" More advanced strategies might involve internally reformulating the query to handle issues like user misspellings, which can lead to void results.
 
-**Ambiguous Results: Seek Clarification**
-For ambiguous queries such as "What is a good restaurant in Portland?", where Portland could refer to multiple locations, it's advisable to seek further clarification from the user. For example, "Did you mean Portland, OR, or Portland, ME?"
+**Ambiguous Results: Seek Clarification**: For ambiguous queries such as "What is a good restaurant in Portland?", where Portland could refer to multiple locations, it's advisable to seek further clarification from the user. For example, "Did you mean Portland, OR, or Portland, ME?"
 
-**Wrong Results: Navigate Carefully**
-Incorrect retrieval results are particularly challenging to address because they are difficult to identify without an external ground truth. While improving the accuracy of retrieval engines is a complex problem that's beyond the scope of this document, we recommend analyzing the performance of your retrieval solution within your application's specific use cases. Design your prompts to be extra cautious in areas where the retrieval engine has been identified to be less accurate.
+**Wrong Results: Navigate Carefully**: Incorrect retrieval results are particularly challenging to address because they are difficult to identify without an external ground truth. While improving the accuracy of retrieval engines is a complex problem that's beyond the scope of this document, we recommend analyzing the performance of your retrieval solution within your application's specific use cases. Design your prompts to be extra cautious in areas where the retrieval engine has been identified to be less accurate.
 
 ## <a name="advancedprompting"></a>Advanced Prompt Engineering methods
 
 Over the past few months, significant efforts have been directed towards mitigating the issues of hallucinations and grounding in Large Language Models (LLMs). These endeavors have led to a variety of innovative approaches that tackle the problem from a prompt engineering perspective. It's important to note that these advanced methods are distinctly different from the more straightforward "design tricks" discussed earlier. I will give a few examples of advanced prompt engineering methods that are relevant in the context of preventing hallucination. If you are interested in a more comprehensive catalog, check my previous post [“Prompt Engineering 201: Advanced methods and toolkits”](https://amatriain.net/blog/prompt201)
 
-Complexity, Latency, and Cost
+**Complexity, Latency, and Cost**: Advanced prompt engineering techniques often introduce additional complexity, latency, and cost, primarily because they frequently involve making multiple calls to the LLM. However, it's crucial to grasp their functionality and to have these advanced methods in your prompt engineering toolbox.
 
-Advanced prompt engineering techniques often introduce additional complexity, latency, and cost, primarily because they frequently involve making multiple calls to the LLM. However, it's crucial to grasp their functionality and to have these advanced methods in your prompt engineering toolbox.
-
-Trade-offs and Opportunities
-
-In some cases, the incremental costs and latency might be justifiable, given the improvement in 
+**Trade-offs and Opportunities**: In some cases, the incremental costs and latency might be justifiable, given the improvement in 
 grounding and reduction in hallucinations. Additionally, you may find opportunities to implement some of these advanced methods using smaller, more cost-effective models. This could offer a valuable compromise between performance and expense.
 
 By understanding these advanced prompt engineering methods, you can make more informed decisions about when and how to apply them, and whether their benefits outweigh their costs for your specific application.
