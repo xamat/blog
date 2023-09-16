@@ -14,12 +14,10 @@ categories:
     - Prompt Engineering
 ---
 
-# Mitigating LLM Hallucinations: a multifaceted approach 
-
 * [Introduction](#introduction)
-* [What Are Hallucinations](#definition)
-* [How to Measure Hallucinations](#measurement)
-* [Mitigating Hallucinations](#mitigation)
+* [What we talk about when we talk about Hallucinations](#definition)
+* [How to Measure](#measurement)
+* [Mitigating Hallucinations: a multifacted approach](#mitigation)
     * [Product design approaches](#product)
     * [Prompt Engineering solutions](#promptengineering)
     * [Grounding with RAG](#rag)
@@ -34,7 +32,7 @@ Ever been curious about the complexities of integrating large language models (L
 
 In this blog post, you'll find a comprehensive guide to the most effective strategies for mitigating these hallucinations in user-facing products. The field is fast-evolving, so while I don't plan on continuously updating this post, I hope it serves as a valuable snapshot of current best practices. I'm also open to your insights and ideas, so feel free to reach out with any suggestions or questions you might have.
 
-<img src="/blog/images/105-0.png">
+<img src="/blog/images/106-0.png">
 *A multifaceted approach to mitigating LLM hallucinations*
 
 # <a name="definition"></a>What Are Hallucinations in Large Language Models?
@@ -183,11 +181,11 @@ In upcoming sections, we'll dissect advanced metaprompting techniques, such as t
 
 Chain of thought was initially described in the [“Chain-of-Thought Prompting Elicits Reasoning in Large Language Models”](https://arxiv.org/abs/2201.11903) paper by Google researchers. The simple idea here is that given that LLMs have been trained to predict tokens and not explicitly reason, you can get them closer to reasoning if you specify those required reasoning steps. Here is a simple example from the original paper:
 
-<img src="/blog/images/105-1.png">
+<img src="/blog/images/106-1.png">
 
 Note that in this case the “required reasoning steps” are given in the example in blue. This is the so-called “Manual CoT”.  There are in fact two ways of doing basic chain of thought prompting (see below). In the basic one, called zero-shot CoT, you simply ask the LLM to “think step by step”. In the more complex version, called “manual CoT” you have to give the LLM examples of thinking step by step to illustrate how to reason. Manual prompting is more effective, but harder to scale and maintain.
 
-<img src="/blog/images/105-2.png">
+<img src="/blog/images/106-2.png">
 
 CoT is just a more structured approach to the “simplify complex tasks” generic recommendation above and is known to mitigate hallucinations in many situations.
 
@@ -199,7 +197,7 @@ Retrieval-Augmented Generation, commonly known as RAG, is a technique aimed at a
 
 The fundamental idea behind RAG is straightforward: it merges a retrieval component with a generative component, allowing the two to complement each other. This process is visually explained in the diagram below, extracted from the original research paper.
 
-<img src="/blog/images/105-3.png">
+<img src="/blog/images/106-3.png">
 
 By combining these two elements, RAG enables the LLM to access and incorporate external information, thereby grounding the generated content more effectively. The retrieval component fetches relevant data, while the generative aspect of the model synthesizes this data into coherent and contextually appropriate responses.
 
@@ -244,7 +242,7 @@ By understanding these advanced prompt engineering methods, you can make more in
 
 Self consistency, introduced in the paper [“SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models”](https://arxiv.org/abs/2303.08896), is a method to use an LLM to fact-check itself. The idea is a simple ensemble-based approach where the LLM is asked to generate several responses to the same prompt. The consistency between those responses indicates how accurate the response may be.
 
-<img src="/blog/images/105-4.png">
+<img src="/blog/images/106-4.png">
 
 The diagram above illustrates the approach in a QA scenario. In this case, the “consistency” is measured by the number of answers to passages that agree with the overall answer. However, the authors introduce two other measures of consistency (BERT-scores, and n-gram), and a fourth one that combines the three.
 
@@ -252,7 +250,7 @@ The diagram above illustrates the approach in a QA scenario. In this case, the �
 
 React is a specific approach to designing agents introduced by Google in [“ReAct: Synergizing Reasoning and Acting in Language Models”](https://www.promptingguide.ai/techniques/react). This method prompts the LLM to generate both verbal reasoning traces and actions in an interleaved manner, which allows the model to perform dynamic reasoning. Importantly, the authors find that the React approach reduces hallucination from CoT. However, this increase in groundedness and trustworthiness, also comes at the cost of slightly reduced flexibility in reasoning steps (see the paper for more details).
 
-<img src="/blog/images/105-5.png">
+<img src="/blog/images/106-5.png">
 
 ### <a name="reflection"></a>Reflection
 
@@ -260,13 +258,13 @@ In the Self-consistency approach we saw how LLMs can be used to infer the confid
 
 The Reflexion [paper](https://arxiv.org/abs/2303.11366) proposes an approach defined as “reinforcement via verbal reflection” with different components. The actor, an LLM itself, produces a trajectory (hypothesis). The evaluator produces a score on how good that hypothesis is. The self reflection component produces a summary that is stored in memory. The process is repeated iteratively until the Evaluator decides it has a “good enough” answer. The authors show through experiments how reflection greatly improves the ability of detecting hallucinations even when compared to a ReAct agent.
 
-<img src="/blog/images/105-6.png">
+<img src="/blog/images/106-6.png">
 
 ### <a name="dera"></a>Dialog-Enabled Resolving Agents (DERA)
 
 [DERA](https://arxiv.org/abs/2303.17071), developed by my former team at Curai Health for their specific healthcare approach, defines different agents that, in the context of a dialog, take different roles. In the case of high stakes situations like a medical conversation, it pays off to define a set of “Researchers” and a “Decider”. The main difference here is that the Researchers operate in parallel vs. the Reflexion Actors that operate sequentially only if the Evaluator decides.
 
-<img src="/blog/images/105-7.png">
+<img src="/blog/images/106-7.png">
 
 ### <a name="rails"></a>Rails
 
