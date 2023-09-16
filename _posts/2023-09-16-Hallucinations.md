@@ -25,7 +25,7 @@ categories:
     * [Model Choices](#modeling)
     * [Reinforcement Learning from Human Feedback (RLHF)](#rlhf)
     * [Domain adaptation through Fine-Tuning](#finetuning)
-* [Conclusion](#conclusion)
+* [Conclusion: Yann vs. Ilya](#conclusion)
 
 # <a name="introduction"></a>Introduction
 Ever been curious about the complexities of integrating large language models (LLMs) into user-facing products? One challenge that has been gaining attention is the occurrence of 'hallucinations'—situations where these advanced AI systems produce misleading or incorrect information. This is a real-world issue that many of us in the tech industry are actively working to address as we develop new features and services.
