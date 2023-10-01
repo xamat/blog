@@ -107,6 +107,12 @@ Despite the sophistication of automated metrics, human evaluation still holds si
 1. **Scoring:** Human annotators assign scores within a defined range to rate the level of hallucination.
 1. **Comparing:** Here, human annotators evaluate the generated content against baselines or ground-truth references, providing an additional layer of validation.
 
+### <a name="factscore"></a>The example of FActScore
+
+[FActScore](https://arxiv.org/abs/2305.14251) is a recent example of a metric that can be used both for human and model-based evaluation. The metric breaks an LLM generation into "atomic facts". The final score is computed as the sum of the accuracy of each atomic fact, giving each of them equal weight. Accuracy is a binary number that simply states whether the atomic fact is supported by the source. The authors implement different automation strategies that use LLMs to estimate this metric.
+
+<img src="/blog/images/106-9.png">
+
 # <a name="redteaming"></a>The Art of Red Teaming: Best Practices for Stress-Testing LLMs
 
 While statistical and model-based metrics are indispensable for measuring hallucinations in LLMs, it's equally important to put these models through the rigor of human evaluation. Red teaming provides an essential layer of scrutiny that complements systematic measurement. Here are some best practices to follow:
@@ -253,6 +259,12 @@ The Reflexion [paper](https://arxiv.org/abs/2303.11366) proposes an approach def
 [DERA](https://arxiv.org/abs/2303.17071), developed by my former team at Curai Health for their specific healthcare approach, defines different agents that, in the context of a dialog, take different roles. In the case of high stakes situations like a medical conversation, it pays off to define a set of “Researchers” and a “Decider”. The main difference here is that the Researchers operate in parallel vs. the Reflexion Actors that operate sequentially only if the Evaluator decides.
 
 <img src="/blog/images/106-7.png">
+
+### <a name="cove"></a>Chain-of-Verification (COVE)
+
+[COVE](https://arxiv.org/abs/2309.11495), recently presented by Meta, presents yet another variation on using different instances of the LLM to produce several responses and self-validate. In their approach, illustrated in the figure below, the model first (i) drafts an initial response; then (ii) plans verification questions to fact-check its draft; (iii) answers those questions independently so the answers are not biased by other responses; and (iv) generates its final verified response.
+
+<img src="/blog/images/106-8.png">
 
 ### <a name="rails"></a>Rails
 
