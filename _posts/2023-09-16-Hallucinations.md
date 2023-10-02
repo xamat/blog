@@ -131,7 +131,7 @@ While statistical and model-based metrics are indispensable for measuring halluc
 
 **Manage Tester Time and Well-being:** Determine how much time each tester should ideally dedicate to the task. Moreover, be cognizant of potential burnout or a decline in creativity over time, and plan accordingly.
 
-For more details, see Microsoft’s [“Planning red teaming for large language models (LLMs) and their applications”](https://hits.microsoft.com/Collection/7002860)
+New approaches to red teaming include using an LLM to read team another LLM. See e.g. Deepmind's [“Red Teaming Language Models with Language Models”](https://arxiv.org/abs/2202.03286)
 
 # <a name="mitigation"></a>Mitigating Hallucinations in Large Language Models: A Multifaceted Approach
 
