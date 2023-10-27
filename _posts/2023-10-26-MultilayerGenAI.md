@@ -26,24 +26,24 @@ What binds these layers together, serving as the crucial "icing" in between, is 
 
 1. Foundational Layers:
 
-* **Pre-training:** The base of our GenAI cake. It's where models are given a general understanding of language through vast amounts of data.
-* **Instruction Tuning & RLHF:** Tailoring the pre-trained models to be more specific in their responses and actions.
-* **Fine-Tuning (Task or Domain Adaption):** Further refining the model's skills, focusing on niche areas or specific tasks.
+    * **Pre-training:** The base of our GenAI cake. It's where models are given a general understanding of language through vast amounts of data.
+    * **Instruction Tuning & RLHF:** Tailoring the pre-trained models to be more specific in their responses and actions.
+    * **Fine-Tuning (Task or Domain Adaption):** Further refining the model's skills, focusing on niche areas or specific tasks.
 
 2. Prompting Layers:
 
-* **Prompting**: Crafting specific questions or commands to elicit desired outputs from the model.
-* **Meta-Prompting:** Beyond individual prompts, meta-prompting is about creating programmatically generalized structures for prompts. It allows for adaptability and flexibility in interactions, without needing to manually design each prompt.
-* **Chaining:** Combining multiple prompts in sequence to guide the model towards complex outputs.
+    * **Prompting**: Crafting specific questions or commands to elicit desired outputs from the model.
+    * **Meta-Prompting:** Beyond individual prompts, meta-prompting is about creating programmatically generalized structures for prompts. It allows for adaptability and flexibility in interactions, without needing to manually design each prompt.
+    * **Chaining:** Combining multiple prompts in sequence to guide the model towards complex outputs.
 
 3. Design & Interaction Layers:
 
-* **Tool Design:** Creating tools that allow users or developers to interact with and harness the power of the GenAI model.
-* **Agent Design & Multi-Agent Design:** Designing how the GenAI system interacts, both as a standalone agent and in multi-agent scenarios.
+    * **Tool Design:** Creating tools that allow users or developers to interact with and harness the power of the GenAI model.
+    * **Agent Design & Multi-Agent Design:** Designing how the GenAI system interacts, both as a standalone agent and in multi-agent scenarios.
 
 4. Final Presentation Layers:
 
-* **Product/UX Design:** The icing on the cake. Ensuring the final GenAI application is intuitive, engaging, and user-centric.
+    * **Product/UX Design:** The icing on the cake. Ensuring the final GenAI application is intuitive, engaging, and user-centric.
 
 # Conclusion
 While prompt engineering remains a focal point in the GenAI development discourse, it's essential to zoom out and appreciate the broader landscape. Each layer, from pre-training to UX design, plays a crucial role in creating a holistic and effective GenAI product. Think of it as baking a cake: while the icing might catch your eye, it's the combined flavors of each layer that make it truly delightful.
