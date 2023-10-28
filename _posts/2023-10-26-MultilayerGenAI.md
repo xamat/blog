@@ -5,6 +5,9 @@ date: '2023-10-26T00:00:01+00:00'
 author: Xavier
 permalink: /multilayer
 image: /blog/images/107-0.png
+header:
+  image: /blog/images/107-0.png
+teaser: /blog/images/107-0.png
 reading_time:
     - ''
     - ''
