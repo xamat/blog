@@ -99,7 +99,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
+      layout: collection
       author_profile: true
       read_time: true
       comments: true
