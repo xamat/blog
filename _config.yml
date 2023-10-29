@@ -66,11 +66,14 @@ plugins:
 author:
   name   : "Xavier Amatriain"
   avatar : "../blog/images/xamat_twitter.jpeg"
-  bio    : "Cofounder-CTO at Curai Health. Former Quora VP Eng. Led ML algos at Netflix. ML, AI, eHealth, Recsys, Software. Catalan in the Valley. Runner & Ironman - amatriain.eth"
+  bio    : "VP Engineering (Product AI Strategy) at LinkedIn. Cofounder-Board of Directors at Curai Health. Former Quora VP Eng. Led ML algos at Netflix. ML, AI, eHealth, Recsys, Software. Catalan in the Valley. Runner & Ironman - amatriain.eth"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://xavier.amatriain.net"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/xamatriain"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/xamat"
@@ -83,6 +86,9 @@ author:
 
 footer:
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/xamatriain"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/xamat"
