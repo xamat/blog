@@ -106,6 +106,8 @@ defaults:
       share: true
       related: true
       show_date: true
+      entries_layout: grid
+      permalink: "/:categories/images/:title/"
   # _pages
   - scope:
       path: "_pages"
@@ -113,11 +115,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  - scope:
-      path: "_posts/:categories/images/:title/"
-    values:
-      permalink: "/:categories/images/:title/"
-
 category_archive:
   type: liquid
   path: /categories/
