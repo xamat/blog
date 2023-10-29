@@ -113,6 +113,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "_posts/:categories/images/:title/"
+    values:
+      permalink: "/:categories/images/:title/"
 
 category_archive:
   type: liquid
