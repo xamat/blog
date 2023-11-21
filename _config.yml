@@ -105,7 +105,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: collection
+      layout: splash
       author_profile: true
       read_time: true
       comments: true
