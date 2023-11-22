@@ -105,12 +105,13 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+      is_post: true
       show_date: true
       entries_layout: grid
       permalink: "/:categories/images/:title/"
@@ -119,8 +120,9 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      layout: splash
+      layout: single
       author_profile: true
+      entries_layout: grid
 category_archive:
   type: liquid
   path: /categories/
