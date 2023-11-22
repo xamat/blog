@@ -6,7 +6,7 @@ author: Xavier
 permalink: /2022Books
 image: /blog/images/2022Books.png
 header:
-    - teaser: https://amatriain.net/blog/images/2022Books.png
+    teaser: https://amatriain.net/blog/images/2022Books.png
 reading_time:
     - ''
     - ''
