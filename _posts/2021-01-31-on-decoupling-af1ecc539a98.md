@@ -5,6 +5,8 @@ date: '2021-01-31T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /on-decoupling-af1ecc539a98/
+header:
+    - teaser: https://amatriain.net/blog/images/06-01.png
 reading_time:
     - ''
     - ''
