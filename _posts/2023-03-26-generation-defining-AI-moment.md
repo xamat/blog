@@ -5,6 +5,8 @@ date: '2023-03-25T00:00:01+00:00'
 author: Xavier
 permalink: /AImoment
 image: /blog/images/99-00.png
+header:
+  teaser: https://amatriain.net/blog/images/99-00.png
 reading_time:
     - ''
     - ''
