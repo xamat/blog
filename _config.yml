@@ -38,6 +38,9 @@ permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+teaser: https://amatriain.net/blog/images/110-0.png
+header:
+  image: /assets/Splash1.jpg
 
 include:
   - _pages
