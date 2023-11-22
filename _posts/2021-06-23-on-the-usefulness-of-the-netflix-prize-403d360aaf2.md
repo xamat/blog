@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /on-the-usefulness-of-the-netflix-prize-403d360aaf2/
 header:
-    - teaser: https://amatriain.net/blog/images/03-02.png
+    teaser: https://amatriain.net/blog/images/03-02.png
 reading_time:
     - ''
     - ''
