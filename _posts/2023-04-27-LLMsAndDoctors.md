@@ -5,6 +5,8 @@ date: '2023-04-27T00:00:01+00:00'
 author: Xavier
 permalink: /llmsdoctors
 image: /blog/images/102-1.png
+header:
+  teaser: https://amatriain.net/blog/images/102-1.png
 reading_time:
     - ''
     - ''
