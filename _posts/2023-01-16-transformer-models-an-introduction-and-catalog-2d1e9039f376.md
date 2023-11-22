@@ -5,6 +5,8 @@ date: '2023-01-16T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /transformer-models-an-introduction-and-catalog-2d1e9039f376/
+header:
+    - teaser: https://amatriain.net/blog/images/02-05.png
 reading_time:
     - ''
     - ''
