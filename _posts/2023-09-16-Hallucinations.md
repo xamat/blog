@@ -5,6 +5,8 @@ date: '2023-09-16T00:00:01+00:00'
 author: Xavier
 permalink: /hallucinations
 image: /blog/images/106-0.png
+header:
+  teaser: https://amatriain.net/blog/images/106-0.png
 reading_time:
     - ''
     - ''
