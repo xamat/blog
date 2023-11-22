@@ -5,6 +5,8 @@ date: '2022-07-09T00:00:00+00:00'
 author: xamat
 permalink: /data-driven
 image: /blog/images/91-01.png
+header:
+    - teaser: https://amatriain.net/blog/images/91-01.png
 reading_time:
     - ''
     - ''
