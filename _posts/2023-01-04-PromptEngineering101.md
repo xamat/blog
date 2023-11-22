@@ -5,6 +5,8 @@ date: '2023-01-04T00:00:00+00:00'
 author: Xavier
 permalink: /PromptEngineering
 image: /blog/images/FatCrocodile.png
+header:
+    - teaser: https://amatriain.net/blog/images/FatCrocodile.png
 reading_time:
     - ''
     - ''
