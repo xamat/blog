@@ -6,14 +6,14 @@ author: xamat
 ##layout: post
 permalink: /recsys-resources/
 header:
-  teaser: https://amatriain.net/blog/images/101-01.png
+  teaser: https://amatriain.net/blog/images/101-1.png
 reading_time:
     - ''
     - ''
 categories:
     - machine learning
     - recommender systems
-image: /blog/images/101-01.png
+image: /blog/images/101-1.png
 ---
 
 
