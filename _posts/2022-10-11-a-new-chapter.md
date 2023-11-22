@@ -5,6 +5,8 @@ date: '2022-10-11T00:00:00+00:00'
 author: Xmas
 permalink: /newchapter
 image: /blog/images/NewChapter1.jpg
+header:
+    - teaser: https://amatriain.net/blog/images/NewChapter1.jpg
 reading_time:
     - ''
     - ''
