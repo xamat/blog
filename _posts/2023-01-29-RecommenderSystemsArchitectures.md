@@ -6,7 +6,7 @@ author: Xavier
 permalink: /RecsysArchitectures
 image: /blog/images/2022Books.png
 header:
-    - teaser: https://amatriain.net/blog/images/NewArchitecture.png
+    teaser: https://amatriain.net/blog/images/NewArchitecture.png
 reading_time:
     - ''
     - ''
