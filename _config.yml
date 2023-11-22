@@ -117,8 +117,8 @@ defaults:
       entries_layout: grid
       permalink: "/:categories/images/:title/"
       teaser: https://amatriain.net/blog/images/110-0.png
-header:
-  image: /assets/Splash1.jpg
+      header:
+          image: /assets/Splash1.jpg
   # _pages
   - scope:
       path: "_pages"
