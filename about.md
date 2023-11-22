@@ -9,4 +9,4 @@ Read more about me in [my website](https://xavier.amatriain.net)
 
 ### Contact me
 
-Reach out to me on Twitter or LinkedIn
+Reach out to me on LinkedIn
