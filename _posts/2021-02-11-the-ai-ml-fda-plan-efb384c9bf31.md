@@ -5,6 +5,8 @@ date: '2021-02-11T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /the-ai-ml-fda-plan-efb384c9bf31/
+header:
+    - teaser: https://amatriain.net/blog/images/05-01.png
 reading_time:
     - ''
     - ''
