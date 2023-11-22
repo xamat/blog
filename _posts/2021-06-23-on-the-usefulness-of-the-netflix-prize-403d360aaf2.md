@@ -5,6 +5,8 @@ date: '2021-06-23T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /on-the-usefulness-of-the-netflix-prize-403d360aaf2/
+header:
+    - teaser: https://amatriain.net/blog/images/03-02.png
 reading_time:
     - ''
     - ''
