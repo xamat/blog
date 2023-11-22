@@ -5,6 +5,8 @@ date: '2023-04-23T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /recsys-resources/
+header:
+  teaser: https://amatriain.net/blog/images/101-01.png
 reading_time:
     - ''
     - ''
