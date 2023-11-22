@@ -4,6 +4,8 @@ title: "Migrating Medium and Blogger blogs to self-maintained Github Pages"
 date: '2022-06-07T00:00:00+00:00'
 author: xamat
 permalink: /migrating-my-blog
+header:
+    - teaser: https://amatriain.net/blog/images/90-05.png
 reading_time:
     - ''
     - ''
