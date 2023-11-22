@@ -5,6 +5,8 @@ date: '2021-03-21T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /valuing-equity-in-startups-a-decision-making-framework-7cfc39d99597/
+header:
+    - teaser: https://amatriain.net/blog/images/04-01-jpeg
 reading_time:
     - ''
     - ''
