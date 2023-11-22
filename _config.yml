@@ -38,9 +38,7 @@ permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-teaser: https://amatriain.net/blog/images/110-0.png
-header:
-  image: /assets/Splash1.jpg
+
 
 include:
   - _pages
@@ -118,6 +116,9 @@ defaults:
       show_date: true
       entries_layout: grid
       permalink: "/:categories/images/:title/"
+      teaser: https://amatriain.net/blog/images/110-0.png
+header:
+  image: /assets/Splash1.jpg
   # _pages
   - scope:
       path: "_pages"
