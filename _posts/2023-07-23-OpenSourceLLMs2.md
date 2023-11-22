@@ -5,6 +5,8 @@ date: '2023-07-23T00:00:01+00:00'
 author: Xavier
 permalink: /opensourcellms2
 image: /blog/images/105-0.png
+header:
+  teaser: https://amatriain.net/blog/images/105-0.png
 reading_time:
     - ''
     - ''
