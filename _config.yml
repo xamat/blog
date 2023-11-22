@@ -32,7 +32,7 @@ analytics:
 # kramdown:
 #  syntax_highlighter_opts:
 #    disable : true
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 # Outputting
 permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
