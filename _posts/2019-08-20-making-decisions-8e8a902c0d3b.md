@@ -5,6 +5,8 @@ date: '2019-08-20T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /making-decisions-8e8a902c0d3b/
+header:
+    teaser: https://amatriain.net/blog/images/10-01.png
 reading_time:
     - ''
     - ''
