@@ -5,6 +5,8 @@ date: '2018-07-01T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /the-memo-culture-41a2debefe2d/
+header:
+  teaser: https://amatriain.net/blog/images/14-01.jpeg
 reading_time:
     - ''
     - ''
