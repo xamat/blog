@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: AI, software, tech, and people, not in that order... by X
+title: AI, software, tech, and people. Not in that order. By X
 email:
 description: Musings on AI, software, technology, and people. Catalan in The Valley.
 twitter_username: xamat
@@ -65,7 +65,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Xavier Amatriain"
+  name   : "Xavi Amatriain"
   avatar : "../blog/images/xamat_twitter.jpeg"
   bio    : "VP Engineering (Product AI Strategy) at LinkedIn. Cofounder-Board of Directors at Curai Health. Former Quora VP Eng. Led ML algos at Netflix. ML, AI, eHealth, Recsys, Software. Catalan in the Valley. Runner & Ironman - amatriain.eth"
   links:
