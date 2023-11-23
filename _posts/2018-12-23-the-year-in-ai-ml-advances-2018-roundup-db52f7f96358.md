@@ -5,6 +5,8 @@ date: '2018-12-23T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /the-year-in-ai-ml-advances-2018-roundup-db52f7f96358/
+header:
+  teaser: https://amatriain.net/blog/images/13-01.png
 reading_time:
     - ''
     - ''
