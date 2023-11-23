@@ -5,6 +5,8 @@ date: '2020-12-09T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /scaling-healthcare-through-ai-3dc526c24ba9/
+header:
+     teaser: https://amatriain.net/blog/images/07-01.png
 reading_time:
     - ''
     - ''
