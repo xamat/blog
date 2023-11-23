@@ -4,6 +4,8 @@ title: "The year in AI: 2019 ML/AI advances\_recap"
 date: '2019-12-16T00:00:00+00:00'
 author: xamat
 ##layout: post
+header:
+     teaser: https://amatriain.net/blog/images/09-01.png
 reading_time:
     - ''
     - ''
