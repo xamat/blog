@@ -5,6 +5,8 @@ date: '2019-04-18T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /data-as-prior-innate-knowledge-for-deep-learning-models-23898363a71a/
+header:
+  teaser: https://amatriain.net/blog/images/11-01.png
 reading_time:
     - ''
     - ''
