@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /the-ai-ml-fda-plan-efb384c9bf31/
 header:
-    - teaser: https://amatriain.net/blog/images/05-01.png
+    teaser: https://amatriain.net/blog/images/05-01.png
 reading_time:
     - ''
     - ''
