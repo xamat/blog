@@ -5,6 +5,8 @@ date: '2016-04-20T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /football-or-futbol-or-why-deep-learning-will-not-make-other-machine-learning-approaches-obsolete-666658ed4167/
+header:
+  teaser: https://amatriain.net/blog/images/16-01.png
 reading_time:
     - ''
     - ''
