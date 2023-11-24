@@ -121,6 +121,8 @@ defaults:
       teaser: https://amatriain.net/blog/images/110-0.png
       header:
           overlay_image: /assets/Splash6.jpg
+          show_overlay_excerpt: false
+          overlay_filter: 0.5
   # _pages
   - scope:
       path: "_pages"
