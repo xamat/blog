@@ -5,6 +5,8 @@ date: '2012-09-05T17:18:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /netflix-recsys-2012/
+header:
+  teaser: https://amatriain.net/blog/images/14-01.png
 categories:
     - Uncategorized
 ---
