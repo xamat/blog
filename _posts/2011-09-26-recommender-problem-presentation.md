@@ -5,7 +5,8 @@ date: '2011-09-26T06:41:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recommender-problem-presentation/
-image: /wp-content/uploads/2011/09/NetflixInterface.jpg
+header:
+  teaser: https://amatriain.net/blog/images/NetflixInterface.jpg
 categories:
     - Uncategorized
 tags:
