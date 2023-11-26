@@ -5,6 +5,8 @@ date: '2016-01-14T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-ii-93fe7008fa9/
+header:
+  teaser: https://amatriain.net/blog/images/18-01.png
 reading_time:
     - ''
     - ''
