@@ -6,6 +6,9 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recommendations-as-personalized/
 image: /blog/imagesTwoDimensionalRanking.png
+header:
+  teaser: https://amatriain.net/blog/images/TwoDimensionalRanking.png.png
+
 categories:
     - Uncategorized
 ---
