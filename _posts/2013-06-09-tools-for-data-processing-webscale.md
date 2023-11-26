@@ -5,7 +5,9 @@ date: '2013-06-09T18:19:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /tools-for-data-processing-webscale/
-image: /blog/images/ParquetTwitter-Poster.jpg
+header:
+  teaser: https://amatriain.net/blog/images/ParquetTwitter-Poster.jpg
+
 categories:
     - Uncategorized
 ---
