@@ -5,6 +5,9 @@ date: '2014-06-20T21:03:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /blog-posts-and-summer-gigs/
+header:
+  teaser: https://amatriain.net/blog/images/14-01.png
+
 categories:
     - Uncategorized
 ---
