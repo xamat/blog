@@ -5,7 +5,8 @@ date: '2012-09-17T17:47:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recsys-2012-long-and-likely-biased/
-image: /wp-content/uploads/2012/09/RecsysPhoto.jpg
+header:
+  teaser: https://amatriain.net/blog/images/RecsysPhoto.jpg
 categories:
     - Uncategorized
 ---
