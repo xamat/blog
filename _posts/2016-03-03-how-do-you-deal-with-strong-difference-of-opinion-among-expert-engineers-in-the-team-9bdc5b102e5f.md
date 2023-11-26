@@ -5,6 +5,8 @@ date: '2016-03-03T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /how-do-you-deal-with-strong-difference-of-opinion-among-expert-engineers-in-the-team-9bdc5b102e5f/
+header:
+  teaser: https://amatriain.net/blog/images/14-01.png
 reading_time:
     - ''
     - ''
