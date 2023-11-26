@@ -5,7 +5,8 @@ date: '2011-04-07T20:59:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recommender-systems-were-doing-it-all/
-image: /wp-content/uploads/2011/04/fig2b.jpg
+header:
+  teaser: https://amatriain.net/blog/images/fig2b.jpg
 categories:
     - Uncategorized
 tags:
