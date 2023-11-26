@@ -5,8 +5,10 @@ date: '2012-04-17T05:56:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /beyond-5-stars-round-up/
+header:
+  teaser: https://amatriain.net/blog/images/4-01.png
 categories:
-    - Uncategorized
+    - 'recsys'
 tags:
     - netflix
     - 'netflix prize'
