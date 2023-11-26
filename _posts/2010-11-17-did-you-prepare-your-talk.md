@@ -5,7 +5,8 @@ date: '2010-11-17T00:12:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /did-you-prepare-your-talk/
-image: /wp-content/uploads/2010/11/ted-presenter.jpg
+header:
+  teaser: https://amatriain.net/blog/images/ted-presenter.jpg
 categories:
     - Uncategorized
 tags:
