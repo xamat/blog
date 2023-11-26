@@ -5,7 +5,8 @@ date: '2012-07-03T06:22:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /more-data-or-better-models/
-image: /blog/images/TheUnreasonableEffectivenessOfData.png
+header:
+  teaser: https://amatriain.net/blog/images/TheUnreasonableEffectivenessOfData.png
 categories:
     - Uncategorized
 tags:
