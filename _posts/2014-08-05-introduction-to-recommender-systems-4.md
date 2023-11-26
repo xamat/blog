@@ -5,6 +5,8 @@ date: '2014-08-05T05:19:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /introduction-to-recommender-systems-4/
+header:
+  teaser: https://amatriain.net/blog/images/14-01.png
 categories:
     - Uncategorized
 tags:
