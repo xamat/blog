@@ -5,6 +5,8 @@ date: '2016-01-14T00:00:00+00:00'
 author: xamat
 ##layout: post
 permalink: /what-s-the-relationship-between-machine-learning-and-data-mining-8c8675966615/
+header:
+  teaser: https://amatriain.net/blog/images/14-01.png
 reading_time:
     - ''
     - ''
