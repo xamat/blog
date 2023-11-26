@@ -5,7 +5,8 @@ date: '2011-07-19T05:32:00+00:00'
 author: 'Xavier Amatriain'
 ##layout: post
 permalink: /walk-talk-on-combination-of-implicit/
-image: /wp-content/uploads/2011/07/up-box.png
+header:
+  teaser: https://amatriain.net/blog/images/up-box.png
 categories:
     - Uncategorized
 tags:
