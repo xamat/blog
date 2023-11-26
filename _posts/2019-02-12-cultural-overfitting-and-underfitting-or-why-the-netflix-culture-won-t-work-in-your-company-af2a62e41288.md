@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /cultural-overfitting-and-underfitting-or-why-the-netflix-culture-won-t-work-in-your-company-af2a62e41288/
 header:
-  teaser: https://amatriain.net/blog/images/12-01.png
+  teaser: https://amatriain.net/blog/images/12-01.jpeg
 reading_time:
     - ''
     - ''
