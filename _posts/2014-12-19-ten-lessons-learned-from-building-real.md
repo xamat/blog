@@ -6,6 +6,8 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /ten-lessons-learned-from-building-real/
 image: /blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png
+header:
+  teaser: https://amatriain.net/blog/images/Screenshot2Bfrom2B2014-12-112B223A263A27.png
 categories:
     - Uncategorized
 tags:
