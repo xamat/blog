@@ -17,11 +17,11 @@ categories:
     - software engineering
 ---
 
-<img src="/blog/images/111-0.png">
-
 # Exploring the AI-Driven Future of Software Development
 
 Embarking on an experiment that blends the boundaries of AI and software engineering, a few days back I set out to explore a provocative hypothesis. Will AI-generated code dominate software development in the near future, accounting for over 80% of all coding? This question is not just theoretical; it's a forecast based on the rapid advancements in AI, and I'm putting it to the test through a hands-on project.
+
+<img src="/blog/images/111-0.png">
 
 ## The Challenge: AI as the Core Developer
 
