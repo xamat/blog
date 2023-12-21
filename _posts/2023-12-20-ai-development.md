@@ -39,6 +39,8 @@ Join me in this exploration. This journey is more than a technical challenge; it
 
 In this segment of my journey, I decided to push my boundaries by choosing technologies I had never worked with before. The goal was to create a personalized chatbot, "Xavibot," designed to respond as if it were me. You can interact with this chatbot [here](https://amatriain.net/Xavibot). 
 
+<img src="/blog/images/111-1.png">
+
 *A Note on Performance and Feedback:* Should you experience timeouts or other issues while using the bot, it's worth noting that it's hosted on a lower tier of Azure, which may affect performance. I welcome any feedback or queries at xavier at amatriain dot net.
 
 For this project, I utilized:
@@ -46,6 +48,8 @@ For this project, I utilized:
 - Node.js for the Backend: A deliberate choice over Python to challenge myself with an unfamiliar environment and assess ChatGPT's effectiveness in aiding with new technologies.
 - React for the Front-End: Leveraging the react-chatbot-kit, I ventured into modern UI design, an area where my experience is limited.
 - OpenAI Assistants APIs with GPT4: A choice driven by the desire to explore this new and powerful technology from OpenAI, with which I had no prior experience.
+
+<img src="/blog/images/111-2.png">
 
 The source code for the application is available on my [my Github](https://github.com/xamat/Xavibot). I encourage others to use it for their own projects or adaptations.
 
