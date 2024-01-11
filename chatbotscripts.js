@@ -4,8 +4,8 @@ document.getElementById('closeChatbot').addEventListener('click', function() {
         chatbot.style.display = 'block';
         this.textContent = 'X';
         // Position for the open chatbot (inside the iframe)
-        this.style.right = 'calc(20px)'; 
-        this.style.bottom = 'calc(520px  - 30px)';
+        this.style.right = 'calc(19px)'; 
+        this.style.bottom = 'calc(520px  - 28px)';
     } else {
         chatbot.style.display = 'none';
         this.textContent = 'Open Chatbot';
