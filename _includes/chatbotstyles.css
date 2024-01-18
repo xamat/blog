@@ -1,5 +1,6 @@
 #closeChatbot {
     cursor: pointer;
+    style: block;
     background-color: #2b6e9b; /* Red background for visibility */
     color: white; /* White text */
     border: none; /* No border */
