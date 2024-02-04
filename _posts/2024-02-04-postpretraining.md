@@ -95,7 +95,7 @@ models' utility across a range of benchmarks, from natural language understandin
 
 [AI alignment](https://en.wikipedia.org/wiki/AI_alignment)  emerges as a critical endeavor in the development of LLMs, ensuring these models act in accordance with human 
 goals, principles, and preferences. Despite their sophistication, LLMs can inadvertently generate content that is biased, misleading, or harmful. Addressing these challenges 
-requires a suite of alignment techniques, each with its unique approach and application.
+requires a suite of alignment techniques, each with its unique approach and application. Note that instruction tuning is in itself a first step towards alignment.. And, according to some [recent research](https://github.com/ContextualAI/HALOs/blob/main/assets/report.pdf), only large models beyond 7 billion parameters benefit from more complex alignment methods.
 
 **Reinforcement Learning from Human Feedback (RLHF)** simplifies the complex process of aligning LLM outputs with human judgment. By employing a reward model trained on human 
 feedback, [RLHF](https://proceedings.neurips.cc/paper_files/paper/2017/hash/d5e2c0adad503c91f91df240d0cd4e49-Abstract.html) fine-tunes LLMs to produce responses that better 
