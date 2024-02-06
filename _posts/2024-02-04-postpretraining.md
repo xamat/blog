@@ -15,6 +15,8 @@ categories:
     - LLMs
 ---
 
+(This blog post, as most of my recent ones, is written in collaboration/augmentation with GPT-4)
+
 Language Learning Models (LLMs) like GPT-4 are often simplified as mere probabilistic token predictors, a perspective I've shared in the past to demystify their 
 capabilities and temper the surrounding hype. Yet, this view undersells the true sophistication of modern LLMs. If you've had the opportunity to interact with frontier 
 models such as GPT-4, you might have noticed abilities that hint at something beyond simple token prediction. This post isn't about convincing you of their advanced 
@@ -75,7 +77,7 @@ models to novel or exclusive datasets, ensuring their evolution in step with eme
 
 SFT does not only improve the performance of the foundation LLM on a given or multiple tasks, but it also offers other advantages. For example, it provides a way to train the 
 model with proprietary data that was not present in the original dataset. Or, when using [Parameter Efficient Fine Tuning (PEFT)](https://github.com/huggingface/peft) it can yield 
-not only a more accurate, but also smaller LLM. AS we will see in the next section, SFT can also be used to have the model become better at following human instructions.
+not only a more accurate, but also smaller LLM. As we will see in the next section, SFT can also be used to have the model become better at following human instructions.
 
 # Improving Human-Model Interaction through Instruction Tuning
 
