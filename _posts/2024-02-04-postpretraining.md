@@ -128,6 +128,10 @@ improvements across various benchmarks.
 
 <img src="/blog/images/113-4.png">
 
+It should be noted that there are pre-pretraining techniques that can also help with alignment. In fact, Microsoft researchers showed in their work with [Phi](https://www.microsoft.com/en-us/research/publication/textbooks-are-all-you-need-ii-phi-1-5-technical-report/) that using carefully crafted synthetic data in the pretraining step can lead to more alignment than using post pretraining techniques like RLHF (see more details in the Phi-2 model blog post [here](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/).
+
+<img src="/blog/images/113-5.png">
+
 # Fine-Tuning Interaction: The Art of Prompt Tuning
 
 As LLMs approach deployment, [prompt tuning]((https://research.ibm.com/blog/what-is-ai-prompt-tuning).) becomes essential, refining the interface through which humans 
