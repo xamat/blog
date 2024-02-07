@@ -17,7 +17,7 @@ categories:
 
 (This blog post, as most of my recent ones, is written in collaboration/augmentation with GPT-4)
 
-Language Learning Models (LLMs) like GPT-4 are often simplified as mere probabilistic token predictors, a perspective I've shared in the past to demystify their 
+Large Language Models (LLMs) like GPT-4 are often simplified as mere probabilistic token predictors, a perspective I've shared in the past to demystify their 
 capabilities and temper the surrounding hype. Yet, this view undersells the true sophistication of modern LLMs. If you've had the opportunity to interact with frontier 
 models such as GPT-4, you might have noticed abilities that hint at something beyond simple token prediction. This post isn't about convincing you of their advanced 
 capabilities—that should be evident to users of such models. Instead, we'll delve into the technical underpinnings that elevate LLMs above mere token prediction, exploring 
@@ -44,7 +44,7 @@ despite their complexity, still fundamentally rely on predicting the most likely
 
 # Beyond Basic Prediction: The Advent of Instruction-Focused LLMs
 
-As we delve deeper into the evolution of Language Learning Models, a significant milestone emerges with OpenAI's introduction of 
+As we delve deeper into the evolution of Large Language Models, a significant milestone emerges with OpenAI's introduction of 
 [InstructGPT](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract-Conference.html) in 2022. This model marked a departure from 
 traditional training methodologies by emphasizing the model's ability to follow human instructions more effectively. InstructGPT leveraged the concept of fine-tuning, a familiar 
 technique in the LLM toolkit, but with a novel focus: enhancing the model's responsiveness to nuanced human prompts.
@@ -63,7 +63,7 @@ today.
 
 # Enhancing LLMs with Supervised Fine Tuning (SFT)
 
-At the heart of making Language Learning Models (LLMs) adept at specific tasks is Supervised Fine Tuning (SFT). This crucial step tailors a broadly trained foundation model, 
+At the heart of making Large Language Models (LLMs) adept at specific tasks is Supervised Fine Tuning (SFT). This crucial step tailors a broadly trained foundation model, 
 like BERT, to excel in distinct applications by leveraging labeled data. The seminal [BERT paper](https://arxiv.org/abs/1810.04805) exemplifies this, detailing the model's 
 adaptation to 11 diverse tasks, showcasing SFT's transformative impact.
 
@@ -153,7 +153,7 @@ recent publication, which provides a comprehensive exploration of this field.
 
 # Conclusion
 
-In light of our exploration, it's evident that modern Language Learning Models (LLMs) transcend their foundational token-predicting capabilities. From the nuanced fine-tuning for 
+In light of our exploration, it's evident that modern Large Language Models (LLMs) transcend their foundational token-predicting capabilities. From the nuanced fine-tuning for 
 specific tasks to the sophisticated alignment with human values and the artful crafting of prompts, each step in the development of LLMs contributes layers of complexity and 
 adaptability, making them far more than mere token predictors.
 
