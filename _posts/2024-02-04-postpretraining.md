@@ -148,8 +148,8 @@ LLM's responses, ensuring that the final prompts align closely with user intenti
 Through practical examples, such as optimizing prompts for a customer service chatbot or a content generation tool, we can observe the transformative impact of prompt tuning. 
 These cases underscore the heightened efficiency and specificity with which tuned LLMs can address tasks, heralding a new era of human-AI interaction.
 
-For those eager to explore the intricate strategies and methodologies of [prompt design and engineering]((https://arxiv.org/abs/2401.14423) ), I invite you to delve into my 
-recent publication, which provides a comprehensive exploration of this field.
+For those eager to explore the intricate strategies and methodologies of prompt design and engineering, I invite you to delve into my 
+[recent publication](https://arxiv.org/abs/2401.14423), which provides a comprehensive exploration of this field.
 
 # Conclusion
 
