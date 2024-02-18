@@ -15,7 +15,7 @@ categories:
     - LLMs
 ---
 
-(This blog post, as most of my recent ones, is written in collaboration/augmentation with GPT-4)
+(This blog post, as most of my recent ones, is written with GPT-4 assistance and augmentation)
 
 Large Language Models (LLMs) like GPT-4 are often simplified as mere probabilistic token predictors, a perspective I've shared in the past to demystify their 
 capabilities and temper the surrounding hype. Yet, this view undersells the true sophistication of modern LLMs. If you've had the opportunity to interact with frontier 
