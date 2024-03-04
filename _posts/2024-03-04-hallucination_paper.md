@@ -15,7 +15,7 @@ categories:
     - LLMs
 ---
 
-(Interestingly, this is the first time arXiV has declined a submission from me. I would give the editors kudos for finally taking their role seriously if it wasn't because I suspect this is simply the result of a poor algorithmic decision. I have seen much worse stuff in arXiv and I think this paper is as good if not better than many of my other arXiV submissions. In any case, here it will be "archived" for eternity. Prove that arXiv algo wrong and cite this publication!)
+*(Interestingly, this is the first time arXiV has declined a submission from me. I would give the editors kudos for finally taking their role seriously if it wasn't because I suspect this is simply the result of a poor algorithmic decision. I have seen much worse stuff in arXiv and I think this paper is as good if not better than many of my other arXiV submissions. In any case, here it will be "archived" for eternity. Prove that arXiv algo wrong and cite this publication!)*
 
 [Download pdf](https://amatriain.net/blog/images/Mitigating_Hallucinations.pdf)
 
