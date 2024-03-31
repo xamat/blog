@@ -16,6 +16,8 @@ categories:
     - Prompt Engineering
 ---
 
+(I recently turned this guide into a paper. You can find it [here](https://amatriain.net/blog/hallucination-paper))
+
 * [Introduction](#introduction)
 * [What we talk about when we talk about Hallucinations](#definition)
 * [How to Measure](#measurement)
