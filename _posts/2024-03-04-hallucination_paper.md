@@ -21,7 +21,8 @@ categories:
 
 # Cite as
 
-*@misc{amatriain2024llmhallucinations,
+```
+@misc{amatriain2024llmhallucinations,
 
       title={Measuring and Mitigating Hallucinations in Large Language Models: A Multifaceted Approach}, 
 
@@ -29,7 +30,8 @@ categories:
       
       year={2024},
 
-}*
+}
+```
 
 # Abstract
 
