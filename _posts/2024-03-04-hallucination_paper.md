@@ -23,13 +23,9 @@ categories:
 
 ```
 @misc{amatriain2024llmhallucinations,
-
       title={Measuring and Mitigating Hallucinations in Large Language Models: A Multifaceted Approach}, 
-
       author={Xavier Amatriain},
-      
       year={2024},
-
 }
 ```
 
