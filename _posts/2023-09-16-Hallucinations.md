@@ -6,7 +6,7 @@ author: Xavier
 permalink: /hallucinations
 image: /blog/images/106-0.png
 header:
-  teaser: https://amatriain.net/blog/images/106-0.png
+  teaser: /images/106-0.png
 reading_time:
     - ''
     - ''
@@ -16,7 +16,7 @@ categories:
     - Prompt Engineering
 ---
 
-(I recently turned this guide into a paper. You can find it [here](https://amatriain.net/blog/hallucination-paper))
+(I recently turned this guide into a paper. You can find it [here](https://amatria.in/blog/hallucination-paper))
 
 * [Introduction](#introduction)
 * [What we talk about when we talk about Hallucinations](#definition)
