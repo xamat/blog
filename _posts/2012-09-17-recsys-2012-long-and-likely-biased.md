@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recsys-2012-long-and-likely-biased/
 header:
-  teaser: https://amatriain.net/blog/images/RecsysPhoto.jpg
+  teaser: /images/RecsysPhoto.jpg
 categories:
     - Uncategorized
 ---
