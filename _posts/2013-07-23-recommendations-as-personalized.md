@@ -7,7 +7,7 @@ author: 'Xavier Amatriain'
 permalink: /recommendations-as-personalized/
 image: /blog/imagesTwoDimensionalRanking.png
 header:
-  teaser: https://amatriain.net/blog/images/TwoDimensionalRanking.png
+  teaser: /images/TwoDimensionalRanking.png
 
 categories:
     - Uncategorized
