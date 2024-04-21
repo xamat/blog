@@ -6,7 +6,7 @@ author: xamat
 permalink: /data-driven
 image: /blog/images/91-01.png
 header:
-    teaser: https://amatriain.net/blog/images/91-01.jpeg
+    teaser: /images/91-01.jpeg
 reading_time:
     - ''
     - ''
