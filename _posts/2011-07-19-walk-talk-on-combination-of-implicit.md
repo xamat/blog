@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /walk-talk-on-combination-of-implicit/
 header:
-  teaser: https://amatriain.net/blog/images/up-box.png
+  teaser: /images/up-box.png
 categories:
     - Uncategorized
 tags:
