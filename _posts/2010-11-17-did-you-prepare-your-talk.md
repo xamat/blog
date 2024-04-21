@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /did-you-prepare-your-talk/
 header:
-  teaser: https://amatriain.net/blog/images/ted-presenter.jpg
+  teaser: /images/ted-presenter.jpg
 categories:
     - Uncategorized
 tags:
