@@ -6,7 +6,7 @@ author: Xavier
 permalink: /AImoment
 image: /blog/images/99-00.png
 header:
-  teaser: https://amatriain.net/blog/images/99-00.png
+  teaser: /images/99-00.png
 reading_time:
     - ''
     - ''
