@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /blog-posts-and-summer-gigs/
 header:
-  teaser: https://amatriain.net/blog/images/14-01.png
+  teaser: /images/14-01.png
 
 categories:
     - Uncategorized
