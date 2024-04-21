@@ -6,7 +6,7 @@ author: Xavier
 permalink: /aidevelopment
 image: /blog/images/111-0.png
 header:
-  teaser: https://amatriain.net/blog/images/111-0.png
+  teaser: /images/111-0.png
 reading_time:
     - ''
     - ''
