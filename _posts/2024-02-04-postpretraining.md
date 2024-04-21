@@ -6,7 +6,7 @@ author: Xavier
 permalink: /postpretraining
 image: /blog/images/113-0.png
 header:
-  teaser: https://amatriain.net/blog/images/113-0.png
+  teaser: /images/113-0.png
 reading_time:
     - ''
     - ''
