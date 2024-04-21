@@ -6,7 +6,7 @@ author: Xavier
 permalink: /prompt201
 image: /blog/images/104-0.png
 header:
-  teaser: https://amatriain.net/blog/images/104-0.png
+  teaser: /images/104-0.png
 reading_time:
     - ''
     - ''
