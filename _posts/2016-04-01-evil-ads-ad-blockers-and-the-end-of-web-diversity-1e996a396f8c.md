@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /evil-ads-ad-blockers-and-the-end-of-web-diversity-1e996a396f8c/
 header:
-  teaser: https://amatriain.net/blog/images/17-01.png
+  teaser: /images/17-01.png
 reading_time:
     - ''
     - ''
