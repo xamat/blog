@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recommender-systems-were-doing-it-all/
 header:
-  teaser: https://amatriain.net/blog/images/fig2b.jpg
+  teaser: /images/fig2b.jpg
 categories:
     - Uncategorized
 tags:
