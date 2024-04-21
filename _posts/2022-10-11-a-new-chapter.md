@@ -6,7 +6,7 @@ author: Xmas
 permalink: /newchapter
 image: /blog/images/NewChapter1.jpg
 header:
-    teaser: https://amatriain.net/blog/images/NewChapter1.jpg
+    teaser: /images/NewChapter1.jpg
 reading_time:
     - ''
     - ''
