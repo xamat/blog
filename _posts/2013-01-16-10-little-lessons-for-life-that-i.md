@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /10-little-lessons-for-life-that-i/
 header:
-  teaser: https://amatriain.net/blog/images/ChicagoFinisher.jpg
+  teaser: /images/ChicagoFinisher.jpg
 categories:
     - Uncategorized
 ---
