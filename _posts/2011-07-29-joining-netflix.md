@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /joining-netflix/
 header:
-  teaser: https://amatriain.net/blog/images/2011-07-202B08.19.53.jpg
+  teaser: /images/2011-07-202B08.19.53.jpg
 categories:
     - Uncategorized
 tags:
