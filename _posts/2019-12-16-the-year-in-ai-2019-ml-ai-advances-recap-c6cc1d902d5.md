@@ -5,7 +5,7 @@ date: '2019-12-16T00:00:00+00:00'
 author: xamat
 ##layout: post
 header:
-     teaser: https://amatriain.net/blog/images/09-01.png
+     teaser: /images/09-01.png
 reading_time:
     - ''
     - ''
