@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /the-memo-culture-41a2debefe2d/
 header:
-  teaser: https://amatriain.net/blog/images/14-01.jpeg
+  teaser: /images/14-01.jpeg
 reading_time:
     - ''
     - ''
