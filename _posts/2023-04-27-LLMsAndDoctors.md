@@ -6,7 +6,7 @@ author: Xavier
 permalink: /llmsdoctors
 image: /blog/images/102-1.png
 header:
-  teaser: https://amatriain.net/blog/images/102-1.png
+  teaser: /images/102-1.png
 reading_time:
     - ''
     - ''
