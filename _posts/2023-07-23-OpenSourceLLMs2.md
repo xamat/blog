@@ -6,7 +6,7 @@ author: Xavier
 permalink: /opensourcellms2
 image: /blog/images/105-0.png
 header:
-  teaser: https://amatriain.net/blog/images/105-0.png
+  teaser: /images/105-0.png
 reading_time:
     - ''
     - ''
