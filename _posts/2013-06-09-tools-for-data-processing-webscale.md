@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /tools-for-data-processing-webscale/
 header:
-  teaser: https://amatriain.net/blog/images/ParquetTwitter-Poster.jpg
+  teaser: /images/ParquetTwitter-Poster.jpg
 
 categories:
     - Uncategorized
