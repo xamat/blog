@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /beyond-5-stars-round-up/
 header:
-  teaser: https://amatriain.net/blog/images/4-01.png
+  teaser: /images/4-01.png
 categories:
     - 'recsys'
 tags:
