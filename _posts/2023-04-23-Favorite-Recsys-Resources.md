@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /recsys-resources/
 header:
-  teaser: https://amatriain.net/blog/images/101-1.png
+  teaser: /images/101-1.png
 reading_time:
     - ''
     - ''
