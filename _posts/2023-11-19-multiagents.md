@@ -6,7 +6,7 @@ author: Xavier
 permalink: /multiagents
 image: /blog/images/110-0.png
 header:
-  teaser: https://amatriain.net/blog/images/110-0.png
+  teaser: /images/110-0.png
 reading_time:
     - ''
     - ''
