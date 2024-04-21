@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /introduction-to-recommender-systems-4/
 header:
-  teaser: https://amatriain.net/blog/images/14-01.png
+  teaser: /images/14-01.png
 categories:
     - Uncategorized
 tags:
