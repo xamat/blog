@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recsys-2011-notes-and-pointers/
 header:
-  teaser: https://amatriain.net/blog/images/14-01.png
+  teaser: /images/14-01.png
 categories:
     - Uncategorized
 tags:
