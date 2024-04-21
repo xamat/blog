@@ -6,7 +6,7 @@ author: Xavier
 permalink: /datagutdecisions
 image: /blog/images/115-1.png
 header:
-  teaser: /blog/images/115-1.png
+  teaser: /images/115-1.png
 reading_time:
     - ''
     - ''
