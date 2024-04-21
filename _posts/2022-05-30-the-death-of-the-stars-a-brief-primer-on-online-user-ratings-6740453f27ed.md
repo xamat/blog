@@ -6,7 +6,7 @@ author: xamat
 ##layout: post
 permalink: /the-death-of-the-stars-a-brief-primer-on-online-user-ratings-6740453f27ed/
 header:
-    teaser: https://amatriain.net/blog/images/01-01.png
+    teaser: /images/01-01.png
 reading_time:
     - ''
     - ''
