@@ -6,7 +6,7 @@ author: Xavier
 permalink: /hallucination-paper
 image: /blog/images/114-0.png
 header:
-  teaser: https://amatriain.net/blog/images/114-0.png
+  teaser: /images/114-0.png
 reading_time:
     - ''
     - ''
