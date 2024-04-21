@@ -6,7 +6,7 @@ author: Xavier
 permalink: /challengeinspire
 image: /blog/images/112-1.png
 header:
-  teaser: https://amatriain.net/blog/images/112-1.png
+  teaser: /images/112-1.png
 reading_time:
     - ''
     - ''
