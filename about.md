@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Read more about me in [my website](https://xavier.amatriain.net)
+Read more about me in [my website](https://xavier.amatria.in)
 
 
 ### Contact me
