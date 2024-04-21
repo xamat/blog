@@ -6,7 +6,7 @@ author: 'Xavier Amatriain'
 ##layout: post
 permalink: /recommender-problem-presentation/
 header:
-  teaser: https://amatriain.net/blog/images/NetflixInterface.jpg
+  teaser: /images/NetflixInterface.jpg
 categories:
     - Uncategorized
 tags:
