@@ -6,7 +6,7 @@ author: Xavier
 permalink: /multimodalGAI
 image: /blog/images/108-0.png
 header:
-  teaser: https://amatriain.net/blog/images/108-0.png
+  teaser: /images/108-0.png
 reading_time:
     - ''
     - ''
