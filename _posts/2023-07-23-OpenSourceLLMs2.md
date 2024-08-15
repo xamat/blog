@@ -18,7 +18,7 @@ categories:
 ---
 
 *In this post I summarize the main advances in the area of LLM models, and particularly open source LLMs (including Falcon, LlaMa2, and Free Willy). I describe different leaderboards and what their current top positions mean. 
-I enunciate the three laws of generative AI model evolution, and I ask GPT-4, Bard, and LlaMa 1 the implications of these laws.*
+I enunciate the three laws of generative AI model evolution, and I ask GPT-4, Bard, and LlaMa 2 the implications of these laws.*
 
 Five months ago, I [wrote](https://amatriain.net/blog/rlaif) about what open source LLMs meant for the future of AI. Here is what I had to say “back in the days”:
 
