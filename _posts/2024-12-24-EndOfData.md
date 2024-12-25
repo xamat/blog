@@ -103,15 +103,15 @@ the internet. Humans also play a crucial role in creating the labeled datasets u
 can or should continue is a subject of intense debate. While it is true that much of the existing web data has been "used up" for pretraining purposes, the kind of data that 
 future AI will need is very different.
 
-One promising avenue is **synthetic data**, artificially generated data that can augment or even replace real-world data. The potential of synthetic data has been met with both 
-excitement and skepticism. Some research, such as the paper "AI models collapse when trained on recursively generated data" (https://www.nature.com/articles/s41586-024-07566-y), 
-suggests that models trained solely on their own outputs can degrade. However, I believe these limitations can be overcome by generating synthetic data from diverse and more 
+One promising avenue, also highlighted by Ilya in his talk, is **synthetic data**, artificially generated data that can augment or even replace real-world data. The potential of synthetic data has been met with both excitement and skepticism. Some research, such as the paper 
+["AI models collapse when trained on recursively generated data"](https://www.nature.com/articles/s41586-024-07566-y), suggests that models trained solely on their own outputs 
+can degrade. However, I believe these limitations can be overcome by generating synthetic data from diverse and more 
 complex models, as argued in ["On the Diversity of Synthetic Data and its Impact on Training Large Language Models"](https://arxiv.org/abs/2410.15226). There is a rich and 
 growing body of work on how to best generate and use synthetic data that I won't review here (see e.g. 
 [“Machine Learning for Synthetic Data Generation: A Review”](https://arxiv.org/abs/2302.04062) and 
 [“Generative AI for Synthetic Data Generation: Methods, Challenges and the Future”](https://arxiv.org/abs/2403.04190) ).
 
-In fact, I believe we are rapidly approaching a turning point: **the end of the age of data as defined by human limitations**. While human-generated data has been essential in 
+I believe we are rapidly approaching a turning point: **the end of the age of data as defined by human limitations**. While human-generated data has been essential in 
 bootstrapping AI, it is inherently constrained by our own perceptions, biases, and the inefficiencies of human communication. As [Yann LeCun](https://www.noemamag.com/ai-and-the-limits-of-language/) 
 has pointed out, human language is an imperfect tool for capturing the full complexity of reality. We are, in a sense, "lossy" encoders of the world around 
 us.
@@ -126,13 +126,14 @@ to be both more achievable and more beneficial in addressing specific, complex c
 [“Beyond Singular Intelligence: Exploring Multi-Agent Systems and Multi-LoRA in the Quest for AGI”](https://amatria.in/blog/multiagents)).
 Consider autonomous vehicles like Waymo's. While currently limited in scope, they represent a first step towards this future. These vehicles collect vast amounts of real-time 
 data about the world, data that can be used to improve their own performance and, crucially, could be used to create richer datasets beyond the task of driving. In the near 
-future, we can envision AI agents designed explicitly for data collection and generation, operating across a wide range of domains, from materials science to medical research.
+future, we can envision AI agents designed explicitly for data collection and generation, operating across a wide range of domains, from materials science to medical research. 
+Some very recent interesting examples of new data include ["The Well (15TB of Physics Simulations)"](https://github.com/PolymathicAI/the_well), ["Multimodal Universe (100TBs of Astronomical Scientific Data)"](https://github.com/MultimodalUniverse/MultimodalUniverse), and ["Genie-2"](https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/), a large-scale foundation world modelcapable of generating an endless variety of action-controllable, playable 3D environments for training and evaluating embodied agents.
 
 This transition to agent-generated data will not be without its challenges. **Importantly, we must acknowledge the continued need for human-generated data in specific areas, 
-particularly for aligning AI systems with human values and preferences. Data reflecting human desires, feedback, and ethical judgments will remain crucial for ensuring that 
+particularly for aligning AI systems with human values and preferences.** Data reflecting human desires, feedback, and ethical judgments will remain crucial for ensuring that 
 AI remains beneficial and aligned with our goals. This includes data used for techniques like Reinforcement Learning from Human Feedback (RLHF) and other alignment methods. 
 In addition, human data will continue to be invaluable for personalizing AI experiences, ensuring that systems are responsive to individual needs and preferences. While 
-superhuman data can provide a more accurate and comprehensive understanding of the world, it is human data that provides the crucial link to what matters to us as humans**.
+superhuman data can provide a more accurate and comprehensive understanding of the world, it is human data that provides the crucial link to what matters to us as humans.
 
 It is not an overstatement to say that data is not only not over, but it is in fact about to get much bigger and better, thanks to AI.
 
