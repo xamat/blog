@@ -35,8 +35,7 @@ could be predicted by the number of parameters, dataset size, and compute budget
 
 So, here we are, just 12 years later, being told that the age of data is over. We don't have any more data to pump into our models. We ran out of our 'fossil fuel' of AI.Or have we?"
 
- (**Historical digression**:
-
+ **(Historical digression**:
 One of the interesting things when you have been around for a while or you study a bit of history is that you realize that many scientific 
 ideas or trends die and resurrect again and again. This is particularly true in AI, where a couple of AI winters declared the whole field itself mostly 
 dead. As a reminder, the perceptron, which is the basic unit of Artificial Neural Networks, was also dismissed by Minski in his 1969 book 
@@ -50,7 +49,7 @@ by Halevy, Norvig, and Pereira from Google. Both of these contributed to the beg
 [“The End of Theory: The Data Deluge Makes the Scientific Method Obsolete”](https://www.wired.com/2008/06/pb-theory/ ) in Wired where he claimed that the world of 
 discovery and science was going to be dominated by data. Models and algorithms were to become obsolete. I argued against this point-of-view in my 2012 post 
 [“More data or better models?”](https://amatria.in/blog/more-data-or-better-models/) .
-)
+**)**
 
 <img src="/blog/images/116-2.png">
 
