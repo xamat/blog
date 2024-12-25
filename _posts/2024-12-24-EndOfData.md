@@ -43,7 +43,7 @@ dead. As a reminder, the perceptron, which is the basic unit of Artificial Neura
 
 It is also important to note that the simpler scaling law that states that in order to improve your model performance all you need is more data 
 and more parameters was discovered years earlier. One of the earliest papers to be cited in that context is 2001 Banko and Brill’s 
-[“Scaling to Very Very Large Corpora forNatural Language Disambiguation”](https://aclanthology.org/P01-1005.pdf ). Another popular, but a bit more recent, 
+[“Scaling to Very Very Large Corpora for Natural Language Disambiguation”](https://aclanthology.org/P01-1005.pdf ). Another popular, but a bit more recent, 
 reference is [“The Unreasonable Effectiveness of Data”](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf ) 
 by Halevy, Norvig, and Pereira from Google. Both of these contributed to the beginning of the “Age of Data” that is probably best illustrated by Chris Anderson’s 
 [“The End of Theory: The Data Deluge Makes the Scientific Method Obsolete”](https://www.wired.com/2008/06/pb-theory/ ) in Wired where he claimed that the world of 
@@ -106,7 +106,7 @@ future AI will need is very different.
 One promising avenue is **synthetic data**, artificially generated data that can augment or even replace real-world data. The potential of synthetic data has been met with both 
 excitement and skepticism. Some research, such as the paper "AI models collapse when trained on recursively generated data" (https://www.nature.com/articles/s41586-024-07566-y), 
 suggests that models trained solely on their own outputs can degrade. However, I believe these limitations can be overcome by generating synthetic data from diverse and more 
-complex models, as argued in "On the Diversity of Synthetic Data and its Impact on Training Large Language Models" (https://arxiv.org/abs/2410.15226). There is a rich and 
+complex models, as argued in ["On the Diversity of Synthetic Data and its Impact on Training Large Language Models"](https://arxiv.org/abs/2410.15226). There is a rich and 
 growing body of work on how to best generate and use synthetic data that I won't review here (see e.g. 
 [“Machine Learning for Synthetic Data Generation: A Review”](https://arxiv.org/abs/2302.04062) and 
 [“Generative AI for Synthetic Data Generation: Methods, Challenges and the Future”](https://arxiv.org/abs/2403.04190) ).
@@ -120,10 +120,10 @@ The future of data lies in moving beyond these limitations. My hypothesis is tha
 capture much better data. In fact, they will capture superhuman data. We are on the cusp of an era where AI agents, equipped with advanced sensors and sophisticated reasoning 
 capabilities, will interact directly with the world, generating data that is richer, more accurate, and less filtered by human interpretation. Multimodal agents, such as Google 
 Deepmind's [Astra](https://deepmind.google/technologies/project-astra/), will be deployed in real environments to create better data and representations of the world, enabling new 
-forms of scientific discovery, as previewed in "Scientific discovery in the age of artificial intelligence" (https://www.nature.com/articles/s41586-023-06221-2). 
+forms of scientific discovery, as previewed in ["Scientific discovery in the age of artificial intelligence"](https://www.nature.com/articles/s41586-023-06221-2). 
 **This is not to say that we should expect or even desire a monolithic Artificial General Intelligence. As I have argued elsewhere, specialized, superhuman agents are likely 
 to be both more achievable and more beneficial in addressing specific, complex challenges** (see my 
-[“Beyond Singular Intelligence: Exploring Multi-Agent Systems and Multi-LoRA in the Quest for AGI”]9https://amatria.in/blog/multiagents)).
+[“Beyond Singular Intelligence: Exploring Multi-Agent Systems and Multi-LoRA in the Quest for AGI”](https://amatria.in/blog/multiagents)).
 Consider autonomous vehicles like Waymo's. While currently limited in scope, they represent a first step towards this future. These vehicles collect vast amounts of real-time 
 data about the world, data that can be used to improve their own performance and, crucially, could be used to create richer datasets beyond the task of driving. In the near 
 future, we can envision AI agents designed explicitly for data collection and generation, operating across a wide range of domains, from materials science to medical research.
