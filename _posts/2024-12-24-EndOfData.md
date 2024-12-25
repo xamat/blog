@@ -1,6 +1,6 @@
 ---
 id: 116
-title: "The end of the "Age of Data"? Enter the age of superhuman data and AI"
+title: 'The end of the "Age of Data"? Enter the age of superhuman data and AI'
 date: '2024-12-24T00:00:01+00:00'
 author: Xavier
 permalink: /ageofdata
