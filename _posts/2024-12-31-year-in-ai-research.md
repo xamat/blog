@@ -4,9 +4,9 @@ title: '2024: A Year in AI Research'
 date: '2024-12-31T00:00:01+00:00'
 author: Xavier
 permalink: /ageofdata
-image: /blog/images/117-0.png
+image: /blog/images/117-0.jpeg
 header:
-  teaser: /images/117-0.png
+  teaser: /images/117-0.jpeg
 reading_time:
     - ''
     - ''
@@ -25,7 +25,7 @@ grouped them into categories. In each category I kept them ordered by publicatio
 
 Of course, this is a highly curated and probably biased list. I hope you enjoy it, and please let me know what was your favorite paper that I missed!
 
-<img src="/blog/images/117-0.png">
+<img src="/blog/images/117-0.jpeg">
 
 
 # LLMs, surveys and new models
@@ -42,7 +42,7 @@ Of course, this is a highly curated and probably biased list. I hope you enjoy i
 10. *[Movie Gen: A Cast of Media Foundation Models](https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/ )* - Meta's MovieGen showcases the impressive capabilities of foundation models in the realm of multimedia generation. This collection of models achieves state-of-the-art results on a wide range of tasks, including text-to-video, video-to-audio, and text-to-audio generation. *This work highlights the growing power of AI to create and manipulate different forms of media, opening up exciting possibilities for creative expression and content generation.*
 11. *[Deepseek v3 technical report](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf )* - The DeepSeek-V3 technical report is a testament to the fact that you don't need a massive budget to build a state-of-the-art LLM. This model has been making waves in the AI community due to its impressive performance, achieved with a surprisingly small training budget. *This report provides valuable insights into how to efficiently train high-performing LLMs, making it a valuable resource for researchers and developers working with limited resources.*
 
-<img src="/blog/images/117-1.png">
+<img src="/blog/images/117-1.pdf">
 From our "Large Language Models: A Survey"
 
 # New techniques
@@ -101,4 +101,4 @@ From our "Large Language Models: A Survey"
 1. [New Computer Evaluation Metrics for a Changing World](https://cacm.acm.org/opinion/new-computer-evaluation-metrics-for-a-changing-world/ ) - This paper argues for the need to rethink traditional computer performance metrics in light of the changing landscape of computing. The authors, my colleagues at Google, propose new metrics that take into account factors like energy efficiency, sustainability, and the specific needs of modern workloads, such as AI and machine learning. This is a timely and important contribution that will be relevant to anyone involved in designing, evaluating, or using computer systems.
 1. [Hardware Trends Impacting Floating-Point Computations In Scientific Applications](https://arxiv.org/abs/2411.12090 ) - This paper explores the complex interplay between hardware trends and the precision requirements of scientific computing. The authors analyze how different floating-point formats and hardware architectures affect the accuracy and performance of scientific applications. This research provides valuable insights for developers of scientific software, helping them navigate the trade-offs between precision, performance, and efficiency in the context of evolving hardware.
 
-<img src="/blog/images/117-2.png">
+<img src="/blog/images/117-2.jpeg">
