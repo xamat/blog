@@ -42,7 +42,7 @@ Of course, this is a highly curated and probably biased list. I hope you enjoy i
 10. *[Movie Gen: A Cast of Media Foundation Models](https://ai.meta.com/research/publications/movie-gen-a-cast-of-media-foundation-models/ )* - Meta's MovieGen showcases the impressive capabilities of foundation models in the realm of multimedia generation. This collection of models achieves state-of-the-art results on a wide range of tasks, including text-to-video, video-to-audio, and text-to-audio generation. *This work highlights the growing power of AI to create and manipulate different forms of media, opening up exciting possibilities for creative expression and content generation.*
 11. *[Deepseek v3 technical report](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf )* - The DeepSeek-V3 technical report is a testament to the fact that you don't need a massive budget to build a state-of-the-art LLM. This model has been making waves in the AI community due to its impressive performance, achieved with a surprisingly small training budget. *This report provides valuable insights into how to efficiently train high-performing LLMs, making it a valuable resource for researchers and developers working with limited resources.*
 
-<img src="/blog/images/117-1.pdf">
+<img src="/blog/images/117-1.png">
 From our "Large Language Models: A Survey"
 
 # New techniques
