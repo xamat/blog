@@ -3,7 +3,7 @@ id: 117
 title: '2024: A Year in AI Research'
 date: '2024-12-31T00:00:01+00:00'
 author: Xavier
-permalink: /ageofdata
+permalink: /2024research
 image: /blog/images/117-0.jpeg
 header:
   teaser: /images/117-0.jpeg
