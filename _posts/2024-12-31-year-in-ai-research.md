@@ -26,7 +26,7 @@ grouped them into categories. In each category I kept them ordered by publicatio
 Of course, this is a highly curated and probably biased list. I hope you enjoy it, and please let me know what was your favorite paper that I missed!
 
 <img src="/blog/images/117-0.jpeg">
-#Imagen3. Prompt= "Futuristic cityscape under construction in 2024, representing rapid progress in AI research, many buildings under construction, robots, drones, holographic blueprints, but also trees and nature and happy people and children, each building a different research area, detailed, cinematic lighting, concept art, warm colors"#
+*Imagen3. Prompt= "Futuristic cityscape under construction in 2024, representing rapid progress in AI research, many buildings under construction, robots, drones, holographic blueprints, but also trees and nature and happy people and children, each building a different research area, detailed, cinematic lighting, concept art, warm colors"*
 
 - [LLMs, surveys and new models](#models)
 - [New techniques](#techniques)
@@ -112,4 +112,4 @@ Of course, this is a highly curated and probably biased list. I hope you enjoy i
 1. **[Hardware Trends Impacting Floating-Point Computations In Scientific Applications](https://arxiv.org/abs/2411.12090 )** - This paper explores the complex interplay between hardware trends and the precision requirements of scientific computing. The authors analyze how different floating-point formats and hardware architectures affect the accuracy and performance of scientific applications. **This research provides valuable insights for developers of scientific software, helping them navigate the trade-offs between precision, performance, and efficiency in the context of evolving hardware**.
 
 <img src="/blog/images/117-2.jpeg">
-#Imagen3. Prompt = "2024, AI research depicted as a challenging mountain range, climbers making progress on each peak, representing breakthroughs and ongoing efforts, detailed, cinematic lighting, concept art"#
+*Imagen3. Prompt = "2024, AI research depicted as a challenging mountain range, climbers making progress on each peak, representing breakthroughs and ongoing efforts, detailed, cinematic lighting, concept art"*
