@@ -15,7 +15,7 @@ categories:
     - research
 ---
 
-# Introduction
+
 
 2024 has been an intense year for AI. While some argue that we haven’t made much progress, I beg to differ. It is true that many of the research advances from 2023 have still 
 not made it to mainstream applications. But, that doesn’t mean that research is not making progress all around! 
