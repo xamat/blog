@@ -1,6 +1,6 @@
 document.getElementById('closeChatbot').addEventListener('click', function() {
     var chatbot = document.getElementById('chatbot');
-    if (chatbot.style.display === 'none') {
+    if (chatbot.style.display == 'none') {
         chatbot.style.display = 'block';
         this.textContent = 'X';
         // Position for the open chatbot (inside the iframe)
