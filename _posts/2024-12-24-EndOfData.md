@@ -68,6 +68,7 @@ represented. They also pay special attention to having the right “data mix” 
 “roughly 50% of tokens corresponding to general knowledge, 25% of mathematical and reasoning tokens, 17% code tokens, and 8% multilingual tokens”. Note that the category of 
 “general knowledge” could be broken down into whatever domains are important or relevant.
 
+A highlight of this data-driven approach to LLM training is the ["FineWeb Datasets"](https://arxiv.org/abs/2406.17557) by HuggingFace. These datasets, and the associated publication, are a clear example of how important curation has become whenever training LLMs on publicly available data.
 
 # Beyond the Web: The Value of Proprietary and Labeled Data
 
