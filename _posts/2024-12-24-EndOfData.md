@@ -19,7 +19,7 @@ categories:
 
 In the ever-shifting landscape of Artificial Intelligence, pronouncements of the 'end of an era' are surprisingly common. 
 The latest such declaration comes from Ilya Sutskever who recently suggested that the 'age of data'—a period defined by the
-relentless pursuit of ever-larger datasets— [is drawing to a close](https://www.youtube.com/watch?v=YD-9NG1Ke5Y)  . 
+relentless pursuit of ever-larger datasets— [is drawing to a close](https://www.youtube.com/watch?v=YD-9NG1Ke5Y)  . "Peak data" is the term used.
 But is he right?  This post will argue that the age of data is far from over. Instead, it's transforming into something even more powerful: an age of superhuman data.
 
 <img src="/blog/images/116-0.png">
