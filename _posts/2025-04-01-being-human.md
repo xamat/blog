@@ -1,6 +1,6 @@
 ---
 id: 118
-title: 'Being Human in the Age of AI: Critical Thinking, Agency, and Scientific Discovery'
+title: 'Being Human in the Age of AI: On Critical Thinking, Agency, and Scientific Discovery'
 date: '2025-04-01T00:00:01+00:00'
 author: Xavier
 permalink: /2025human
