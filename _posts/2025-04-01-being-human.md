@@ -4,9 +4,9 @@ title: 'Being Human in the Age of AI: Critical Thinking, Agency, and Scientific 
 date: '2025-04-01T00:00:01+00:00'
 author: Xavier
 permalink: /2025human
-image: /blog/images/118-0.jpeg
+image: /blog/images/118-0.png
 header:
-  teaser: /images/118-0.jpeg
+  teaser: /images/118-0.png
 reading_time:
     - ''
     - ''
@@ -15,7 +15,6 @@ categories:
     - research
     - philosophy
 ---
-
 
 We seem to be living through a pivotal moment, often dubbed the ["Age of AI"](https://www.gatesnotes.com/the-age-of-ai-has-begun). It feels like barely a day goes by without news of another AI breakthrough that promises to revolutionize how we live, work, and perhaps even think. This rapid advancement naturally leads to big questions: What does it mean to be human when machines become increasingly intelligent? Is intelligence really what defines us?
 
