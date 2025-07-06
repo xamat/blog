@@ -18,6 +18,8 @@ categories:
 
 Eighteen months ago, I wrote a post on how Large Language Models would change software development, sharing my early experiences with the technology. You can read those initial thoughts [here](https://amatriain.net/blog/aidevelopment). A lot of things have happened since then, and my early observations are by now way outdated. That is why I decided to spend some time during a recent break to work on my side project and see how much better things are now.
 
+<img src="/blog/images/119-0.png">
+
 This time, my primary tool was [Cursor](https://cursor.sh/), an AI-first code editor, which I used almost exclusively in its agentic mode. I experimented with various backend models, including Gemini 1.5 Pro and Claude 3 Sonnet, though I often found myself defaulting to the "Auto" setting. I also incorporated [Jules](https://jules.google.com/), Google's own software development agent, into my workflow.
 
 Instead of starting a project from scratch, I decided to undertake a full refactoring of my old project, [Xavibot](https://github.com/xamat/Xavibot). The objective was to test the mettle of these AI agents on a relatively complex codebase while attempting substantial changes—a scenario often trickier than a clean-slate build.
