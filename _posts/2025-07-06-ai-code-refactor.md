@@ -1,7 +1,7 @@
 ---
 id: 119
 title: "The AI Co-Developer 18 Months Later"
-date: '2025-07-07T00:00:01+00:00'
+date: '2025-07-06T00:00:01+00:00'
 author: Xavier
 permalink: /ai-code-refactor
 image: /blog/images/119-0.png
