@@ -6,7 +6,7 @@ author: Xavier
 permalink: /ai-code-refactor
 image: /blog/images/119-0.png
 header:
-  teaser: /blog/images/119-0.png
+  teaser: /images/119-0.png
 reading_time:
   - ''
   - ''
