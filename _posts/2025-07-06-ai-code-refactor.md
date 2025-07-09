@@ -50,4 +50,4 @@ Despite the significant strides in AI-assisted development, there were several a
 
 All that said, this is a huge improvement in developer experience in only 18 months, and I was able to do a lot of work in just a few days. For my next iteration, I might refactor the Node.js backend to Python, since I have no reason to maintain the Node.js approach and Python APIs are usually updated sooner.
 
-I invite you to try out the new and improved [Xavibot](https://amatriain.net/Xavibot/) and let me know your thoughts. Any other suggestions on what other features to add? Again, code is available [here](https://github.com/xamat/Xavibot)
+I invite you to try out the new and improved [Xavibot](https://amatriain.net/Xavibot/) directly here in this blog or visiting the URL directly. Let me know your thoughts. Any other suggestions on what other features to add? Again, code is available [here](https://github.com/xamat/Xavibot)
