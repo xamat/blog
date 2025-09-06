@@ -62,3 +62,22 @@ No discussion of the future of AI would be complete without mentioning Andrej Ka
 However, Karpathy is also a pragmatist. In [another tweet](https://x.com/karpathy/status/1960803117689397543), he raised a crucial question about the scalability of reward functions. He expressed some doubt that we can design reward functions that can scale all the way to AGI. And he has a point. While it's relatively straightforward to design a verifiable rewards for a math problem or a coding challenge, what's the verifiable rewards for writing a beautiful poem or a compelling story? How do we create a reward function for "common sense"?
 
 This is the central challenge we face. As we push our models to tackle more complex and nuanced tasks, the line between verifiable and subjective rewards will inevitably blur. But that doesn't mean we should abandon the pursuit. The progress we're seeing with RLVR in domains like math, science, and coding is a testament to its potential. It might not be the silver bullet that gets us all the way to AGI, but it's a massive step in the right direction. It's a step towards models that don't just talk the talk but can actually walk the walk of reason. And that, in itself, is a revolution.
+
+### References
+
+* Amatriain, X. (2024). *Beyond Token Prediction: the post-Pretraining journey of modern LLMs*. <https://amatria.in/blog/postpretraining>
+* Minae, S., et al. (2024). *Large language models: A survey*. <https://arxiv.org/abs/2402.06196>
+* Li, Z., et al. (2024). *Reinforcement Learning with Verifiable Rewards*. <https://arxiv.org/abs/2411.15124>
+* Fireworks.ai. *Reinforcement Learning with Verifiable Reward*. <https://fireworks.ai/blog/reinforcement-learning-with-verifiable-reward>
+* SemiAnalysis. (2025). *Scaling Reinforcement Learning: Environments, Reward Hacking, Agents, & Scaling Data*. <https://semianalysis.com/2025/06/08/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data/>
+* DeepSeek-AI. (2025). *DeepSeek-V2: A Strong, Economical, and Open-Source Mixture-of-Experts Language Model*. <https://arxiv.org/html/2501.12948>
+* Uhr, N. (2025). *Implementing Deepseek's GRPO from scratch*. Hugging Face Blog. <https://huggingface.co/blog/NormalUhr/grpo>
+* Lightning AI. *Build a reasoning LLM from scratch using GRPO*. <https://lightning.ai/lightning-purchase-test/studios/build-a-reasoning-llm-from-scratch-using-grpo?section=featured>
+* OpenAI. (2023). *Improving mathematical reasoning with process supervision*. <https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/>
+* Lightman, H., et al. (2023). *Let's Verify Step by Step*. <https://arxiv.org/abs/2305.20050>
+* Lambert, N. (2025). *What Comes Next with Reinforcement*. Interconnects.ai. <https://www.interconnects.ai/p/what-comes-next-with-reinforcement>
+* The Future of AI Agents. (Video). <https://www.youtube.com/watch?v=JIsgyk0Paic>
+* Wang, X., et al. (2022). *Self-Consistency Improves Chain of Thought Reasoning in Language Models*. <https://arxiv.org/abs/2203.11171v4>
+* Yao, S., et al. (2023). *Tree of Thoughts: Deliberate Problem Solving with Large Language Models*. <https://arxiv.org/abs/2305.10601v1>
+* Karpathy, A. (2025). Twitter Post on RL Bull Case. <https://x.com/karpathy/status/1944435412489171119>
+* Karpathy, A. (2025). Twitter Post on Reward Function Scalability. <https://x.com/karpathy/status/1960803117689397543>
