@@ -3,7 +3,7 @@ id: 120
 title: "The post-training journey of modern LLMs revisited"
 date: '2025-09-06T00:00:01+00:00'
 author: Xavier
-permalink: /postpretraining
+permalink: /postpretraining-revisted
 image: /blog/images/120-0.png
 header:
   teaser: /images/120-0.png
