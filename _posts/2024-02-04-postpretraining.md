@@ -17,6 +17,8 @@ categories:
 
 (This blog post, as most of my recent ones, is written with AI assistance and augmentation)
 
+(**Note**: If you came here looking for the more recent part 2 of this post, you will find it [here](https://amatria.in/blog/postpretraining-revisted))
+
 Large Language Models (LLMs) like GPT-4 are often simplified as mere probabilistic token predictors, a perspective I've shared in the past to demystify their 
 capabilities and temper the surrounding hype. Yet, this view undersells the true sophistication of modern LLMs. If you've had the opportunity to interact with frontier 
 models such as GPT-4, you might have noticed abilities that hint at something beyond simple token prediction. This post isn't about convincing you of their advanced 
@@ -163,4 +165,7 @@ expectations.
 
 So, the next time the conversation turns to the nature of LLMs, remember that these models are the product of a rich tapestry of innovations, each adding depth and dimension 
 to their interactions with the world. Let's embrace the complexity and continue to push the boundaries of what these extraordinary tools can achieve
+
+(Onto [part 2](https://amatria.in/blog/postpretraining-revisted)!
+
 
