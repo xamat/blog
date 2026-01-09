@@ -85,7 +85,7 @@ author:
       icon: "fab fa-fw fa-quora"
       url: "https://quora.com/profile/Xavier-Amatriain"
 header:
-  overlay_image: /assets/Splash6.jpg
+  overlay_image: /assets/Splash-Barcelona1.png
   
 footer:
   links:
@@ -120,7 +120,7 @@ defaults:
       permalink: "/:categories/images/:title/"
       teaser: https://amatria.in/blog/images/110-0.png
       header:
-          overlay_image: /assets/Splash6.jpg
+          overlay_image: /assets/Splash-Barcelona1.png
           show_overlay_excerpt: false
           overlay_filter: 0.5
   # _pages
