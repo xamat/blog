@@ -46,6 +46,8 @@ It’s also why the first RecSys conference was held in Minneapolis—and why go
 
 I deliberately intertwined recommender systems history with the history of AI, because the two have been co-evolving for decades:
 
+<img src="/blog/images/123-1a.png">
+
 * **1950s**: “Artificial Intelligence” is coined at Dartmouth; Rosenblatt publishes the perceptron paper.
 * **1969 → 1970s**: Minsky’s critique leads to the first AI winter.
 * **1980s**: expert systems become fashionable again; then people rediscover their brittleness and scaling limits.
@@ -158,6 +160,8 @@ Bill Gates wrote, “the age of AI has begun.” I used that line to mark the pr
 ## Two parameters → trillions of parameters
 
 I showed a plot: transformer research families over time, parameter counts rising from ~100M to beyond a trillion. It’s worth repeating the contrast because it captures the discontinuity: earlier I showed a recommender with two parameters (popularity weight and predicted-rating weight). Now we’re in a world where models have trillions of parameters. All of those parameters still get learned from data—just through a very different pipeline.
+
+<img src="/blog/images/123-4b.png">
 
 ## Even “research impact” got weird
 
