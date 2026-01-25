@@ -1,5 +1,5 @@
 ---
-id: 122
+id: 123
 title: "Recommending in the Age of AI: How we got here and what comes next - My Recsys 2025 keynote"
 date: '2026-01-24T00:00:01+00:00'
 author: Xavier
@@ -194,44 +194,67 @@ pure prompting (like my demos)
 # Part III — What’s next
 
 I started this section with a screenshot from a startup called Fable: “Netflix for generative content.” The proposition is an extreme endpoint of personalization: not only recommending content but generating content, on the fly, personalized to each user. That’s “the last step” of personalization in one direction.
+
 Then I returned again—intentionally—to the product triad:
-UX design (especially in multimodal / agentic worlds)
-Domain knowledge + deep, continuous user knowledge
-Evaluation (now vastly harder)
-Demo 3: a recommendation agent (Localify)
+* UX design (especially in multimodal / agentic worlds)
+* Domain knowledge + deep, continuous user knowledge
+* Evaluation (now vastly harder)
+
+**Demo 3: a recommendation agent (Localify)**
+
 I showed an agent built with Google AgentSpace. I called it “Localify.” Its job was simple: ask the user about tastes, search local events, and help find tickets. In the live demo, the agent didn’t ask the preference questions because it already “knew” my earlier answers (I had tested it). Based on what it remembered—rock, jazz, music, cinema—it recommended:
-an indie rock concert
-a jazz evening
-an independent drama film
+* an indie rock concert
+* a jazz evening
+* an independent drama film
+
 Then it helped find a link for tickets. What I wanted to emphasize was how small the barrier has become:
-the agent prompt was basic
-I used “help me write” and the LLM improved the prompt
-it took minutes, not weeks
+* the agent prompt was basic
+* I used “help me write” and the LLM improved the prompt
+* it took minutes, not weeks
+
 And if you want to make it more powerful, you can connect it to tools: calendar, email, enterprise systems, backend databases, …and even (dangerously) payment.
+
 (AI digression — the moment you add tools, you import responsibility) In one of my posts, I put it bluntly: AI is great for organizing/analyzing data, but it doesn’t have “gut,” intuition, or accountability—and that’s precisely why human judgment remains central. That maps directly to agents: the moment an agent can act, UX design and safety constraints stop being secondary concerns.
-Project Mariner: agents that browse the web
+
+## Project Mariner: agents that browse the web
+
 I then showed a more advanced agent concept (Project Mariner): it can browse the web on your behalf—scroll, click, match opportunities to your resume, and execute a multi-step flow. The only additional capability (conceptually) is huge: delegated navigation in human UIs.
-World models (Genie 3) and “generated reality”
+
+## World models (Genie 3) and “generated reality”
+
 I showed a clip of “Genie 3,” positioning it as a frontier: not just generating text or images, but generating interactive worlds, with real-time reactivity, “world memory” (actions persist), and promptable events. This opens a window to a future where “personalized media” is not just personalized content—it’s personalized environments.
-Deep, continuous user knowledge: the personalization paradox
-LLMs have huge world knowledge; what’s still hard is injecting knowledge about you—accurately, safely, continuously. I showed a Gemini direction: more persistent memory so you don’t need to repeat “I like jazz and indie cinema” every time. That’s the personalization paradox: the model knows the world, it still struggles to know you (and to update that knowledge responsibly).
-Research directions I highlighted
+
+## Deep, continuous user knowledge: the personalization paradox
+
+LLMs have huge world knowledge; what’s still hard is injecting knowledge about you—accurately, safely, continuously. I showed a Gemini direction: more persistent memory so you don’t need to repeat “I like jazz and indie cinema” every time. That’s the personalization paradox: **the model knows the world, it still struggles to know you (and to update that knowledge responsibly)**.
+
+## Research directions I highlighted
+
 I ended with a set of recent papers (three examples) illustrating trends:
-aligning LLM-powered systems to user feedback (and novelty)
-serendipity / novelty with multimodal signals
-hybrid strategies that combine fine-tuning (infrequent) with RAG (more frequent) to keep user modeling fresh without constantly retraining
-Conclusion: a journey from clicks to conversations
+* aligning LLM-powered systems to user feedback (and novelty)
+* serendipity / novelty with multimodal signals
+* hybrid strategies that combine fine-tuning (infrequent) with RAG (more frequent) to keep user modeling fresh without constantly retraining
+
+# Conclusion: a journey from clicks to conversations
+
 I closed with a framing I’d encourage you to keep in mind as you design systems in 2026 and beyond: We’ve revisited the recommender problem multiple times. We started with predicting stars, then clicks. We’re shifting into conversations, and now agents—long-running, tool-using systems that discover on our behalf.
+
 My current bets are:
-Agents are the future of discovery. They’ll search, filter, and propose options in the background, then surface novel things for us to engage with.
-Personalization will remain the hard part. World knowledge scales. “User knowledge” is messy, dynamic, private, and consequential.
+* **Agents are the future of discovery**. They’ll search, filter, and propose options in the background, then surface novel things for us to engage with.
+* **Personalization will remain the hard part**. World knowledge scales. “User knowledge” is messy, dynamic, private, and consequential.
 Evaluation is the new frontier. Especially for long-running, multi-step systems where value accrues over time and failure modes are subtle.
-The ultimate prize might be “media of one.” Content not only discovered for you—but created for you, on the fly, personalized to what you want right now.
+* **The ultimate prize might be “media of one.”** Content not only discovered for you—but created for you, on the fly, personalized to what you want right now.
+
 And, because this is RecSys: karaoke remains a constant—and apparently so do 7am runs.
-Q&A moments worth carrying forward
+
+# Q&A moments worth carrying forward
+
 A few audience questions surfaced important tensions:
-Recommend from catalog vs generate unique items? The cultural value of shared artifacts matters. If everyone gets a different show, what happens to shared conversation? My instinct: we’ll find hybrid dynamics—personalized creation plus social sharing (you can “send” your generated show).
-Will users really have long conversations vs passive feeds? Different modes will coexist. There are “brain-dead scroll” moments and “high-ROI search” moments (finding the next book vs watching a 30-second clip). The adoption of chat products is a strong counterexample to the idea that people never want conversational interfaces.
-If agents consume content, what incentives remain for creators? No clean answer yet. But historically, new creation tools tend to democratize creation rather than end it—and we should proactively design ecosystems that keep human creativity rewarded and visible.
+
+**Recommend from catalog vs generate unique items?** The cultural value of shared artifacts matters. If everyone gets a different show, what happens to shared conversation? My instinct: we’ll find hybrid dynamics—personalized creation plus social sharing (you can “send” your generated show).
+
+**Will users really have long conversations vs passive feeds?** Different modes will coexist. There are “brain-dead scroll” moments and “high-ROI search” moments (finding the next book vs watching a 30-second clip). The adoption of chat products is a strong counterexample to the idea that people never want conversational interfaces.
+
+**If agents consume content, what incentives remain for creators?** No clean answer yet. But historically, new creation tools tend to democratize creation rather than end it—and we should proactively design ecosystems that keep human creativity rewarded and visible.
 
 
