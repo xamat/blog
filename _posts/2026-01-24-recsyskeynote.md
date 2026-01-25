@@ -84,6 +84,8 @@ I used a simple example to make this concrete: the most basic personalized recom
 
 The task: learn w1 and w2 from user behavior data. It’s a useful toy model because it captures a core truth: the system is mostly the same loop, regardless of complexity: choose features, choose model family, estimate parameters from data, measure whether it helped users.
 
+<img src="/blog/images/123-1.png">
+
 We used to “advance ML” by adding more features and making models more complex. Feature engineering mattered and it required domain knowledge.
 
 I gave a Quora example that still resonates with me: ranking answers for a question. It sounds obvious until you try to formalize it. We had to talk to editors and journalists about what “good” meant. They said: truthful, reusable, well-formatted, not too long, the right length. That became features. And then those features got learned.
@@ -98,6 +100,8 @@ Another key arc: the problem definition evolved.
 * **Page optimization**: optimize a full surface (rows, shelves, competing modules)
 * **Context-aware**: device, time of day, location, intent—more dimensions
 
+<img src="/blog/images/123-2.png">
+
 This wasn’t an academic shift. It was driven by the reality that a product isn’t a “list.” It’s an environment. At this point in the talk I referenced two of my own prior contributions:
 * The Netflix work on “Beyond the five stars”, emphasizing why implicit feedback often beats explicit ratings for real-world optimization.
 * The “Multiverse recommendation” work (published at RecSys in Barcelona 2010), which became my most cited RecSys paper—explicitly leaning into context-aware recommendation.
@@ -110,6 +114,8 @@ To ground it, I showed the classic two-tower model:
 * user embedding tower
 * item embedding tower
 * dot product to score similarity / relevance
+
+<img src="/blog/images/123-3.png">
 
 It’s not the best model, but it’s the right mental starting point. Even in 2014 we were already experimenting with distributed neural nets in production contexts. And by 2016–2017, I was explicitly framing this as “the recommender problem revisited,” because deep learning forced us to revisit assumptions about features, modeling capacity, and system architecture.
 
@@ -136,6 +142,8 @@ I summarized the “non-algorithm” pillars as:
 * UX / design
 * Domain knowledge
 * Evaluation metrics
+
+<img src="/blog/images/123-4.png">
 
 **UX / design**: I showed an early Netflix interface where the page was packed with explanations: predicted rating, “because you watched X”, actors, director, etc. Those explanations—and the way we presented choices—often mattered as much as the model. This also connects to why Netflix ultimately moved from stars to thumbs: the UX and the feedback mechanism are part of the learning loop.
 
@@ -185,11 +193,13 @@ With five questions, it recommended: Tool, King Crimson, Animals as Leaders, Rus
 
 ### A taxonomy of how LLMs enter RecSys
 
-I referenced a diagram from the STAR paper that classifies approaches:
-pure prompting (like my demos)
+I referenced a diagram from the STAR paper that classifies approaches (see below):
+* pure prompting (like my demos)
 * prompting with user history (user–item interactions)
 * using LLMs to create semantic features/IDs/embeddings combined with collaborative signals
 * two-LLM architectures: one for semantic features + CF, another LLM for final ranking The meta-point: “using LLMs” isn’t a single technique; it’s a design space.
+
+<img src="/blog/images/123-5.png">
 
 # Part III — What’s next
 
@@ -256,5 +266,22 @@ A few audience questions surfaced important tensions:
 **Will users really have long conversations vs passive feeds?** Different modes will coexist. There are “brain-dead scroll” moments and “high-ROI search” moments (finding the next book vs watching a 30-second clip). The adoption of chat products is a strong counterexample to the idea that people never want conversational interfaces.
 
 **If agents consume content, what incentives remain for creators?** No clean answer yet. But historically, new creation tools tend to democratize creation rather than end it—and we should proactively design ecosystems that keep human creativity rewarded and visible.
+
+# References
+
+* **Amatriain, X.** (2025). [Keynote at ACM RecSys 2025](https://www.youtube.com/watch?v=TlR7douxQRM)
+* **Konstan, J. A., et al.** (1997). [GroupLens: Applying collaborative filtering to Usenet news](https://dl.acm.org/doi/10.1145/245108.245126)
+* **Koren, Y.** (2009). [The BellKor Solution to the Netflix Grand Prize](https://www2.seas.gwu.edu/~simhaweb/champalg/cf/papers/KorenBellKor2009.pdf)
+* **Karatzoglou, A., Amatriain, X., Baltrunas, L., & Oliver, N.** (2010). [Multiverse Recommendation: N-dimensional Tensor Factorization for Context-aware Collaborative Filtering.](https://dl.acm.org/doi/10.1145/1864708.1864727) 
+* **Amatriain, X. & Basilico, J.** (2012). [Netflix Recommendations: Beyond the 5 stars.](https://netflixtechblog.com/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429)
+* **Le, Q. V., et al.** (2012). [Building high-level features using large scale unsupervised learning (The "Cat" paper).](https://arxiv.org/abs/1112.6209) 
+* **Covington, P., et al.** (2016). [Deep Neural Networks for YouTube Recommendations.](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf)
+* **Vaswani, A., et al.** (2017). [Attention Is All You Need](https://arxiv.org/abs/1706.03762).
+* **Amatriain, X.** (2024). [Transformer models: an introduction and catalog.](https://arxiv.org/abs/2302.07730)
+* **Minaee, S., et al.** (2024). [Large Language Models: A Survey.](https://arxiv.org/abs/2402.06196)
+* **Amatriain, X.** (2024). [Prompt Design and Engineering: Introduction and Advanced Methods.](https://arxiv.org/abs/2401.14423)
+* **Lee, D., et al.** (2024) [STAR: A Simple Training-free Approach for Recommendations using Large Language Models](https://arxiv.org/abs/2410.16458)
+* **Wang, J., et al** (2025) [User Feedback Alignment for LLM-powered Exploration in Large-scale Recommendation Systems](https://arxiv.org/abs/2504.05522)
+* **Meng, C., et al.** (2025) [Balancing Fine-tuning and RAG: A Hybrid Strategy for Dynamic LLM Recommendation Updates] (https://arxiv.org/abs/2510.20260)
 
 
