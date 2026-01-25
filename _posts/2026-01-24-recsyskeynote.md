@@ -18,11 +18,9 @@ reading_time:
     - ''
 ---
 
+This blog post is a detailed summary of my recent keynote at ACM RecSys 2025 in Prague. You can watch the full video [https://www.youtube.com/watch?v=TlR7douxQRM](here).
 
 <img src="/blog/images/123-0.png">
-
-
-This blog post is a detailed summary of my recent keynote at ACM RecSys 2025 in Prague. You can watch the full video [https://www.youtube.com/watch?v=TlR7douxQRM](here).
 
 I’ve been involved with RecSys for a long time. This keynote was my 11th. I attended the first six, so I was there in the early days—and I’ve watched the field repeatedly reinvent itself.
 
