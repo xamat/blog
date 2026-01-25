@@ -18,9 +18,6 @@ reading_time:
     - ''
 ---
 
-It has been quite a while since I last shared a reading list on this blog. In the fast-paced world of technology, it’s easy to get caught up in the stream of papers and newsletters, but I’ve always found that books provide the necessary depth and historical context to truly understand where we are heading.
-As I sat down to synthesize my recent readings, I realized that the core themes converged into what I've started calling my "A-List" of recent books: Abundance, Anxiety, AI, and Algorithms. It’s a playful alliteration, but one that captures the profound tension between the potential for technological plenty and the societal costs we are only beginning to calculate. Over the past few months, I’ve been diving into a diverse set of titles that help decode these four forces, categorizing them into AI, Tech, Leadership, and "Other Important Ideas."
-
 
 <img src="/blog/images/123-0.png">
 
@@ -30,29 +27,41 @@ The current revolution isn't just about code; it's about the fundamental nature 
 
 <img src="/blog/images/123-1.png">
 
-(This blog post is a detailed summary of my recent keynote at ACM RecSys 2025 in Prague. You can watch the full video here.)
+(This blog post is a detailed summary of my recent keynote at ACM RecSys 2025 in Prague. You can watch the full video [https://www.youtube.com/watch?v=TlR7douxQRM](here).)
+
 I’ve been involved with RecSys for a long time. This keynote was my 11th. I attended the first six, so I was there in the early days—and I’ve watched the field repeatedly reinvent itself.
+
 One of my favorite personal “RecSys origin stories” is that when I transitioned from academia to industry, I found my job through this community. In Barcelona 2010, I started conversations that led me to Netflix, and eventually to many other things. I look around today and see people who have been interns with me and then followed similar paths. That’s part of what makes this community special: it’s a rare intersection of industry + academia + practitioners, with a shared obsession not only for algorithms, but for product, users, and psychology.
+
 This talk had three parts:
-How we got here (history, with some personal bias)
-Recommending in the age of GenAI (the present)
-What’s coming next (where I think we’re heading)
+* How we got here (history, with some personal bias)
+* Recommending in the age of GenAI (the present)
+* What’s coming next (where I think we’re heading)
+
 <img src="/blog/images/121-0.png">
-Part I — How We Got Here
-MovieLens v0, 1997, and the “field becomes a field”
+
+### Part I — How We Got Here
+
+## MovieLens v0, 1997, and the “field becomes a field”
+
 Early in the talk I put up a screenshot that not everyone recognized: MovieLens v0 (published around 1997). For me, that interface is more than nostalgia. It’s a marker that a set of ideas turned into a recognizable field—built by Joe Konstan, the late John Riedl, and the rest of the University of Minnesota team.
+
 It’s also why the first RecSys conference was held in Minneapolis—and why going back there feels like a loop closing and reopening.
-AI history, intertwined with RecSys history
+
+# AI history, intertwined with RecSys history
+
 I deliberately intertwined recommender systems history with the history of AI, because the two have been co-evolving for decades:
-1950s: “Artificial Intelligence” is coined at Dartmouth; Rosenblatt publishes the perceptron paper.
-1969 → 1970s: Minsky’s critique leads to the first AI winter.
-1980s: expert systems become fashionable again; then people rediscover their brittleness and scaling limits.
-1987–1993: another AI winter.
-1997: MovieLens, early RS papers.
-2006–2009: Netflix Prize (we’ll spend time here).
-2007: RecSys conference starts (on the heels of Netflix Prize energy).
-2011–2016: deep learning momentum hits recommender systems (YouTube DL recommender paper is a major moment).
-2018: Transformers (“Attention is All You Need”).
+
+* 1950s: “Artificial Intelligence” is coined at Dartmouth; Rosenblatt publishes the perceptron paper.
+* 1969 → 1970s: Minsky’s critique leads to the first AI winter.
+* 1980s: expert systems become fashionable again; then people rediscover their brittleness and scaling limits.
+* 1987–1993: another AI winter.
+* 1997: MovieLens, early RS papers.
+* 2006–2009: Netflix Prize (we’ll spend time here).
+* 2007: RecSys conference starts (on the heels of Netflix Prize energy).
+* 2011–2016: deep learning momentum hits recommender systems (YouTube DL recommender paper is a major moment).
+* 2018: Transformers (“Attention is All You Need”).
+
 This timeline matters because it shows a pattern: RS progresses when model capability, data availability, and product surfaces line up—and stalls (or misleads us) when we optimize the wrong abstractions.
 Netflix Prize: a turning point, and a lesson about proxies
 The Netflix Prize (2006–2009) was pre-Kaggle, pre-everything we now take for granted. It was a massive public experiment. The goal was framed as “better recommendations,” but the proxy objective was explicit: improve RMSE on rating prediction by 10%, win $1M.
