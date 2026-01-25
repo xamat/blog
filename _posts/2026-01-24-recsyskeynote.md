@@ -21,11 +21,6 @@ reading_time:
 
 <img src="/blog/images/123-0.png">
 
-### AI and the AI Revolution
-
-The current revolution isn't just about code; it's about the fundamental nature of intelligence and the hardware that powers it.
-
-<img src="/blog/images/123-1.png">
 
 (This blog post is a detailed summary of my recent keynote at ACM RecSys 2025 in Prague. You can watch the full video [https://www.youtube.com/watch?v=TlR7douxQRM](here).)
 
@@ -34,13 +29,12 @@ I’ve been involved with RecSys for a long time. This keynote was my 11th. I at
 One of my favorite personal “RecSys origin stories” is that when I transitioned from academia to industry, I found my job through this community. In Barcelona 2010, I started conversations that led me to Netflix, and eventually to many other things. I look around today and see people who have been interns with me and then followed similar paths. That’s part of what makes this community special: it’s a rare intersection of industry + academia + practitioners, with a shared obsession not only for algorithms, but for product, users, and psychology.
 
 This talk had three parts:
-* How we got here (history, with some personal bias)
-* Recommending in the age of GenAI (the present)
-* What’s coming next (where I think we’re heading)
+* **How we got here** (history, with some personal bias)
+* **Recommending in the age of GenAI** (the present)
+* **What’s coming next** (where I think we’re heading)
 
-<img src="/blog/images/121-0.png">
 
-### Part I — How We Got Here
+# Part I — How We Got Here
 
 ## MovieLens v0, 1997, and the “field becomes a field”
 
@@ -48,109 +42,157 @@ Early in the talk I put up a screenshot that not everyone recognized: MovieLens 
 
 It’s also why the first RecSys conference was held in Minneapolis—and why going back there feels like a loop closing and reopening.
 
-# AI history, intertwined with RecSys history
+### AI history, intertwined with RecSys history
 
 I deliberately intertwined recommender systems history with the history of AI, because the two have been co-evolving for decades:
 
-* 1950s: “Artificial Intelligence” is coined at Dartmouth; Rosenblatt publishes the perceptron paper.
-* 1969 → 1970s: Minsky’s critique leads to the first AI winter.
-* 1980s: expert systems become fashionable again; then people rediscover their brittleness and scaling limits.
-* 1987–1993: another AI winter.
-* 1997: MovieLens, early RS papers.
-* 2006–2009: Netflix Prize (we’ll spend time here).
-* 2007: RecSys conference starts (on the heels of Netflix Prize energy).
-* 2011–2016: deep learning momentum hits recommender systems (YouTube DL recommender paper is a major moment).
-* 2018: Transformers (“Attention is All You Need”).
+* **1950s**: “Artificial Intelligence” is coined at Dartmouth; Rosenblatt publishes the perceptron paper.
+* **1969 → 1970s**: Minsky’s critique leads to the first AI winter.
+* **1980s**: expert systems become fashionable again; then people rediscover their brittleness and scaling limits.
+* **1987–1993**: another AI winter.
+* **1997**: MovieLens, early RS papers.
+* **2006–2009**: Netflix Prize (we’ll spend time here).
+* **2007**: RecSys conference starts (on the heels of Netflix Prize energy).
+* **2011–2016**: deep learning momentum hits recommender systems (YouTube DL recommender paper is a major moment).
+* **2018**: Transformers (“Attention is All You Need”).
 
 This timeline matters because it shows a pattern: RS progresses when model capability, data availability, and product surfaces line up—and stalls (or misleads us) when we optimize the wrong abstractions.
-Netflix Prize: a turning point, and a lesson about proxies
+
+### Netflix Prize: a turning point, and a lesson about proxies
+
 The Netflix Prize (2006–2009) was pre-Kaggle, pre-everything we now take for granted. It was a massive public experiment. The goal was framed as “better recommendations,” but the proxy objective was explicit: improve RMSE on rating prediction by 10%, win $1M.
+
 The winning solution was instructive:
-It was an ensemble (as usual).
-It combined 104 models using a neural network.
-The “main” approaches were a matrix factorization / SVD variant and restricted Boltzmann machines (a neural net).
+* It was an ensemble (as usual).
+* It combined 104 models using a neural network.
+* The “main” approaches were a matrix factorization / SVD variant and restricted Boltzmann machines (a neural net).
+
 Then came the part I think many people remember less clearly: we took the work back to Netflix and asked, “Can we productionize it?” The answer was: not as-is.
-104 models didn’t scale well, was too slow, too complicated.
-More importantly: while we were doing that translation work, we realized something deeper: the objective itself (RMSE on ratings) was not the right question.
+* 104 models didn’t scale well, was too slow, too complicated.
+* More importantly: while we were doing that translation work, we realized something deeper: the objective itself (RMSE on ratings) was not the right question.
+
 We did productionize SVD and RBMs—they were the first ML algorithms that went into Netflix’s product. But the Netflix Prize still taught a durable lesson: You can win the benchmark and still lose the product. Or, more precisely: your offline proxy can be “correct” and still be wrong.
-From “algorithms” to “machine learning” to “AI”
+
+### From “algorithms” to “machine learning” to “AI”
+
 Back then, we didn’t even say “machine learning.” We said algorithms. My team at Netflix was literally called Algorithms Engineering. Over time, the naming shifted: algorithms → ML → AI. That branding shift wasn’t just marketing; it reflected real changes in how systems were built and what people expected of them.
+
 I used a simple example to make this concrete: the most basic personalized recommender you can build—almost comically basic by today’s standards.
-Two features: Popularity, Predicted rating
-Two parameters:  and 
-A linear model
-The task: learn  and  from user behavior data. It’s a useful toy model because it captures a core truth: the system is mostly the same loop, regardless of complexity: choose features, choose model family, estimate parameters from data, measure whether it helped users.
+* Two features: Popularity, Predicted rating
+* Two parameters: w1 and w2 
+* A linear model
+
+The task: learn w1 and w2 from user behavior data. It’s a useful toy model because it captures a core truth: the system is mostly the same loop, regardless of complexity: choose features, choose model family, estimate parameters from data, measure whether it helped users.
+
 We used to “advance ML” by adding more features and making models more complex. Feature engineering mattered and it required domain knowledge.
+
 I gave a Quora example that still resonates with me: ranking answers for a question. It sounds obvious until you try to formalize it. We had to talk to editors and journalists about what “good” meant. They said: truthful, reusable, well-formatted, not too long, the right length. That became features. And then those features got learned.
+
 That was “old-school” ML—though, honestly, we still do versions of it today.
-The recommender problem evolved: rating → ranking → page → context
+
+### The recommender problem evolved: rating → ranking → page → context
+
 Another key arc: the problem definition evolved.
-Point-wise prediction: predict a rating (Netflix Prize era)
-Ranking: learn to order items
-Page optimization: optimize a full surface (rows, shelves, competing modules)
-Context-aware: device, time of day, location, intent—more dimensions
+* **Point-wise prediction**: predict a rating (Netflix Prize era)
+* **Ranking**: learn to order items
+* **Page optimization**: optimize a full surface (rows, shelves, competing modules)
+* **Context-aware**: device, time of day, location, intent—more dimensions
+
 This wasn’t an academic shift. It was driven by the reality that a product isn’t a “list.” It’s an environment. At this point in the talk I referenced two of my own prior contributions:
-The Netflix work on “Beyond the five stars”, emphasizing why implicit feedback often beats explicit ratings for real-world optimization.
-The “Multiverse recommendation” work (published at RecSys in Barcelona 2010), which became my most cited RecSys paper—explicitly leaning into context-aware recommendation.
-Deep learning in recommender systems: two-tower (and the promise of representation learning)
+* The Netflix work on “Beyond the five stars”, emphasizing why implicit feedback often beats explicit ratings for real-world optimization.
+* The “Multiverse recommendation” work (published at RecSys in Barcelona 2010), which became my most cited RecSys paper—explicitly leaning into context-aware recommendation.
+
+### Deep learning in recommender systems: two-tower (and the promise of representation learning)
+
 Then came deep learning’s major wave in RecSys—roughly 2011 onward—culminating in the “deep learning for YouTube recommendations” moment that hit this community hard.
+
 To ground it, I showed the classic two-tower model:
-user embedding tower
-item embedding tower
-dot product to score similarity / relevance
+* user embedding tower
+* item embedding tower
+* dot product to score similarity / relevance
+
 It’s not the best model, but it’s the right mental starting point. Even in 2014 we were already experimenting with distributed neural nets in production contexts. And by 2016–2017, I was explicitly framing this as “the recommender problem revisited,” because deep learning forced us to revisit assumptions about features, modeling capacity, and system architecture.
-(Geeky rabbit hole — Deep learning “replaced feature engineering”… but RecSys had already been blending paradigms)
+
+**(Geeky rabbit hole — Deep learning “replaced feature engineering”… but RecSys had already been blending paradigms)**
+
 Deep learning’s promise was: “stop hand-crafting features; the model learns representations.” But there’s a subtle connection to how recommenders already worked. Even matrix factorization is, in a sense, a hybrid of:
-unsupervised structure learning (dimensionality reduction, latent factors)
-supervised signal (ratings, implicit feedback)
+* unsupervised structure learning (dimensionality reduction, latent factors)
+* supervised signal (ratings, implicit feedback)
+
 We were already combining unsupervised and supervised approaches in clustering and latent-factor methods. Deep learning didn’t invent the idea; it industrialized it and scaled it—and then moved us more explicitly into self-supervision.
+
 I tied this to the “multi-layer cake” framing of modern ML:
-self-supervised pretraining
-supervised fine-tuning
-reinforcement learning / alignment as the “icing”
+* self-supervised pretraining
+* supervised fine-tuning
+* reinforcement learning / alignment as the “icing”
+
 This “layered training” view is something I’ve written about in the context of modern LLMs—especially the idea that “token prediction” alone undersells what post-pretraining adds.
-It’s not only about algorithms
+
+## It’s not only about algorithms
+
 At this point I paused and emphasized a point that’s easy to say and hard to operationalize: In recommender systems, the algorithm is rarely the whole system.
+
 I summarized the “non-algorithm” pillars as:
-UX / design
-Domain knowledge
-Evaluation metrics
-UX / design: I showed an early Netflix interface where the page was packed with explanations: predicted rating, “because you watched X”, actors, director, etc. Those explanations—and the way we presented choices—often mattered as much as the model. This also connects to why Netflix ultimately moved from stars to thumbs: the UX and the feedback mechanism are part of the learning loop.
-Domain knowledge: Even with deep learning, you still need domain knowledge—especially in constrained domains like healthcare. Constraints aren’t optional; they’re foundational.
-Evaluation metrics: You need offline and online evaluation. You must iterate fast with offline proxies, validate with online experiments, and connect short-term metrics to long-term satisfaction/retention. I cited a memorable result from a YouTube team study: long-term satisfaction was causally linked not merely to “more consumption,” but to diversity of content consumed. If you get people to consume a more diverse set of content, they tend to be more satisfied in the long run. That finding matters because it’s a reminder that “maximize clicks” is not the same thing as “maximize sustained satisfaction.”
-Part II — Recommending in the age of GenAI
+* UX / design
+* Domain knowledge
+* Evaluation metrics
+
+**UX / design**: I showed an early Netflix interface where the page was packed with explanations: predicted rating, “because you watched X”, actors, director, etc. Those explanations—and the way we presented choices—often mattered as much as the model. This also connects to why Netflix ultimately moved from stars to thumbs: the UX and the feedback mechanism are part of the learning loop.
+
+**Domain knowledge**: Even with deep learning, you still need domain knowledge—especially in constrained domains like healthcare. Constraints aren’t optional; they’re foundational.
+
+**Evaluation metrics**: You need offline and online evaluation. You must iterate fast with offline proxies, validate with online experiments, and connect short-term metrics to long-term satisfaction/retention. I cited a memorable result from a YouTube team study: long-term satisfaction was causally linked not merely to “more consumption,” but to diversity of content consumed. If you get people to consume a more diverse set of content, they tend to be more satisfied in the long run. That finding matters because it’s a reminder that “maximize clicks” is not the same thing as “maximize sustained satisfaction.”
+
+# Part II — Recommending in the age of GenAI
+
 Bill Gates wrote, “the age of AI has begun.” I used that line to mark the present moment—because Transformers, LLMs, and GenAI changed both the research conversation and the product conversation.
-Two parameters → trillions of parameters
+
+## Two parameters → trillions of parameters
+
 I showed a plot: transformer research families over time, parameter counts rising from ~100M to beyond a trillion. It’s worth repeating the contrast because it captures the discontinuity: earlier I showed a recommender with two parameters (popularity weight and predicted-rating weight). Now we’re in a world where models have trillions of parameters. All of those parameters still get learned from data—just through a very different pipeline.
-Even “research impact” got weird
+
+## Even “research impact” got weird
+
 I mentioned how my citations changed dramatically in 2024–2025 because I posted three arXiv works: an LLM survey, a prompt design/engineering publication, and my transformer catalog. They weren’t even peer-reviewed in the traditional sense—yet the field’s attention was so concentrated that the impact was immediate. That’s not a moral argument; it’s an observation about attention allocation in the current research ecosystem.
-How GenAI is already changing recommender systems
+
+## How GenAI is already changing recommender systems
+
 I gave three examples (largely from Google) to illustrate trends:
-LLMs for understanding preferences
-Generative retrieval
-Transformers applied to content-heavy recommendation contexts (e.g., music)
+* LLMs for understanding preferences
+* Generative retrieval
+* Transformers applied to content-heavy recommendation contexts (e.g., music)
+
 Then I returned again to the earlier triad (UX, domain knowledge, evaluation) and argued they still matter—but differently now:
-UX and AI are now intertwined; sometimes the UX is the AI (chatbot-style discovery).
-Pretrained foundation models carry a lot of domain knowledge out of the box—but domain expertise still matters for constraints and evaluation.
-Evaluation is arguably more important now; measuring GenAI is hard, and feedback loops are subtle.
-Demo 1: “basic LLM” recommendation from a handful of shows
+* UX and AI are now intertwined; sometimes the UX is the AI (chatbot-style discovery).
+* Pretrained foundation models carry a lot of domain knowledge out of the box—but domain expertise still matters for constraints and evaluation.
+* Evaluation is arguably more important now; measuring GenAI is hard, and feedback loops are subtle.
+
+**Demo 1: “basic LLM” recommendation from a handful of shows**
+
 I demonstrated a simple prompt in Gemini: I gave it four Netflix shows I liked and asked for recommendations. What mattered wasn’t only the recommendation list—it was the “thinking trace” the model surfaced: identify attributes, extract themes, find common threads, craft categories, then produce options. And it worked. The model recommended:
-Ozark (which I’d seen and liked)
-Mindhunter (which I hadn’t seen)
-Narcos (which I’d seen and liked) Also: it was different each time—both the blessing and the curse of generative systems.
-Demo 2: zero-history preference elicitation in five questions
+* Ozark (which I’d seen and liked)
+* Mindhunter (which I hadn’t seen)
+* Narcos (which I’d seen and liked) Also: it was different each time—both the blessing and the curse of generative systems.
+
+**Demo 2: zero-history preference elicitation in five questions**
+
 Then I made it more interesting: “assume you know nothing about me—ask me five yes/no questions and recommend five music artists I’ll like.” Again, the point wasn’t just the output. The model:
-designed a question flow
-implicitly built a decision tree
-updated a “user profile” after each answer
+* designed a question flow
+* implicitly built a decision tree
+* updated a “user profile” after each answer
+
 With five questions, it recommended: Tool, King Crimson, Animals as Leaders, Russian Circles, and Karnivool. I noted that some picks were a bit off for my taste—likely influenced by how I answered the “harsh vocals” question. But the more important observation remained: from a blank sheet, the system elicited preferences and produced plausible recommendations.
-A taxonomy of how LLMs enter RecSys
+
+### A taxonomy of how LLMs enter RecSys
+
 I referenced a diagram from the STAR paper that classifies approaches:
 pure prompting (like my demos)
-prompting with user history (user–item interactions)
-using LLMs to create semantic features/IDs/embeddings combined with collaborative signals
-two-LLM architectures: one for semantic features + CF, another LLM for final ranking The meta-point: “using LLMs” isn’t a single technique; it’s a design space.
-Part III — What’s next
+* prompting with user history (user–item interactions)
+* using LLMs to create semantic features/IDs/embeddings combined with collaborative signals
+* two-LLM architectures: one for semantic features + CF, another LLM for final ranking The meta-point: “using LLMs” isn’t a single technique; it’s a design space.
+
+# Part III — What’s next
+
 I started this section with a screenshot from a startup called Fable: “Netflix for generative content.” The proposition is an extreme endpoint of personalization: not only recommending content but generating content, on the fly, personalized to each user. That’s “the last step” of personalization in one direction.
 Then I returned again—intentionally—to the product triad:
 UX design (especially in multimodal / agentic worlds)
