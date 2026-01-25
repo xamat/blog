@@ -230,7 +230,7 @@ And if you want to make it more powerful, you can connect it to tools: calendar,
 
 (AI digression — the moment you add tools, you import responsibility) In one of my posts, I put it bluntly: AI is great for organizing/analyzing data, but it doesn’t have “gut,” intuition, or accountability—and that’s precisely why human judgment remains central. That maps directly to agents: the moment an agent can act, UX design and safety constraints stop being secondary concerns.
 
-## Project Mariner: agents that browse the web
+## Agents that browse the web and recommend
 
 I then showed a more advanced agent concept (Project Mariner): it can browse the web on your behalf—scroll, click, match opportunities to your resume, and execute a multi-step flow. The only additional capability (conceptually) is huge: delegated navigation in human UIs.
 
