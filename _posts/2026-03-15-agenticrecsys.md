@@ -56,11 +56,11 @@ The interaction follows a disciplined Recommend → Decide → Do loop:
 1. The Decision Set: It returns a compact "Top 1 + Backup 1" recommendation with explicit tradeoffs based on my retrieved preferences.
 1. Action Execution: Once I give the "Go", the local Linux agent wakes up the browser, navigates to the reservation site, and executes the task using my existing login.
 
-[Watch the Recommend Flow Hotel Reservation Demo](https://drive.google.com/file/d/1jCjrRDnSnwJiOnkoi8QofsUmEUYIW1OX/view?usp=drive_link)
+[Watch the Recommend Flow Hotel Reservation Demo](/blog/images//RestaurantReservationDemo.webm)
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 20px;">
 <iframe
-src="https://www.google.com/search?q=https://drive.google.com/file/d/1-bOx_6-HQiVqwHAkbFc0engmj_4vUkaj/preview"
+src="/blog/images//RestaurantReservationDemo.webm"
 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
 allow="autoplay"
 allowfullscreen>
