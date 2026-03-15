@@ -34,6 +34,8 @@ Furthermore, we’ve leaned into the philosophy of "Memory as Documentation." Al
 - **Portability**: The entire intelligence of the system—the workflows, the personality priors, and the task histories—lives in a folder that can be moved across machines or version-controlled via Git.
 - **Security Guardrails**: Storing workflows in plain text allows for human-readable audit trails. I can verify the steps the agent intends to take before it ever touches a browser.
 
+<img src="/blog/images/125-0.png">
+
 # The Big Idea: Separate Roles, Compose Capabilities
 
 In a [previous post](https://amatria.in/blog/postpretraining), I argued that modern LLMs are evolving into "reasoning engines." In Recommend Flow, we intentionally split those reasoning responsibilities:
