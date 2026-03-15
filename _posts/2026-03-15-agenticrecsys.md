@@ -1,6 +1,6 @@
 ---
 id: 125
-title: "Beyond the Bot: Building Multi-Agent Recommend Flow for Actionable Intelligence"
+title: "Beyond the Bot: Building a Multi-Agent Recomender for Actionable Intelligence"
 date: '2026-03-15T00:00:01+00:00'
 author: Xavier
 permalink: /agenticrecsys
@@ -56,7 +56,7 @@ The interaction follows a disciplined Recommend → Decide → Do loop:
 1. The Decision Set: It returns a compact "Top 1 + Backup 1" recommendation with explicit tradeoffs based on my retrieved preferences.
 1. Action Execution: Once I give the "Go", the local Linux agent wakes up the browser, navigates to the reservation site, and executes the task using my existing login.
 
-[Watch the Recommend Flow Hotel Reservation Demo](/blog/images//RestaurantReservationDemo.webm)
+Watch the Recommend Hotel Reservation Demo below or you can open it [here](/blog/images//RestaurantReservationDemo.webm)
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 20px;">
 <iframe
