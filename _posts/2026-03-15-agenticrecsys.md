@@ -56,6 +56,15 @@ The interaction follows a disciplined Recommend → Decide → Do loop:
 
 [Watch the Recommend Flow Hotel Reservation Demo](https://drive.google.com/file/d/1-bOx_6-HQiVqwHAkbFc0engmj_4vUkaj/view?usp=sharing)
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 20px;">
+<iframe
+src="https://www.google.com/search?q=https://drive.google.com/file/d/1-bOx_6-HQiVqwHAkbFc0engmj_4vUkaj/preview"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+allow="autoplay"
+allowfullscreen>
+</iframe>
+</div>
+
 In this demo I have a chat with my Openclaw instance (called Xavibot) using a local browser for easier recording (as mentioned I usually interface through Whatsapp). Note that the browsing on the Chrome browser on the left is completely autonomous. In fact, at some point Openclaw decided to Google for “best restaurants in Palo Alto on OpenTable” that was a surprise.
 
 # Why Xavibot v0.1 is the Perfect Backbone
