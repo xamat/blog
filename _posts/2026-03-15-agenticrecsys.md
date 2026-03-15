@@ -15,7 +15,7 @@ reading_time:
     - ''
 ---
 
-(This blog post, as with most of my recent ones, is written with AI assistance and augmentation. In this case, "We" in the text refers to myself and my local OpenClaw agent, which has been my primary co-developer throughout this project.)
+*(This blog post, as with most of my recent ones, is written with AI assistance and augmentation. In this case, "We" in the text refers to myself and my local OpenClaw agent, which has been my primary co-developer throughout this project.)*
 
 Most AI demos today suffer from a "low-ceiling" problem: they stop at "look, it can answer a question." I wanted to push toward the actual horizon of this technology—an assistant that doesn't just predict the next token, but personalizes recommendations, reasons with deep context, and executes real-world tasks.
 
@@ -67,7 +67,7 @@ allowfullscreen>
 </iframe>
 </div>
 
-In this demo I have a chat with my Openclaw instance (called Xavibot) using a local browser for easier recording (as mentioned I usually interface through Whatsapp). Note that the browsing on the Chrome browser on the left is completely autonomous. In fact, at some point Openclaw decided to Google for “best restaurants in Palo Alto on OpenTable” that was a surprise.
+*In this demo I have a chat with my Openclaw instance (called Xavibot) using a local browser for easier recording (as mentioned I usually interface through Whatsapp). Note that the browsing on the Chrome browser on the left is completely autonomous. In fact, at some point Openclaw decided to Google for “best restaurants in Palo Alto on OpenTable” that was a surprise."
 
 # Why Xavibot v0.1 is the Perfect Backbone
 
