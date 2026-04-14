@@ -4,7 +4,7 @@ title: "Beyond the Bot: Building a Multi-Agent Recomender for Actionable Intelli
 date: '2026-03-15T00:00:01+00:00'
 author: Xavier
 permalink: /agenticrecsys
-image: /blog/images/125-0.png
+image: /images/125-0.png
 header:
   teaser: /images/125-0.png
 categories:
@@ -34,7 +34,7 @@ Furthermore, we’ve leaned into the philosophy of "Memory as Documentation." Al
 - **Portability**: The entire intelligence of the system—the workflows, the personality priors, and the task histories—lives in a folder that can be moved across machines or version-controlled via Git.
 - **Security Guardrails**: Storing workflows in plain text allows for human-readable audit trails. I can verify the steps the agent intends to take before it ever touches a browser.
 
-<img src="/blog/images/125-0.png">
+<img src="/images/125-0.png">
 
 # The Big Idea: Separate Roles, Compose Capabilities
 
@@ -56,15 +56,13 @@ The interaction follows a disciplined Recommend → Decide → Do loop:
 1. The Decision Set: It returns a compact "Top 1 + Backup 1" recommendation with explicit tradeoffs based on my retrieved preferences.
 1. Action Execution: Once I give the "Go", the local Linux agent wakes up the browser, navigates to the reservation site, and executes the task using my existing login.
 
-Watch the Recommend Hotel Reservation Demo below or you can open it [here](/blog/images//RestaurantReservationDemo.webm)
+Watch the Recommend Hotel Reservation Demo below or you can open it [here]({{ site.baseurl }}/images/RestaurantReservationDemo.webm)
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 20px;">
-<iframe
-src="/blog/images//RestaurantReservationDemo.webm"
-style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-allow="autoplay"
-allowfullscreen>
-</iframe>
+<div style="margin-bottom: 20px;">
+  <video controls preload="metadata" style="width: 100%; max-width: 100%; height: auto;">
+    <source src="{{ site.baseurl }}/images/RestaurantReservationDemo.webm" type="video/webm">
+    Your browser does not support the video tag. You can open the demo directly <a href="{{ site.baseurl }}/images/RestaurantReservationDemo.webm">here</a>.
+  </video>
 </div>
 
 *In this demo I have a chat with my Openclaw instance (called Xavibot) using a local browser for easier recording (as mentioned I usually interface through Whatsapp). Note that the browsing on the Chrome browser on the left is completely autonomous. In fact, at some point Openclaw decided to Google for “best restaurants in Palo Alto on OpenTable” that was a surprise."
