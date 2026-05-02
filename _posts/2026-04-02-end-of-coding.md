@@ -18,7 +18,7 @@ reading_time:
 
 <img src="/images/126-0.png">
 
-This is the third—and likely final—post in a series I’ve been writing over the past two and a half years on using AI for software development. The journey began with my early experiences of how LLMs would change development, and continued 18 months later when I revisited those ideas during an AI-assisted codebase refactor.
+This is the third—and likely final—post in a series I’ve been writing over the past two and a half years on using AI for software development. The journey began with [my early experiences of how LLMs would change development](https://amatria.in/blog/aidevelopment), and continued 18 months later when I revisited those ideas during an [AI-assisted codebase refactor](https://amatria.in/blog/ai-code-refactor).
 
 But this post is going to have a significantly different vibe. Instead of discussing AI as a helpful “co-developer,” my argument today is simple and perhaps a bit provocative: coding, as we know it, is ending.
 
@@ -52,7 +52,7 @@ To truly understand this frontier, I decided to do a coding sprint. But rather t
 
 OpenClaw was the tool that made the abstraction shift visceral for me. It gives me complete control over the orchestration layer. I hooked it up to both Codex and Gemini, meaning I can hot-swap models at any point without breaking my workflows. I even connected it to WhatsApp and Obsidian. Do I think OpenClaw is the definitive future of mainstream software development? No way. It has a very "Linux" vibe to it—incredibly cool for hackers and early adopters, but tools like Claude Cowork are already bringing these features to the masses via polished GUIs. Still, for a personal sprint, it was the perfect playground.
 
-For this experiment, I tackled tasks across the complexity spectrum. On the everyday maintenance side, I fixed all the security warnings accumulated in my Xavibot project (a notoriously painful dependency-hell operation) and added a long-overdue like/comment feature to my Jekyll-based blog. But to truly test the limits of agentic abstraction, I also used this framework to build a distributed recommender system from scratch. Architecting a multi-agent recommendation flow involves complex state management, data orchestration, and API design—hardly trivial work.
+For this experiment, I tackled tasks across the complexity spectrum. On the everyday maintenance side, I fixed all the security warnings accumulated in my Xavibot project (a notoriously painful dependency-hell operation) and added a long-overdue like/comment feature to my Jekyll-based blog. But to truly test the limits of agentic abstraction, I also used this framework to build a [distributed recommender system](https://amatria.in/blog/agenticrecsys) from scratch. Architecting a multi-agent recommendation flow generally involves complex state management, data orchestration, and API design.
 
 Here is where the paradigm shift hit me: Whether it was untangling old dependencies or architecting a distributed recommendation engine, I executed this entire sprint using only OpenClaw, interacting with it almost exclusively through WhatsApp messages. I only opened a local terminal for specific operations that required elevated permissions.
 
@@ -62,7 +62,7 @@ One reason we rely so heavily on IDEs is the tight feedback loop: code, run, deb
 
 # The Future of Software Engineering: From Code to Intent
 
-A lot of software engineers are already writing significantly less code (or no code at all), and it is my strong opinion that the large majority of them will very soon not even see a line of code in their day-to-day work. Just as looking at raw assembly became a rarity decades ago, the same will happen with high-level languages like Python, Java, or C++. Very soon.
+A lot of software engineers are already writing significantly less code (or [no code at all](https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/)), and it is my strong opinion that the large majority of them will very soon not even see a line of code in their day-to-day work. Just as looking at raw assembly became a rarity decades ago, the same will happen with high-level languages like Python, Java, or C++. Very soon.
 
 For decades, source code was the canonical artifact of software engineering. Requirements were fuzzy, architecture diagrams were partial, tests were incomplete, but the code was the source of truth. In an agentic workflow, that hierarchy starts to invert. The durable artifacts become the spec, the constraints, the tests, the deployment environment, the issue reports, and the evaluation loop. Code still exists, of course, but it becomes an intermediate representation: something the agent manipulates on the way to a working system.
 
