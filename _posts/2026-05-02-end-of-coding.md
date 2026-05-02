@@ -1,7 +1,7 @@
 ---
 id: 126
-title: "Beyond the Bot: Building a Multi-Agent Recomender for Actionable Intelligence"
-date: '2026-04-02T00:00:01+00:00'
+title: "The End of Coding? From AI Co-Development to Leading AI Agents"
+date: '2026-05-02T00:00:01+00:00'
 author: Xavier
 permalink: /endofcode
 image: /blog/images/126-0.png
