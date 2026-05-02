@@ -31,7 +31,7 @@ I took my first computer class when I was around 10. In hindsight, there was ver
 
 I loved the combination of object-oriented design with the hardcore, low-level control inherited from C. I took this obsession to the absolute limit during my Ph.D. leading the CLAM project, where I dove into the darkest depths of template metaprogramming and signal processing optimization, eventually winning an international ACM prize.
 
-**(Fun fact: I still proudly keep a copy of a C++ book signed by Bjarne Stroustrup, a prize I won for spotting an error in his slides during an advanced course years ago.)**
+*(Fun fact: I still proudly keep a copy of a C++ book signed by Bjarne Stroustrup, a prize I won for spotting an error in his slides during an advanced course years ago.)*
 
 This was not a casual phase. I taught programming and software engineering in universities in both Europe and the US, and even while doing my postdoc I moonlighted writing professional C++ code for startups. For a long stretch of my career, code was not just a tool I used; it was one of the main ways I thought.
 
