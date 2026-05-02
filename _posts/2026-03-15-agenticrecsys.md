@@ -4,7 +4,7 @@ title: "Beyond the Bot: Building a Multi-Agent Recomender for Actionable Intelli
 date: '2026-03-15T00:00:01+00:00'
 author: Xavier
 permalink: /agenticrecsys
-image: /images/125-0.png
+image: /blog/images/125-0.png
 header:
   teaser: /images/125-0.png
 categories:
@@ -34,7 +34,7 @@ Furthermore, we’ve leaned into the philosophy of "Memory as Documentation." Al
 - **Portability**: The entire intelligence of the system—the workflows, the personality priors, and the task histories—lives in a folder that can be moved across machines or version-controlled via Git.
 - **Security Guardrails**: Storing workflows in plain text allows for human-readable audit trails. I can verify the steps the agent intends to take before it ever touches a browser.
 
-<img src="/images/125-0.png">
+<img src="/blog/images/125-0.png">
 
 # The Big Idea: Separate Roles, Compose Capabilities
 
