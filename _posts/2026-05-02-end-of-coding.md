@@ -15,9 +15,6 @@ reading_time:
     - ''
 ---
 
-
-<img src="/blog/images/126-0.png">
-
 This is the third—and likely final—post in a series I’ve been writing over the past two and a half years on using AI for software development. The journey began with [my early experiences of how LLMs would change development](https://amatria.in/blog/aidevelopment), and continued 18 months later when I revisited those ideas during an [AI-assisted codebase refactor](https://amatria.in/blog/ai-code-refactor).
 
 But this post is going to have a significantly different vibe. Instead of discussing AI as a helpful “co-developer,” my argument today is simple and perhaps a bit provocative: coding, as we know it, is ending.
@@ -25,6 +22,8 @@ But this post is going to have a significantly different vibe. Instead of discus
 To be clear, I do not mean that software engineering is disappearing, or that code no longer matters. Code will still exist, just as assembly still exists. But for most engineers, most of the time, code is becoming less of a language we write directly and more of an intermediate representation produced, inspected, tested, and modified by agents.
 
 In other words, the important shift is not from “coding” to “not coding.” It is from writing syntax to expressing intent, constraints, architecture, and verification. That is the abstraction jump this post is about.
+
+<img src="/blog/images/126-0.png">
 
 # The Arc of Abstraction: Letting Go of the Syntax
 
