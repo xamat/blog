@@ -561,7 +561,7 @@ since Feb, 2023.
 
 <a name="fig:timeline3"></a>![Recently published LLMs](/blog/images/02-10.png)
 
-### <a name="Catalog List"></a>Catalog List
+### <a name="CatalogList"></a>Catalog List
 
 Finally, here is the full list of all the models in the catalog:
 
