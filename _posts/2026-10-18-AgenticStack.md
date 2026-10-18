@@ -107,7 +107,7 @@ Here, players like [ElevenLabs](https://elevenlabs.io/docs/overview/intro) and [
 
 At the top of the runtime is what users actually touch—and where we find out whether all the machinery underneath actually helps someone get a job done.
 
-For teams building custom interfaces, toolkits like the [Vercel AI SDK](https://ai-sdk.dev/) streamline streaming UIs and state wiring. On the other end of the spectrum are vertically integrated customer-experience platforms like [Cognigy](https://docs.cognigy.com/ai/overview/about-cognigy-ai) and [Sierra](https://sierra.ai/), which bundle experiences together with voice, orchestration, and backend integrations. hat overlap isn't a flaw in the taxonomy; it surfaces one of the most consequential architectural decisions you have to make across the entire stack.
+For teams building custom interfaces, toolkits like the [Vercel AI SDK](https://ai-sdk.dev/) streamline streaming UIs and state wiring. On the other end of the spectrum are vertically integrated customer-experience platforms like [Gradient Labs](https://gradient-labs.ai/) [Cognigy](https://docs.cognigy.com/ai/overview/about-cognigy-ai) and [Sierra](https://sierra.ai/), which bundle experiences together with voice, orchestration, and backend integrations. hat overlap isn't a flaw in the taxonomy; it surfaces one of the most consequential architectural decisions you have to make across the entire stack.
 
 ## Suites vs. composable stacks: optimizing for optionality and anti-fragility
 
@@ -163,7 +163,7 @@ Tools like [Langfuse](https://langfuse.com/), [LangSmith](https://www.langchain.
 
 ### Security and governance
 
-Model-level guardrails—such as [NVIDIA NeMo Guardrails](https://developer.nvidia.com/nemo-guardrails), [Lakera](https://www.lakera.ai/), [Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/), and [Azure AI Content Safety](https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety)—remain essential for catching prompt injections, toxicity, and PII leaks.
+Model-level guardrails—such as [NVIDIA NeMo Guardrails](https://developer.nvidia.com/nemo-guardrails), [Alinia](https://www.alinia.ai/) [Lakera](https://www.lakera.ai/), [Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/), and [Azure AI Content Safety](https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety)—remain essential for catching prompt injections, toxicity, and PII leaks.
 
 However, agentic governance goes far beyond filtering input and output strings. It encompasses agent identity, least-privilege permissions, strict data boundaries, tool registries, human-in-the-loop approval policies, immutable audit logs, and kill switches. For an autonomous agent, the most critical security perimeter sits at the point of *action*, not the point of text generation.
 
