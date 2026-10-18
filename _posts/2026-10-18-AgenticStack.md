@@ -93,7 +93,9 @@ Once a system can take actions, you need orchestration to govern how work progre
 
 Code-first frameworks like [LangChain](https://docs.langchain.com/oss/python/langchain/overview)/[LangGraph](https://www.langchain.com/langgraph), [LlamaIndex](https://www.llamaindex.ai/), [CrewAI](https://docs.crewai.com/), [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/), [Google ADK](https://adk.dev/), and [Strands Agents](https://strandsagents.com/) occupy different points along the autonomy spectrum, alongside visual workflow engines like [n8n](https://github.com/n8n-io/n8n) that both design and execute pipelines.
 
-Do you actually need a multi-agent architecture? Maybe. But I always look for a justification grounded in clear task decomposition, context isolation, or fundamentally distinct security boundaries. Splitting a straightforward workflow into five chattering personas usually just gives you five new places to debug without improving the outcome.
+Two caveats are worth keeping in mind here. First, do you actually need a multi-agent architecture? Maybe. But I always look for a justification grounded in clear task decomposition, context isolation, or fundamentally distinct security boundaries. Splitting a straightforward workflow into five chattering personas usually just gives you five new places to debug without improving the outcome.
+
+Second, be mindful of framework lock-in. Heavyweight orchestration abstractions that try to own prompts, memory, tool execution, and state all at once can accelerate a prototype, only to fight you later when model capabilities shift or you need fine-grained control over the control flow. Writing thin, custom orchestration logic in plain code—and pulling in modular libraries only where they earn their keep—is often the more resilient path.
 
 ### Voice
 
@@ -105,7 +107,23 @@ Here, players like [ElevenLabs](https://elevenlabs.io/docs/overview/intro) and [
 
 At the top of the runtime is what users actually touch—and where we find out whether all the machinery underneath actually helps someone get a job done.
 
-For teams building custom interfaces, toolkits like the [Vercel AI SDK](https://ai-sdk.dev/) streamline streaming UIs and state wiring. On the other end of the spectrum are vertically integrated customer-experience platforms like [Cognigy](https://docs.cognigy.com/ai/overview/about-cognigy-ai) and [Sierra](https://sierra.ai/), which bundle experiences together with voice, orchestration, and backend integrations. That overlap isn't a flaw in the taxonomy; it represents a core architectural decision between composing best-of-breed layers yourself or adopting an integrated platform.
+For teams building custom interfaces, toolkits like the [Vercel AI SDK](https://ai-sdk.dev/) streamline streaming UIs and state wiring. On the other end of the spectrum are vertically integrated customer-experience platforms like [Cognigy](https://docs.cognigy.com/ai/overview/about-cognigy-ai) and [Sierra](https://sierra.ai/), which bundle experiences together with voice, orchestration, and backend integrations. hat overlap isn't a flaw in the taxonomy; it surfaces one of the most consequential architectural decisions you have to make across the entire stack.
+
+## Suites vs. composable stacks: optimizing for optionality and anti-fragility
+
+Looking at the diagram, you can immediately see a fundamental tension in how teams adopt these layers: do you buy into a broader, opinionated framework or platform that spans several boxes at once, or do you compose your own stack from smaller, focused tools—and build key pieces yourself?
+
+Integrated platforms and all-in-one frameworks are appealing because they reduce initial integration friction. If you are standing up a standard workflow or lack dedicated AI systems engineering capacity, buying a bundled solution can get you to market much faster.
+
+However, in an ecosystem moving this fast, convenience at day one often turns into a straitjacket by month six. Today's clever framework abstraction is frequently tomorrow's native model capability—or tech debt. When you outsource your core control flow, context assembly, or state management to a monolithic framework, you inherit its assumptions and move at the speed of its roadmap.
+
+My strong bias here is to optimize for optionality and anti-fragility while aggressively avoiding lock-in:
+
+* Keep boundaries clean and interfaces thin: Treat models, vector stores, tools, and even orchestration frameworks as swappable dependencies behind interfaces you control.
+* Compose focused tools over monolithic abstractions: Prefer libraries and services that do one job exceptionally well (e.g., a model gateway, a sandboxed code runner, or a tracing layer) over sprawling frameworks that demand ownership of your entire execution loop.
+* Don't be afraid to write the glue yourself: Especially given how much faster we can write and maintain software with modern coding agents, implementing a lightweight state machine, context builder, or tool router in your own codebase is often far cheaper—and much easier to debug—than wrestling with a leaky third-party abstraction.
+
+An anti-fragile architecture doesn't just survive the next wave of model releases or vendor consolidation; it benefits from them. When a new frontier model drops a capability that renders a complex workaround obsolete, you want to be able to delete a module in an afternoon, not re-architect your entire platform.
 
 ## Building the agent is not the same as running it
 
@@ -171,6 +189,6 @@ Post-training is powerful when you have a measured need to distill a smaller mod
 
 The takeaway from this landscape is not that every team needs to go out and assemble a twelve-layer enterprise platform tomorrow. Quite the opposite: we need clearer mental models of the responsibilities an agentic system must fulfill, so we can make deliberate choices about where those responsibilities live.
 
-Start with the user outcome. Build the simplest architecture that can reliably deliver it. Introduce new layers only when the problem demands them, and instrument everything so you can evaluate and observe what is actually happening in production.
+Start with the user outcome. Build the simplest architecture that can reliably deliver it. Design for optionality so you aren't locked into yesterday's abstractions, introduce new layers only when the problem demands them, and instrument everything so you can evaluate and observe what is actually happening in production.
 
 The logos on this chart will inevitably churn. Vendors will consolidate neighboring boxes, categories will blur, and new abstractions will emerge. But the core lesson from that 2023 cake holds up: the model matters, and so does everything around it. The difference in 2026 is that our systems don't just talk—they act. And that makes the surrounding architecture, and our accountability for it, more important than ever.
