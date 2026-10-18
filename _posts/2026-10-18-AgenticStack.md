@@ -27,6 +27,7 @@ The core thesis behind this updated map hasn't changed, even if the capabilities
 
 (As most of my other recent posts, this one has been written with AI assistance. In this one in particular I used GPT 6.1 Sol and Gemini 4 Argon)
 
+<img src="/blog/images/128-0.png">
 
 ## A map of capabilities, not a shopping list
 
