@@ -51,7 +51,7 @@ That is why the diagram separates managed agent hosting platforms like [AWS Agen
 
 ### Foundation models
 
-Providers like [OpenAI](https://openai.com/), [Anthropic](https://www.anthropic.com/), [Google](https://deepmind.google/models/), and [xAI](https://x.ai/) supply frontier proprietary models, alongside an increasingly capable ecosystem of open-weight models from [Meta](https://ai.meta.com/) (Llama), [DeepSeek](https://www.deepseek.com/), [Qwen](https://qwenlm.github.io/), and others.
+Providers like [OpenAI](https://openai.com/), [Anthropic](https://www.anthropic.com/), [Google](https://deepmind.google/models/), and [xAI](https://x.ai/) supply frontier proprietary models, alongside an increasingly capable ecosystem of open-weight models from Meta ([Muse Spark Open](https://dev.meta.ai/models/muse-spark-ope)), Google ([Gemma](https://deepmind.google/models/gemma/)), [DeepSeek](https://www.deepseek.com/), [Qwen](https://qwenlm.github.io/), and others.
 
 Model selection—including the trade-off between closed APIs and self-hosted or managed open-weight models—remains consequential. However, it should always be evaluated against your specific tasks, latency budgets, cost constraints, data-privacy requirements, and risk tolerance, rather than a model's latest position on a general academic leaderboard. A frontier model that tops a reasoning benchmark can easily be the wrong choice for a high-throughput production workflow where a smaller open-weight model excels, and vice versa.
 
